@@ -154,7 +154,7 @@ const renderEventDetails = (event: MatchEvent, align: 'left' | 'right' = 'left')
           <div className={`flex items-center gap-2 ${alignmentClass}`}>
             <Link
               href={event.player.id ? `/spillerprofil/${event.player.id}` : '#'}
-              className={`text-sm font-medium ${event.player.id ? 'hover:text-blue-600' : 'pointer-events-none'}`}
+              className={`text-sm font-medium ${event.player.id ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'pointer-events-none'} dark:text-gray-200`}
             >
               {event.player.name || 'Ukjent Spiller'}
             </Link>
@@ -164,10 +164,10 @@ const renderEventDetails = (event: MatchEvent, align: 'left' | 'right' = 'left')
           </div>
           {event.assist?.name && (
             <div className={`flex items-center gap-1 ${alignmentClass}`}>
-              <span className="text-xs text-gray-500">assist by</span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">assist by</span>
               <Link
                 href={event.assist.id ? `/spillerprofil/${event.assist.id}` : '#'}
-                className={`text-xs text-gray-600 font-medium ${event.assist.id ? 'hover:text-blue-600' : 'pointer-events-none'}`}
+                className={`text-xs text-gray-600 dark:text-gray-300 font-medium ${event.assist.id ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'pointer-events-none'}`}
               >
                 {event.assist.name}
               </Link>
@@ -180,7 +180,7 @@ const renderEventDetails = (event: MatchEvent, align: 'left' | 'right' = 'left')
         <div className={`flex items-center gap-2 ${alignmentClass}`}>
           <Link
             href={event.player.id ? `/spillerprofil/${event.player.id}` : '#'}
-            className={`text-sm font-medium ${event.player.id ? 'hover:text-blue-600' : 'pointer-events-none'}`}
+            className={`text-sm font-medium ${event.player.id ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'pointer-events-none'} dark:text-gray-200`}
           >
             {event.player.name || 'Ukjent Spiller'}
           </Link>
@@ -192,7 +192,7 @@ const renderEventDetails = (event: MatchEvent, align: 'left' | 'right' = 'left')
           <div className={`flex items-center gap-2 ${alignmentClass}`}>
             <Link
               href={event.assist?.id ? `/spillerprofil/${event.assist.id}` : '#'}
-              className={`text-sm text-green-600 ${event.assist?.id ? 'hover:text-green-700' : 'pointer-events-none'}`}
+              className={`text-sm text-green-600 ${event.assist?.id ? 'hover:text-green-700 dark:hover:text-green-500' : 'pointer-events-none'}`}
             >
               {event.assist?.name || 'Ukjent Spiller'}
             </Link>
@@ -200,7 +200,7 @@ const renderEventDetails = (event: MatchEvent, align: 'left' | 'right' = 'left')
           <div className={`flex items-center gap-2 ${alignmentClass}`}>
             <Link
               href={event.player.id ? `/spillerprofil/${event.player.id}` : '#'}
-              className={`text-sm text-red-600 ${event.player.id ? 'hover:text-red-700' : 'pointer-events-none'}`}
+              className={`text-sm text-red-600 ${event.player.id ? 'hover:text-red-700 dark:hover:text-red-500' : 'pointer-events-none'}`}
             >
               {event.player.name || 'Ukjent Spiller'}
             </Link>
@@ -208,7 +208,7 @@ const renderEventDetails = (event: MatchEvent, align: 'left' | 'right' = 'left')
         </div>
       );
     default:
-      return <span className={`block text-sm text-gray-500 ${align === 'right' ? 'text-right' : 'text-left'}`}>{event.type} - {event.detail || event.comments || ''}</span>;
+      return <span className={`block text-sm text-gray-500 dark:text-gray-400 ${align === 'right' ? 'text-right' : 'text-left'}`}>{event.type} - {event.detail || event.comments || ''}</span>;
   }
 };
 
@@ -276,13 +276,13 @@ const LiveMatchEvents: React.FC<LiveMatchEventsProps> = ({
   }, [matchId, initialEvents]);
 
   const showKickoff = true;
-  const timeCircleBaseClasses = "flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full flex-shrink-0";
-  const timeTextClasses = "text-sm font-semibold text-black";
+  const timeCircleBaseClasses = "flex items-center justify-center w-10 h-10 bg-gray-200 dark:bg-gray-600 rounded-full flex-shrink-0";
+  const timeTextClasses = "text-sm font-semibold text-black dark:text-gray-100";
 
   return (
-    <div className="mt-2">
+    <div className="mt-2 bg-white dark:bg-[#222222] rounded-lg p-4">
       <div className="text-center mb-4">
-        <h3 className="text-base font-semibold text-gray-800 inline-block">
+        <h3 className="text-base font-semibold text-gray-800 dark:text-gray-100 inline-block">
           Kamphendelser
           {isLive && (
             <span className="text-[10px] text-green-600 font-bold align-middle ml-1.5 tracking-wide">
@@ -292,7 +292,7 @@ const LiveMatchEvents: React.FC<LiveMatchEventsProps> = ({
         </h3>
       </div>
       <div className="relative flex flex-col items-center">
-        <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-gray-200 transform -translate-x-1/2 z-0 hidden md:block" />
+        <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-gray-200 dark:bg-gray-700 transform -translate-x-1/2 z-0 hidden md:block" />
 
         <div className="w-full space-y-4 relative z-10 px-2">
           {showKickoff && (
@@ -301,7 +301,7 @@ const LiveMatchEvents: React.FC<LiveMatchEventsProps> = ({
               animate={{ opacity: 1 }}
               className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center my-2"
             >
-              <div className="flex md:hidden justify-self-start text-sm text-gray-500 py-2">
+              <div className="flex md:hidden justify-self-start text-sm text-gray-500 dark:text-gray-400 py-2">
                  Avspark
               </div>
               <div className="hidden md:flex justify-center md:col-start-2 z-10">
@@ -327,7 +327,7 @@ const LiveMatchEvents: React.FC<LiveMatchEventsProps> = ({
                  else if (event.type === 'Card') { iconSize = 20; wrapperSize = 'w-8 h-8'; }
                  else if (event.type === 'subst') { iconSize = 22; wrapperSize = 'w-8 h-8'; }
               }
-              const iconWrapperClasses = `flex-shrink-0 flex items-center justify-center ${wrapperSize} rounded-full border border-gray-200 bg-white`;
+              const iconWrapperClasses = `flex-shrink-0 flex items-center justify-center ${wrapperSize} rounded-full border border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-700`;
               const eventTimeText = `${event.time.elapsed}'${event.time.extra ? `+${event.time.extra}` : ''}`;
 
               return (

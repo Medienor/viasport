@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function PlayerSearchPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold mb-6">Spillerprofiler</h1>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 dark:bg-dark-bg min-h-screen">
+      <h1 className="text-3xl font-bold mb-6 dark:text-white">Spillerprofiler</h1>
       <PlayerSearch />
     </div>
   );

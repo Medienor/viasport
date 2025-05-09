@@ -1,23 +1,36 @@
 import { createClient } from '@supabase/supabase-js';
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import fs from 'fs';
 
-// Load environment variables from .env.local in the project root
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.resolve(__dirname, '../../');
+// Supabase setup using Next.js environment variables
+// Ensure these are defined in your .env.local or environment configuration
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_KEY; // Use the ANON key
 
-// Try to load from .env.local first, then fall back to .env
-let envPath = path.join(rootDir, '.env.local');
-if (!fs.existsSync(envPath)) {
-  envPath = path.join(rootDir, '.env');
+if (!supabaseUrl) {
+  throw new Error("Missing environment variable NEXT_PUBLIC_SUPABASE_URL");
 }
-dotenv.config({ path: envPath });
+if (!supabaseAnonKey) {
+  // Remember to use the ANON key for client-side code.
+  // Service role key should only be used securely on the server (e.g., API routes).
+  throw new Error("Missing environment variable NEXT_PUBLIC_SUPABASE_KEY (should be ANON key)");
+}
 
-// Supabase setup with loaded environment variables
-const supabaseUrl = process.env.SUPABASE_URL || 'https://cdynfbwdwdsiwkgiua.supabase.co';
-const supabaseKey = process.env.SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkeW5mYndkd2Rmc2l3a2dpeHVhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjU3ODQwMSwiZXhwIjoyMDU4MTU0NDAxfQ.5V7CbSCE4lb3FbJUa3kgipRPWXG4LeVRCf7eeLSrSoI';
+// Create Supabase client for client-side usage
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-// Create Supabase client
-export const supabase = createClient(supabaseUrl, supabaseKey); 
+// If you need a separate client instance for server-side operations
+// using the service role key (e.g., in API routes or server components
+// where you are SURE it won't leak to the client), you could potentially
+// create another client like this, but be very careful where you use it:
+/*
+import { createServerClient } from '@supabase/ssr'; // Or appropriate server helper
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY; // No NEXT_PUBLIC_ prefix
+
+export const getSupabaseServiceRoleClient = () => {
+  if (!supabaseUrl || !supabaseServiceRoleKey) {
+    throw new Error("Missing Supabase URL or Service Role Key for server client");
+  }
+  // Use appropriate server-side client creation method depending on your setup
+  // This is just a placeholder example:
+  // return createClient(supabaseUrl, supabaseServiceRoleKey);
+};
+*/ 

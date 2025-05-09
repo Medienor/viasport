@@ -369,8 +369,8 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
             {/* --- NEW: Team Form Section --- */}
             {formFixtures.length > 0 && currentTeamId && (
-              <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">Lagform (Siste 5)</h3>
+              <div className="bg-white dark:bg-dark-nav p-4 rounded-lg border border-gray-200 dark:border-dark-border shadow-sm">
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Lagform (Siste 5)</h3>
                 <div className="flex justify-around items-start space-x-1">
                   {formFixtures.map((fixture: SupabaseFixture) => { // Use SupabaseFixture type
                     // --- Corrected Form Logic ---
@@ -433,7 +433,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                             loading="lazy"
                           />
                         ) : (
-                          <div className="h-6 w-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 text-xs">?</div>
+                          <div className="h-6 w-6 bg-gray-200 dark:bg-dark-border rounded-full flex items-center justify-center text-gray-500 dark:text-gray-300 text-xs">?</div>
                         )}
                         {/* Tooltip (alternative, more styled) - requires CSS for visibility on hover */}
                         {/* <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
@@ -449,9 +449,9 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
             {/* --- NEW: Next Match Section - Enhanced --- */}
             {nextMatchFixture && (
-              <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">Neste kamp</h3>
-                <Link href={`/fotball/kamp/${nextMatchFixture.id}`} className="block hover:bg-gray-50 rounded-md -m-2 p-2 transition-colors">
+              <div className="bg-white dark:bg-dark-nav p-4 rounded-lg border border-gray-200 dark:border-dark-border shadow-sm">
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Neste kamp</h3>
+                <Link href={`/fotball/kamp/${nextMatchFixture.id}`} className="block hover:bg-gray-50 dark:hover:bg-[#222222] rounded-md -m-2 p-2 transition-colors">
                   <div className="flex items-center justify-between text-center mb-3">
                      {/* Home Team */}
                      <div className="flex flex-col items-center space-y-1 w-[35%]">
@@ -463,13 +463,13 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                            loading="lazy"
                          />
                        )}
-                       <span className="text-xs font-medium text-gray-800 truncate w-full">
+                       <span className="text-xs font-medium text-gray-800 dark:text-gray-200 truncate w-full">
                          {nextMatchFixture.home_team?.name ?? `Team ${nextMatchFixture.home_team_id}`}
                        </span>
                      </div>
                      {/* Time/Date or Live Status */}
                      <div className="flex flex-col items-center w-[30%]">
-                       <span className="text-sm font-semibold text-gray-900">
+                       <span className="text-sm font-semibold text-gray-900 dark:text-white">
                          {(() => {
                             const statusShort = nextMatchFixture.status?.short;
                             const elapsed = nextMatchFixture.status?.elapsed;
@@ -489,7 +489,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                             }
                          })()}
                        </span>
-                       <span className="text-xs text-gray-500">
+                       <span className="text-xs text-gray-500 dark:text-gray-400">
                          {format(parseISO(nextMatchFixture.date), "d. MMM", { locale: nb })}
                        </span>
                      </div>
@@ -503,26 +503,26 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                            loading="lazy"
                          />
                        )}
-                       <span className="text-xs font-medium text-gray-800 truncate w-full">
+                       <span className="text-xs font-medium text-gray-800 dark:text-gray-200 truncate w-full">
                          {nextMatchFixture.away_team?.name ?? `Team ${nextMatchFixture.away_team_id}`}
                        </span>
                      </div>
                   </div>
                   {/* League and Venue Info */}
-                  <div className="text-center text-xs text-gray-500 border-t border-gray-100 pt-2 mt-2 space-y-0.5">
+                  <div className="text-center text-xs text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-dark-border pt-2 mt-2 space-y-0.5">
                     {nextMatchFixture.league && (
                       <div className="flex items-center justify-center space-x-1.5">
                         {nextMatchFixture.league.logo && (
                           <img src={nextMatchFixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} alt={nextMatchFixture.league.name || ''} className="h-3 w-3 object-contain"/>
                         )}
                         <span>{nextMatchFixture.league.name}</span>
-                        {nextMatchFixture.round && <span className="text-gray-400">({nextMatchFixture.round.split(' - ')[1] || nextMatchFixture.round})</span>}
+                        {nextMatchFixture.round && <span className="text-gray-400 dark:text-gray-500">({nextMatchFixture.round.split(' - ')[1] || nextMatchFixture.round})</span>}
                       </div>
                     )}
                     {nextMatchFixture.venue && (
                       <div>
                         <span>{nextMatchFixture.venue.name}</span>
-                        {nextMatchFixture.venue.city && <span className="text-gray-400">, {nextMatchFixture.venue.city}</span>}
+                        {nextMatchFixture.venue.city && <span className="text-gray-400 dark:text-gray-500">, {nextMatchFixture.venue.city}</span>}
                       </div>
                     )}
                   </div>
@@ -538,7 +538,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             {/* Upcoming Matches - Enhanced */}
             {supabaseUpcomingFixtures.length > 0 && (
               <div>
-                <h2 className="text-xl font-semibold mb-6">Kommende kamper</h2>
+                <h2 className="text-xl font-semibold mb-6 dark:text-white">Kommende kamper</h2>
                 <div className="space-y-4">
                   {supabaseUpcomingFixtures.map((fixture: SupabaseFixture) => {
                     const isHomeTeamCurrent = fixture.home_team_id === currentTeamId;
@@ -547,16 +547,79 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                     const elapsed = fixture.status?.elapsed;
                     const isLive = statusShort && liveStatuses.includes(statusShort);
 
-                    console.log(`[TeamPage] ⏱️ Upcoming Fixture List (ID: ${fixture.id}) Status: ${statusShort}, Elapsed: ${elapsed}, IsLive: ${isLive}`); // Log status
+                    // console.log(`[TeamPage] ⏱️ Upcoming Fixture List (ID: ${fixture.id}) Status: ${statusShort}, Elapsed: ${elapsed}, IsLive: ${isLive}`); // Log status
 
                     return (
-                      <div key={fixture.id} className="bg-white rounded-lg border border-gray-200 shadow-sm relative overflow-hidden">
-                        {/* Date Badge */}
-                        <div className="absolute top-2 left-2 bg-gray-100 text-gray-700 text-[10px] font-semibold px-1.5 py-0.5 rounded-full z-10">
+                      <div key={fixture.id} className="bg-white dark:bg-dark-nav rounded-lg border border-gray-200 dark:border-none shadow-sm relative overflow-hidden">
+                        {/* Date Badge - Keep for both layouts */}
+                        <div className="absolute top-2 left-2 bg-gray-100 dark:bg-[#222222] text-gray-700 dark:text-gray-300 text-[10px] font-semibold px-1.5 py-0.5 rounded-full z-10">
                           {format(parseISO(fixture.date), "d. MMM", { locale: nb })}
                         </div>
-                        <Link href={`/fotball/kamp/${fixture.id}`} className="block p-4 pt-8 hover:bg-gray-50 transition-colors">
-                          <div className="flex items-center justify-between">
+                        {/* Link container */}
+                        <Link href={`/fotball/kamp/${fixture.id}`} className="block hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors">
+                          {/* Mobile Layout (Default: flex column) */}
+                          <div className="flex items-center justify-between p-4 pt-8 sm:hidden">
+                            {/* Status (FT, Time, Live) */}
+                            <div className="text-center w-10 flex-shrink-0 text-xs font-medium text-gray-600 dark:text-gray-400">
+                               <span className={`font-semibold text-sm ${
+                                 isLive
+                                   ? 'text-[#00985f] dark:text-[#ff6b00] animate-pulse'
+                                   : 'text-gray-900 dark:text-white'
+                               }`}>
+                                 {(() => {
+                                    if (isLive) {
+                                      if (statusShort === 'HT') return 'HT';
+                                      if (typeof elapsed === 'number') return `${elapsed}'`;
+                                      return 'Live';
+                                    }
+                                    try {
+                                      return format(parseISO(fixture.date), "HH:mm", { locale: nb });
+                                    } catch {
+                                      return '--:--';
+                                    }
+                                 })()}
+                               </span>
+                            </div>
+                            {/* Teams Stacked */}
+                            <div className="flex-grow mx-2 space-y-1">
+                               {/* Home Team */}
+                               <div className="flex items-center space-x-2">
+                                 <div className="relative h-5 w-5 flex-shrink-0">
+                                   <Image
+                                     src={fixture.home_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
+                                     alt={fixture.home_team?.name || ''}
+                                     fill className="object-contain" loading="lazy"
+                                   />
+                                 </div>
+                                 <span className={`text-sm font-medium truncate dark:text-[#AAAAAA] ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
+                                   {fixture.home_team?.name ?? `Team ${fixture.home_team_id}`}
+                                 </span>
+                               </div>
+                               {/* Away Team */}
+                               <div className="flex items-center space-x-2">
+                                 <div className="relative h-5 w-5 flex-shrink-0">
+                                   <Image
+                                     src={fixture.away_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
+                                     alt={fixture.away_team?.name || ''}
+                                     fill className="object-contain" loading="lazy"
+                                   />
+                                 </div>
+                                 <span className={`text-sm font-medium truncate dark:text-[#AAAAAA] ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
+                                   {fixture.away_team?.name ?? `Team ${fixture.away_team_id}`}
+                                 </span>
+                               </div>
+                            </div>
+                            {/* Favorite Icon Placeholder (Mobile) */}
+                            <div className="w-6 flex-shrink-0 text-gray-400 dark:text-gray-500">
+                              {/* Add Star Icon component here */}
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.31h5.418a.562.562 0 0 1 .321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988h5.418a.563.563 0 0 0 .475-.31h0z" />
+                              </svg>
+                            </div>
+                          </div>
+
+                          {/* Desktop Layout (Hidden by default, shown on sm screens) */}
+                          <div className="hidden sm:flex items-center justify-between p-4 pt-8">
                             {/* Home Team */}
                             <div className="flex items-center space-x-3 w-2/5">
                               <div className="relative h-8 w-8 flex-shrink-0">
@@ -568,15 +631,19 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                                   loading="lazy"
                                 />
                               </div>
-                              <span className={`font-medium truncate ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
+                              <span className={`font-medium truncate dark:text-[#AAAAAA] ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
                                 {fixture.home_team?.name ?? `Team ${fixture.home_team_id}`} {/* Use nested name */}
                               </span>
                             </div>
 
                             {/* Middle Section: Time/Live Status, League, Venue */}
                             <div className="text-center w-1/5 flex flex-col items-center text-xs">
-                               {/* Use the new green color for live indicators */}
-                               <span className={`font-semibold text-sm mb-1 ${isLive ? 'text-[#00985f] animate-pulse' : 'text-gray-900'}`}>
+                               {/* Use orange color for live indicators in dark mode */}
+                               <span className={`font-semibold text-sm mb-1 ${
+                                 isLive
+                                   ? 'text-[#00985f] dark:text-[#ff6b00] animate-pulse'
+                                   : 'text-gray-900 dark:text-white'
+                               }`}>
                                  {(() => {
                                     if (isLive) {
                                       if (statusShort === 'HT') return 'HT';
@@ -591,8 +658,9 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                                     }
                                  })()}
                                </span>
+                               {/* League and Venue - Shown only on desktop */}
                                {fixture.league && (
-                                 <div className="flex items-center justify-center space-x-1 text-gray-600 mb-0.5">
+                                 <div className="flex items-center justify-center space-x-1 text-gray-600 dark:text-gray-400 mb-0.5">
                                    {fixture.league.logo && (
                                      <img src={fixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} alt="" className="h-3 w-3 object-contain"/>
                                    )}
@@ -600,7 +668,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                                  </div>
                                )}
                                {fixture.venue && (
-                                 <span className="text-gray-400 truncate" title={`${fixture.venue?.name ?? ''}, ${fixture.venue?.city ?? ''}`}>
+                                 <span className="text-gray-400 dark:text-gray-500 truncate" title={`${fixture.venue?.name ?? ''}, ${fixture.venue?.city ?? ''}`}>
                                     {fixture.venue.name}
                                  </span>
                                )}
@@ -608,7 +676,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
                             {/* Away Team */}
                             <div className="flex items-center justify-end space-x-3 w-2/5">
-                              <span className={`font-medium text-right truncate ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
+                              <span className={`font-medium text-right truncate dark:text-[#AAAAAA] ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
                                 {fixture.away_team?.name ?? `Team ${fixture.away_team_id}`} {/* Use nested name */}
                               </span>
                               <div className="relative h-8 w-8 flex-shrink-0">
@@ -620,6 +688,13 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                                   loading="lazy"
                                 />
                               </div>
+                               {/* Favorite Icon Placeholder (Desktop) */}
+                               <div className="w-6 flex-shrink-0 text-gray-400 dark:text-gray-500 ml-2">
+                                  {/* Add Star Icon component here */}
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.31h5.418a.562.562 0 0 1 .321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988h5.418a.563.563 0 0 0 .475-.31h0z" />
+                                  </svg>
+                               </div>
                             </div>
                           </div>
                         </Link>
@@ -633,7 +708,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             {/* Siste Kamper Section (uses Supabase past) */}
             {supabasePastFixtures.length > 0 && (
               <div>
-                <h2 className="text-xl font-semibold mb-6">Siste kamper</h2>
+                <h2 className="text-xl font-semibold mb-6 dark:text-white">Siste kamper</h2>
                 <div className="space-y-4">
                   {supabasePastFixtures.map((fixture: SupabaseFixture) => {
                     const isHomeTeamCurrent = fixture.home_team_id === currentTeamId;
@@ -644,13 +719,71 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                     const statusShort = fixture.status?.short; // Get status short code
 
                     return (
-                      <div key={fixture.id} className="bg-white rounded-lg border border-gray-200 shadow-sm relative overflow-hidden">
-                        {/* Date Badge */}
-                        <div className="absolute top-2 left-2 bg-gray-100 text-gray-700 text-[10px] font-semibold px-1.5 py-0.5 rounded-full z-10">
-                          {format(parseISO(fixture.date), "d. MMM yyyy", { locale: nb })}
+                      <div key={fixture.id} className="bg-white dark:bg-dark-nav rounded-lg border border-gray-200 dark:border-none shadow-sm relative overflow-hidden">
+                        {/* Date Badge - Keep for both layouts */}
+                        <div className="absolute top-2 left-2 bg-gray-100 dark:bg-[#222222] text-gray-700 dark:text-gray-300 text-[10px] font-semibold px-1.5 py-0.5 rounded-full z-10">
+                          {format(parseISO(fixture.date), "d. MMM", { locale: nb })}
                         </div>
-                        <Link href={`/fotball/kamp/${fixture.id}`} className="block p-4 pt-8 hover:bg-gray-50 transition-colors">
-                          <div className="flex items-center justify-between">
+                        {/* Link container */}
+                        <Link href={`/fotball/kamp/${fixture.id}`} className="block hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors">
+                           {/* Mobile Layout (Default: flex column) */}
+                           <div className="flex items-center justify-between p-4 pt-8 sm:hidden">
+                             {/* Status (FT) */}
+                             <div className="text-center w-10 flex-shrink-0 text-xs font-medium text-gray-600 dark:text-gray-400">
+                               {statusShort || 'FT'}
+                             </div>
+                             {/* Teams Stacked */}
+                             <div className="flex-grow mx-2 space-y-1">
+                                {/* Home Team */}
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center space-x-2">
+                                    <div className="relative h-5 w-5 flex-shrink-0">
+                                      <Image
+                                        src={fixture.home_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
+                                        alt={fixture.home_team?.name || ''}
+                                        fill className="object-contain" loading="lazy"
+                                      />
+                                    </div>
+                                    <span className={`text-sm font-medium truncate dark:text-[#AAAAAA] ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
+                                      {fixture.home_team?.name ?? `Team ${fixture.home_team_id}`}
+                                    </span>
+                                  </div>
+                                  {/* Home Score */}
+                                  <span className="text-sm font-semibold dark:text-white ml-2">
+                                    {typeof homeScore === 'number' ? homeScore : '-'}
+                                  </span>
+                                </div>
+                                {/* Away Team */}
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center space-x-2">
+                                    <div className="relative h-5 w-5 flex-shrink-0">
+                                      <Image
+                                        src={fixture.away_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
+                                        alt={fixture.away_team?.name || ''}
+                                        fill className="object-contain" loading="lazy"
+                                      />
+                                    </div>
+                                    <span className={`text-sm font-medium truncate dark:text-[#AAAAAA] ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
+                                      {fixture.away_team?.name ?? `Team ${fixture.away_team_id}`}
+                                    </span>
+                                  </div>
+                                  {/* Away Score */}
+                                  <span className="text-sm font-semibold dark:text-white ml-2">
+                                    {typeof awayScore === 'number' ? awayScore : '-'}
+                                  </span>
+                                </div>
+                             </div>
+                             {/* Favorite Icon Placeholder (Mobile) */}
+                             <div className="w-6 flex-shrink-0 text-gray-400 dark:text-gray-500">
+                               {/* Add Star Icon component here */}
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                 <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.31h5.418a.562.562 0 0 1 .321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988h5.418a.563.563 0 0 0 .475-.31h0z" />
+                               </svg>
+                             </div>
+                           </div>
+
+                          {/* Desktop Layout (Hidden by default, shown on sm screens) */}
+                          <div className="hidden sm:flex items-center justify-between p-4 pt-8">
                             {/* Home Team */}
                             <div className="flex items-center space-x-3 w-2/5">
                               <div className="relative h-8 w-8 flex-shrink-0">
@@ -661,7 +794,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                                   loading="lazy"
                                 />
                               </div>
-                              <span className={`font-medium truncate ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
+                              <span className={`font-medium truncate dark:text-[#AAAAAA] ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
                                 {fixture.home_team?.name ?? `Team ${fixture.home_team_id}`}
                               </span>
                             </div>
@@ -669,15 +802,16 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                             {/* Middle Section: Score, League */}
                             <div className="text-center w-1/5 flex flex-col items-center text-xs">
                                {/* Display fulltime score */}
-                               <span className="font-bold text-lg text-gray-900 mb-1">
+                               <span className="font-bold text-lg text-gray-900 dark:text-white mb-1">
                                  {typeof homeScore === 'number' && typeof awayScore === 'number'
                                    ? `${homeScore} - ${awayScore}`
                                    : ['FT', 'AET', 'PEN'].includes(statusShort || '') ? '0 - 0' // Show 0-0 if finished but no score
                                    : statusShort || 'vs' // Show status if available and not finished, else 'vs'
                                  }
                                </span>
+                               {/* League Info - Shown only on desktop */}
                                {fixture.league && (
-                                 <div className="flex items-center justify-center space-x-1 text-gray-600 mb-0.5">
+                                 <div className="flex items-center justify-center space-x-1 text-gray-600 dark:text-gray-400 mb-0.5">
                                    {fixture.league.logo && (
                                      <img src={fixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} alt="" className="h-3 w-3 object-contain"/>
                                    )}
@@ -688,7 +822,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
                             {/* Away Team */}
                             <div className="flex items-center justify-end space-x-3 w-2/5">
-                              <span className={`font-medium text-right truncate ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
+                              <span className={`font-medium text-right truncate dark:text-[#AAAAAA] ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
                                 {fixture.away_team?.name ?? `Team ${fixture.away_team_id}`}
                               </span>
                               <div className="relative h-8 w-8 flex-shrink-0">
@@ -699,6 +833,13 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                                   loading="lazy"
                                 />
                               </div>
+                               {/* Favorite Icon Placeholder (Desktop) */}
+                               <div className="w-6 flex-shrink-0 text-gray-400 dark:text-gray-500 ml-2">
+                                  {/* Add Star Icon component here */}
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.31h5.418a.562.562 0 0 1 .321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988h5.418a.563.563 0 0 0 .475-.31h0z" />
+                                  </svg>
+                               </div>
                             </div>
                           </div>
                         </Link>
@@ -723,10 +864,10 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             {/* Next Match Information Section - Enhanced */}
             {supabaseUpcomingFixtures.length > 0 && team && team.team && (
               <div className="mt-12">
-                <h2 className="text-xl font-semibold mb-4">
+                <h2 className="text-xl font-semibold mb-4 dark:text-white">
                   Når spiller {team.team.name} sin neste kamp?
                 </h2>
-                <div className="prose prose-lg max-w-none">
+                <div className="prose prose-lg dark:prose-invert max-w-none">
                   {(() => {
                     const nextMatch = supabaseUpcomingFixtures[0];
                     const secondMatch = supabaseUpcomingFixtures[1];
@@ -782,7 +923,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                     } else {
                        text = `Ingen kommende kamper funnet for ${team.team.name}.`;
                     }
-                    return <p>{text}</p>;
+                    return <p className="dark:text-gray-300">{text}</p>;
                   })()}
                 </div>
               </div>
@@ -791,10 +932,10 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             {/* --- NEW: Turneringer List Section --- */}
             {leagues.length > 0 && team && team.team && (
               <div className="mt-12">
-                <h2 className="text-xl font-semibold mb-4">
+                <h2 className="text-xl font-semibold mb-4 dark:text-white">
                   Turneringer for {team.team.name}
                 </h2>
-                <div className="prose max-w-none">
+                <div className="prose dark:prose-invert max-w-none">
                   <ul className="list-disc pl-5 space-y-1">
                     {leagues.map((leagueData: LeagueData) => ( // Use LeagueData type
                       <li key={leagueData.league.id}>
@@ -824,10 +965,10 @@ export default async function TeamPage({ params }: { params: { slug: string } })
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
             <h1 className="text-2xl font-bold text-red-600 mb-4">Oops! Noe gikk galt.</h1>
-            <p className="text-gray-700">Kunne ikke laste inn laginformasjonen. Vennligst prøv igjen senere.</p>
+            <p className="text-gray-700 dark:text-gray-300">Kunne ikke laste inn laginformasjonen. Vennligst prøv igjen senere.</p>
             {/* Optionally show error details in development */}
             {process.env.NODE_ENV === 'development' && (
-                <pre className="mt-4 text-left text-xs bg-gray-100 p-2 rounded overflow-auto">
+                <pre className="mt-4 text-left text-xs bg-gray-100 dark:bg-dark-nav dark:text-gray-200 p-2 rounded overflow-auto">
                     {error instanceof Error ? error.stack : String(error)}
                 </pre>
             )}

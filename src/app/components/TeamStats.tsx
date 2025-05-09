@@ -182,57 +182,93 @@ export default function TeamStats({ statistics }: TeamStatsProps) {
     { id: 'performance', label: 'Prestasjon' },
   ];
 
+  // Chart data for results distribution
+  const chartData = {
+    labels: ['Seire', 'Uavgjort', 'Tap'],
+    datasets: [
+      {
+        data: [statistics?.fixtures?.wins?.total || 0, statistics?.fixtures?.draws?.total || 0, statistics?.fixtures?.loses?.total || 0],
+        backgroundColor: ['#10B981', '#F59E0B', '#EF4444'],
+        borderColor: ['#10B981', '#F59E0B', '#EF4444'],
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  // Chart options
+  const chartOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom' as const,
+        labels: {
+          color: 'rgb(156, 163, 175)', // gray-400 for both light and dark mode
+          font: {
+            size: 12,
+          },
+        },
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context: any) {
+            const label = context.label || '';
+            const value = context.raw || 0;
+            const total = statistics?.fixtures?.played?.total || 0;
+            const percentage = Math.round((value / total) * 100);
+            return `${label}: ${value} (${percentage}%)`;
+          }
+        }
+      }
+    },
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow p-6">
-      <h2 className="text-xl font-semibold mb-6">Statistikk</h2>
+    <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-6">
+      <h2 className="text-xl font-semibold mb-6 dark:text-white">Statistikk</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Fixtures Summary */}
-        <div className="bg-gray-50 p-4 rounded-lg">
-          <h3 className="text-lg font-semibold mb-4">Kamper</h3>
+        <div className="bg-gray-50 dark:bg-dark-nav p-4 rounded-lg">
+          <h3 className="text-lg font-semibold mb-4 dark:text-white">Kamper</h3>
           <div className="space-y-2">
             <div className="flex justify-between">
-              <span>Spilt:</span>
-              <span className="font-medium">{getSafeValue('fixtures.played')}</span>
+              <span className="dark:text-gray-300">Spilt:</span>
+              <span className="font-medium dark:text-white">{getSafeValue('fixtures.played')}</span>
             </div>
             <div className="flex justify-between">
-              <span>Vunnet:</span>
-              <span className="font-medium text-green-600">{getSafeValue('fixtures.wins')}</span>
+              <span className="dark:text-gray-300">Vunnet:</span>
+              <span className="font-medium text-green-600 dark:text-green-400">{getSafeValue('fixtures.wins')}</span>
             </div>
             <div className="flex justify-between">
-              <span>Uavgjort:</span>
-              <span className="font-medium text-yellow-600">{getSafeValue('fixtures.draws')}</span>
+              <span className="dark:text-gray-300">Uavgjort:</span>
+              <span className="font-medium text-yellow-600 dark:text-yellow-400">{getSafeValue('fixtures.draws')}</span>
             </div>
             <div className="flex justify-between">
-              <span>Tapt:</span>
-              <span className="font-medium text-red-600">{getSafeValue('fixtures.loses')}</span>
+              <span className="dark:text-gray-300">Tapt:</span>
+              <span className="font-medium text-red-600 dark:text-red-400">{getSafeValue('fixtures.loses')}</span>
             </div>
           </div>
         </div>
 
         {/* Goals Summary */}
-        <div className="bg-gray-50 p-4 rounded-lg">
-          <h3 className="text-lg font-semibold mb-4">Mål</h3>
+        <div className="bg-gray-50 dark:bg-dark-nav p-4 rounded-lg">
+          <h3 className="text-lg font-semibold mb-4 dark:text-white">Mål</h3>
           <div className="space-y-2">
             <div className="flex justify-between">
-              <span>Scoret:</span>
-              <span className="font-medium text-green-600">
-                {getTotal(statistics.goals?.for?.total)}
-              </span>
+              <span className="dark:text-gray-300">Scoret:</span>
+              <span className="font-medium text-green-600 dark:text-green-400">{getTotal(statistics.goals?.for?.total)}</span>
             </div>
             <div className="flex justify-between">
-              <span>Innsluppet:</span>
-              <span className="font-medium text-red-600">
-                {getTotal(statistics.goals?.against?.total)}
-              </span>
+              <span className="dark:text-gray-300">Innsluppet:</span>
+              <span className="font-medium text-red-600 dark:text-red-400">{getTotal(statistics.goals?.against?.total)}</span>
             </div>
             <div className="flex justify-between">
-              <span>Målforskjell:</span>
+              <span className="dark:text-gray-300">Målforskjell:</span>
               <span className={`font-medium ${
                 (getTotal(statistics.goals?.for?.total) - getTotal(statistics.goals?.against?.total)) > 0 
-                  ? 'text-green-600' 
+                  ? 'text-green-600 dark:text-green-400' 
                   : (getTotal(statistics.goals?.for?.total) - getTotal(statistics.goals?.against?.total)) < 0 
-                    ? 'text-red-600' 
-                    : ''
+                    ? 'text-red-600 dark:text-red-400' 
+                    : 'text-gray-600 dark:text-gray-400'
               }`}>
                 {getTotal(statistics.goals?.for?.total) - getTotal(statistics.goals?.against?.total)}
               </span>
@@ -241,27 +277,27 @@ export default function TeamStats({ statistics }: TeamStatsProps) {
         </div>
 
         {/* Clean Sheets */}
-        <div className="bg-gray-50 p-4 rounded-lg">
-          <h3 className="text-lg font-semibold mb-4">Clean Sheets</h3>
+        <div className="bg-gray-50 dark:bg-dark-nav p-4 rounded-lg">
+          <h3 className="text-lg font-semibold mb-4 dark:text-white">Clean Sheets</h3>
           <div className="space-y-2">
             <div className="flex justify-between">
-              <span>Totalt:</span>
-              <span className="font-medium">{getTotal(statistics.clean_sheet)}</span>
+              <span className="dark:text-gray-300">Totalt:</span>
+              <span className="font-medium dark:text-white">{getTotal(statistics.clean_sheet)}</span>
             </div>
             <div className="flex justify-between">
-              <span>Hjemme:</span>
-              <span className="font-medium">{statistics.clean_sheet?.home || 0}</span>
+              <span className="dark:text-gray-300">Hjemme:</span>
+              <span className="font-medium dark:text-white">{statistics.clean_sheet?.home || 0}</span>
             </div>
             <div className="flex justify-between">
-              <span>Borte:</span>
-              <span className="font-medium">{statistics.clean_sheet?.away || 0}</span>
+              <span className="dark:text-gray-300">Borte:</span>
+              <span className="font-medium dark:text-white">{statistics.clean_sheet?.away || 0}</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Tabs Navigation */}
-      <div className="mt-8 border-b">
+      <div className="mt-8 border-b dark:border-gray-700">
         <div className="flex overflow-x-auto scrollbar-hide">
           {tabs.map((tab) => (
             <button
@@ -269,8 +305,8 @@ export default function TeamStats({ statistics }: TeamStatsProps) {
               onClick={() => setActiveTab(tab.id)}
               className={`px-4 py-3 text-sm font-medium whitespace-nowrap ${
                 activeTab === tab.id
-                  ? 'border-b-2 border-blue-500 text-blue-600'
-                  : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  ? 'border-b-2 border-blue-500 text-blue-600 dark:text-blue-400 dark:border-blue-400'
+                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600'
               }`}
             >
               {tab.label}
@@ -285,38 +321,8 @@ export default function TeamStats({ statistics }: TeamStatsProps) {
           <div className="space-y-6">
             {/* Results Distribution */}
             <div className="max-w-sm mx-auto">
-              <h3 className="text-lg font-semibold mb-4 text-center">Resultatfordeling</h3>
-              <Doughnut 
-                data={{
-                  labels: ['Seire', 'Uavgjort', 'Tap'],
-                  datasets: [{
-                    data: [
-                      statistics?.fixtures?.wins?.total || 0,
-                      statistics?.fixtures?.draws?.total || 0,
-                      statistics?.fixtures?.loses?.total || 0,
-                    ],
-                    backgroundColor: [
-                      'rgba(22, 163, 74, 0.8)',
-                      'rgba(234, 179, 8, 0.8)',
-                      'rgba(220, 38, 38, 0.8)',
-                    ],
-                    borderColor: [
-                      'rgba(22, 163, 74, 1)',
-                      'rgba(234, 179, 8, 1)',
-                      'rgba(220, 38, 38, 1)',
-                    ],
-                    borderWidth: 1,
-                  }],
-                }}
-                options={{
-                  responsive: true,
-                  plugins: {
-                    legend: {
-                      position: 'bottom',
-                    }
-                  }
-                }}
-              />
+              <h3 className="text-lg font-semibold mb-4 text-center dark:text-white">Resultatfordeling</h3>
+              <Doughnut data={chartData} options={chartOptions} />
             </div>
           </div>
         )}
@@ -324,7 +330,7 @@ export default function TeamStats({ statistics }: TeamStatsProps) {
         {activeTab === 'performance' && (
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Hjemme vs. Borte prestasjon</h3>
+              <h3 className="text-lg font-semibold mb-4 dark:text-white">Hjemme vs. Borte prestasjon</h3>
               <div className="h-64">
                 <Bar
                   data={performanceData}

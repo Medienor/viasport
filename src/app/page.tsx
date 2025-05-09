@@ -30,94 +30,148 @@ const additionalLeagues = [
   { id: 144, name: 'Superliga', logo: '/league-logos/superliga.png' }
 ];
 
+// Example popular teams data
+const popularTeams = [
+  { id: 33, name: 'Manchester United', country: 'England', logo: 'https://viasport.b-cdn.net/football/teams/33.png' },
+  { id: 40, name: 'Liverpool', country: 'England', logo: 'https://viasport.b-cdn.net/football/teams/40.png' },
+  { id: 42, name: 'Arsenal', country: 'England', logo: 'https://viasport.b-cdn.net/football/teams/42.png' },
+  { id: 50, name: 'Manchester City', country: 'England', logo: 'https://viasport.b-cdn.net/football/teams/50.png' },
+  { id: 541, name: 'Real Madrid', country: 'Spain', logo: 'https://viasport.b-cdn.net/football/teams/541.png' },
+];
+
 // Helper function to create league URL
 const createLeagueUrl = (name: string, id: number) => {
   const slug = name.toLowerCase().replace(/\s+/g, '-');
   return `/fotball/liga/${slug}-${id}`;
 };
 
-export default function Home() {
+// Helper function to create team URL (you might need to adjust this based on your routes)
+// const createTeamUrl = (name: string, id: number) => {
+//   const slug = name.toLowerCase().replace(/\s+/g, '-');
+//   return `/fotball/lag/${slug}-${id}`;
+// };
+
+export default function Home({
+  searchParams
+}: {
+  searchParams?: { [key: string]: string | string[] | undefined };
+}) {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 dark:bg-dark-main">
       {/* Three-column layout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Left Sidebar - Popular Leagues */}
+          {/* Left Sidebar - Popular Leagues & Teams */}
           <div className="lg:col-span-3 order-3 lg:order-1">
-            <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
-              <div className="bg-white shadow rounded-lg overflow-hidden mb-6">
-                <div className="p-4 border-b">
-                  <h2 className="text-lg font-semibold">Populære ligaer</h2>
-                </div>
-                <div className="divide-y">
-                  {popularLeagues.map(league => (
-                    <Link 
-                      key={league.id}
-                      href={createLeagueUrl(league.name, league.id)}
-                      className="flex items-center p-2 hover:bg-gray-50 rounded-md"
-                    >
-                      <div className="relative w-5 h-5 mr-3">
-                        <Image 
-                          src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
-                          alt={league.name} 
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      <span className="text-sm">{league.name}</span>
-                    </Link>
-                  ))}
-                </div>
+            <div className="h-full">
+              {/* Popular Leagues Section */}
+              <Link 
+                href="/fotball/liga" 
+                className="flex justify-between items-center mb-3 px-1 group"
+              >
+                <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-150">
+                  Populære ligaer
+                </h2>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  className="h-4 w-4 text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-150" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <div className="space-y-1.5 mb-8">
+                {popularLeagues.map(league => (
+                  <Link 
+                    key={league.id}
+                    href={createLeagueUrl(league.name, league.id)}
+                    className="flex items-center p-3 bg-white dark:bg-[#222222] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 shadow-sm" 
+                  >
+                    <div className="relative w-5 h-5 mr-3 flex-shrink-0">
+                      <Image 
+                        src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
+                        alt={league.name} 
+                        fill
+                        className="object-contain dark:brightness-110"
+                      />
+                    </div>
+                    <span className="text-sm font-medium text-gray-800 dark:text-gray-100 truncate"> 
+                      {league.name}
+                    </span>
+                  </Link>
+                ))}
               </div>
               
-              <div className="mt-4 pt-4 border-t">
-                <Link 
-                  href="/fotball/liga" 
-                  className="flex items-center text-sm text-gray-600 hover:text-gray-900 p-2 hover:bg-gray-50 rounded-md"
-                >
-                  <span>Se alle ligaer</span>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className="h-4 w-4 ml-1" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+              {/* Popular Teams Section */}
+              <div className="flex justify-between items-center mb-3 px-1">
+                <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">
+                  Fotball lag
+                </h2>
+              </div>
+              <div className="space-y-1.5"> 
+                {popularTeams.map(team => {
+                  // Generate slug directly here
+                  const slug = team.name.toLowerCase().replace(/\s+/g, '-'); 
+                  return (
+                    <Link 
+                      key={team.id}
+                      // Corrected href structure: /lag/{slug}-{id}
+                      href={`/lag/${slug}-${team.id}`} 
+                      className="flex items-center p-3 bg-white dark:bg-[#222222] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 shadow-sm" 
+                    >
+                      <div className="relative w-5 h-5 mr-3 flex-shrink-0">
+                        <Image 
+                          src={team.logo}
+                          alt={team.name} 
+                          fill
+                          className="object-contain dark:brightness-110"
+                        />
+                      </div>
+                      <div>
+                        <span className="block text-sm font-medium text-gray-800 dark:text-gray-100 truncate"> 
+                          {team.name}
+                        </span>
+                        <span className="block text-xs text-gray-500 dark:text-gray-400">
+                          {team.country} 
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
 
           {/* Center Column - Fixtures */}
           <div className="lg:col-span-6 order-1 lg:order-2">
-            <div className="bg-white shadow rounded-lg overflow-hidden">
+            <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
               <Suspense fallback={<FixturesSkeleton />}>
-                <EnhancedFixturesSectionWrapper />
+                <EnhancedFixturesSectionWrapper searchParams={searchParams} />
               </Suspense>
             </div>
           </div>
 
           {/* Right Sidebar - Premier League Table */}
           <div className="lg:col-span-3 order-2 lg:order-3">
-            <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
-              <div className="bg-white shadow rounded-lg overflow-hidden">
-                <div className="p-4 border-b">
-                  <h2 className="text-lg font-semibold">Tabellplassering</h2>
+            <div> 
+              <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
+                <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Tabellplassering</h2>
                 </div>
-                <SimpleTeamStandings leagueId={39} />
+                <SimpleTeamStandings leagueId={39} season={2024} leagueName={'Premier League'} /> 
               </div>
             </div>
           </div>
           
           {/* Full-width Eliteserien Videos section at the bottom */}
           <div className="lg:col-span-12 mt-8 order-4">
-            <div className="bg-white shadow rounded-lg p-4">
-              <h2 className="text-lg font-semibold mb-4">Høydepunkter fra Eliteserien</h2>
+            <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg p-4">
+              <h2 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Høydepunkter fra Eliteserien</h2>
               <Suspense fallback={<div className="animate-pulse grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[...Array(4)].map((_, i) => (
-                  <div key={i} className="bg-gray-200 rounded-lg h-48"></div>
+                  <div key={i} className="bg-gray-200 dark:bg-[#222222] rounded-lg h-48"></div>
                 ))}
               </div>}>
                 <EliteserienVideos />
@@ -134,12 +188,12 @@ function FixturesSkeleton() {
   return (
     <div className="animate-pulse p-4">
       {[...Array(5)].map((_, i) => (
-        <div key={i} className="flex items-center space-x-4 py-3">
-          <div className="w-16 h-4 bg-gray-200 rounded"></div>
-          <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-          <div className="flex-1 h-4 bg-gray-200 rounded"></div>
-          <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-          <div className="flex-1 h-4 bg-gray-200 rounded"></div>
+        <div key={i} className="flex items-center space-x-4 py-3 border-b border-gray-100 dark:border-[#333333] last:border-b-0">
+          <div className="w-16 h-4 bg-gray-200 dark:bg-[#222222] rounded"></div>
+          <div className="w-8 h-8 bg-gray-200 dark:bg-[#222222] rounded-full"></div>
+          <div className="flex-1 h-4 bg-gray-200 dark:bg-[#222222] rounded"></div>
+          <div className="w-8 h-8 bg-gray-200 dark:bg-[#222222] rounded-full"></div>
+          <div className="flex-1 h-4 bg-gray-200 dark:bg-[#222222] rounded"></div>
         </div>
       ))}
     </div>
@@ -148,13 +202,13 @@ function FixturesSkeleton() {
 
 function TableSkeleton() {
   return (
-    <div className="animate-pulse space-y-2">
+    <div className="animate-pulse space-y-2 p-4">
       {[...Array(5)].map((_, i) => (
-        <div key={i} className="flex items-center space-x-2 py-2">
-          <div className="w-6 h-4 bg-gray-200 rounded"></div>
-          <div className="w-6 h-6 bg-gray-200 rounded"></div>
-          <div className="flex-1 h-4 bg-gray-200 rounded"></div>
-          <div className="w-8 h-4 bg-gray-200 rounded"></div>
+        <div key={i} className="flex items-center space-x-2 py-2 border-b border-gray-100 dark:border-[#333333] last:border-b-0">
+          <div className="w-6 h-4 bg-gray-200 dark:bg-[#222222] rounded"></div>
+          <div className="w-6 h-6 bg-gray-200 dark:bg-[#222222] rounded"></div>
+          <div className="flex-1 h-4 bg-gray-200 dark:bg-[#222222] rounded"></div>
+          <div className="w-8 h-4 bg-gray-200 dark:bg-[#222222] rounded"></div>
         </div>
       ))}
     </div>

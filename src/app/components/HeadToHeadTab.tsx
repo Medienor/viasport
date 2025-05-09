@@ -27,7 +27,7 @@ const isLightColor = (color: string): boolean => {
 export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps) {
   if (!match.head_to_head || match.head_to_head.length === 0) {
     return (
-      <div className="text-gray-500 italic">
+      <div className="text-gray-500 dark:text-gray-400 italic">
         Ingen tidligere oppgjør funnet mellom lagene.
       </div>
     );
@@ -49,8 +49,9 @@ export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps)
   }, { homeWins: 0, draws: 0, awayWins: 0 });
 
   return (
-    <div className="bg-white rounded-lg">
-      <div className="flex justify-center gap-20 mb-8">
+    <div className="bg-white dark:bg-[#222222] rounded-lg">
+      {/* Desktop header - hidden on mobile */}
+      <div className="hidden md:flex justify-center gap-20 mb-8">
         <div className="text-center">
           <img
             src={match.teams.home.logo}
@@ -66,15 +67,15 @@ export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps)
           >
             {h2hStats.homeWins}
           </div>
-          <div className="mt-2 text-sm">Seier</div>
+          <div className="mt-2 text-sm text-gray-800 dark:text-gray-300">Seier</div>
         </div>
 
         <div className="text-center">
           <div className="w-16 h-16 mb-4"></div>
-          <div className="bg-white border border-gray-200 text-2xl font-bold rounded-[50px] px-6 py-2">
+          <div className="bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#2c2c2c] text-2xl font-bold rounded-[50px] px-6 py-2 text-gray-800 dark:text-gray-200">
             {h2hStats.draws}
           </div>
-          <div className="mt-2 text-sm">Uavgjort</div>
+          <div className="mt-2 text-sm text-gray-800 dark:text-gray-300">Uavgjort</div>
         </div>
 
         <div className="text-center">
@@ -92,7 +93,56 @@ export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps)
           >
             {h2hStats.awayWins}
           </div>
-          <div className="mt-2 text-sm">Seier</div>
+          <div className="mt-2 text-sm text-gray-800 dark:text-gray-300">Seier</div>
+        </div>
+      </div>
+
+      {/* Mobile header - hidden on desktop */}
+      <div className="md:hidden flex items-center justify-between mb-6 px-2">
+        <div className="flex flex-col items-center">
+          <img
+            src={match.teams.home.logo}
+            alt={match.teams.home.name}
+            className="w-10 h-10 mb-2 object-contain"
+          />
+          <div 
+            className="text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center"
+            style={{ 
+              backgroundColor: teamColors.home,
+              color: isLightColor(teamColors.home) ? '#000' : '#fff'
+            }}
+          >
+            {h2hStats.homeWins}
+          </div>
+          <div className="mt-1 text-xs text-gray-800 dark:text-gray-300">Seier</div>
+        </div>
+
+        <div className="flex flex-col items-center mx-2">
+          <div className="flex items-center justify-center mb-2">
+            <span className="text-xs font-medium text-gray-500 dark:text-gray-400">VS</span>
+          </div>
+          <div className="bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#2c2c2c] text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center text-gray-800 dark:text-gray-200">
+            {h2hStats.draws}
+          </div>
+          <div className="mt-1 text-xs text-gray-800 dark:text-gray-300">Uavgjort</div>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <img
+            src={match.teams.away.logo}
+            alt={match.teams.away.name}
+            className="w-10 h-10 mb-2 object-contain"
+          />
+          <div 
+            className="text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center"
+            style={{ 
+              backgroundColor: teamColors.away,
+              color: isLightColor(teamColors.away) ? '#000' : '#fff'
+            }}
+          >
+            {h2hStats.awayWins}
+          </div>
+          <div className="mt-1 text-xs text-gray-800 dark:text-gray-300">Seier</div>
         </div>
       </div>
 

@@ -206,7 +206,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
 
   // Helper function to render a single search result item (used for both recent and results)
   const renderResultItem = (result: SearchIndexItem, isRecent: boolean = false) => {
-    const commonClasses = "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100";
+    const commonClasses = "block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-transparent";
     const linkProps = {
       className: `${commonClasses} flex items-center justify-between`, // Use flex for layout
       onClick: () => {
@@ -222,11 +222,11 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
           <Link key={`team-${result.id}`} href={`/lag/${createTeamSlug(result.name || '')}-${result.id}`} {...linkProps}>
             <div className="flex items-center min-w-0 mr-2"> {/* Left side content */}
               <div className="flex-shrink-0 h-6 w-6 mr-3 relative">
-                <Image src={result.logo || '/placeholder-team.png'} alt={result.name || 'Team logo'} fill className="object-contain" onError={(e) => e.currentTarget.src = '/placeholder-team.png'} />
+                <Image src={result.logo || '/placeholder-team.png'} alt={result.name || 'Team logo'} fill className="object-contain dark:brightness-110" onError={(e) => e.currentTarget.src = '/placeholder-team.png'} />
               </div>
               <div className="truncate">
-                <div className="font-medium">{result.name}</div>
-                <div className="text-xs text-gray-500">Lag • {result.country || 'Unknown'}</div>
+                <div className="font-medium dark:text-gray-200">{result.name}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Lag • {result.country || 'Unknown'}</div>
               </div>
             </div>
             {isRecent && ( // Show remove button only for recent items
@@ -241,11 +241,11 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
           <Link key={`league-${result.id}`} href={`/fotball/liga/${createLeagueSlug(result.name || '')}-${result.id}`} {...linkProps}>
              <div className="flex items-center min-w-0 mr-2">
               <div className="flex-shrink-0 h-6 w-6 mr-3 relative">
-                <Image src={result.logo || '/placeholder-league.png'} alt={result.name || 'League logo'} fill className="object-contain" onError={(e) => e.currentTarget.src = '/placeholder-league.png'} />
+                <Image src={result.logo || '/placeholder-league.png'} alt={result.name || 'League logo'} fill className="object-contain dark:brightness-110" onError={(e) => e.currentTarget.src = '/placeholder-league.png'} />
               </div>
               <div className="truncate">
-                <div className="font-medium">{result.name}</div>
-                <div className="text-xs text-gray-500">Liga • {result.country || 'Unknown'}</div>
+                <div className="font-medium dark:text-gray-200">{result.name}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Liga • {result.country || 'Unknown'}</div>
               </div>
             </div>
              {isRecent && (
@@ -260,11 +260,11 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
           <Link key={`player-${result.id}`} href={`/spillerprofil/${createPlayerSlug(result.name || '')}-${result.id}`} {...linkProps}>
              <div className="flex items-center min-w-0 mr-2">
               <div className="flex-shrink-0 h-6 w-6 mr-3 relative rounded-full overflow-hidden">
-                <Image src={result.logo || '/placeholder-player.png'} alt={result.name || 'Player photo'} fill className="object-cover" onError={(e) => e.currentTarget.src = '/placeholder-player.png'} />
+                <Image src={result.logo || '/placeholder-player.png'} alt={result.name || 'Player photo'} fill className="object-cover dark:brightness-110" onError={(e) => e.currentTarget.src = '/placeholder-player.png'} />
               </div>
               <div className="truncate">
-                <div className="font-medium">{result.name}</div>
-                <div className="text-xs text-gray-500">Spiller • {result.teamName || 'Ukjent lag'}</div>
+                <div className="font-medium dark:text-gray-200">{result.name}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Spiller • {result.teamName || 'Ukjent lag'}</div>
               </div>
             </div>
              {isRecent && (
@@ -295,17 +295,17 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                 {/* Left side: Teams and Logos */}
                 <div className="flex items-center space-x-2 flex-grow min-w-0 mr-2">
                     <div className="flex-shrink-0 h-5 w-5 relative">
-                        <Image src={result.homeTeam.logo || '/placeholder-team.png'} alt={result.homeTeam.name} fill className="object-contain" onError={(e) => e.currentTarget.src = '/placeholder-team.png'} />
+                        <Image src={result.homeTeam.logo || '/placeholder-team.png'} alt={result.homeTeam.name} fill className="object-contain dark:brightness-110" onError={(e) => e.currentTarget.src = '/placeholder-team.png'} />
                     </div>
                     <div className="text-xs truncate">
-                        <span className="font-medium">{result.homeTeam.name}</span>
+                        <span className="font-medium dark:text-gray-200">{result.homeTeam.name}</span>
                         {/* Add score if available and match finished? */}
                         {/* <span className="text-gray-500"> vs </span> */}
                         <br /> {/* Stack team names */}
-                        <span className="font-medium">{result.awayTeam.name}</span>
+                        <span className="font-medium dark:text-gray-200">{result.awayTeam.name}</span>
                     </div>
                     <div className="flex-shrink-0 h-5 w-5 relative">
-                        <Image src={result.awayTeam.logo || '/placeholder-team.png'} alt={result.awayTeam.name} fill className="object-contain" onError={(e) => e.currentTarget.src = '/placeholder-team.png'} />
+                        <Image src={result.awayTeam.logo || '/placeholder-team.png'} alt={result.awayTeam.name} fill className="object-contain dark:brightness-110" onError={(e) => e.currentTarget.src = '/placeholder-team.png'} />
                     </div>
                 </div>
                 {/* Right side: Score/Date/Status */}
@@ -313,7 +313,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                     {/* Add score display logic here if available */}
                     {/* <div>{result.score?.home ?? '-'}</div>
                     <div>{result.score?.away ?? '-'}</div> */}
-                    <div className="mt-1">{formatMatchDate(result.date)}</div>
+                    <div className="mt-1 dark:text-gray-400">{formatMatchDate(result.date)}</div>
                 </div>
             </div>
              {isRecent && ( // Add remove button container for matches
@@ -333,46 +333,47 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
   return (
     <div ref={searchRef} className="relative">
       <div className="relative">
-        {/* Input field (no changes needed here) */}
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <svg className="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
           </svg>
         </div>
         <input
           type="text"
-          className="block w-full pl-10 pr-3 py-2 border border-gray-100 rounded-md leading-5 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none sm:text-sm"
+          className="block w-full pl-10 pr-3 py-2 border rounded-md leading-5 
+            bg-gray-50 dark:bg-dark-nav 
+            border-gray-200 dark:border-dark-border 
+            text-gray-900 dark:text-gray-100
+            placeholder-gray-500 dark:placeholder-gray-400/70
+            focus:outline-none focus:border-gray-300 dark:focus:border-dark-border
+            transition-colors duration-200 sm:text-sm"
           placeholder="Søk etter lag, ligaer..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          // Show results immediately on focus
           onFocus={() => setShowResults(true)}
-          // Don't hide on blur immediately, handle with click outside
         />
       </div>
       
       {/* Search results dropdown/area */}
-      {/* Conditionally render based on showResults OR always render in mobileMode and let internal logic handle content */}
       {(showResults || mobileMode) && (
-        // Adjust container based on mobileMode
         <div className={`
           ${mobileMode
-            ? 'mt-4' // Mobile: Simple margin, takes available space, scrolling handled by parent or self if needed
-            : 'absolute mt-1 w-[32rem] shadow-lg z-50 max-h-[70vh] rounded-md' // Desktop: Absolute positioning, fixed width, max height
+            ? 'mt-4'
+            : 'absolute mt-1 w-[32rem] shadow-lg z-50 max-h-[70vh] rounded-md'
           }
-           bg-white flex flex-col
-           ${mobileMode ? '' : 'overflow-y-auto'} // Let parent handle scroll in mobile overlay, or add overflow-y-auto here if SearchBar should scroll internally
+          bg-white dark:bg-dark-nav border border-gray-200 dark:border-dark-border flex flex-col
+          ${mobileMode ? '' : 'overflow-y-auto'}
         `}>
           {/* --- Show Recent Searches OR Filters/Results --- */}
           {searchTerm.length < 2 ? (
             // --- Recent Searches Section ---
             recentSearches.length > 0 ? (
               <div className="flex-grow overflow-y-auto"> {/* Make recent section scrollable if needed */}
-                <div className="flex justify-between items-center px-4 py-2 bg-gray-50 border-b border-gray-100">
-                  <h3 className="text-xs font-semibold text-gray-500">Nylig</h3>
+                <div className="flex justify-between items-center px-4 py-2 bg-gray-50 dark:bg-dark-nav border-b border-gray-100 dark:border-dark-border">
+                  <h3 className="text-xs font-semibold text-gray-500 dark:text-gray-400">Nylig</h3>
                   <button
                     onClick={clearRecentSearches}
-                    className="text-xs font-medium text-blue-600 hover:text-blue-800"
+                    className="text-xs font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                   >
                     Tøm
                   </button>
@@ -383,7 +384,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
               </div>
             ) : (
               // Message when no recent searches and input is empty
-              !mobileMode && <div className="px-4 py-6 text-sm text-center text-gray-500">
+              !mobileMode && <div className="px-4 py-6 text-sm text-center text-gray-500 dark:text-gray-400">
                 Ingen nylige søk.
               </div>
               // Optionally hide this message in mobileMode or show the "type 2 chars" message directly
@@ -393,7 +394,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
             <>
               {/* Filter Buttons Section */}
               {(searchResults.length > 0 || searchTerm.length >= 2) && ( // Keep filters visible while typing
-                <div className={`p-2 bg-white border-b border-gray-100 ${mobileMode ? '' : 'sticky top-0 z-10'}`}> {/* Ensure filters stay above results */}
+                <div className="p-2 bg-gray-50 dark:bg-dark-nav border-b border-gray-100 dark:border-dark-border sticky top-0 z-10">
                   <div className="flex space-x-2 pb-1 overflow-x-auto hide-scrollbar">
                     {filterButtons.map(filter => (
                       <button
@@ -401,8 +402,8 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                         onClick={() => setActiveFilter(filter)}
                         className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors duration-150 ${
                           activeFilter === filter
-                            ? 'bg-gray-900 text-white'
-                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            ? 'bg-gray-900 text-white dark:bg-[#ff6b00] dark:text-white'
+                            : 'bg-gray-100 dark:bg-[#222222] text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-[#ff6b00] dark:hover:text-white'
                         }`}
                       >
                         {filter}
@@ -415,7 +416,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
               {/* Results Section */}
               <div className={`flex-grow ${mobileMode ? 'overflow-y-auto max-h-[calc(100vh-10rem)]' : ''}`}>
                 {filteredResults.length === 0 && searchTerm.length >= 2 ? (
-                  <div className="px-4 py-6 text-sm text-center text-gray-500">
+                  <div className="px-4 py-6 text-sm text-center text-gray-500 dark:text-gray-400">
                     Ingen resultater funnet for "{searchTerm}"
                     {activeFilter !== 'Alle' && ` i ${activeFilter.toLowerCase()}`}
                   </div>
@@ -448,7 +449,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                           {grouped.teams.length > 0 && (
                             <div>
                               {showTeamHeader && (
-                                <div className={`px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 ${mobileMode ? '' : 'sticky top-[53px] z-10'}`}> {/* Ensure headers stay above results */}
+                                <div className="px-4 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-dark-nav border-b border-gray-100 dark:border-dark-border sticky top-[53px] z-10">
                                   Lag ({grouped.teams.length})
                                 </div>
                               )}
@@ -462,7 +463,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                           {grouped.leagues.length > 0 && (
                             <div>
                               {showLeagueHeader && (
-                                <div className={`px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 ${mobileMode ? '' : 'sticky top-[53px] z-10'}`}>
+                                <div className="px-4 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-dark-nav border-b border-gray-100 dark:border-dark-border sticky top-[53px] z-10">
                                   Ligaer ({grouped.leagues.length})
                                 </div>
                               )}
@@ -476,7 +477,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                           {grouped.players.length > 0 && (
                             <div>
                               {showPlayerHeader && (
-                                <div className={`px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 ${mobileMode ? '' : 'sticky top-[53px] z-10'}`}>
+                                <div className="px-4 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-dark-nav border-b border-gray-100 dark:border-dark-border sticky top-[53px] z-10">
                                   Spillere ({grouped.players.length})
                                 </div>
                               )}
@@ -490,7 +491,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
                           {grouped.matches.length > 0 && (
                             <div>
                               {showMatchHeader && (
-                                <div className={`px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 ${mobileMode ? '' : 'sticky top-[53px] z-10'}`}>
+                                <div className="px-4 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-dark-nav border-b border-gray-100 dark:border-dark-border sticky top-[53px] z-10">
                                   Kamper ({grouped.matches.length})
                                 </div>
                               )}

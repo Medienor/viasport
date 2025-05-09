@@ -1,22 +1,30 @@
 "use client"
 
 import { useState, useEffect, useRef } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import Image from 'next/image';
 import MegaMenu from './MegaMenu';
-import { MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon, XMarkIcon, Cog6ToothIcon, SunIcon, MoonIcon, ArrowRightOnRectangleIcon, UserCircleIcon } from '@heroicons/react/24/outline';
+import { useAuth } from '@/context/AuthContext';
+import { useTheme } from '@/context/ThemeContext';
 
 const Navbar = () => {
+  const { session, isLoading, signOut } = useAuth();
+  const { theme, toggleTheme } = useTheme();
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isStickyVisible, setIsStickyVisible] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const pathname = usePathname();
   const megaMenuRef = useRef<HTMLDivElement>(null);
   const megaMenuTriggerRef = useRef<HTMLButtonElement>(null);
+  const settingsMenuRef = useRef<HTMLDivElement>(null);
+  const settingsTriggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setHasMounted(true);
@@ -66,6 +74,7 @@ const Navbar = () => {
     setIsMenuOpen(false);
     setIsMegaMenuOpen(false);
     setIsMobileSearchOpen(false);
+    setIsSettingsOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -90,6 +99,29 @@ const Navbar = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMegaMenuOpen]);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        settingsMenuRef.current &&
+        !settingsMenuRef.current.contains(event.target as Node) &&
+        settingsTriggerRef.current &&
+        !settingsTriggerRef.current.contains(event.target as Node)
+      ) {
+        setIsSettingsOpen(false);
+      }
+    }
+
+    if (isSettingsOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isSettingsOpen]);
 
   const mainLeagues = [
     { name: 'Premier League', country: 'England', id: 39 },
@@ -124,16 +156,22 @@ const Navbar = () => {
     { href: '/fotball/sondag', text: 'Søndag' },
   ];
 
+  const handleSignInClick = () => {
+    setIsSettingsOpen(false);
+    setIsMenuOpen(false);
+    router.push('/signin');
+  };
+
   return (
     <>
-      <nav className="bg-white text-gray-800 border-t-2 border-t-[#2e2e2e] border-b border-gray-100 z-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-0 bg-white">
+      <nav className="bg-white dark:bg-dark-nav border-b border-gray-200 dark:border-dark-border z-20">
+        <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8 bg-white dark:bg-dark-nav">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <Link href="/" className="relative w-48 h-8">
                   <Image
-                    src="/blacklogo.svg"
+                    src={theme === 'dark' ? "/whitelogo.svg" : "/blacklogo.svg"}
                     alt="ViaSport"
                     fill
                     priority
@@ -145,81 +183,148 @@ const Navbar = () => {
               <div className="ml-6 w-96 hidden md:block">
                 <SearchBar />
               </div>
+            </div>
+            
+            <div className="hidden md:flex items-center space-x-2">
+              <button
+                ref={megaMenuTriggerRef}
+                onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+                className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-200 flex items-center ${
+                  isMegaMenuOpen
+                    ? 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white'
+                    : 'text-black dark:text-gray-100/80 hover:text-gray-700 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-transparent'
+                }`}
+                aria-haspopup="true"
+                aria-expanded={isMegaMenuOpen}
+              >
+                Alle ligaer
+                <svg className={`ml-1 h-4 w-4 transition-transform duration-200 ${isMegaMenuOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
 
-              <div className="hidden md:block ml-4">
+              <Link 
+                href="/om-oss"
+                className="px-4 py-2 rounded-md text-sm font-semibold text-black dark:text-gray-100/80 hover:text-gray-700 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-transparent transition-all duration-200"
+              >
+                Om oss
+              </Link>
+
+              <div className="relative">
                 <button
-                  ref={megaMenuTriggerRef}
-                  onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center ${
-                    isMegaMenuOpen
-                      ? 'bg-gray-100 text-gray-900'
-                      : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                  ref={settingsTriggerRef}
+                  onClick={() => setIsSettingsOpen(!isSettingsOpen)}
+                  className={`p-2 rounded-full transition-all duration-200 ${
+                    isSettingsOpen
+                      ? 'bg-gray-200 dark:bg-[#222222] text-black dark:text-white'
+                      : 'text-black dark:text-gray-100/80 hover:text-gray-700 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#222222]'
                   }`}
+                  aria-label="Innstillinger"
                   aria-haspopup="true"
-                  aria-expanded={isMegaMenuOpen}
+                  aria-expanded={isSettingsOpen}
                 >
-                  Alle ligaer
-                  <svg className={`ml-1 h-4 w-4 transition-transform duration-200 ${isMegaMenuOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
+                  {session ? <UserCircleIcon className="h-6 w-6" /> : <Cog6ToothIcon className="h-6 w-6" />}
                 </button>
+
+                {isSettingsOpen && (
+                  <div
+                    ref={settingsMenuRef}
+                    className="absolute right-0 mt-2 w-48 bg-white dark:bg-dark-nav rounded-md shadow-lg ring-1 ring-black dark:ring-dark-border ring-opacity-5 focus:outline-none z-30"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="settings-menu-button"
+                  >
+                    <div className="py-1" role="none">
+                      {isLoading ? (
+                        <div className="text-gray-500 dark:text-gray-400 block w-full text-left px-4 py-2 text-sm">Laster...</div>
+                      ) : session ? (
+                        <>
+                          <div className="px-4 pt-2 pb-1 text-sm text-gray-500 dark:text-gray-400 truncate" title={session.user.email}>
+                            {session.user.email}
+                          </div>
+                          <button
+                            onClick={async () => {
+                              await signOut();
+                              setIsSettingsOpen(false);
+                            }}
+                            className="text-red-600 dark:text-red-400 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-[#222222]"
+                            role="menuitem"
+                          >
+                            Logg ut
+                          </button>
+                        </>
+                      ) : (
+                        <button
+                          onClick={handleSignInClick}
+                          className="text-gray-700 dark:text-gray-200 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-[#222222]"
+                          role="menuitem"
+                        >
+                          Logg inn / Registrer deg
+                        </button>
+                      )}
+
+                      <div className="border-t border-gray-100 dark:border-dark-border my-1"></div>
+                      <div className="px-4 py-2 text-sm text-gray-500 dark:text-gray-400">Tema</div>
+                      <div className="flex justify-around items-center px-4 pb-2">
+                        <button
+                          onClick={toggleTheme}
+                          disabled={theme === 'light'}
+                          className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#222222] text-gray-700 dark:text-gray-300 ${theme === 'light' ? 'bg-gray-200 dark:bg-[#333333]' : ''}`}
+                          aria-label="Lyst tema"
+                        >
+                          <SunIcon className="h-5 w-5" />
+                        </button>
+                        <button
+                          onClick={toggleTheme}
+                          disabled={theme === 'dark'}
+                          className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#222222] text-gray-700 dark:text-gray-300 ${theme === 'dark' ? 'bg-gray-200 dark:bg-[#333333]' : ''}`}
+                          aria-label="Mørkt tema"
+                        >
+                          <MoonIcon className="h-5 w-5" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
             
-            <div className="flex items-center">
-              <div className="hidden md:flex items-center">
-                <button className="px-4 py-2 rounded-md text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors duration-200 flex items-center">
-                  <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+            <div className="flex md:hidden items-center ml-4 space-x-2">
+              <button
+                onClick={() => setIsMobileSearchOpen(true)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 focus:ring-gray-500 dark:focus:ring-gray-400"
+                aria-label="Åpne søk"
+              >
+                <MagnifyingGlassIcon className="block h-6 w-6" aria-hidden="true" />
+              </button>
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 focus:ring-gray-500 dark:focus:ring-gray-400"
+                aria-expanded={isMenuOpen}
+                aria-controls="mobile-menu"
+              >
+                <span className="sr-only">Åpne meny</span>
+                {isMenuOpen ? (
+                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                ) : (
+                  <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
-                  <span>Logg inn</span>
-                </button>
-              </div>
-              
-              <div className="flex md:hidden items-center ml-4 space-x-2">
-                <button
-                  onClick={() => setIsMobileSearchOpen(true)}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-500"
-                  aria-label="Åpne søk"
-                >
-                  <MagnifyingGlassIcon className="block h-6 w-6" aria-hidden="true" />
-                </button>
-                <button
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-500"
-                  aria-expanded={isMenuOpen}
-                  aria-controls="mobile-menu"
-                >
-                  <span className="sr-only">Åpne meny</span>
-                  {isMenuOpen ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                  )}
-                </button>
-              </div>
+                )}
+              </button>
             </div>
-          </div>
-        </div>
-        
-        <div className="hidden md:block border-t border-gray-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-0">
-            {/* Removed the inner flex container and its contents */}
-            {/* The links "Kommende kamper", main leagues, and "Flere ligaer" were here */}
           </div>
         </div>
       </nav>
 
       {hasMounted && isStickyVisible && (
-        <div className="fixed top-0 left-0 right-0 z-40 bg-white text-gray-800 md:hidden transition-transform duration-200 ease-in-out transform translate-y-0 border-b border-gray-100">
+        <div className="fixed top-0 left-0 right-0 z-40 bg-white dark:bg-dark-nav text-gray-800 dark:text-gray-100 md:hidden transition-transform duration-200 ease-in-out transform translate-y-0 border-b border-gray-100 dark:border-dark-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center h-12">
               <div className="flex-shrink-0 flex items-center">
                 <Link href="/" className="relative w-36 h-6">
                   <Image
-                    src="/blacklogo.svg"
+                    src={theme === 'dark' ? "/whitelogo.svg" : "/blacklogo.svg"}
                     alt="ViaSport"
                     fill
                     priority
@@ -230,14 +335,14 @@ const Navbar = () => {
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => setIsMobileSearchOpen(true)}
-                  className="inline-flex items-center justify-center p-1 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-500"
+                  className="inline-flex items-center justify-center p-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 focus:ring-gray-500 dark:focus:ring-gray-400"
                   aria-label="Åpne søk"
                 >
                   <MagnifyingGlassIcon className="block h-6 w-6" aria-hidden="true" />
                 </button>
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="inline-flex items-center justify-center p-1 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-500"
+                  className="inline-flex items-center justify-center p-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 focus:ring-gray-500 dark:focus:ring-gray-400"
                   aria-expanded={isMenuOpen}
                   aria-controls="mobile-menu"
                 >
@@ -264,14 +369,14 @@ const Navbar = () => {
       />
 
       {isMobileSearchOpen && (
-        <div className="fixed inset-0 z-50 bg-white md:hidden flex flex-col animate-fade-in">
-          <div className="flex items-center justify-between p-4 border-b border-gray-200 flex-shrink-0">
+        <div className="fixed inset-0 z-50 bg-white dark:bg-dark-main md:hidden flex flex-col animate-fade-in">
+          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-dark-border flex-shrink-0">
             <button
               onClick={() => setIsMobileSearchOpen(false)}
-              className="p-1 text-gray-500 hover:text-gray-800 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              className="p-1 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-500"
               aria-label="Lukk søk"
             >
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6" />
             </button>
             <div className="w-6"></div>
           </div>
@@ -308,27 +413,27 @@ const Navbar = () => {
       <div
         id="mobile-menu"
         className={`
-          md:hidden ${/* Base: hide on medium screens and up */''}
-          ${isMenuOpen ? 'block' : 'hidden'} ${/* Toggle visibility */''}
+          md:hidden
+          ${isMenuOpen ? 'block' : 'hidden'}
           ${
             isMenuOpen && isStickyVisible
-              ? 'fixed top-12 left-0 right-0 z-30 bg-white h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100' // Style for sticky open state
-              : isMenuOpen ? 'bg-white border-t border-gray-100' // Style for non-sticky open state
-              : '' // Default style (static positioning) when not sticky or closed
+              ? 'fixed top-12 left-0 right-0 z-30 bg-white dark:bg-gray-800 h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-gray-700'
+              : isMenuOpen ? 'bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700'
+              : ''
           }
         `}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800">
           <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 rounded-t-md font-medium text-gray-800">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
               Kommende kamper
             </div>
-            <div className="bg-white rounded-b-md mb-2">
+            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2">
               {upcomingItems.map((item, index) => (
                 <Link
                   key={index}
                   href={item.href}
-                  className="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-100 last:border-b-0"
+                  className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
                 >
                   {item.text}
                 </Link>
@@ -337,48 +442,95 @@ const Navbar = () => {
           </div>
           
           <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 rounded-t-md font-medium text-gray-800">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
               Populære ligaer
             </div>
-            <div className="bg-white rounded-b-md mb-2">
+            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2">
               {mainLeagues.map((league, index) => (
                 <Link 
                   key={index} 
                   href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-100 last:border-b-0"
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
                 >
                   <span>{league.name}</span>
-                  <span className="text-xs text-gray-500">{league.country}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">{league.country}</span>
                 </Link>
               ))}
             </div>
           </div>
           
           <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 rounded-t-md font-medium text-gray-800">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
               Andre ligaer
             </div>
-            <div className="bg-white rounded-b-md mb-2">
+            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2">
               {additionalLeagues.map((league, index) => (
                 <Link 
                   key={index} 
                   href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-100 last:border-b-0"
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
                 >
                   <span>{league.name}</span>
-                  <span className="text-xs text-gray-500">{league.country}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">{league.country}</span>
                 </Link>
               ))}
             </div>
           </div>
           
+          <div className="mt-3">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
+              Tema
+            </div>
+            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2 flex justify-around items-center p-2">
+               <button
+                  onClick={toggleTheme}
+                  disabled={theme === 'light'}
+                  className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 ${theme === 'light' ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
+                  aria-label="Lyst tema"
+                >
+                  <SunIcon className="h-6 w-6" />
+                </button>
+                <button
+                  onClick={toggleTheme}
+                  disabled={theme === 'dark'}
+                  className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 ${theme === 'dark' ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
+                  aria-label="Mørkt tema"
+                >
+                  <MoonIcon className="h-6 w-6" />
+                </button>
+            </div>
+          </div>
+          
           <div className="mt-6 px-2">
-            <button className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors duration-200">
-              <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-              </svg>
-              Logg inn
-            </button>
+            {isLoading ? (
+               <div className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400">
+                 Laster...
+               </div>
+            ) : session ? (
+              <>
+                <div className="px-3 pb-2 text-sm text-gray-500 dark:text-gray-400 truncate text-center" title={session.user.email}>
+                  {session.user.email}
+                </div>
+                <button
+                  onClick={async () => {
+                    await signOut();
+                    setIsMenuOpen(false);
+                  }}
+                  className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-800/40 transition-colors duration-200"
+                >
+                  <ArrowRightOnRectangleIcon className="h-5 w-5 mr-2" />
+                  Logg ut
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={handleSignInClick}
+                className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+              >
+                <UserCircleIcon className="h-5 w-5 mr-2" />
+                Logg inn / Registrer deg
+              </button>
+            )}
           </div>
         </div>
       </div>

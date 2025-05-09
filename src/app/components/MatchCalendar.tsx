@@ -476,16 +476,16 @@ export default function MatchCalendar({
 
     // --- Tooltip Content Helper ---
     const renderTooltipContent = (providers: StreamingProvider[]) => (
-        <div className="p-2 bg-white rounded-md shadow-lg text-xs border border-gray-200 max-w-xs">
-             <div className="font-semibold mb-1 text-gray-800">Se kampen på:</div>
+        <div className="p-2 bg-white dark:bg-dark-nav rounded-md shadow-lg text-xs border border-gray-200 dark:border-dark-border max-w-xs">
+             <div className="font-semibold mb-1 text-gray-800 dark:text-gray-100">Se kampen på:</div>
              <div className="space-y-1">
                  {providers.map((provider) => (
                      <div key={provider.name} className="flex items-center">
                          <div className="relative h-4 w-4 mr-1.5 flex-shrink-0">
                              {provider.icon && <Image src={provider.icon} alt={provider.name} fill className="object-contain" unoptimized />}
                          </div>
-                         <span className="text-[11px] text-gray-700">{provider.name}</span>
-                         {provider.package && <span className="text-gray-500 ml-1 text-[10px]">({provider.package})</span>}
+                         <span className="text-[11px] text-gray-700 dark:text-gray-300">{provider.name}</span>
+                         {provider.package && <span className="text-gray-500 dark:text-gray-400 ml-1 text-[10px]">({provider.package})</span>}
                      </div>
                  ))}
              </div>
@@ -520,17 +520,21 @@ export default function MatchCalendar({
             <Link
                 key={`${isPastSection ? 'past' : 'upcoming'}-${match.id}`}
                 href={linkHref}
-                className={`block hover:bg-gray-50 transition-colors ${isCurrentPageMatch ? 'bg-gray-100 font-semibold' : ''}`}
+                className={`block hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors ${
+                    isCurrentPageMatch ? 'bg-gray-100 dark:bg-gray-800 font-semibold' : ''
+                }`}
             >
-                <div className="flex justify-between items-center px-3 py-3 border-b border-gray-100">
+                <div className="flex justify-between items-center px-3 py-3 border-b border-gray-100 dark:border-dark-border">
                     {/* Left side: Date/Teams/Scores */}
-                    <div className={`flex-grow pr-3 ${isFinished || isLive ? 'border-r border-gray-100' : ''}`}>
+                    <div className={`flex-grow pr-3 ${
+                        isFinished || isLive ? 'border-r border-gray-100 dark:border-dark-border' : ''
+                    }`}>
                         {/* Date Header (only for the first item in upcoming or if date changes) - Simplified: Show for all */}
                         {!isPastSection && (
-                             <div className="text-xs text-gray-500 mb-1.5">{matchDateStr}</div>
+                             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1.5">{matchDateStr}</div>
                         )}
                          {isPastSection && (
-                             <div className="text-xs text-gray-500 mb-1.5">{matchDateStr}</div>
+                             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1.5">{matchDateStr}</div>
                         )}
 
                         {/* Home Team Row */}
@@ -547,9 +551,21 @@ export default function MatchCalendar({
                                         />
                                     )}
                                 </div>
-                                <span className={`text-sm truncate ${isCurrentPageMatch ? 'font-semibold' : 'font-normal'}`}>{match.teams?.home?.name ?? 'N/A'}</span>
+                                <span className={`text-sm truncate ${
+                                    isCurrentPageMatch 
+                                        ? 'font-semibold text-gray-900 dark:text-[#AAAAAA]' 
+                                        : 'font-normal text-gray-800 dark:text-[#AAAAAA]'
+                                }`}>
+                                    {match.teams?.home?.name ?? 'N/A'}
+                                </span>
                             </div>
-                            <span className={`text-sm ml-2 ${isFinished || isLive ? (isLive ? 'font-bold text-gray-900' : 'font-medium text-gray-700') : 'font-normal text-gray-400'}`}>
+                            <span className={`text-sm ml-2 ${
+                                isFinished || isLive 
+                                    ? (isLive 
+                                        ? 'font-bold text-gray-900 dark:text-gray-100' 
+                                        : 'font-medium text-gray-700 dark:text-gray-300')
+                                    : 'font-normal text-gray-400 dark:text-gray-500'
+                            }`}>
                                 {(isFinished || isLive) && homeScore !== null ? homeScore : ''}
                             </span>
                         </div>
@@ -567,9 +583,21 @@ export default function MatchCalendar({
                                         />
                                     )}
                                 </div>
-                                <span className={`text-sm truncate ${isCurrentPageMatch ? 'font-semibold' : 'font-normal'}`}>{match.teams?.away?.name ?? 'N/A'}</span>
+                                <span className={`text-sm truncate ${
+                                    isCurrentPageMatch 
+                                        ? 'font-semibold text-gray-900 dark:text-[#AAAAAA]' 
+                                        : 'font-normal text-gray-800 dark:text-[#AAAAAA]'
+                                }`}>
+                                    {match.teams?.away?.name ?? 'N/A'}
+                                </span>
                             </div>
-                             <span className={`text-sm ml-2 ${isFinished || isLive ? (isLive ? 'font-bold text-gray-900' : 'font-medium text-gray-700') : 'font-normal text-gray-400'}`}>
+                             <span className={`text-sm ml-2 ${
+                                isFinished || isLive 
+                                    ? (isLive 
+                                        ? 'font-bold text-gray-900 dark:text-gray-100' 
+                                        : 'font-medium text-gray-700 dark:text-gray-300')
+                                    : 'font-normal text-gray-400 dark:text-gray-500'
+                            }`}>
                                 {(isFinished || isLive) && awayScore !== null ? awayScore : ''}
                             </span>
                         </div>
@@ -580,7 +608,11 @@ export default function MatchCalendar({
                         {timerComponent ? (
                             timerComponent // Render live timer component
                         ) : (
-                            <span className={`block text-sm ${isFinished ? 'font-normal text-gray-500' : 'font-medium text-gray-800'}`}>
+                            <span className={`block text-sm ${
+                                isFinished 
+                                    ? 'font-normal text-gray-500 dark:text-gray-400' 
+                                    : 'font-medium text-gray-800 dark:text-gray-200'
+                            }`}>
                                 {displayStatus} {/* Render FT, Pause, 15:00 etc. */}
                             </span>
                         )}
@@ -591,7 +623,7 @@ export default function MatchCalendar({
                                 data-tooltip-id="streaming-provider-tooltip" // Use the common ID
                                 data-tooltip-content={JSON.stringify(streamingProviders)}
                                 data-tooltip-place="top-end"
-                                className="mt-1 text-gray-400 flex justify-center relative"
+                                className="mt-1 text-gray-400 dark:text-gray-500 flex justify-center relative"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -608,7 +640,7 @@ export default function MatchCalendar({
     // --- Main Render ---
     if (!leagueId) {
         return (
-            <div className="bg-white rounded-lg shadow-md p-4 text-center text-gray-500">
+            <div className="bg-white dark:bg-dark-nav rounded-lg shadow-md p-4 text-center text-gray-500">
                 Ingen liga valgt.
             </div>
         );
@@ -618,9 +650,9 @@ export default function MatchCalendar({
     const leagueLogoUrl = `https://viasport.b-cdn.net/football/leagues/${leagueId}.png`;
 
     return (
-        <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="bg-white dark:bg-dark-nav rounded-lg shadow overflow-hidden">
             {/* === League Header === */}
-            <div className="flex items-center p-4 border-b border-gray-100 bg-white">
+            <div className="flex items-center p-4 border-b border-gray-100 dark:border-dark-border bg-white dark:bg-dark-nav">
                 <div className="relative w-6 h-6 mr-2 flex-shrink-0">
                     <Image
                         src={leagueLogoUrl}
@@ -631,20 +663,20 @@ export default function MatchCalendar({
                         onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
                 </div>
-                <h2 className="text-base font-semibold text-gray-800 truncate">
+                <h2 className="text-base font-semibold text-gray-800 dark:text-gray-100 truncate">
                     {leagueName}
                 </h2>
             </div>
             {/* === End League Header === */}
 
             {/* === Tabs === */}
-            <div className="flex border-b border-gray-100">
+            <div className="flex border-b border-gray-100 dark:border-dark-border">
                 <button
                     onClick={() => setActiveTab('upcoming')}
                     className={`flex-1 py-2 px-4 text-sm font-medium text-center focus:outline-none ${
                         activeTab === 'upcoming'
-                            ? 'text-blue-600 border-b-2 border-blue-600'
-                            : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                            ? 'text-blue-600 dark:text-white border-b-2 border-blue-600 dark:border-[#ff6b00]'
+                            : 'text-gray-500 dark:text-gray-400/70 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
                     }`}
                 >
                     Kommende ({upcomingMatches.length})
@@ -653,8 +685,8 @@ export default function MatchCalendar({
                     onClick={() => setActiveTab('past')}
                     className={`flex-1 py-2 px-4 text-sm font-medium text-center focus:outline-none ${
                         activeTab === 'past'
-                            ? 'text-blue-600 border-b-2 border-blue-600'
-                            : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                            ? 'text-blue-600 dark:text-white border-b-2 border-blue-600 dark:border-[#ff6b00]'
+                            : 'text-gray-500 dark:text-gray-400/70 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
                     }`}
                 >
                     Resultater ({pastMatches.length})
@@ -664,16 +696,16 @@ export default function MatchCalendar({
 
 
             {isLoading && (
-                <div className="p-4 text-center text-gray-500">Laster kamper...</div>
+                <div className="p-4 text-center text-gray-500 dark:text-gray-400">Laster kamper...</div>
             )}
             {error && (
-                <div className="p-4 text-center text-red-600">{error}</div>
+                <div className="p-4 text-center text-red-600 dark:text-red-400">{error}</div>
             )}
 
             {/* Match List Container */}
             {!isLoading && !error && (
                  // Added overflow-x-hidden to prevent horizontal scrollbar
-                <div className="max-h-[400px] overflow-y-auto overflow-x-hidden">
+                <div className="max-h-[400px] overflow-y-auto overflow-x-hidden custom-scrollbar">
                     {/* Upcoming Matches Section (Conditional) */}
                     {activeTab === 'upcoming' && (
                         <>
@@ -682,7 +714,7 @@ export default function MatchCalendar({
                                     {upcomingMatches.map(match => renderMatchRow(match, false))}
                                 </div>
                             ) : (
-                                <div className="p-4 text-center text-gray-500 text-sm">Ingen kommende kamper.</div>
+                                <div className="p-4 text-center text-gray-500 dark:text-gray-400 text-sm">Ingen kommende kamper.</div>
                             )}
                         </>
                     )}
@@ -695,7 +727,7 @@ export default function MatchCalendar({
                                     {pastMatches.map(match => renderMatchRow(match, true))}
                                 </div>
                              ) : (
-                                <div className="p-4 text-center text-gray-500 text-sm">Ingen nylige resultater.</div>
+                                <div className="p-4 text-center text-gray-500 dark:text-gray-400 text-sm">Ingen nylige resultater.</div>
                              )}
                         </>
                     )}

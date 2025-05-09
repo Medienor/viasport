@@ -23,46 +23,32 @@ export default function PrivacyPolicyPage() {
       {/* Client component for document title */}
       <ClientHead title="Personvernerklæring - ViaSport" />
       
-      {/* Breadcrumb navigation */}
-      <div className="bg-white border-b border-gray-200">
+      {/* Main content - Added dark mode background */}
+      <div className="bg-gray-50 dark:bg-dark-main min-h-screen py-12"> 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex py-3" aria-label="Breadcrumb">
-            <ol className="flex items-center space-x-1">
-              <li>
-                <Link href="/" className="text-sm text-gray-500 hover:text-blue-600">
-                  <HomeIcon className="h-4 w-4" />
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <ChevronRightIcon className="h-4 w-4 text-gray-400" />
-                <span className="ml-1 text-sm text-gray-700">
-                  Personvernerklæring
-                </span>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-
-      {/* Main content - using the same max-w-7xl as navbar and breadcrumbs */}
-      <div className="bg-gray-50 min-h-screen py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white shadow rounded-lg p-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-6">Personvernerklæring</h1>
+          {/* Content card - Added dark mode background AND base text color */}
+          <div className="bg-white dark:bg-[#181818] dark:text-gray-300 shadow rounded-lg p-8"> 
+            {/* Heading - Added dark mode text color */}
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Personvernerklæring</h1> 
             
-            <div className="prose prose-blue max-w-none">
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-                <p className="text-blue-700">
+            {/* Prose container - Added dark:prose-invert for relative styling */}
+            <div className="prose prose-blue dark:prose-invert max-w-none"> 
+              {/* Important info box - Adjusted dark mode styles */}
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 dark:bg-blue-900/30 dark:border-blue-700"> 
+                {/* Adjusted dark mode text color */}
+                <p className="text-blue-700 dark:text-blue-300"> 
                   <strong>Viktig informasjon:</strong> ViaSport.no drives av Medienor AS og er ikke tilknyttet 
                   ViaSport-selskapet som tilbyr strømmetjenester. Vi er en uavhengig tjeneste som viser når og hvor 
                   sportsarrangementer sendes på TV og strømmetjenester.
                 </p>
               </div>
               
-              <p className="text-lg text-gray-700 mb-6">
+              {/* "Last updated" - color handled by dark:prose-invert */}
+              <p className="text-lg text-gray-700 mb-6"> 
                 Sist oppdatert: {formattedDate}
               </p>
               
+              {/* Headings and paragraphs below should be handled by dark:prose-invert */}
               <h2 className="text-xl font-semibold mt-8 mb-4">1. Innledning</h2>
               <p>
                 ViaSport.no, drevet av Medienor AS (org.nr. 924 303 263), er opptatt av å beskytte dine personopplysninger. 
@@ -155,16 +141,14 @@ export default function PrivacyPolicyPage() {
               <p className="mt-2">
                 <strong>Selskap:</strong> Medienor AS<br />
                 <strong>Org.nr:</strong> 924 303 263<br />
-                <strong>E-post:</strong> josef@medienor.no<br />
-                <strong>Adresse:</strong> Skoglien 23, 5056 Bergen<br />
-                <strong>Daglig leder:</strong> Josef Eines
               </p>
               
               <h2 className="text-xl font-semibold mt-8 mb-4">11. Klagerett</h2>
               <p>
                 Du har rett til å klage til Datatilsynet hvis du mener at vår behandling av dine personopplysninger ikke 
                 overholder personvernlovgivningen. Du kan finne mer informasjon på 
-                <a href="https://www.datatilsynet.no" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer"> www.datatilsynet.no</a>.
+                {/* Adjusted dark mode link color */}
+                <a href="https://www.datatilsynet.no" className="text-blue-600 hover:underline dark:text-blue-400 dark:hover:underline" target="_blank" rel="noopener noreferrer"> www.datatilsynet.no</a>. 
               </p>
             </div>
           </div>

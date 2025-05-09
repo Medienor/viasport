@@ -75,17 +75,17 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
   const renderSortArrow = (key: string) => {
     if (sortConfig.key !== key) {
       return (
-        <svg className="w-3 h-3 ml-1 inline-block text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <svg className="w-3 h-3 ml-1 inline-block text-gray-400 dark:text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5" />
         </svg>
       );
     }
     return sortConfig.direction === 'desc' ? (
-      <svg className="w-3 h-3 ml-1 inline-block text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <svg className="w-3 h-3 ml-1 inline-block text-black dark:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5" />
       </svg>
     ) : (
-      <svg className="w-3 h-3 ml-1 inline-block text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <svg className="w-3 h-3 ml-1 inline-block text-black dark:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l-5-5-5 5" />
       </svg>
     );
@@ -180,17 +180,17 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
   return (
     <div className="mt-8">
       <div className="mb-10 mt-15">
-        <h2 className="text-xl font-semibold">Spillerstatistikk</h2>
+        <h2 className="text-xl font-semibold dark:text-gray-100">Spillerstatistikk</h2>
       </div>
 
       {/* Player Stats Table */}
       <div className="overflow-x-auto">
         <table className="w-full overflow-hidden">
           <thead>
-            <tr className="text-sm text-gray-600">
-              <th className="text-left py-2 font-medium text-gray-500">Spiller</th>
+            <tr className="text-sm text-gray-600 dark:text-gray-400">
+              <th className="text-left py-2 font-medium text-gray-500 dark:text-gray-400">Spiller</th>
               <th 
-                className="text-center py-2 cursor-pointer group hover:bg-gray-50 font-medium text-gray-500"
+                className="text-center py-2 cursor-pointer group hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-500 dark:text-gray-400"
                 onClick={() => handleSort('rating')}
               >
                 <span className="inline-flex items-center">
@@ -198,7 +198,7 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
                 </span>
               </th>
               <th 
-                className="text-center py-2 cursor-pointer group hover:bg-gray-50 font-medium text-gray-500"
+                className="text-center py-2 cursor-pointer group hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-500 dark:text-gray-400"
                 onClick={() => handleSort('minutes')}
               >
                 <span className="inline-flex items-center">
@@ -206,7 +206,7 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
                 </span>
               </th>
               <th 
-                className="text-center py-2 cursor-pointer group hover:bg-gray-50 font-medium text-gray-500"
+                className="text-center py-2 cursor-pointer group hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-500 dark:text-gray-400"
                 onClick={() => handleSort('goals')}
               >
                 <span className="inline-flex items-center">
@@ -214,7 +214,7 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
                 </span>
               </th>
               <th 
-                className="text-center py-2 cursor-pointer group hover:bg-gray-50 font-medium text-gray-500"
+                className="text-center py-2 cursor-pointer group hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-500 dark:text-gray-400"
                 onClick={() => handleSort('assists')}
               >
                 <span className="inline-flex items-center">
@@ -222,16 +222,16 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
                 </span>
               </th>
               <th 
-                className="text-center py-2 cursor-pointer group hover:bg-gray-50 font-medium text-gray-500"
+                className="text-center py-2 cursor-pointer group hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-500 dark:text-gray-400"
                 onClick={() => handleSort('shots')}
               >
                 <span className="inline-flex items-center">
                   Skudd {renderSortArrow('shots')}
                 </span>
               </th>
-              <th className="text-center py-2 font-medium text-gray-500">xG</th>
-              <th className="text-center py-2 font-medium text-gray-500">xA</th>
-              <th className="text-center py-2 font-medium text-gray-500">xG + xA</th>
+              <th className="text-center py-2 font-medium text-gray-500 dark:text-gray-400">xG</th>
+              <th className="text-center py-2 font-medium text-gray-500 dark:text-gray-400">xA</th>
+              <th className="text-center py-2 font-medium text-gray-500 dark:text-gray-400">xG + xA</th>
             </tr>
           </thead>
           <tbody>
@@ -242,7 +242,7 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
               return (
                 <tr 
                   key={player.player.id} 
-                  className="border-t hover:bg-gray-50 transition-all duration-300 ease-in-out animate-fade-in"
+                  className="border-t dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out animate-fade-in"
                 >
                   <td className="py-2">
                     <div className="flex items-center gap-2">
@@ -272,14 +272,14 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
                         </div>
                         <Link 
                           href={`/spillerprofil/${player.player.id}`}
-                          className="hover:underline"
+                          className="hover:underline dark:text-gray-200 dark:hover:text-blue-400"
                         >
                           <span className="group-hover:opacity-70 transition-opacity">{player.player.name}</span>
                         </Link>
                       </div>
                     </div>
                   </td>
-                  <td className="text-center">
+                  <td className="text-center dark:text-gray-300">
                     <span className={`inline-flex px-2 py-0.5 rounded-full text-white text-sm
                       ${rating >= 8 ? 'bg-green-500' : 
                         rating >= 7 ? 'bg-green-400' :
@@ -287,13 +287,13 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
                       {rating.toFixed(1)}
                     </span>
                   </td>
-                  <td className="text-center">{stats.games.minutes || 0}</td>
-                  <td className="text-center">{stats.goals.total || 0}</td>
-                  <td className="text-center">{stats.goals.assists || 0}</td>
-                  <td className="text-center">{stats.shots.total || 0}</td>
-                  <td className="text-center">-</td>
-                  <td className="text-center">-</td>
-                  <td className="text-center">-</td>
+                  <td className="text-center dark:text-gray-300">{stats.games.minutes || 0}</td>
+                  <td className="text-center dark:text-gray-300">{stats.goals.total || 0}</td>
+                  <td className="text-center dark:text-gray-300">{stats.goals.assists || 0}</td>
+                  <td className="text-center dark:text-gray-300">{stats.shots.total || 0}</td>
+                  <td className="text-center dark:text-gray-300">-</td>
+                  <td className="text-center dark:text-gray-300">-</td>
+                  <td className="text-center dark:text-gray-300">-</td>
                 </tr>
               );
             })}
@@ -302,9 +302,9 @@ export default function PlayerStats({ playerStats }: PlayerStatsProps) {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-xl font-semibold mb-4">Oppsummert</h2>
+        <h2 className="text-xl font-semibold mb-4 dark:text-gray-100">Oppsummert</h2>
         
-        <div className="space-y-4 text-gray-700">
+        <div className="space-y-4 text-gray-700 dark:text-gray-300">
           {(() => {
             const summaries = getPlayerSummaries(playerStats);
             

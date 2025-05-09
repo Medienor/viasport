@@ -215,8 +215,8 @@ export default function LeagueLatestVideo({ leagueName, leagueId, leagueLogo }: 
   }
 
   return (
-    <div className="mt-6 border-t border-gray-200 pt-6">
-      <h3 className="font-medium mb-4">Siste høydepunkter fra {leagueName}</h3>
+    <div className="mt-6 border-t border-gray-200 pt-6 dark:border-dark-border">
+      <h3 className="font-medium mb-4 dark:text-gray-200">Siste høydepunkter fra {leagueName}</h3>
       <Link 
         href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
         target="_blank"

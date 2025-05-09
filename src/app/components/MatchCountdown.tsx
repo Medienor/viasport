@@ -50,7 +50,7 @@ export default function MatchCountdown({ matchDate }: MatchCountdownProps) {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="text-xl md:text-2xl font-bold text-gray-700">
+      <div className="text-xl md:text-2xl font-bold text-gray-700 dark:text-white">
         {formatMatchDateTime(matchDate).time}
       </div>
       <div
@@ -58,7 +58,7 @@ export default function MatchCountdown({ matchDate }: MatchCountdownProps) {
           text-sm mt-1 transition-colors duration-300
           ${isStarting
             ? 'text-red-600 font-semibold animate-pulse'
-            : 'text-gray-500'
+            : 'text-gray-500 dark:text-[#dedede]'
           }
         `}
       >

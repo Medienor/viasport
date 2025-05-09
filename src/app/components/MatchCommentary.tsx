@@ -388,7 +388,7 @@ export default function MatchCommentary({ match }: MatchCommentaryProps) {
 
   // Wait for commentary path to be initialized
   if (!commentaryPath) {
-    return <div>Loading commentary...</div>;
+    return <div className="dark:text-gray-300">Loading commentary...</div>;
   }
 
   // Add debug logging
@@ -647,7 +647,7 @@ Takk for at du fulgte kampen!`;
 
   if (!match) {
     return (
-      <div className="text-gray-500 italic">
+      <div className="text-gray-500 italic dark:text-gray-400">
         Ingen kampinformasjon tilgjengelig.
       </div>
     );
@@ -680,23 +680,24 @@ Takk for at du fulgte kampen!`;
 
           return (
             <div key={`system-${index}`} className="flex gap-4 items-start">
-              <div className="rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 bg-gray-100">
+              <div className="rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 bg-gray-100 dark:bg-[#282828]">
                 {event.systemType === 'break' ? (
                   <Image
                     src="/timer.svg"
                     alt="Halftime"
                     width={24}
                     height={24}
+                    className="dark:invert"
                   />
                 ) : (
-                  <span className="font-bold">{event.time}'</span>
+                  <span className="font-bold dark:text-gray-200">{event.time}'</span>
                 )}
               </div>
-              <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
+              <div className="flex-1 bg-white dark:bg-[#282828] rounded-lg p-4 shadow-sm">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="font-medium">{systemLabel}</span>
+                  <span className="font-medium dark:text-gray-100">{systemLabel}</span>
                 </div>
-                <p>{event.text}</p>
+                <p className="dark:text-gray-300">{event.text}</p>
               </div>
             </div>
           );
@@ -709,10 +710,10 @@ Takk for at du fulgte kampen!`;
         return (
           <div key={`event-${index}`} className="flex gap-4 items-start">
             <div className={`rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 
-              ${commentary.type === 'goal' ? 'bg-[#01935c] text-white' : 'bg-gray-100 text-gray-900'}`}>
+              ${commentary.type === 'goal' ? 'bg-[#01935c] text-white' : 'bg-gray-100 dark:bg-[#282828] text-gray-900 dark:text-gray-200'}`}>
               <span className="font-bold">{commentary.time}'</span>
             </div>
-            <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
+            <div className="flex-1 bg-white dark:bg-[#282828] rounded-lg p-4 shadow-sm">
               <div className="flex items-center gap-2 mb-2">
                 {commentary.type === 'goal' && (
                   <span className="text-xl">⚽</span>
@@ -724,13 +725,13 @@ Takk for at du fulgte kampen!`;
                   <span className="text-red-600">🟥</span>
                 )}
                 {commentary.type === 'substitution' && (
-                  <span>🔄</span>
+                  <span className="dark:text-gray-200">🔄</span>
                 )}
-                <span className="font-medium">
+                <span className="font-medium dark:text-gray-100">
                   {commentary.type === 'goal' ? 'Mål!' : 'Hendelse'}
                 </span>
               </div>
-              <p>{commentary.text}</p>
+              <p className="dark:text-gray-300">{commentary.text}</p>
             </div>
           </div>
         );
@@ -738,7 +739,7 @@ Takk for at du fulgte kampen!`;
 
       {/* Show message if no events yet */}
       {matchEvents.length === 0 && (
-        <div className="text-gray-500 italic">
+        <div className="text-gray-500 italic dark:text-gray-400">
           Ingen hendelser å vise ennå.
         </div>
       )}
@@ -746,17 +747,18 @@ Takk for at du fulgte kampen!`;
       {/* Pre-match content with bubble-chat icon */}
       {preMatchContent.map((content, index) => (
         <div key={`pre-${index}`} className="flex gap-4 items-start">
-          <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+          <div className="bg-gray-100 dark:bg-[#282828] rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
             <Image
               src="/bubble-chat.svg"
               alt="Chat bubble"
               width={24}
               height={24}
+              className="dark:invert"
             />
           </div>
-          <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
+          <div className="flex-1 bg-white dark:bg-[#282828] rounded-lg p-4 shadow-sm">
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-medium">
+              <span className="font-medium dark:text-gray-100">
                 {content.type === 'welcome' ? 'Velkommen' : 
                  content.type === 'lineup' ? 'Lagoppstilling' :
                  content.type === 'subs' ? 'Innbyttere' :
@@ -765,7 +767,7 @@ Takk for at du fulgte kampen!`;
                  content.type === 'venue' ? 'Arena' : 'Info'}
               </span>
             </div>
-            <p>{content.text}</p>
+            <p className="dark:text-gray-300">{content.text}</p>
           </div>
         </div>
       ))}

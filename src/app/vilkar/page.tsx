@@ -23,46 +23,32 @@ export default function TermsOfUsePage() {
       {/* Client component for document title */}
       <ClientHead title="Vilkår for bruk - ViaSport" />
       
-      {/* Breadcrumb navigation */}
-      <div className="bg-white border-b border-gray-200">
+      {/* Main content - Added dark mode background */}
+      <div className="bg-gray-50 dark:bg-dark-main min-h-screen py-12"> 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex py-3" aria-label="Breadcrumb">
-            <ol className="flex items-center space-x-1">
-              <li>
-                <Link href="/" className="text-sm text-gray-500 hover:text-blue-600">
-                  <HomeIcon className="h-4 w-4" />
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <ChevronRightIcon className="h-4 w-4 text-gray-400" />
-                <span className="ml-1 text-sm text-gray-700">
-                  Vilkår for bruk
-                </span>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-
-      {/* Main content - using the same max-w-7xl as navbar and breadcrumbs */}
-      <div className="bg-gray-50 min-h-screen py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white shadow rounded-lg p-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-6">Vilkår for bruk</h1>
+          {/* Content card - Added dark mode background AND base text color */}
+          <div className="bg-white dark:bg-[#181818] dark:text-gray-300 shadow rounded-lg p-8"> 
+            {/* Heading - Added dark mode text color */}
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Vilkår for bruk</h1> 
             
-            <div className="prose prose-blue max-w-none">
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-                <p className="text-blue-700">
+            {/* Prose container - Kept dark:prose-invert for relative styling */}
+            <div className="prose prose-blue dark:prose-invert max-w-none"> 
+              {/* Important info box - Adjusted dark mode styles */}
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 dark:bg-blue-900/30 dark:border-blue-700"> 
+                {/* Adjusted dark mode text color */}
+                <p className="text-blue-700 dark:text-blue-300"> 
                   <strong>Viktig informasjon:</strong> ViaSport.no drives av Medienor AS og er ikke tilknyttet 
                   ViaSport-selskapet som tilbyr strømmetjenester. Vi er en uavhengig tjeneste som viser når og hvor 
                   sportsarrangementer sendes på TV og strømmetjenester.
                 </p>
               </div>
               
-              <p className="text-lg text-gray-700 mb-6">
+              {/* "Last updated" - color should now inherit or be adjusted by prose-invert */}
+              <p className="text-lg text-gray-700 mb-6"> 
                 Sist oppdatert: {formattedDate}
               </p>
               
+              {/* Headings and paragraphs below should be handled by dark:prose-invert relative to the new base color */}
               <h2 className="text-xl font-semibold mt-8 mb-4">1. Aksept av vilkår</h2>
               <p>
                 Ved å bruke ViaSport.no, godtar du disse vilkårene for bruk i sin helhet. Hvis du ikke godtar disse vilkårene, 
@@ -206,8 +192,6 @@ export default function TermsOfUsePage() {
               <p className="mt-2">
                 <strong>Selskap:</strong> Medienor AS<br />
                 <strong>Org.nr:</strong> 924 303 263<br />
-                <strong>E-post:</strong> josef@medienor.no<br />
-                <strong>Adresse:</strong> Skoglien 23, 5056 Bergen
               </p>
             </div>
           </div>

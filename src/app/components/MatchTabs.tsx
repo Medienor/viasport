@@ -64,7 +64,6 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
     { id: 'facts', label: 'Fakta' },
     { id: 'table', label: 'Tabell' },
     { id: 'commentary', label: 'Kommentarer' },
-    { id: 'lineup', label: 'Lagoppstilling' },
     { id: 'stats', label: 'Statistikk' },
     { id: 'head-to-head', label: 'Oppgjør' },
   ];
@@ -127,7 +126,7 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
 
   return (
     <>
-      <div className="border-b border-gray-200 mb-6">
+      <div className="border-b border-gray-200 dark:border-[#2c2c2c] mb-6">
         <nav className="-mb-px flex space-x-6 overflow-x-auto" aria-label="Tabs">
           {/* Map over the filtered tabs */}
           {tabsToShow.map((tab) => (
@@ -137,8 +136,8 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
               className={`
                 whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm
                 ${selectedTab === tab.id
-                  ? 'border-gray-900 text-gray-900 font-semibold'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  ? 'border-gray-900 dark:border-[#ff6b00] text-gray-900 dark:text-white font-semibold'
+                  : 'border-transparent text-gray-500 dark:text-[#9ca3af] hover:text-gray-700 dark:hover:text-white hover:border-gray-300 dark:hover:border-[#9ca3af]'
                 }
               `}
             >
@@ -148,7 +147,7 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
         </nav>
       </div>
 
-      {/* Content area */}
+      {/* Content area - Update error messages for dark mode */}
       {selectedTab === 'head-to-head' ? (
         <HeadToHeadTab match={match} teamColors={teamColors} />
       ) : selectedTab === 'table' ? (
@@ -162,37 +161,30 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
             forcedLeagueDetails={forcedLeagueDetailsForTable}
           />
         ) : (
-          <div className="text-center py-6 text-gray-500">Kan ikke vise tabell (mangler ligainformasjon).</div>
+          <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+            Kan ikke vise tabell (mangler ligainformasjon).
+          </div>
         )
       ) : selectedTab === 'stats' ? (
-        // --- Conditionally render MatchStats based on data ---
         hasPlayerStats ? (
           <MatchStats match={match} teamColors={teamColors} />
         ) : (
-          <div className="text-center py-6 text-gray-500">Ingen statistikk tilgjengelig for denne kampen ennå.</div>
-        )
-      ) : selectedTab === 'lineup' ? (
-        // --- Conditionally render LineupComponent based on data ---
-        hasLineups ? (
-          <LineupComponent
-            lineups={match.lineups}
-            playerStats={match.player_statistics} // Pass stats even if tab logic changes
-            eventData={match.event_data}
-          />
-        ) : (
-           <div className="text-center py-6 text-gray-500">Ingen lagoppstilling tilgjengelig for denne kampen ennå.</div>
+          <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+            Ingen statistikk tilgjengelig for denne kampen ennå.
+          </div>
         )
       ) : selectedTab === 'facts' ? (
         <>
           {children}
         </>
       ) : selectedTab === 'commentary' ? (
-         // --- Conditionally render MatchCommentary based on data ---
-         hasEventData ? (
-           <MatchCommentary match={match} />
-         ) : (
-           <div className="text-center py-6 text-gray-500">Ingen kommentarer tilgjengelig for denne kampen ennå.</div>
-         )
+        hasEventData ? (
+          <MatchCommentary match={match} />
+        ) : (
+          <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+            Ingen kommentarer tilgjengelig for denne kampen ennå.
+          </div>
+        )
       ) : null}
     </>
   );

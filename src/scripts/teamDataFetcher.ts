@@ -1,7 +1,4 @@
-import fs from 'fs/promises';
-import path from 'path';
-
-const API_CONFIG = {
+export const API_CONFIG = {
   baseUrl: 'https://api-football-v1.p.rapidapi.com/v3',
   headers: {
     'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
@@ -50,17 +47,26 @@ export const MAJOR_LEAGUES = [
   { id: 2, name: 'Champions League' },
   { id: 3, name: 'Europa League' },
   { id: 848, name: 'Conference League' },
+  { id: 531, name: 'UEFA Super Cup' },
+  { id: 525, name: 'Women\'s Champions League' },
+  { id: 1083, name: 'Women\'s Championship Qualification' },
 
   // International Teams & Competitions
   { id: 1, name: 'World Cup' },
   { id: 4, name: 'Euro Championship' },
+  { id: 960, name: 'Euro Championship Qualification' },
   { id: 5, name: 'Nations League' },
-  { id: 10, name: 'Friendlies' }, // International Friendlies
+  { id: 10, name: 'International Friendlies' },
+  { id: 667, name: 'Club Friendlies' },
+  { id: 480, name: 'Olympics Men' },
   
   // Other Continental Competitions
   { id: 15, name: 'Copa America' },
   { id: 17, name: 'African Nations Cup' },
   { id: 18, name: 'AFC Asian Cup' },
+  { id: 15, name: 'FIFA Club World Cup' },
+  { id: 937, name: 'Emirates Cup' },
+  { id: 772, name: 'Leagues Cup' },
 
   // Major Non-European Leagues
   { id: 71, name: 'Serie A' }, // Brazil
@@ -73,7 +79,21 @@ export const MAJOR_LEAGUES = [
   // Women's Football
   { id: 725, name: 'Toppserien' }, // Already added above (Norway)
   { id: 37, name: 'Women\'s World Cup' },
-  { id: 38, name: 'Women\'s Champions League' }
+  { id: 38, name: 'Women\'s Champions League' },
+
+  // Additional Swedish Leagues
+  { id: 115, name: 'Svenska Cupen' },
+  { id: 563, name: 'Ettan Norra' },
+  { id: 564, name: 'Ettan Södra' },
+  { id: 736, name: 'Elitettan' },
+  { id: 549, name: 'Damallsvenskan' },
+  { id: 592, name: 'Division 2 Norra Götaland' },
+
+  // Iranian Leagues
+  { id: 290, name: 'Persian Gulf Pro League' },
+  { id: 495, name: 'Hazfi Cup' },
+  { id: 291, name: 'Azadegan League' },
+  { id: 905, name: 'Super Cup' }
 ];
 
 // Add this constant at the top of the file, before any functions
@@ -124,21 +144,17 @@ function getSeasonForLeague(leagueId: number): number {
 
 export async function fetchTeamsFromLeague(league: typeof MAJOR_LEAGUES[0]) {
   try {
-    const season = getSeasonForLeague(league.id);
-    console.log(`Fetching teams for ${league.name} (${season})...`);
-    
+    const season = new Date().getFullYear();
     const response = await fetch(
       `${API_CONFIG.baseUrl}/teams?league=${league.id}&season=${season}`,
       { headers: API_CONFIG.headers }
     );
 
     if (!response.ok) {
-      const responseData = await response.json().catch(() => ({}));
-      throw new Error(`API responded with status: ${response.status}, message: ${JSON.stringify(responseData)}`);
+      throw new Error(`API responded with status: ${response.status}`);
     }
 
     const data = await response.json();
-    console.log(`Found ${data.response?.length || 0} teams for ${league.name}`);
     return data.response || [];
   } catch (error) {
     console.error(`Error fetching teams for ${league.name}:`, error);
@@ -332,54 +348,21 @@ async function fetchTeamFullData(teamId: number) {
   }
 }
 
-// Update the function signature to accept the callback
-export async function updateAllTeamsData(progressCallback?: ProgressCallback) {
+export async function fetchTeamData(teamId: number) {
   try {
-    const dataDir = path.join(process.cwd(), 'data', 'teams');
-    await fs.mkdir(dataDir, { recursive: true });
+    const response = await fetch(
+      `${API_CONFIG.baseUrl}/teams?id=${teamId}`,
+      { headers: API_CONFIG.headers }
+    );
 
-    const teams = await getAllTeams();
-    console.log(`Starting update for ${teams.length} teams...`);
-
-    for (let i = 0; i < teams.length; i += 5) {
-      const batch = teams.slice(i, i + 5);
-      
-      await Promise.all(
-        batch.map(async (team) => {
-          try {
-            console.log(`Updating data for ${team.name} (${team.id})...`);
-            const fullTeamData = await fetchTeamFullData(team.id);
-            
-            await fs.writeFile(
-              path.join(dataDir, `${team.id}.json`),
-              JSON.stringify(fullTeamData, null, 2),
-              'utf-8'
-            );
-
-            // Call the progress callback
-            progressCallback?.({
-              teamId: team.id,
-              teamName: team.name,
-              leagueName: fullTeamData.leagues[0].name,
-              totalTeams: 1100, // Approximate total
-              leagueTotal: fullTeamData.leagues.length,
-              leagueProcessed: 1
-            });
-          } catch (error) {
-            console.error(`Failed to update team ${team.name} (${team.id}):`, error);
-          }
-        })
-      );
-
-      // Add delay between batches
-      if (i + 5 < teams.length) {
-        await new Promise(resolve => setTimeout(resolve, 2000));
-      }
+    if (!response.ok) {
+      throw new Error(`API responded with status: ${response.status}`);
     }
 
-    console.log('Team update completed successfully!');
+    const data = await response.json();
+    return data.response?.[0] || null;
   } catch (error) {
-    console.error('Failed to update teams:', error);
-    throw error;
+    console.error(`Error fetching team data:`, error);
+    return null;
   }
 } 

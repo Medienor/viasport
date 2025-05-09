@@ -43,13 +43,13 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
   };
 
   if (!match.fixture_statistics) {
-    return <div className="text-gray-500 text-center py-4">Ingen statistikk tilgjengelig</div>;
+    return <div className="text-gray-500 dark:text-gray-400 text-center py-4">Ingen statistikk tilgjengelig</div>;
   }
 
   return (
     <>
       <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-6">Kampstatistikk</h2>
+        <h2 className="text-xl font-semibold mb-6 text-gray-900 dark:text-gray-100">Kampstatistikk</h2>
 
         {/* Teams header */}
         <div className="flex items-center justify-between mb-6">
@@ -62,7 +62,7 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
                 height={24}
                 className="object-contain"
               />
-              <span className="ml-2 font-medium text-sm md:text-base">{team.team.name}</span>
+              <span className="ml-2 font-medium text-sm md:text-base text-gray-900 dark:text-[#AAA]">{team.team.name}</span>
             </div>
           ))}
         </div>
@@ -71,7 +71,7 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
         <div className="space-y-8">
           {/* Possession bar */}
           <div>
-            <div className="text-center mb-2 font-medium">Ballbesittelse</div>
+            <div className="text-center mb-2 font-medium text-gray-900 dark:text-gray-100">Ballbesittelse</div>
             <div className="h-10 flex gap-[5px] rounded-[50px] overflow-hidden">
               <div 
                 className="flex items-center justify-start pl-6 font-medium rounded-l-[50px]"
@@ -132,10 +132,12 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
                 <div key={stat.type} className="flex items-center justify-between">
                   <div className="w-32 text-right">
                     <span 
-                      className={`font-medium ${betterTeam === 'home' ? 'inline-flex items-center justify-center px-2 py-0.5 rounded-full' : ''}`}
+                      className={`font-medium ${betterTeam === 'home' ? 'inline-flex items-center justify-center px-2 py-0.5 rounded-full' : 'text-gray-900 dark:text-gray-300'}`}
                       style={{ 
                         backgroundColor: betterTeam === 'home' ? teamColors.home : 'transparent',
-                        color: betterTeam === 'home' ? (isLightColor(teamColors.home) ? '#000' : '#fff') : 'inherit'
+                        color: betterTeam === 'home' 
+                          ? (isLightColor(teamColors.home) ? '#000' : '#fff') 
+                          : undefined
                       }}
                     >
                       {stat.format 
@@ -144,15 +146,17 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
                       }
                     </span>
                   </div>
-                  <span className="text-sm text-center flex-1 mx-4 whitespace-nowrap">
+                  <span className="text-sm text-center flex-1 mx-4 whitespace-nowrap text-gray-700 dark:text-gray-300">
                     {stat.label}
                   </span>
                   <div className="w-32">
                     <span 
-                      className={`font-medium ${betterTeam === 'away' ? 'inline-flex items-center justify-center px-2 py-0.5 rounded-full' : ''}`}
+                      className={`font-medium ${betterTeam === 'away' ? 'inline-flex items-center justify-center px-2 py-0.5 rounded-full' : 'text-gray-900 dark:text-gray-300'}`}
                       style={{ 
                         backgroundColor: betterTeam === 'away' ? teamColors.away : 'transparent',
-                        color: betterTeam === 'away' ? (isLightColor(teamColors.away) ? '#000' : '#fff') : 'inherit'
+                        color: betterTeam === 'away' 
+                          ? (isLightColor(teamColors.away) ? '#000' : '#fff') 
+                          : undefined
                       }}
                     >
                       {stat.format

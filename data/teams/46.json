@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-04-26",
+          "end": "2025-05-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,183 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208349,
-          "date": "2025-04-20T15:30:00+00:00",
-          "venue": {
-            "id": 547,
-            "name": "King Power Stadium",
-            "city": "Leicester, Leicestershire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745163000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": null
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208362,
-          "date": "2025-04-26T14:00:00+00:00",
-          "venue": {
-            "id": 600,
-            "name": "Molineux Stadium",
-            "city": "Wolverhampton, West Midlands"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745676000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 39,
-            "name": "Wolves",
-            "logo": "https://media.api-sports.io/football/teams/39.png",
-            "winner": null
-          },
-          "away": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208370,
-          "date": "2025-05-03T14:00:00+00:00",
-          "venue": {
-            "id": 547,
-            "name": "King Power Stadium",
-            "city": "Leicester, Leicestershire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746280800
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": null
-          },
-          "away": {
-            "id": 41,
-            "name": "Southampton",
-            "logo": "https://media.api-sports.io/football/teams/41.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208379,
@@ -506,6 +329,183 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208370,
+          "date": "2025-05-03T14:00:00+00:00",
+          "venue": {
+            "id": 547,
+            "name": "King Power Stadium",
+            "city": "Leicester, Leicestershire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1746280800
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 46,
+            "name": "Leicester",
+            "logo": "https://media.api-sports.io/football/teams/46.png",
+            "winner": true
+          },
+          "away": {
+            "id": 41,
+            "name": "Southampton",
+            "logo": "https://media.api-sports.io/football/teams/41.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208362,
+          "date": "2025-04-26T14:00:00+00:00",
+          "venue": {
+            "id": 600,
+            "name": "Molineux Stadium",
+            "city": "Wolverhampton, West Midlands"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1745676000
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https://media.api-sports.io/football/teams/39.png",
+            "winner": true
+          },
+          "away": {
+            "id": 46,
+            "name": "Leicester",
+            "logo": "https://media.api-sports.io/football/teams/46.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208349,
+          "date": "2025-04-20T15:30:00+00:00",
+          "venue": {
+            "id": 547,
+            "name": "King Power Stadium",
+            "city": "Leicester, Leicestershire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1745163000
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 46,
+            "name": "Leicester",
+            "logo": "https://media.api-sports.io/football/teams/46.png",
+            "winner": false
+          },
+          "away": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208335,
@@ -918,183 +918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208267,
-          "date": "2025-02-15T12:30:00+00:00",
-          "venue": {
-            "id": 547,
-            "name": "King Power Stadium",
-            "city": "Leicester, Leicestershire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739622600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": false
-          },
-          "away": {
-            "id": 42,
-            "name": "Arsenal",
-            "logo": "https://media.api-sports.io/football/teams/42.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1334962,
-          "date": "2025-02-07T20:00:00+00:00",
-          "venue": {
-            "id": 556,
-            "name": "Old Trafford",
-            "city": "Manchester"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738958400
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": true
-          },
-          "away": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208257,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 8560,
-            "name": "Goodison Park",
-            "city": "Liverpool"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 45,
-            "name": "Everton",
-            "logo": "https://media.api-sports.io/football/teams/45.png",
-            "winner": true
-          },
-          "away": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1214,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T18:23:50.867Z"
+  "lastUpdated": "2025-05-08T13:55:28.417Z"
 }

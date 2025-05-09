@@ -117,7 +117,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
   if (loading) {
     return (
       <div className="text-center py-4">
-        <p className="text-gray-500">Laster tabell...</p>
+        <p className="text-gray-500 dark:text-gray-400">Laster tabell...</p>
       </div>
     );
   }
@@ -131,7 +131,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
+    <div className="bg-white dark:bg-[#181818] rounded-lg shadow-md p-4">
       <div className="flex items-center justify-between mb-3 relative" ref={dropdownRef}>
         {/* Current League Display */}
         <div className="flex items-center">
@@ -140,17 +140,17 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
               src={`https://viasport.b-cdn.net/football/leagues/${leagueId}.png`}
               alt={leagueName}
               fill
-              className="object-contain"
+              className="object-contain dark:brightness-110"
               unoptimized
             />
           </div>
-          <h2 className="text-base font-medium ml-2">{leagueName}</h2>
+          <h2 className="text-base font-medium ml-2 text-gray-900 dark:text-gray-100">{leagueName}</h2>
         </div>
         
         {/* Toggle Button */}
         <button 
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="flex items-center space-x-1 px-2 py-1 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors"
+          className="flex items-center space-x-1 px-2 py-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-[#333333] rounded-md transition-colors"
         >
           <span className="text-sm">Bytt liga</span>
           <svg 
@@ -166,11 +166,11 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
         
         {/* Enhanced Dropdown Menu */}
         {isDropdownOpen && (
-          <div className="absolute right-0 top-full mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden z-20">
+          <div className="absolute right-0 top-full mt-1 w-64 bg-white dark:bg-[#181818] rounded-lg shadow-lg border border-gray-100 dark:border-[#333333] overflow-hidden z-20">
             <div className="py-2">
               {/* Header */}
-              <div className="px-4 py-2 bg-gray-50 border-b border-gray-100">
-                <h3 className="text-sm font-semibold text-gray-700">Velg liga</h3>
+              <div className="px-4 py-2 bg-gray-50 dark:bg-[#222222] border-b border-gray-100 dark:border-[#333333]">
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-100">Velg liga</h3>
               </div>
               
               {/* League List */}
@@ -179,8 +179,8 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
                   <button
                     key={league.id}
                     onClick={() => changeLeague(league.id, league.name)}
-                    className={`w-full text-left px-4 py-2.5 flex items-center space-x-3 hover:bg-gray-50 transition-colors
-                      ${leagueId === league.id ? 'bg-blue-50/50' : ''}`}
+                    className={`w-full text-left px-4 py-2.5 flex items-center space-x-3 hover:bg-gray-50 dark:hover:bg-[#333333] transition-colors
+                      ${leagueId === league.id ? 'bg-blue-50/50 dark:bg-[#222222]' : ''}`}
                   >
                     {/* League Icon */}
                     <div className="relative h-6 w-6 flex-shrink-0">
@@ -188,24 +188,28 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
                         src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
                         alt={league.name}
                         fill
-                        className="object-contain"
+                        className="object-contain dark:brightness-110"
                         unoptimized
                       />
                     </div>
                     
                     {/* League Info */}
                     <div className="flex flex-col flex-1 min-w-0">
-                      <span className={`text-sm truncate ${leagueId === league.id ? 'font-medium text-blue-600' : 'text-gray-700'}`}>
+                      <span className={`text-sm truncate ${
+                        leagueId === league.id 
+                          ? 'font-medium text-blue-600 dark:text-blue-400' 
+                          : 'text-gray-700 dark:text-gray-100'
+                      }`}>
                         {league.name}
                       </span>
-                      <span className="text-xs text-gray-400">
+                      <span className="text-xs text-gray-400 dark:text-gray-400">
                         {league.country}
                       </span>
                     </div>
                     
                     {/* Selected Indicator */}
                     {leagueId === league.id && (
-                      <svg className="h-5 w-5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="h-5 w-5 text-blue-500 dark:text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     )}
@@ -232,27 +236,39 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
             }
           }
 
+          // Generate a URL-friendly slug for the team name
+          const teamNameForUrl = standing.team.name;
+          let slug = teamNameForUrl.toLowerCase();
+          // Transliterate Norwegian characters
+          slug = slug.replace(/ø/g, 'o');
+          slug = slug.replace(/å/g, 'a');
+          slug = slug.replace(/æ/g, 'ae');
+          // Replace non-alphanumeric characters with a hyphen
+          slug = slug.replace(/[^a-z0-9]+/g, '-');
+          // Remove leading or trailing hyphens
+          slug = slug.replace(/^-+|-+$/g, '');
+
           return (
             <Link
               key={standing.team.id}
-              href={`/lag/${standing.team.name.toLowerCase().replace(/\s+/g, '-')}-${standing.team.id}`}
-              className={`flex items-center justify-between py-1 px-2 hover:bg-gray-50 rounded ${rankClass}`}
+              href={`/lag/${slug}-${standing.team.id}`}
+              className={`flex items-center justify-between py-1 px-2 hover:bg-gray-50 dark:hover:bg-[#222222] rounded ${rankClass}`}
             >
               <div className="flex items-center space-x-2">
-                <span className="w-5 text-xs text-gray-600">{standing.rank}</span>
+                <span className="w-5 text-xs text-gray-600 dark:text-gray-400">{standing.rank}</span>
                 <div className="relative h-4 w-4">
                   <Image
                     src={standing.team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                     alt={standing.team.name}
                     fill
-                    className="object-contain"
+                    className="object-contain dark:brightness-110"
                   />
                 </div>
-                <span className="text-xs truncate max-w-[100px]">
+                <span className="text-xs truncate max-w-[100px] text-gray-800 dark:text-gray-100">
                   {standing.team.name}
                 </span>
               </div>
-              <div className="text-xs font-medium">
+              <div className="text-xs font-medium text-gray-800 dark:text-gray-100">
                 {standing.points}
               </div>
             </Link>

@@ -3,16 +3,19 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { supabase } from '@/lib/supabase'; // Ensure Supabase client is imported
 
 interface MatchHighlightsProps {
+  matchId: number; // Keep matchId to update the correct fixture
+  initialYoutubeHighlightId: string | null; // Receive the ID from the fixture table
   homeTeamName: string;
   awayTeamName: string;
-  homeTeamId: number; // Keep IDs if needed for channel mapping later
+  homeTeamId: number;
   awayTeamId: number;
   leagueId: number;
   matchDate: string; // ISO string date
   isFinished: boolean;
-  winnerTeamId: number;
+  winnerTeamId: number | null; // Can be null
 }
 
 // Helper to get potential YouTube channel IDs based on team/league
@@ -162,6 +165,8 @@ const getPriority = (
 // --- End of Added Helper Functions ---
 
 export default function MatchHighlights({
+  matchId,
+  initialYoutubeHighlightId,
   homeTeamName,
   awayTeamName,
   homeTeamId,
@@ -171,255 +176,218 @@ export default function MatchHighlights({
   isFinished,
   winnerTeamId
 }: MatchHighlightsProps) {
+  const [loading, setLoading] = useState(false);
   const [video, setVideo] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [attemptedSearch, setAttemptedSearch] = useState(false);
 
   useEffect(() => {
-    if (!isFinished) {
-      setLoading(false);
-      setVideo(null);
-      setErrorMessage(null);
-      return;
-    }
-
     const fetchHighlights = async () => {
-      setLoading(true);
-      setErrorMessage(null);
-      setVideo(null);
-
-      // --- Minimal Logging Setup ---
-      console.log(`📺 MatchHighlights: Fetching highlights for ${homeTeamName} vs ${awayTeamName}...`);
-      // --- End Minimal Logging Setup ---
-
-      const potentialChannelIds = getPotentialChannelIds(leagueId, homeTeamId, awayTeamId);
-      const searchTerms = generateSearchTerms(homeTeamName, awayTeamName, leagueId);
-      const matchDateObj = new Date(matchDate);
-      const searchCutoffDate = new Date(matchDateObj);
-      searchCutoffDate.setDate(matchDateObj.getDate() + 3); // Allow 3 days after match
-
-      const normalizedHome = normalizeName(homeTeamName);
-      const normalizedAway = normalizeName(awayTeamName);
-
-      // --- Get Mapped Channel IDs (optional logging if needed later) ---
-      // const homeTeamChannelId = getChannelIdForTeam(homeTeamId);
-      // const awayTeamChannelId = getChannelIdForTeam(awayTeamId);
-      // console.log(`   - Home Channel: ${homeTeamChannelId || 'N/A'}, Away Channel: ${awayTeamChannelId || 'N/A'}`);
-      // console.log(`   - Potential League/Broadcaster Channels:`, potentialChannelIds);
-      // console.log(`   - Search Terms:`, searchTerms);
-      // console.log(`   - Normalized Names: home='${normalizedHome}', away='${normalizedAway}'`);
-      // --- End Mapped Channel IDs ---
-
-
-      let allPotentialVideos: any[] = [];
-
-      try {
-        // --- Performing General Keyword Searches ---
-        // console.log(`--- Performing General Keyword Searches ---`); // Optional: uncomment if needed
-        for (const term of searchTerms) {
-          // console.log(`➡️ Searching General Term: "${term}"`); // Optional: uncomment if needed
-          try {
-              const response = await fetch(`/api/youtube/search?q=${encodeURIComponent(term)}&maxResults=50&purpose=highlights`); // Keep maxResults high initially
-
-              if (!response.ok) {
-                console.warn(`⚠️ General search failed for term: "${term}" (Status: ${response.status})`);
-                continue;
+      // If we have an initial ID from Supabase, use it directly
+      if (initialYoutubeHighlightId) {
+        setVideo({
+          id: initialYoutubeHighlightId,
+          snippet: {
+            title: `${homeTeamName} vs ${awayTeamName} Highlights`,
+            thumbnails: {
+              high: {
+                url: `https://img.youtube.com/vi/${initialYoutubeHighlightId}/hqdefault.jpg`
+              },
+              medium: {
+                url: `https://img.youtube.com/vi/${initialYoutubeHighlightId}/mqdefault.jpg`
+              },
+              default: {
+                url: `https://img.youtube.com/vi/${initialYoutubeHighlightId}/default.jpg`
               }
-              const data = await response.json();
-              // console.log(`📦 General Term "${term}" Raw Items Found: ${data.items?.length || 0}`); // Optional: uncomment if needed
-
-              // --- Removed detailed raw result logging ---
-
-              if (data.items && data.items.length > 0) {
-                 // Process these results
-                 const processed = data.items.map((item: any) => ({
-                    fullItem: item,
-                    id: item.id?.videoId,
-                    title: item.snippet?.title,
-                    titleLower: item.snippet?.title?.toLowerCase() || '',
-                    titleNorm: normalizeName(item.snippet?.title || ''),
-                    channelId: item.snippet?.channelId,
-                    channelTitle: item.snippet?.channelTitle,
-                    publishedAt: item.snippet?.publishedAt,
-                    publishDate: item.snippet?.publishedAt ? new Date(item.snippet.publishedAt) : null,
-                 })).filter((item: any) => item.id && item.publishDate); // Basic filter for valid items
-
-                 allPotentialVideos.push(...processed);
-              }
-          } catch (generalErr) {
-              console.error(`❌ Error searching general term "${term}":`, generalErr);
+            }
           }
-        } // --- End of search term loop ---
-         // console.log(`--- Finished General Searches ---`); // Optional: uncomment if needed
-
-        // --- Removed consolidated found channel log ---
-
-
-        // --- Combine, Filter, Deduplicate, Sort ---
-        // console.log(`\n--- Processing All Collected Videos (${allPotentialVideos.length} before filtering) ---`); // Optional: uncomment if needed
-
-        // 1. Filter
-        const filteredVideos = allPotentialVideos.filter((item: any) => {
-            let passes = true;
-            // const videoTitle = item.title || 'N/A'; // Keep for debugging specific filter issues if needed
-            // const videoChannelId = item.channelId || 'N/A';
-
-            // Date check
-            if (!item.publishDate || item.publishDate < matchDateObj || item.publishDate > searchCutoffDate) {
-                passes = false;
-                // reason = `Date out of range (${item.publishDate?.toISOString()})`; // Keep reasons if debugging filters
-            }
-            // Title check (normalized) - MUST contain both teams
-            if (passes && (!item.titleNorm.includes(normalizedHome) || !item.titleNorm.includes(normalizedAway))) {
-                passes = false;
-                // reason = `Missing team name (Home: ${item.titleNorm.includes(normalizedHome)}, Away: ${item.titleNorm.includes(normalizedAway)}) in title: "${item.titleNorm}"`;
-            }
-            // Keyword check
-            const highlightKeyword = [103, 725].includes(leagueId) ? 'høydepunkter' : 'highlight';
-            if (passes && !item.titleLower.includes(highlightKeyword)) {
-                passes = false;
-                // reason = `Missing keyword '${highlightKeyword}'`;
-            }
-
-            // --- Removed detailed logging for filtered out videos ---
-            // if (!passes) {
-            //      const isPotentiallyOfficial = ...
-            //      if (isPotentiallyOfficial || videoChannelId === 'UCDUnsT44JgL0ItDZrfe7dgQ') {
-            //         console.log(`🚫 Filtering out: "${videoTitle}" (Channel: ${videoChannelId}) | Reason: ${reason}`);
-            //      }
-            // }
-
-            return passes;
         });
-        // console.log(`Filtered down to ${filteredVideos.length} videos.`); // Optional: uncomment if needed
+        return; // Exit early - no need to search
+      }
 
-        // 2. Deduplicate
-        const uniqueVideoMap = new Map<string, any>();
-        filteredVideos.forEach(video => {
-            if (!uniqueVideoMap.has(video.id)) {
-                uniqueVideoMap.set(video.id, video);
+      // Only search for a video if we don't have one saved
+      if (!initialYoutubeHighlightId && isFinished) {
+        setAttemptedSearch(true); // Mark that we are attempting a search
+        console.log(`📺 MatchHighlights [${matchId}]: Proceeding to YouTube search...`);
+        const potentialChannelIds = getPotentialChannelIds(leagueId, homeTeamId, awayTeamId);
+        const searchTerms = generateSearchTerms(homeTeamName, awayTeamName, leagueId);
+        const matchDateObj = new Date(matchDate);
+        const searchCutoffDate = new Date(matchDateObj);
+        searchCutoffDate.setDate(matchDateObj.getDate() + 3); // Allow 3 days after match
+
+        const normalizedHome = normalizeName(homeTeamName);
+        const normalizedAway = normalizeName(awayTeamName);
+
+        let allPotentialVideos: any[] = [];
+
+        try {
+          console.log(`📺 MatchHighlights [${matchId}]: --- Performing General Keyword Searches ---`);
+          for (const term of searchTerms) {
+            try {
+                const response = await fetch(`/api/youtube/search?q=${encodeURIComponent(term)}&maxResults=50&purpose=highlights`);
+                if (!response.ok) {
+                  console.warn(`📺 MatchHighlights [${matchId}]: ⚠️ General search failed for term: "${term}" (Status: ${response.status})`);
+                  continue;
+                }
+                const data = await response.json();
+                if (data.items && data.items.length > 0) {
+                   const processed = data.items.map((item: any) => ({
+                      fullItem: item,
+                      id: item.id?.videoId,
+                      title: item.snippet?.title,
+                      titleLower: item.snippet?.title?.toLowerCase() || '',
+                      titleNorm: normalizeName(item.snippet?.title || ''),
+                      channelId: item.snippet?.channelId,
+                      channelTitle: item.snippet?.channelTitle,
+                      publishedAt: item.snippet?.publishedAt,
+                      publishDate: item.snippet?.publishedAt ? new Date(item.snippet.publishedAt) : null,
+                   })).filter((item: any) => item.id && item.publishDate);
+                   allPotentialVideos.push(...processed);
+                }
+            } catch (generalErr) {
+                console.error(`📺 MatchHighlights [${matchId}]: ❌ Error searching general term "${term}":`, generalErr);
             }
-        });
-        const uniqueVideos = Array.from(uniqueVideoMap.values());
-        // console.log(`Deduplicated down to ${uniqueVideos.length} videos.`); // Optional: uncomment if needed
+          }
+          console.log(`📺 MatchHighlights [${matchId}]: --- Finished General Searches ---`);
 
+          // ... (Filtering, Deduplicating, Sorting logic - same as before) ...
+          console.log(`📺 MatchHighlights [${matchId}]: --- Processing All Collected Videos (${allPotentialVideos.length} before filtering) ---`);
+          // 1. Filter
+          const filteredVideos = allPotentialVideos.filter((item: any) => {
+              let passes = true;
+              if (!item.publishDate || item.publishDate < matchDateObj || item.publishDate > searchCutoffDate) passes = false;
+              if (passes && (!item.titleNorm.includes(normalizedHome) || !item.titleNorm.includes(normalizedAway))) passes = false;
+              const highlightKeyword = [103, 725].includes(leagueId) ? 'høydepunkter' : 'highlight';
+              if (passes && !item.titleLower.includes(highlightKeyword)) passes = false;
+              return passes;
+          });
+          console.log(`📺 MatchHighlights [${matchId}]: Filtered down to ${filteredVideos.length} videos.`);
+          // 2. Deduplicate
+          const uniqueVideoMap = new Map<string, any>();
+          filteredVideos.forEach(video => { if (!uniqueVideoMap.has(video.id)) uniqueVideoMap.set(video.id, video); });
+          const uniqueVideos = Array.from(uniqueVideoMap.values());
+          console.log(`📺 MatchHighlights [${matchId}]: Deduplicated down to ${uniqueVideos.length} videos.`);
+          // 3. Sort
+          uniqueVideos.sort((a, b) => {
+              const priorityA = getPriority(a.channelId, leagueId, homeTeamId, awayTeamId, winnerTeamId);
+              const priorityB = getPriority(b.channelId, leagueId, homeTeamId, awayTeamId, winnerTeamId);
+              if (priorityA !== priorityB) return priorityA - priorityB;
+              const dateA = a.publishDate?.getTime() || 0;
+              const dateB = b.publishDate?.getTime() || 0;
+              return dateB - dateA;
+          });
 
-        // 3. Sort by Priority and Date
-        uniqueVideos.sort((a, b) => {
-            const priorityA = getPriority(a.channelId, leagueId, homeTeamId, awayTeamId, winnerTeamId);
-            const priorityB = getPriority(b.channelId, leagueId, homeTeamId, awayTeamId, winnerTeamId);
+          const finalVideo = uniqueVideos.length > 0 ? uniqueVideos[0] : null;
 
-            if (priorityA !== priorityB) {
-                return priorityA - priorityB;
+          // --- 3. Update Fixture Table if Found ---
+          if (finalVideo?.id) {
+            console.log(`📺 MatchHighlights [${matchId}]: ✅ Search Found: "${finalVideo.title}" (ID: ${finalVideo.id}). Updating fixture...`);
+            setVideo(finalVideo.fullItem); // Set the video state
+
+            try {
+              // Update the specific fixture row in Supabase
+              const { error: updateError } = await supabase
+                .from('fixtures')
+                .update({ youtube_highlight_id: finalVideo.id }) // Set the new column
+                .eq('id', matchId); // Match the fixture ID
+
+              if (updateError) {
+                console.warn(`📺 MatchHighlights [${matchId}]: ⚠️ Failed to update fixture table with video ID ${finalVideo.id}:`, updateError.message);
+              } else {
+                console.log(`📺 MatchHighlights [${matchId}]: ✅ Successfully updated fixture table with video ID ${finalVideo.id}.`);
+              }
+            } catch (updateErr) {
+              console.error(`📺 MatchHighlights [${matchId}]: ❌ Error updating fixture table:`, updateErr);
             }
-            // Secondary sort by publish date (newest first)
-            const dateA = a.publishDate?.getTime() || 0;
-            const dateB = b.publishDate?.getTime() || 0;
-            return dateB - dateA; // Newest first
-        });
+          } else {
+            console.log(`📺 MatchHighlights [${matchId}]: 🤷 Search: No suitable video found.`);
+            setVideo(null); // Ensure video is null if search fails
+          }
+          // --- End Update Fixture Table ---
 
-        // --- Removed Sorted Unique Videos log ---
-        // console.log(`\n📑 Sorted Unique Videos (Top 5):`);
-        // uniqueVideos.slice(0, 5).forEach((v, index) => { ... });
-
-
-        const finalVideo = uniqueVideos.length > 0 ? uniqueVideos[0] : null;
-
-        // Log Final Result
-        if (finalVideo) {
-            console.log(`✅ MatchHighlights: Found video "${finalVideo.title}" (Channel: ${finalVideo.channelTitle})`);
-        } else {
-            console.log(`🤷 MatchHighlights: No suitable video found for ${homeTeamName} vs ${awayTeamName}.`);
+        } catch (err) {
+          console.error(`📺 MatchHighlights [${matchId}]: Error during search/processing:`, err);
+          setErrorMessage(err instanceof Error ? err.message : 'An error occurred fetching highlights');
+          setVideo(null);
+        } finally {
+          setLoading(false); // Ensure loading is set to false in all paths
         }
-
-        setVideo(finalVideo ? finalVideo.fullItem : null);
-
-      } catch (err) {
-        console.error('❌ MatchHighlights: Error fetching highlights:', err);
-        setErrorMessage(err instanceof Error ? err.message : 'An error occurred fetching highlights');
-        setVideo(null);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchHighlights();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [homeTeamName, awayTeamName, homeTeamId, awayTeamId, leagueId, matchDate, isFinished, winnerTeamId]); // Dependencies remain the same
+  }, [matchId, initialYoutubeHighlightId, isFinished]);
 
-  // Show loading state
-  if (loading) {
-    return (
-      <div className="bg-white rounded-lg p-4 animate-pulse shadow">
-        <div className="h-4 bg-gray-200 rounded w-3/4 mb-3"></div>
-        <div className="aspect-video bg-gray-200 rounded-lg"></div>
-      </div>
-    );
-  }
+  // Show loading state only if we haven't successfully loaded video via initial ID or finished searching
+   if (loading) {
+     return (
+       <div className="bg-white dark:bg-[#222222] rounded-lg p-4 animate-pulse shadow">
+         <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4 mb-3"></div>
+         <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg"></div>
+       </div>
+     );
+   }
 
-  // Show error message if one occurred during fetch
-  if (errorMessage) {
-      return (
-          <div className="bg-white rounded-lg p-4 shadow border border-red-200 text-red-700">
-              <h2 className="text-lg font-semibold mb-2">Error Loading Highlights</h2>
-              <p className="text-sm">{errorMessage}</p>
-          </div>
-      );
-  }
-
-  // Don't render if not finished or no video found
-  if (!isFinished || !video) {
-    // --- Removed the console log here ---
-    // if (isFinished && !loading && !errorMessage) {
-    //     console.log("🤔 Component rendered null (Match finished, no error, but no video found/selected).");
-    // }
-    return null;
-  }
-
-  // Render the video link and thumbnail
-  const videoData = video;
-  const videoId = videoData?.id?.videoId;
-  const videoTitle = videoData?.title;
-
-  return (
-    <div className="bg-white rounded-lg p-4 shadow">
-      <h2 className="text-lg font-semibold mb-4">Offisielle høydepunkter</h2>
-      <Link
-        href={`https://www.youtube.com/watch?v=${videoId}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block relative rounded-lg overflow-hidden group transition-shadow duration-200"
-        aria-label={`Se høydepunkter: ${videoTitle}`}
-      >
-        {/* Thumbnail */}
-        <div className="relative aspect-video bg-gray-100">
-          {videoData?.snippet?.thumbnails?.high?.url ? (
-             <Image
-                src={videoData.snippet.thumbnails.high.url}
-                alt=""
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-             />
-          ) : (
-             <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">No Thumbnail</div>
-          )}
-          {/* Play button overlay - REMOVED bg-black/20 */}
-          <div className="absolute inset-0 flex items-center justify-center group-hover:bg-black/40 transition-colors duration-200">
-            <svg className="w-12 h-12 text-white opacity-80 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-            </svg>
-          </div>
-           {/* Source text overlay */}
-           <div className="absolute bottom-1 left-2">
-              <p className="text-white/90 text-[10px] font-medium drop-shadow">
-                  www.youtube.com
-              </p>
+   // Show error message if one occurred during fetch (and we don't have a video)
+   if (!video && errorMessage) {
+       return (
+           <div className="bg-white dark:bg-[#222222] rounded-lg p-4 shadow border border-red-200 dark:border-red-900 text-red-700 dark:text-red-400">
+               <h2 className="text-lg font-semibold mb-2">Error Loading Highlights</h2>
+               <p className="text-sm">{errorMessage}</p>
            </div>
-        </div>
-      </Link>
-       {/* Optional: Display video title below thumbnail */}
-       {/* <p className="text-xs text-gray-600 mt-2 line-clamp-2">{videoTitle}</p> */}
-    </div>
-  );
+       );
+   }
+
+   // Don't render if not finished, or if no video was found (either initially or after search)
+   if (!isFinished || !video) {
+     // Optionally, show a "No highlights found" message if search was attempted
+     if (isFinished && attemptedSearch && !loading) {
+        // console.log(`🤔 MatchHighlights [${matchId}]: No highlights found after search.`);
+        // return <div className="bg-white rounded-lg p-4 shadow text-sm text-gray-500">Ingen høydepunkter funnet.</div>;
+     }
+     return null; // Render nothing otherwise
+   }
+
+   // Render the video link and thumbnail (using the video state)
+   const videoData = video;
+   const videoId = videoData?.id?.videoId || videoData?.id;
+   const videoTitle = videoData?.snippet?.title;
+   const thumbnailUrl = videoData?.snippet?.thumbnails?.high?.url || videoData?.snippet?.thumbnails?.medium?.url || videoData?.snippet?.thumbnails?.default?.url;
+
+   return (
+     <div className="bg-white dark:bg-[#222222] rounded-lg p-4 shadow">
+       <h2 className="text-lg font-semibold mb-4 dark:text-white">Offisielle høydepunkter</h2>
+       <Link
+         href={`https://www.youtube.com/watch?v=${videoId}`}
+         target="_blank"
+         rel="noopener noreferrer"
+         className="block relative rounded-lg overflow-hidden group transition-shadow duration-200"
+         aria-label={`Se høydepunkter: ${videoTitle}`}
+       >
+         <div className="relative aspect-video bg-gray-100 dark:bg-gray-800">
+           {thumbnailUrl ? (
+              <Image
+                 src={thumbnailUrl}
+                 alt=""
+                 fill
+                 sizes="(max-width: 768px) 100vw, 33vw"
+                 className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+           ) : (
+              <div className="w-full h-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400">No Thumbnail</div>
+           )}
+           <div className="absolute inset-0 flex items-center justify-center group-hover:bg-black/40 transition-colors duration-200">
+             <svg className="w-12 h-12 text-white opacity-80 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
+               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+             </svg>
+           </div>
+            <div className="absolute bottom-1 left-2">
+               <p className="text-white/90 text-[10px] font-medium drop-shadow">
+                   www.youtube.com
+               </p>
+            </div>
+         </div>
+       </Link>
+     </div>
+   );
 } 

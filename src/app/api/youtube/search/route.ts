@@ -6,55 +6,75 @@ const CACHE_DURATION = 86400000;
 // In-memory cache
 const cache: Record<string, { data: any, timestamp: number }> = {};
 
+// Helper function to determine which API key to use
+const getApiKey = (query: string, purpose?: string | null): string => {
+  // Always use Eliteserien key for:
+  // 1. Explicit football-related searches
+  // 2. Searches from MatchHighlights component
+  // 3. Searches containing team names
+  const footballTerms = [
+    'eliteserien',
+    'premier league',
+    'høydepunkter',
+    'highlights',
+    'vs',
+    'channel:',
+    // Add Norwegian team names
+    'bodø/glimt', 'bodo/glimt', 'bodø glimt', 'bodo glimt',
+    'brann', 'viking', 'rosenborg', 'rbk', 'molde',
+    'fredrikstad', 'ffk', 'strømsgodset', 'stromsgodset',
+    'kfum oslo', 'kfum', 'sarpsborg', 'sandefjord',
+    'kristiansund', 'kbk', 'ham-kam', 'hamkam', 'ham kam',
+    'tromsø', 'tromso', 'til', 'haugesund', 'fkh',
+    'lillestrøm', 'lillestrom', 'lsk', 'odd'
+  ];
+
+  const normalizedQuery = query.toLowerCase();
+  const isFootballRelated = footballTerms.some(term => normalizedQuery.includes(term.toLowerCase()));
+  
+  // Use Eliteserien key if:
+  // 1. The search is football-related OR
+  // 2. The purpose is 'highlights' (from MatchHighlights component)
+  if (isFootballRelated || purpose === 'highlights') {
+    console.log('Using dedicated football videos API key for:', { query, purpose });
+    return process.env.YOUTUBE_ELITESERIEN_API_KEY || '';
+  }
+
+  console.log('Using general API key for:', { query, purpose });
+  return process.env.YOUTUBE_API_KEY || '';
+};
+
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get('q') || 'eliteserien';
   const maxResults = searchParams.get('maxResults') || '5';
   const purpose = searchParams.get('purpose');
   
-  // Create a cache key based on the query parameters, including purpose
+  // Create a cache key based on the query parameters
   const cacheKey = `${query}-${maxResults}-${purpose || 'default'}`;
   
-  // Check if we have a valid cached response
+  // Check cache
   const now = Date.now();
   if (cache[cacheKey] && (now - cache[cacheKey].timestamp) < CACHE_DURATION) {
     console.log(`Using cached result for "${query}" (purpose: ${purpose || 'default'}, ${now - cache[cacheKey].timestamp}ms old)`);
     return NextResponse.json(cache[cacheKey].data);
   }
   
-  // If no valid cache, make a request to YouTube API
   try {
     console.log(`Fetching new results for "${query}" (purpose: ${purpose || 'default'})`);
     
-    // Choose the appropriate API key based on the query
-    let apiKey;
-    if (query.toLowerCase().includes('eliteserien') || 
-        query.toLowerCase().includes('premier league') ||
-        query.toLowerCase().includes('channel:')) {
-      apiKey = process.env.YOUTUBE_ELITESERIEN_API_KEY;
-      console.log('Using dedicated football videos API key');
-    } else {
-      apiKey = process.env.YOUTUBE_API_KEY;
-    }
+    // Get the appropriate API key
+    const apiKey = getApiKey(query, purpose);
     
     if (!apiKey) {
       throw new Error('YouTube API key is not configured');
     }
     
-    // --- Conditionally set YouTube API parameters ---
-    let orderParam = 'date'; // Default order
-    let durationParam = ''; // Default: no duration filter
-
-    if (purpose === 'highlights') {
-      console.log('Applying highlights-specific parameters: order=relevance, videoDuration=medium');
-      orderParam = 'relevance';
-      durationParam = '&videoDuration=medium'; // Add duration filter for highlights
-    }
-    // --- End Conditional Parameters ---
+    // Set search parameters
+    let orderParam = purpose === 'highlights' ? 'relevance' : 'date';
+    let durationParam = purpose === 'highlights' ? '&videoDuration=medium' : '';
     
     const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&maxResults=${maxResults}&key=${apiKey}&type=video&order=${orderParam}${durationParam}`;
-    
-    console.log(`Constructed YouTube URL: ${youtubeUrl}`); // Log the final URL
     
     const response = await fetch(youtubeUrl);
     
@@ -65,7 +85,6 @@ export async function GET(request: NextRequest) {
     }
     
     const data = await response.json();
-    console.log(`YouTube API returned ${data.items?.length || 0} videos for purpose "${purpose || 'default'}"`);
     
     // Cache the response
     cache[cacheKey] = {
@@ -73,14 +92,13 @@ export async function GET(request: NextRequest) {
       timestamp: now
     };
     
-    console.log(`Cached new result for "${query}" (purpose: ${purpose || 'default'})`);
     return NextResponse.json(data);
   } catch (err) {
     console.error('YouTube API Error:', err);
     
-    // If we have an expired cache, use it as fallback
+    // Use expired cache as fallback
     if (cache[cacheKey]) {
-      console.log(`Using expired cache as fallback for "${query}" (purpose: ${purpose || 'default'})`);
+      console.log(`Using expired cache as fallback for "${query}"`);
       return NextResponse.json(cache[cacheKey].data);
     }
     

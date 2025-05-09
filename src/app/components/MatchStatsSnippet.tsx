@@ -120,20 +120,19 @@ export default function MatchStatsSnippet({
   // --- Render Logic ---
 
   if (!hasData) {
-    // Optional: Render a loading state or minimal placeholder if desired
     return (
-        <div className="bg-white rounded-lg shadow p-4 md:p-6 text-center text-gray-500">
+        <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6 text-center text-gray-500 dark:text-gray-400">
             Statistikk ikke tilgjengelig ennå.
         </div>
     );
   }
 
   return (
-    <div className="bg-white rounded-lg shadow overflow-hidden">
+    <div className="bg-white dark:bg-[#222222] rounded-lg shadow overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Column 1: Momentum Chart */}
-        <div className="p-4 md:p-6 border-b md:border-b-0 md:border-r border-[#f3f4f6]">
-          <h3 className="text-[14px] font-[500] mb-3 text-gray-700">Momentum</h3>
+        <div className="p-4 md:p-6 border-b md:border-b-0 md:border-r border-[#f3f4f6] dark:border-gray-700">
+          <h3 className="text-[14px] font-[500] mb-3 text-gray-700 dark:text-gray-300">Momentum</h3>
           {/* Render MomentumChart if data is available */}
           {matchId && initialEvents !== undefined ? (
              <MomentumChart
@@ -147,7 +146,7 @@ export default function MatchStatsSnippet({
                lastUpdatedAt={lastUpdatedAt}
              />
            ) : (
-             <div className="flex items-center justify-center h-[180px] text-gray-400 text-sm">
+             <div className="flex items-center justify-center h-[180px] text-gray-400 dark:text-gray-500 text-sm">
                Momentum data unavailable.
              </div>
            )}
@@ -155,12 +154,12 @@ export default function MatchStatsSnippet({
 
         {/* Column 2: Top Stats */}
         <div className="p-4 md:p-6">
-          <h3 className="text-[14px] font-[500] mb-4 text-gray-700">Nøkkelstatistikk</h3>
+          <h3 className="text-[14px] font-[500] mb-4 text-gray-700 dark:text-gray-300">Nøkkelstatistikk</h3>
           <div className="space-y-4"> {/* Increased spacing slightly */}
 
             {/* Ball Possession */}
             <div>
-              <div className="text-sm text-center mb-1.5 text-gray-600">Ballbesittelse</div>
+              <div className="text-sm text-center mb-1.5 text-gray-600 dark:text-gray-400">Ballbesittelse</div>
               <div className="flex justify-between gap-2"> {/* Changed to flex with gap, removed h-7, rounded-full and overflow-hidden */}
                 {/* Home Bar */}
                 <div
@@ -209,7 +208,7 @@ export default function MatchStatsSnippet({
                   {stat.homeVal}
                 </span>
                 {/* Label */}
-                <span className="text-gray-600 text-center mx-2 text-xs flex-shrink-0">{stat.label}</span>
+                <span className="text-gray-600 dark:text-gray-400 text-center mx-2 text-xs flex-shrink-0">{stat.label}</span>
                 {/* Away Value Pill */}
                 <span
                   className="font-semibold px-2.5 py-0.5 rounded-full text-xs min-w-[30px] text-center" // Pill styling
@@ -226,10 +225,10 @@ export default function MatchStatsSnippet({
         </div>
       </div>
        {/* "All stats" Button/Link Area */}
-       <div className="text-center border-t border-[#f3f4f6]">
+       <div className="text-center border-t border-[#f3f4f6] dark:border-gray-700">
          <button
             onClick={onShowAllStats}
-            className="w-full py-2.5 px-4 text-sm font-medium text-blue-600 hover:text-blue-800 hover:bg-gray-50 transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-2.5 px-4 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={!onShowAllStats} // Disable if no handler provided
             aria-label="Se all kampstatistikk"
           >

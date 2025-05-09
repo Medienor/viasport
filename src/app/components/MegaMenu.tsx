@@ -78,10 +78,11 @@ const MegaMenu = forwardRef<HTMLDivElement, MegaMenuProps>(({ isOpen, leagues, o
           role="dialog"
           aria-modal="true"
         >
-          {/* Inner div: Added rounded-lg for all corners */}
-          <div className="max-w-7xl mx-auto bg-white shadow-lg border-t border-gray-100 rounded-lg">
+          {/* Inner div: Added dark mode styles */}
+          <div className="max-w-7xl mx-auto bg-white dark:bg-dark-nav shadow-lg dark:shadow-none border-t border-gray-100 dark:border-dark-border rounded-lg">
             <div className="px-4 sm:px-6 lg:px-8 py-6">
-              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4 px-2">
+              {/* Heading: Added dark mode text color */}
+              <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4 px-2">
                 Populære Ligaer
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-4">
@@ -90,17 +91,18 @@ const MegaMenu = forwardRef<HTMLDivElement, MegaMenuProps>(({ isOpen, leagues, o
                     key={league.id}
                     href={getLeagueUrl(league)}
                     onClick={onClose}
-                    className="group flex items-center p-2 rounded-md hover:bg-gray-50 transition-colors duration-150"
+                    // Link item: Added dark mode hover background
+                    className="group flex items-center p-2 rounded-md hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors duration-150"
                   >
-                    {/* Logo */}
-                    <div className="flex-shrink-0 h-8 w-8 mr-3 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden"> {/* Changed placeholder bg */}
+                    {/* Logo: Added dark mode background for placeholder */}
+                    <div className="flex-shrink-0 h-8 w-8 mr-3 bg-gray-100 dark:bg-[#222222] rounded-full flex items-center justify-center overflow-hidden">
                       <Image
                         // Use the dynamic URL function
                         src={getLogoUrl(league.id)}
                         alt={`${league.name} logo`}
                         width={24} // Keep size constraints
                         height={24}
-                        className="object-contain"
+                        className="object-contain dark:brightness-110" // Added brightness adjustment for dark logos
                         // Optional: Add unoptimized prop if experiencing issues with external URLs in dev
                         // unoptimized
                         // Optional: Add error handling to show fallback
@@ -113,16 +115,18 @@ const MegaMenu = forwardRef<HTMLDivElement, MegaMenuProps>(({ isOpen, leagues, o
                           }
                         }}
                       />
-                      {/* Fallback text, initially hidden */}
-                      <span className="text-xs font-medium text-gray-500 hidden">
+                      {/* Fallback text: Added dark mode text color */}
+                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 hidden">
                         {league.name.substring(0, 1)}
                       </span>
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-gray-800 group-hover:text-black">
+                      {/* League name: Added dark mode text and hover colors */}
+                      <p className="text-sm font-medium text-gray-800 dark:text-gray-100 group-hover:text-black dark:group-hover:text-white">
                         {league.name}
                       </p>
-                      <p className="text-xs text-gray-500">{league.country}</p>
+                      {/* Country: Added dark mode text color */}
+                      <p className="text-xs text-gray-500 dark:text-gray-400">{league.country}</p>
                     </div>
                   </Link>
                 ))}

@@ -147,7 +147,44 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-04-26",
+          "end": "2025-05-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-09-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -184,309 +221,15 @@
     2021,
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "fixtures": {
     "upcoming": [
       {
         "fixture": {
-          "id": 1208339,
-          "date": "2025-04-13T15:30:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744558200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": null
-          },
-          "away": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208311,
-          "date": "2025-04-16T18:30:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744828200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": null
-          },
-          "away": {
-            "id": 52,
-            "name": "Crystal Palace",
-            "logo": "https://media.api-sports.io/football/teams/52.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208343,
-          "date": "2025-04-19T16:30:00+00:00",
-          "venue": {
-            "id": 495,
-            "name": "Villa Park",
-            "city": "Birmingham"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745080200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
-            "winner": null
-          },
-          "away": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208359,
-          "date": "2025-04-26T14:00:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745676000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": null
-          },
-          "away": {
-            "id": 57,
-            "name": "Ipswich",
-            "logo": "https://media.api-sports.io/football/teams/57.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208366,
-          "date": "2025-05-04T13:00:00+00:00",
-          "venue": {
-            "id": 508,
-            "name": "American Express Stadium",
-            "city": "Falmer, East Sussex"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746363600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 51,
-            "name": "Brighton",
-            "logo": "https://media.api-sports.io/football/teams/51.png",
-            "winner": null
-          },
-          "away": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208378,
-          "date": "2025-05-10T11:30:00+00:00",
+          "date": "2025-05-11T11:00:00+00:00",
           "venue": {
             "id": 562,
             "name": "St. James' Park",
@@ -498,7 +241,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746876600
+          "timestamp": 1746961200
         },
         "league": {
           "id": 39,
@@ -545,7 +288,7 @@
       {
         "fixture": {
           "id": 1208383,
-          "date": "2025-05-18T14:00:00+00:00",
+          "date": "2025-05-18T15:30:00+00:00",
           "venue": {
             "id": 494,
             "name": "Emirates Stadium",
@@ -557,7 +300,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1747576800
+          "timestamp": 1747582200
         },
         "league": {
           "id": 39,
@@ -659,9 +402,363 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1371780,
+          "date": "2025-07-27T11:30:00+00:00",
+          "venue": {
+            "id": 21415,
+            "name": "National Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753615800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png",
+            "winner": null
+          },
+          "away": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208366,
+          "date": "2025-05-04T13:00:00+00:00",
+          "venue": {
+            "id": 508,
+            "name": "American Express Stadium",
+            "city": "Falmer, East Sussex"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1746363600
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 51,
+            "name": "Brighton",
+            "logo": "https://media.api-sports.io/football/teams/51.png",
+            "winner": null
+          },
+          "away": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208359,
+          "date": "2025-04-26T14:00:00+00:00",
+          "venue": {
+            "id": 562,
+            "name": "St. James' Park",
+            "city": "Newcastle upon Tyne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1745676000
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png",
+            "winner": true
+          },
+          "away": {
+            "id": 57,
+            "name": "Ipswich",
+            "logo": "https://media.api-sports.io/football/teams/57.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208343,
+          "date": "2025-04-19T16:30:00+00:00",
+          "venue": {
+            "id": 495,
+            "name": "Villa Park",
+            "city": "Birmingham"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1745080200
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 66,
+            "name": "Aston Villa",
+            "logo": "https://media.api-sports.io/football/teams/66.png",
+            "winner": true
+          },
+          "away": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208311,
+          "date": "2025-04-16T18:30:00+00:00",
+          "venue": {
+            "id": 562,
+            "name": "St. James' Park",
+            "city": "Newcastle upon Tyne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744828200
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png",
+            "winner": true
+          },
+          "away": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https://media.api-sports.io/football/teams/52.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208339,
+          "date": "2025-04-13T15:30:00+00:00",
+          "venue": {
+            "id": 562,
+            "name": "St. James' Park",
+            "city": "Newcastle upon Tyne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744558200
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png",
+            "winner": true
+          },
+          "away": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https://media.api-sports.io/football/teams/33.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208329,
@@ -946,301 +1043,6 @@
           "fulltime": {
             "home": 2,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208281,
-          "date": "2025-02-23T14:00:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1740319200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": true
-          },
-          "away": {
-            "id": 65,
-            "name": "Nottingham Forest",
-            "logo": "https://media.api-sports.io/football/teams/65.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 4,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208269,
-          "date": "2025-02-15T15:00:00+00:00",
-          "venue": {
-            "id": 555,
-            "name": "Etihad Stadium",
-            "city": "Manchester"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739631600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": true
-          },
-          "away": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1334967,
-          "date": "2025-02-08T17:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "St. Andrew's @ Knighthead Park",
-            "city": "Birmingham"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 14
-          },
-          "timestamp": 1739036700
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 54,
-            "name": "Birmingham",
-            "logo": "https://media.api-sports.io/football/teams/54.png",
-            "winner": false
-          },
-          "away": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1327989,
-          "date": "2025-02-05T20:00:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738785600
-        },
-        "league": {
-          "id": 48,
-          "name": "League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/48.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": true
-          },
-          "away": {
-            "id": 42,
-            "name": "Arsenal",
-            "logo": "https://media.api-sports.io/football/teams/42.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208260,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": false
-          },
-          "away": {
-            "id": 36,
-            "name": "Fulham",
-            "logo": "https://media.api-sports.io/football/teams/36.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1547,5 +1349,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T18:23:45.785Z"
+  "lastUpdated": "2025-05-08T13:55:23.044Z"
 }

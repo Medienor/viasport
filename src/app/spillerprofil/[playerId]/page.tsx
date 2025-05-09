@@ -113,7 +113,11 @@ export default async function PlayerPage({ params }: { params: { playerId: strin
       // Continue without teams data
     }
     
-    return <PlayerProfile playerData={playerData} playerTeamsData={playerTeamsData} />;
+    return (
+      <div className="dark:bg-dark-bg min-h-screen">
+        <PlayerProfile playerData={playerData} playerTeamsData={playerTeamsData} />
+      </div>
+    );
   } catch (error) {
     console.error('Error loading player:', error);
     notFound();

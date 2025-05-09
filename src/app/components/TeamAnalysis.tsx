@@ -168,7 +168,7 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
   }, [team, leagues, fixtures]);
 
   if (loading) {
-    return <p className="text-gray-500">Laster analyse...</p>;
+    return <p className="text-gray-500 dark:text-gray-400">Laster analyse...</p>;
   }
 
   if (!analysisText) {
@@ -178,20 +178,20 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
   return (
     <div>
       <div className="mt-12">
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="text-xl font-semibold mb-4 dark:text-white">
           Tabellplassering for {team.team.name}
         </h2>
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none dark:prose-invert">
           <p>{analysisText}</p>
         </div>
       </div>
 
       {/* Team History and Facts Section */}
       <div className="mt-12">
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="text-xl font-semibold mb-4 dark:text-white">
           Historien og fakta om {team.team.name}
         </h2>
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none dark:prose-invert">
           <p>
             {`${team.team.name} ${team.team.founded ? `ble grunnlagt i ${team.team.founded} og ` : ''}`}
             {team.venue ? 
@@ -217,7 +217,7 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
       {/* New section for upcoming matches */}
       {fixtures.upcoming && fixtures.upcoming.length > 0 && (
         <div className="mt-12">
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-4 dark:text-white">
             Kommende kamper for {team.team.name} du bør følge med på
           </h2>
           <ul className="space-y-3">
@@ -231,7 +231,7 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
                   <li key={match.fixture.id}>
                     <Link 
                       href={`/fotball/kamp/${match.fixture.id}`}
-                      className="text-blue-600 hover:text-blue-800 hover:underline"
+                      className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline"
                     >
                       {`${isHome ? team.team.name : opponent.name} mot ${isHome ? opponent.name : team.team.name}`}
                     </Link>

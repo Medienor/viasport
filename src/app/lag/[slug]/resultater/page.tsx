@@ -163,7 +163,7 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
       <div className="mt-8 space-y-3">
         {fixtures.length === 0 ? (
            <div className="text-center py-12">
-            <p className="text-gray-500">Ingen resultater funnet</p>
+            <p className="text-gray-500 dark:text-gray-400">Ingen resultater funnet</p>
           </div>
         ) : (
           fixtures.map((fixture: SupabaseFixture) => {
@@ -198,24 +198,24 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
               <Link
                 key={fixture.id}
                 href={`/fotball/kamp/${fixture.id}`}
-                className="block bg-white rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+                className="block bg-white dark:bg-[#181818] rounded-lg border border-gray-200 dark:border-none shadow-sm hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors"
               >
                 <div className="hidden sm:flex items-center justify-between p-4 gap-4">
                   <div className="flex-shrink-0 w-40 text-xs">
-                    <span className="block font-medium text-gray-900">
+                    <span className="block font-medium text-gray-900 dark:text-gray-200">
                       {format(matchDate, 'EEEE d. MMM yyyy', { locale: nb })}
                     </span>
-                    <span className="block text-gray-500 truncate" title={fixture.league?.name ?? ''}>
+                    <span className="block text-gray-500 dark:text-gray-400 truncate" title={fixture.league?.name ?? ''}>
                       {fixture.league?.name ?? 'Ukjent liga'}
                     </span>
-                     <span className="block text-gray-400 truncate" title={fixture.venue?.name ?? ''}>
+                     <span className="block text-gray-400 dark:text-gray-500 truncate" title={fixture.venue?.name ?? ''}>
                       {fixture.venue?.name ?? 'Ukjent stadion'}
                     </span>
                   </div>
 
                   <div className="flex-grow flex items-center justify-center gap-3 min-w-0">
                     <div className="flex items-center justify-end gap-2 text-right flex-1 min-w-0">
-                      <span className={`font-medium text-sm truncate ${homeWinner ? 'font-bold' : ''}`} title={homeTeamName}>
+                      <span className={`font-medium text-sm truncate dark:text-gray-200 ${homeWinner ? 'font-bold' : ''}`} title={homeTeamName}>
                         {homeTeamName}
                       </span>
                       <div className="relative h-6 w-6 flex-shrink-0">
@@ -229,10 +229,10 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
                       </div>
                     </div>
 
-                    <div className="w-auto px-3 py-1 bg-gray-100 rounded text-sm font-semibold flex-shrink-0">
+                    <div className="w-auto px-3 py-1 bg-gray-100 dark:bg-[#222222] rounded text-sm font-semibold flex-shrink-0 text-gray-800 dark:text-gray-200">
                       {score}
-                      {fixture.status?.short === 'AET' && <span className="text-xs text-gray-500 ml-1">e.e.o.</span>}
-                      {fixture.status?.short === 'PEN' && <span className="text-xs text-gray-500 ml-1">str.</span>}
+                      {fixture.status?.short === 'AET' && <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">e.e.o.</span>}
+                      {fixture.status?.short === 'PEN' && <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">str.</span>}
                     </div>
 
                     <div className="flex items-center gap-2 text-left flex-1 min-w-0">
@@ -245,13 +245,13 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
                           sizes="24px"
                         />
                       </div>
-                      <span className={`font-medium text-sm truncate ${awayWinner ? 'font-bold' : ''}`} title={awayTeamName}>
+                      <span className={`font-medium text-sm truncate dark:text-gray-200 ${awayWinner ? 'font-bold' : ''}`} title={awayTeamName}>
                         {awayTeamName}
                       </span>
                     </div>
                   </div>
 
-                  <div className="flex-shrink-0 w-10 text-right text-gray-400">
+                  <div className="flex-shrink-0 w-10 text-right text-gray-400 dark:text-gray-500">
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 inline-block">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
@@ -260,15 +260,15 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
 
                 <div className="sm:hidden p-4 space-y-3">
                   <div className="flex justify-between items-center text-xs mb-2">
-                    <span className="text-gray-600">
+                    <span className="text-gray-600 dark:text-gray-400">
                       {format(matchDate, 'E d. MMM yyyy', { locale: nb })}
                     </span>
-                    <span className="font-semibold bg-gray-100 px-2 py-0.5 rounded">
+                    <span className="font-semibold bg-gray-100 dark:bg-[#222222] px-2 py-0.5 rounded text-gray-800 dark:text-gray-200">
                       {score}
-                      {fixture.status?.short === 'AET' && <span className="text-xs text-gray-500 ml-1">e.e.o.</span>}
-                      {fixture.status?.short === 'PEN' && <span className="text-xs text-gray-500 ml-1">str.</span>}
+                      {fixture.status?.short === 'AET' && <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">e.e.o.</span>}
+                      {fixture.status?.short === 'PEN' && <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">str.</span>}
                     </span>
-                    <span className="text-gray-500 truncate" title={fixture.league?.name ?? ''}>
+                    <span className="text-gray-500 dark:text-gray-400 truncate" title={fixture.league?.name ?? ''}>
                       {fixture.league?.name ?? 'Ukjent liga'}
                     </span>
                   </div>
@@ -283,7 +283,7 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
                         sizes="20px"
                       />
                     </div>
-                    <span className={`text-sm font-medium truncate ${homeWinner ? 'font-bold' : ''}`}>
+                    <span className={`text-sm font-medium truncate dark:text-gray-200 ${homeWinner ? 'font-bold' : ''}`}>
                       {homeTeamName}
                     </span>
                   </div>
@@ -297,11 +297,11 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
                         sizes="20px"
                       />
                     </div>
-                    <span className={`text-sm font-medium truncate ${awayWinner ? 'font-bold' : ''}`}>
+                    <span className={`text-sm font-medium truncate dark:text-gray-200 ${awayWinner ? 'font-bold' : ''}`}>
                       {awayTeamName}
                     </span>
                   </div>
-                   <div className="text-xs text-gray-400 pt-1 text-center truncate" title={fixture.venue?.name ?? ''}>
+                   <div className="text-xs text-gray-400 dark:text-gray-500 pt-1 text-center truncate" title={fixture.venue?.name ?? ''}>
                       {fixture.venue?.name ?? 'Ukjent stadion'}
                    </div>
                 </div>

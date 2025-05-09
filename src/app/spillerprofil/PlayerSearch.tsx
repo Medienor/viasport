@@ -48,9 +48,9 @@ export default function PlayerSearch() {
   }, [debouncedQuery]);
 
   return (
-    <div className="space-y-6">
-      <div className="bg-white shadow rounded-lg p-6">
-        <h2 className="text-xl font-semibold mb-4">Søk etter spillere</h2>
+    <div className="space-y-6 dark:bg-dark-bg">
+      <div className="bg-white dark:bg-dark-nav shadow rounded-lg p-6 dark:border-0">
+        <h2 className="text-xl font-semibold mb-4 dark:text-white">Søk etter spillere</h2>
         
         <div className="relative">
           <input
@@ -58,7 +58,7 @@ export default function PlayerSearch() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Søk etter spillernavn (minst 3 tegn)"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
             minLength={3}
           />
           {isLoading && (
@@ -69,28 +69,28 @@ export default function PlayerSearch() {
         </div>
         
         {error && (
-          <div className="mt-4 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded relative" role="alert">
+          <div className="mt-4 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-200 px-4 py-3 rounded relative" role="alert">
             <span className="block sm:inline">{error}</span>
           </div>
         )}
         
         {searchQuery.length > 0 && searchQuery.length < 3 && (
-          <div className="mt-4 text-sm text-gray-500">
+          <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
             Skriv minst 3 tegn for å søke.
           </div>
         )}
       </div>
       
       {searchResults.length > 0 && (
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-xl font-semibold mb-4">Søkeresultater</h2>
+        <div className="bg-white dark:bg-dark-nav shadow rounded-lg p-6 dark:border-0">
+          <h2 className="text-xl font-semibold mb-4 dark:text-white">Søkeresultater</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {searchResults.map((player) => (
               <Link 
                 key={player.player.id}
                 href={`/spillerprofil/${createPlayerSlug(player.player.name, player.player.id)}`}
-                className="flex items-center p-4 border rounded-lg hover:bg-blue-50 transition-colors"
+                className="flex items-center p-4 border dark:border-dark-border rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors"
               >
                 <div className="flex-shrink-0 h-16 w-16 relative mr-4">
                   {player.player.photo ? (
@@ -102,7 +102,7 @@ export default function PlayerSearch() {
                       sizes="64px"
                     />
                   ) : (
-                    <div className="h-16 w-16 rounded-full bg-gray-200 flex items-center justify-center text-gray-400">
+                    <div className="h-16 w-16 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-400 dark:text-gray-500">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
@@ -111,8 +111,8 @@ export default function PlayerSearch() {
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-gray-900">{player.player.name}</h3>
-                  <div className="text-sm text-gray-500">
+                  <h3 className="font-medium text-gray-900 dark:text-white">{player.player.name}</h3>
+                  <div className="text-sm text-gray-500 dark:text-gray-400">
                     {player.statistics && player.statistics[0]?.team?.name ? (
                       <div className="flex items-center">
                         {player.statistics[0].team.logo && (
@@ -131,7 +131,7 @@ export default function PlayerSearch() {
                     )}
                   </div>
                   {player.player.age && (
-                    <div className="text-xs text-gray-500">
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
                       Alder: {player.player.age}
                     </div>
                   )}
@@ -143,9 +143,9 @@ export default function PlayerSearch() {
       )}
       
       {debouncedQuery.length >= 3 && searchResults.length === 0 && !isLoading && (
-        <div className="bg-white shadow rounded-lg p-6 text-center">
-          <p className="text-gray-500">Ingen spillere funnet for &ldquo;{debouncedQuery}&rdquo;</p>
-          <p className="text-sm text-gray-400 mt-2">Prøv et annet søk</p>
+        <div className="bg-white dark:bg-dark-nav shadow rounded-lg p-6 text-center dark:border-0">
+          <p className="text-gray-500 dark:text-gray-400">Ingen spillere funnet for &ldquo;{debouncedQuery}&rdquo;</p>
+          <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">Prøv et annet søk</p>
         </div>
       )}
     </div>

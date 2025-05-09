@@ -36,34 +36,78 @@ export default function HeadToHeadFixtures({ matches }: HeadToHeadFixturesProps)
         .map((match) => (
           <div 
             key={match.fixture.id}
-            className="block bg-gray-50 rounded-lg p-4"
+            className="block bg-gray-50 dark:bg-[#2c2c2c] rounded-lg p-3"
           >
-            <div className="text-xs text-gray-500 mb-2">
+            <div className="md:text-[10px] text-[9px] text-gray-500 dark:text-gray-400 mb-2">
               {format(parseISO(match.fixture.date), 'd. MMMM yyyy', { locale: nb })}
               {match.league && ` • ${match.league.name}`}
             </div>
             
-            <div className="grid grid-cols-[1fr_80px_1fr] items-center">
+            {/* Desktop layout */}
+            <div className="hidden md:grid grid-cols-[1fr_80px_1fr] items-center">
               <div className="flex items-center gap-3">
                 <img 
                   src={match.teams.home.logo} 
                   alt={match.teams.home.name}
                   className="w-6 h-6 object-contain"
                 />
-                <span className="font-medium">{match.teams.home.name}</span>
+                <span className="font-medium text-gray-900 dark:text-[#AAA]">{match.teams.home.name}</span>
               </div>
               
-              <div className="font-semibold text-center">
+              <div className="font-semibold text-center text-gray-900 dark:text-gray-100">
                 {match.match_status === 'NS' ? '-' : `${match.goals.home} - ${match.goals.away}`}
               </div>
               
               <div className="flex items-center gap-3 justify-end">
-                <span className="font-medium">{match.teams.away.name}</span>
+                <span className="font-medium text-gray-900 dark:text-[#AAA]">{match.teams.away.name}</span>
                 <img 
                   src={match.teams.away.logo} 
                   alt={match.teams.away.name}
                   className="w-6 h-6 object-contain"
                 />
+              </div>
+            </div>
+            
+            {/* Mobile layout - more compact */}
+            <div className="md:hidden flex items-center">
+              <div className="flex flex-col items-center w-10">
+                <span className="text-xs text-gray-500 dark:text-gray-400">FT</span>
+              </div>
+              
+              <div className="flex flex-1 items-center">
+                <div className="flex flex-col space-y-2 flex-1">
+                  {/* Home team */}
+                  <div className="flex items-center gap-1.5">
+                    <img 
+                      src={match.teams.home.logo} 
+                      alt={match.teams.home.name}
+                      className="w-5 h-5 object-contain"
+                    />
+                    <span className="font-medium text-xs text-gray-900 dark:text-[#AAA]">{match.teams.home.name}</span>
+                  </div>
+                  
+                  {/* Away team */}
+                  <div className="flex items-center gap-1.5">
+                    <img 
+                      src={match.teams.away.logo} 
+                      alt={match.teams.away.name}
+                      className="w-5 h-5 object-contain"
+                    />
+                    <span className="font-medium text-xs text-gray-900 dark:text-[#AAA]">{match.teams.away.name}</span>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col items-center space-y-2 w-6 mr-1">
+                  {/* Score for home team */}
+                  <span className="font-semibold text-xs text-gray-900 dark:text-gray-100">
+                    {match.match_status === 'NS' ? '-' : match.goals.home}
+                  </span>
+                  
+                  {/* Score for away team */}
+                  <span className="font-semibold text-xs text-gray-900 dark:text-gray-100">
+                    {match.match_status === 'NS' ? '-' : match.goals.away}
+                  </span>
+                </div>
               </div>
             </div>
           </div>

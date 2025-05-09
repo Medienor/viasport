@@ -37,8 +37,17 @@ function createTeamSlug(teamName: string, teamId: number) {
 }
 
 // Helper function to format season display
-const formatSeasonDisplay = (season: number) => {
-  return `${season}/${season + 1}`;
+const formatSeasonDisplay = (year: number) => {
+  // Assuming leagues like 103, 104 are single year (e.g., 2023)
+  // and others are split (e.g., 2023/2024)
+  // Adjust this logic based on your actual league IDs if needed
+  // For now, we'll assume any season >= current year is single format
+  const currentYear = new Date().getFullYear();
+  if (year >= currentYear) {
+    return `${year}`;
+  } else {
+    return `${year}/${year + 1}`;
+  }
 };
 
 // Helper function to translate form string
@@ -71,9 +80,10 @@ export default function TeamStandings({
     forcedLeagueDetails ? forcedLeagueDetails.id : null
   );
   const [showForm, setShowForm] = useState(false);
+  const [validSortedSeasons, setValidSortedSeasons] = useState<number[]>([]);
 
   // --- Memoize validSortedSeasons ---
-  const validSortedSeasons = useMemo(() => {
+  const validSortedSeasonsMemo = useMemo(() => {
     console.log("[Memo] Recalculating validSortedSeasons"); // Log when this recalculates
     return Array.isArray(seasons) ? [...seasons].sort((a, b) => b - a) : [];
   }, [seasons]); // Only recalculate if the 'seasons' prop changes
@@ -85,7 +95,7 @@ export default function TeamStandings({
       console.log("[Effect 1] Running: Determine Initial Season");
       setLoading(true);
       setError(null); // Clear previous errors
-      const latestYear = validSortedSeasons[0];
+      const latestYear = validSortedSeasonsMemo[0];
 
       try {
         const response = await fetch(`/api/leagues?team=${teamId}&season=${latestYear}`);
@@ -110,7 +120,7 @@ export default function TeamStandings({
         }
 
         if (!foundActiveSeason) {
-          const previousYear = validSortedSeasons.find(year => year === latestYear - 1);
+          const previousYear = validSortedSeasonsMemo.find(year => year === latestYear - 1);
           if (previousYear) {
             console.log(`[Effect 1] Latest year not active, falling back to previous year: ${previousYear}`);
             initialSeasonToSet = previousYear;
@@ -132,7 +142,7 @@ export default function TeamStandings({
         if (isMounted) {
           setError(`Feil ved henting av sesongdata: ${err.message}`);
           // Fallback: Set to latest year on error? Or handle differently?
-          setSelectedSeason(validSortedSeasons[0]); // Set to latest as a fallback
+          setSelectedSeason(validSortedSeasonsMemo[0]); // Set to latest as a fallback
           setIsInitialSeasonDetermined(true); // Mark determined even on error to prevent loop
           setLoading(false); // Stop loading on error
         }
@@ -145,7 +155,7 @@ export default function TeamStandings({
       isMounted = false;
       console.log("[Effect 1] Cleanup");
     };
-  }, [isInitialSeasonDetermined, validSortedSeasons, teamId]);
+  }, [isInitialSeasonDetermined, validSortedSeasonsMemo, teamId]);
 
 
   // --- Effect 2: Fetch Leagues for the selected season ---
@@ -199,18 +209,11 @@ export default function TeamStandings({
                 );
 
                 if (isMounted) { // Check before setting state
-                    if (leaguesWithStandings.length > 0) {
-                        console.log(`[Effect 2] Found ${leaguesWithStandings.length} leagues with standings for season ${selectedSeason}.`);
-                        setTeamLeagues(leaguesWithStandings);
-                        // Automatically select the first league found
-                        setSelectedLeagueId(leaguesWithStandings[0].league.id);
-                        console.log(`[Effect 2] Auto-selecting league ID: ${leaguesWithStandings[0].league.id}`);
-                    } else {
-                        console.warn(`[Effect 2] No leagues of type 'League' with standings found for season ${selectedSeason}.`);
-                        setTeamLeagues([]);
-                        setSelectedLeagueId(null);
-                        setLoading(false); // Stop loading if no leagues found
-                    }
+                    console.log(`[Effect 2] Found ${leaguesWithStandings.length} leagues with standings for season ${selectedSeason}.`);
+                    setTeamLeagues(leaguesWithStandings);
+                    // Automatically select the first league found
+                    setSelectedLeagueId(leaguesWithStandings[0].league.id);
+                    console.log(`[Effect 2] Auto-selecting league ID: ${leaguesWithStandings[0].league.id}`);
                 }
             } else {
                  if (isMounted) { // Check before setting state
@@ -351,34 +354,39 @@ export default function TeamStandings({
 
   // --- RENDER LOGIC ---
   if (!isInitialSeasonDetermined && loading) {
-    return <div className="text-center py-10">Laster inn sesongdata...</div>;
+    return <div className="text-center py-10 dark:text-gray-300">Laster inn sesongdata...</div>;
   }
 
   if (error) {
-    return <div className="text-center py-10 text-red-600">Feil: {error}</div>;
+    return <div className="text-center py-10 text-red-600 dark:text-red-400">Feil: {error}</div>;
   }
 
   if (!selectedSeason) {
-     return <div className="text-center py-10 text-gray-500">Ingen sesong valgt.</div>;
+     return <div className="text-center py-10 text-gray-500 dark:text-gray-400">Ingen sesong valgt.</div>;
   }
 
   return (
-    <div className={`${!embedded ? 'bg-white rounded-lg shadow-md p-4 md:p-6' : ''}`}>
+    <div className={`
+      ${embedded 
+        ? '' // No background or shadow when embedded
+        : 'bg-white dark:bg-[#222222] shadow rounded-lg p-4'
+      }
+    `}>
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
         {/* Only show title when not embedded */}
-        {!embedded && <h2 className="text-xl font-semibold text-gray-800">Tabell</h2>}
+        {!embedded && <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-2 sm:mb-0">Tabell</h2>}
         
         {/* Season selector - hide when embedded or hideSeasonSelector is true OR if league is forced */}
-        {!embedded && !hideSeasonSelector && !forcedLeagueDetails && validSortedSeasons.length > 0 && (
-          <div className="flex items-center gap-2">
-            <label htmlFor="season-select" className="text-sm font-medium text-gray-700">Sesong:</label>
+        {!embedded && !hideSeasonSelector && !forcedLeagueDetails && validSortedSeasonsMemo.length > 0 && (
+          <div className="flex items-center gap-2 mt-2 sm:mt-0">
+            <label htmlFor="season-select" className="text-sm font-medium text-gray-700 dark:text-gray-300">Sesong:</label>
             <select
               id="season-select"
-              value={selectedSeason}
+              value={selectedSeason ?? ''}
               onChange={handleSeasonChange}
-              className="block w-full sm:w-auto pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
+              className="block w-full sm:w-auto pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
             >
-              {validSortedSeasons.map(year => (
+              {validSortedSeasonsMemo.map(year => (
                 <option key={year} value={year}>
                   {formatSeasonDisplay(year)}
                 </option>
@@ -391,12 +399,12 @@ export default function TeamStandings({
        {/* League Selector (only if multiple leagues exist AND league is NOT forced) */}
        {!forcedLeagueDetails && teamLeagues.length > 1 && (
          <div className="mb-4">
-           <label htmlFor="league-select" className="block text-sm font-medium text-gray-700 mb-1">Velg liga:</label>
+           <label htmlFor="league-select" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Velg liga:</label>
            <select
              id="league-select"
              value={selectedLeagueId ?? ''}
              onChange={handleLeagueChange}
-             className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
+             className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
            >
              {teamLeagues.map((leagueItem) => (
                <option key={leagueItem.league.id} value={leagueItem.league.id}>
@@ -409,13 +417,13 @@ export default function TeamStandings({
 
 
       {/* Loading Indicator */}
-      {loading && <div className="text-center py-6">Laster tabell...</div>}
+      {loading && <div className="text-center py-6 dark:text-gray-300">Laster tabell...</div>}
 
       {/* Standings Display Area */}
       {!loading && error && <div className="text-center py-6 text-red-500">Kunne ikke laste tabell: {error}</div>}
 
       {!loading && !error && !currentLeague && teamLeagues.length > 0 && (
-         <div className="text-center py-6 text-gray-500">Velg en liga for å se tabellen.</div>
+         <div className="text-center py-6 text-gray-500 dark:text-gray-400">Velg en liga for å se tabellen.</div>
       )}
 
       {!loading && !error && teamLeagues.length === 0 && (
@@ -423,7 +431,7 @@ export default function TeamStandings({
       )}
 
       {!loading && !error && currentLeague && standingsGroups.length === 0 && (
-         <div className="text-center py-6 text-gray-500">Ingen tabelldata tilgjengelig for {currentLeague.league.name} ({formatSeasonDisplay(selectedSeason)}).</div>
+         <div className="text-center py-6 text-gray-500 dark:text-gray-400">Ingen tabelldata tilgjengelig for {teamName} i {currentLeague.league.name} for sesongen {formatSeasonDisplay(selectedSeason)}.</div>
       )}
 
       {/* Render Standings Table(s) */}
@@ -465,52 +473,60 @@ export default function TeamStandings({
                            onError={(e) => { console.warn(`Error loading image for league ${currentLeague.league.id}: ${currentLeague.league.logo}`); }}
                          />
                        </div>
-                       <h3 className="text-lg font-medium">{currentLeague.league.name || 'Ukjent Liga'}</h3>
+                       <h3 className="text-lg font-medium dark:text-white">{currentLeague.league.name || 'Ukjent Liga'}</h3>
                      </div>
                      {/* Form Toggle */}
                      <div className="flex items-center">
-                       <span className="mr-2 text-sm text-gray-600">Form</span>
-                       <label className="relative inline-flex items-center cursor-pointer">
-                         <input
-                           type="checkbox"
-                           className="sr-only peer"
-                           checked={showForm}
-                           onChange={(e) => setShowForm(e.target.checked)}
-                         />
-                         <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
-                       </label>
+                       <button
+                         type="button"
+                         onClick={() => setShowForm(!showForm)}
+                         className={`px-3 py-1 text-xs font-medium rounded-md ${
+                           showForm 
+                             ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300' 
+                             : 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300'
+                         }`}
+                       >
+                         {showForm ? 'Vis statistikk' : 'Vis form'}
+                       </button>
                      </div>
                    </div>
                 )}
 
+                {/* Group Title if available and not the first group */}
+                {standingGroup[0]?.group && (
+                  <h4 className="text-md font-medium mb-2 dark:text-gray-300">
+                    {standingGroup[0].group}
+                  </h4>
+                )}
+
                 {/* Table for the current group */}
                 <div className="overflow-x-auto">
-                  <table className="min-w-full divide-y divide-gray-200 text-sm">
+                  <table className="min-w-full divide-y divide-gray-200 dark:divide-[#2c2c2c]">
                     {/* Table Head */}
-                    <thead className="bg-gray-50">
+                    <thead className="bg-gray-50 dark:bg-[#222222]">
                       <tr>
-                        <th scope="col" className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-10">#</th>
-                        <th scope="col" className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Lag</th>
+                        <th scope="col" className="px-2 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider w-10">#</th>
+                        <th scope="col" className="px-2 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Lag</th>
                         {!showForm && (
                           <>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">K</th>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">V</th>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">U</th>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">T</th>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Mål</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">K</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">V</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">U</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">T</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Mål</th>
                           </>
                         )}
-                        <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">P</th>
+                        <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">P</th>
                         {showForm && (
                           <>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">+/-</th>
-                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-24">Form</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">+/-</th>
+                            <th scope="col" className="px-2 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider w-24">Form</th>
                           </>
                         )}
                       </tr>
                     </thead>
                     {/* Table Body */}
-                    <tbody className="bg-white divide-y divide-gray-200">
+                    <tbody className="bg-white dark:bg-[#222222] divide-y divide-gray-200 dark:divide-[#2c2c2c]">
                       {standingGroup.map((standing: any) => {
                         // Safeguard against missing/incomplete standing data
                         if (!standing || !standing.team || !standing.team.id) {
@@ -523,20 +539,20 @@ export default function TeamStandings({
                         const formTranslated = translateForm(standing.form);
 
                         // Determine rank background based on description
-                        let rankClass = '';
+                        let rankClass = 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-400';
                         if (standing.description) {
-                            if (standing.description.includes('Champions League')) rankClass = 'bg-green-100 text-green-800';
-                            else if (standing.description.includes('Europa League')) rankClass = 'bg-blue-100 text-blue-800';
-                            else if (standing.description.includes('Conference League')) rankClass = 'bg-orange-100 text-orange-800';
-                            else if (standing.description.includes('Relegation Play-off')) rankClass = 'bg-yellow-100 text-yellow-800';
-                            else if (standing.description.includes('Relegation')) rankClass = 'bg-red-100 text-red-800';
+                            if (standing.description.includes('Champions League')) rankClass = 'bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300';
+                            else if (standing.description.includes('Europa League')) rankClass = 'bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300';
+                            else if (standing.description.includes('Conference League')) rankClass = 'bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300';
+                            else if (standing.description.includes('Relegation Play-off')) rankClass = 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300';
+                            else if (standing.description.includes('Relegation')) rankClass = 'bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300';
                         }
 
                         return (
                           <tr key={standing.team.id} 
-                              className={`hover:bg-gray-50 ${
-                                isCurrentTeam ? 'bg-blue-50 font-semibold' : 
-                                isHighlightedTeam ? 'bg-yellow-50' : ''
+                              className={`hover:bg-gray-50 dark:hover:bg-[#222222] ${
+                                isCurrentTeam ? 'bg-blue-50 dark:bg-blue-900/30 font-semibold' : 
+                                isHighlightedTeam ? 'bg-yellow-50 dark:bg-yellow-900/30' : ''
                               }`}
                           >
                             {/* Rank */}
@@ -547,7 +563,7 @@ export default function TeamStandings({
                             </td>
                             {/* Team */}
                             <td className="px-2 py-2 whitespace-nowrap">
-                              <Link href={`/lag/${createTeamSlug(standing.team.name || `team-${standing.team.id}`, standing.team.id)}`} className="flex items-center hover:text-blue-600 group">
+                              <Link href={`/lag/${createTeamSlug(standing.team.name || `team-${standing.team.id}`, standing.team.id)}`} className="flex items-center hover:text-blue-600 dark:hover:text-blue-400 group">
                                 <div className="flex-shrink-0 h-5 w-5 relative mr-2">
                                   <Image
                                     src={standing.team.logo ? 
@@ -560,7 +576,7 @@ export default function TeamStandings({
                                     onError={(e) => { console.warn(`Error loading image for team ${standing.team.id}: ${standing.team.logo}`); }}
                                   />
                                 </div>
-                                <span className={`text-sm group-hover:underline ${isCurrentTeam ? 'font-bold' : ''}`}>
+                                <span className={`text-sm group-hover:underline ${isCurrentTeam ? 'font-bold' : ''} dark:text-[#AAAAAA]`}>
                                   {standing.team.name || 'Ukjent Lag'}
                                 </span>
                               </Link>
@@ -568,20 +584,20 @@ export default function TeamStandings({
                             {/* Stats Columns */}
                             {!showForm && (
                               <>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 text-center">{standing.all?.played ?? '-'}</td>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 text-center">{standing.all?.win ?? '-'}</td>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 text-center">{standing.all?.draw ?? '-'}</td>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 text-center">{standing.all?.lose ?? '-'}</td>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 text-center">{`${standing.all?.goals?.for ?? '-'}:${standing.all?.goals?.against ?? '-'}`}</td>
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">{standing.all?.played ?? '-'}</td>
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">{standing.all?.win ?? '-'}</td>
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">{standing.all?.draw ?? '-'}</td>
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">{standing.all?.lose ?? '-'}</td>
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">{`${standing.all?.goals?.for ?? '-'}:${standing.all?.goals?.against ?? '-'}`}</td>
                               </>
                             )}
                             {/* Points */}
-                            <td className="px-2 py-2 whitespace-nowrap text-sm text-center font-semibold">{standing.points ?? '-'}</td>
+                            <td className="px-2 py-2 whitespace-nowrap text-sm text-center font-semibold dark:text-white">{standing.points ?? '-'}</td>
                             {/* Form Columns */}
                             {showForm && (
                               <>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 text-center">{standing.goalsDiff ?? '-'}</td>
-                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500">
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">{standing.goalsDiff ?? '-'}</td>
+                                <td className="px-2 py-2 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                                   <div className="flex justify-center space-x-1">
                                     {formTranslated.split('').map((result, formIdx) => (
                                       <span
@@ -605,102 +621,81 @@ export default function TeamStandings({
 
                 {/* --- REFINED: Summary Paragraph --- */}
                 {currentTeamStanding && currentLeague && (
-                  <div className="mt-4 px-2 text-sm text-gray-700 leading-relaxed">
+                  <div className="mt-4 px-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                     {(() => {
-                      const teamAbove = currentTeamIndex > 0 ? standingGroup[currentTeamIndex - 1] : null;
-                      const teamBelow = currentTeamIndex < standingGroup.length - 1 ? standingGroup[currentTeamIndex + 1] : null;
-
-                      const currentRank = currentTeamStanding.rank ?? '?';
-                      const currentPoints = currentTeamStanding.points ?? 0;
-                      const currentTeamName = currentTeamStanding.team?.name || 'Dette laget';
-                      const leagueName = currentLeague.league?.name || 'ligaen';
-
-                      // Handle single-team table first
-                      if (standingGroup.length === 1) {
-                        return <p>{currentTeamName} er det eneste laget i denne tabellen.</p>;
+                      // Safeguard against missing data
+                      if (!currentTeamStanding || !currentTeamStanding.team || !currentTeamStanding.rank) {
+                        return null;
                       }
 
-                      // Determine base sentence about position
-                      let baseSentence = '';
-                      if (currentTeamIndex === 0) {
-                        baseSentence = `${currentTeamName} leder ${leagueName}`;
-                      } else if (currentTeamIndex === standingGroup.length - 1) {
-                        baseSentence = `${currentTeamName} ligger sist på ${currentRank}. plass i ${leagueName}`;
+                      // Extract team data
+                      const teamName = currentTeamStanding.team.name || 'Laget';
+                      const leagueName = currentLeague.league.name || 'ligaen';
+                      const rank = currentTeamStanding.rank;
+                      const totalTeams = standingGroup.length;
+                      const points = currentTeamStanding.points || 0;
+                      const played = currentTeamStanding.all?.played || 0;
+                      const wins = currentTeamStanding.all?.win || 0;
+                      const draws = currentTeamStanding.all?.draw || 0;
+                      const losses = currentTeamStanding.all?.lose || 0;
+                      const goalsFor = currentTeamStanding.all?.goals?.for || 0;
+                      const goalsAgainst = currentTeamStanding.all?.goals?.against || 0;
+                      const goalDiff = goalsFor - goalsAgainst;
+                      
+                      // Calculate position description
+                      let positionDesc = '';
+                      if (rank === 1) {
+                        positionDesc = 'på toppen av tabellen';
+                      } else if (rank <= 3) {
+                        positionDesc = 'i toppen av tabellen';
+                      } else if (rank <= Math.ceil(totalTeams * 0.25)) {
+                        positionDesc = 'i øvre del av tabellen';
+                      } else if (rank >= Math.floor(totalTeams * 0.75)) {
+                        positionDesc = 'i nedre del av tabellen';
+                      } else if (rank > totalTeams - 3 && rank <= totalTeams) {
+                        positionDesc = 'i bunnen av tabellen';
                       } else {
-                        baseSentence = `${currentTeamName} ligger på ${currentRank}. plass i ${leagueName}`;
+                        positionDesc = 'i midten av tabellen';
                       }
 
-                      let details: string[] = [];
-                      let tiedWithAbove = false;
-                      let tiedWithBelow = false;
-                      let pointsDiffAbove = 0;
-                      let pointsDiffBelow = 0;
-                      let teamAboveName = '';
-                      let teamBelowName = '';
-                      let rankAbove = '';
-                      let rankBelow = '';
+                      // Calculate form description
+                      const form = currentTeamStanding.form || '';
+                      const lastFiveResults = form.slice(-5).split('').map(char => {
+                        if (char === 'W') return 'seier';
+                        if (char === 'D') return 'uavgjort';
+                        if (char === 'L') return 'tap';
+                        return '';
+                      }).filter(Boolean);
+                      
+                      const formDesc = lastFiveResults.length > 0 
+                        ? `De siste ${lastFiveResults.length} kampene har resultert i ${lastFiveResults.join(', ')}.`
+                        : '';
 
-
-                      // Analyze team above
-                      if (teamAbove) {
-                        pointsDiffAbove = (teamAbove.points ?? 0) - currentPoints;
-                        teamAboveName = teamAbove.team?.name || 'laget over';
-                        rankAbove = teamAbove.rank ?? '?';
-                        if (pointsDiffAbove === 0) {
-                          tiedWithAbove = true;
+                      // Special descriptions based on position
+                      let specialDesc = '';
+                      if (currentTeamStanding.description) {
+                        if (currentTeamStanding.description.includes('Champions League')) {
+                          specialDesc = ' Denne plasseringen kvalifiserer til Champions League.';
+                        } else if (currentTeamStanding.description.includes('Europa League')) {
+                          specialDesc = ' Denne plasseringen kvalifiserer til Europa League.';
+                        } else if (currentTeamStanding.description.includes('Conference League')) {
+                          specialDesc = ' Denne plasseringen kvalifiserer til Conference League.';
+                        } else if (currentTeamStanding.description.includes('Relegation')) {
+                          specialDesc = ' Denne plasseringen kan føre til nedrykk.';
                         }
                       }
 
-                      // Analyze team below
-                      if (teamBelow) {
-                        pointsDiffBelow = currentPoints - (teamBelow.points ?? 0);
-                        teamBelowName = teamBelow.team?.name || 'laget under';
-                        rankBelow = teamBelow.rank ?? '?';
-                        if (pointsDiffBelow === 0) {
-                          tiedWithBelow = true;
-                        }
-                      }
-
-                      // Construct details based on analysis
-                      if (tiedWithAbove && tiedWithBelow) {
-                        // Tied with both above and below (e.g., 3 teams on same points)
-                        details.push(`à poeng med ${teamAboveName} og ${teamBelowName}`);
-                      } else {
-                        // Handle above team info
-                        if (teamAbove) {
-                          if (tiedWithAbove) {
-                            details.push(`à poeng med ${teamAboveName}`);
-                          } else {
-                             const pointText = pointsDiffAbove === 1 ? 'poeng' : 'poeng'; // Norwegian doesn't change much here, but good practice
-                             details.push(`${pointsDiffAbove} ${pointText} bak ${teamAboveName} (${rankAbove}. plass)`);
-                          }
-                        }
-
-                        // Handle below team info
-                        if (teamBelow) {
-                           if (tiedWithBelow) {
-                             // Only add if not already covered by "tiedWithAbove" case
-                             if (!tiedWithAbove) {
-                               details.push(`à poeng med ${teamBelowName}`);
-                             }
-                           } else {
-                             const pointText = pointsDiffBelow === 1 ? 'poeng' : 'poeng';
-                             const leadText = pointsDiffBelow === 1 ? 'poengs forsprang' : 'poengs forsprang'; // Use "forsprang"
-                             details.push(`${pointsDiffBelow} ${leadText} ned til ${teamBelowName} (${rankBelow}. plass)`);
-                           }
-                        }
-                      }
-
-
-                      // Combine base sentence and details
-                      let finalText = baseSentence;
-                      if (details.length > 0) {
-                        finalText += `, ${details.join(', ')}`; // Join details with commas
-                      }
-                      finalText += '.'; // Add final period.
-
-                      return <p>{finalText}</p>;
-
+                      // Construct the paragraph
+                      return (
+                        <>
+                          <p>
+                            {teamName} ligger for øyeblikket på {rank}. plass {positionDesc} i {leagueName} med {points} poeng etter {played} kamper. 
+                            Laget har {wins} seire, {draws} uavgjort og {losses} tap, med en målforskjell på {goalDiff > 0 ? '+' : ''}{goalDiff} ({goalsFor}-{goalsAgainst}).
+                            {specialDesc}
+                          </p>
+                          {formDesc && <p className="mt-2">{formDesc}</p>}
+                        </>
+                      );
                     })()}
                   </div>
                 )}

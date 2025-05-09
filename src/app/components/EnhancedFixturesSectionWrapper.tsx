@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import EnhancedFixturesSection from './EnhancedFixturesSection';
 import { MAJOR_LEAGUES } from '../../scripts/teamDataFetcher';
+import { parseISO as dateFnsParseISO, isValid as isValidDate } from 'date-fns'; // For parsing date from query param
 
 // Maximum number of fixtures to display per day
 const MAX_FIXTURES_PER_DAY = 10;
@@ -19,21 +20,16 @@ const supabase = createClient(
   }
 );
 
-// Generate dates for the next 7 days
-function generateDates() {
+// Generate dates based on a START_DATE
+function generateDates(startDate: Date) {
   const dates: {[key: string]: Date} = {};
-  const today = new Date();
-  
-  // Today
-  dates.today = new Date(today);
-  
-  // Next 6 days
+  // 'today' in the context of the component will be the startDate
+  dates.today = new Date(startDate);
   for (let i = 1; i <= 6; i++) {
-    const nextDate = new Date(today);
-    nextDate.setDate(today.getDate() + i);
+    const nextDate = new Date(startDate);
+    nextDate.setDate(startDate.getDate() + i);
     dates[`day${i}`] = nextDate;
   }
-  
   return dates;
 }
 
@@ -173,34 +169,51 @@ async function fetchFixturesFromSupabase(date: Date) {
   }
 }
 
-export default async function EnhancedFixturesSectionWrapper() {
-  // Generate dates
-  const dates = generateDates();
-  const formattedDates = formatDates(dates);
-  
-  // Fetch fixtures for all dates in parallel
+export default async function EnhancedFixturesSectionWrapper({
+  searchParams
+}: {
+  searchParams?: { [key: string]: string | string[] | undefined };
+}) {
+  let baseDate = new Date(); // Default to today
+  const dateQueryParam = searchParams?.date;
+
+  if (typeof dateQueryParam === 'string') {
+    // Attempt to parse the date from the query parameter
+    // Ensure it's just the date part, e.g., YYYY-MM-DD
+    const parsedDate = dateFnsParseISO(dateQueryParam);
+    if (isValidDate(parsedDate)) {
+      baseDate = parsedDate;
+    }
+  }
+
+  const dates = generateDates(baseDate); // Generate dates based on baseDate
+  const formattedDates = formatDates(dates); // This will format dates relative to baseDate
+
   const fixturesPromises = Object.entries(dates).map(async ([key, date]) => {
     const result = await fetchFixturesFromSupabase(date);
     return { key, ...result };
   });
-  
+
   const fixturesResults = await Promise.all(fixturesPromises);
-  
-  // Convert results to the format expected by the client component
+
   const fixtures: {[key: string]: any[]} = {};
   const totalFixtureCount: {[key: string]: number} = {};
-  
+
   fixturesResults.forEach(result => {
     fixtures[result.key] = result.fixtures;
     totalFixtureCount[result.key] = result.totalCount;
   });
-  
+
   return (
-    <EnhancedFixturesSection 
+    <EnhancedFixturesSection
       fixtures={fixtures}
+      // formattedDates is still useful for the initial display keys, but the actual date string
+      // in the header will be driven by selectedDate in the client component.
       formattedDates={formattedDates}
       totalFixtureCount={totalFixtureCount}
       popularLeagueIds={popularLeagues.map(league => league.id)}
+      // Pass the determined baseDate to the client component so it can initialize its selectedDate state
+      initialSelectedDateString={baseDate.toISOString()}
     />
   );
 } 

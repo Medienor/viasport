@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-04-26",
+          "end": "2025-05-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,183 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208344,
-          "date": "2025-04-19T14:00:00+00:00",
-          "venue": {
-            "id": 10503,
-            "name": "Gtech Community Stadium",
-            "city": "Brentford, Middlesex"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745071200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": null
-          },
-          "away": {
-            "id": 51,
-            "name": "Brighton",
-            "logo": "https://media.api-sports.io/football/teams/51.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208360,
-          "date": "2025-05-01T18:30:00+00:00",
-          "venue": {
-            "id": 566,
-            "name": "The City Ground",
-            "city": "Nottingham, Nottinghamshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746124200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 65,
-            "name": "Nottingham Forest",
-            "logo": "https://media.api-sports.io/football/teams/65.png",
-            "winner": null
-          },
-          "away": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208365,
-          "date": "2025-05-04T13:00:00+00:00",
-          "venue": {
-            "id": 10503,
-            "name": "Gtech Community Stadium",
-            "city": "Brentford, Middlesex"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746363600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": null
-          },
-          "away": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208375,
@@ -506,6 +329,242 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208365,
+          "date": "2025-05-04T13:00:00+00:00",
+          "venue": {
+            "id": 10503,
+            "name": "Gtech Community Stadium",
+            "city": "Brentford, Middlesex"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1746363600
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 55,
+            "name": "Brentford",
+            "logo": "https://media.api-sports.io/football/teams/55.png",
+            "winner": true
+          },
+          "away": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https://media.api-sports.io/football/teams/33.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208360,
+          "date": "2025-05-01T18:30:00+00:00",
+          "venue": {
+            "id": 566,
+            "name": "The City Ground",
+            "city": "Nottingham, Nottinghamshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1746124200
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https://media.api-sports.io/football/teams/65.png",
+            "winner": false
+          },
+          "away": {
+            "id": 55,
+            "name": "Brentford",
+            "logo": "https://media.api-sports.io/football/teams/55.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208344,
+          "date": "2025-04-19T14:00:00+00:00",
+          "venue": {
+            "id": 10503,
+            "name": "Gtech Community Stadium",
+            "city": "Brentford, Middlesex"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1745071200
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 55,
+            "name": "Brentford",
+            "logo": "https://media.api-sports.io/football/teams/55.png",
+            "winner": true
+          },
+          "away": {
+            "id": 51,
+            "name": "Brighton",
+            "logo": "https://media.api-sports.io/football/teams/51.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208334,
+          "date": "2025-04-12T16:30:00+00:00",
+          "venue": {
+            "id": 494,
+            "name": "Emirates Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744475400
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png",
+            "winner": null
+          },
+          "away": {
+            "id": 55,
+            "name": "Brentford",
+            "logo": "https://media.api-sports.io/football/teams/55.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208324,
@@ -859,242 +918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208272,
-          "date": "2025-02-15T15:00:00+00:00",
-          "venue": {
-            "id": 598,
-            "name": "London Stadium",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739631600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 48,
-            "name": "West Ham",
-            "logo": "https://media.api-sports.io/football/teams/48.png",
-            "winner": false
-          },
-          "away": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208255,
-          "date": "2025-02-02T14:00:00+00:00",
-          "venue": {
-            "id": 10503,
-            "name": "Gtech Community Stadium",
-            "city": "Brentford, Middlesex"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738504800
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": false
-          },
-          "away": {
-            "id": 47,
-            "name": "Tottenham",
-            "logo": "https://media.api-sports.io/football/teams/47.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208246,
-          "date": "2025-01-26T14:00:00+00:00",
-          "venue": {
-            "id": 525,
-            "name": "Selhurst Park",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1737900000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 52,
-            "name": "Crystal Palace",
-            "logo": "https://media.api-sports.io/football/teams/52.png",
-            "winner": false
-          },
-          "away": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208234,
-          "date": "2025-01-18T15:00:00+00:00",
-          "venue": {
-            "id": 10503,
-            "name": "Gtech Community Stadium",
-            "city": "Brentford, Middlesex"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737212400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 55,
-            "name": "Brentford",
-            "logo": "https://media.api-sports.io/football/teams/55.png",
-            "winner": false
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1214,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T18:23:53.693Z"
+  "lastUpdated": "2025-05-08T13:55:31.030Z"
 }

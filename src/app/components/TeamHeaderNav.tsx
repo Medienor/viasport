@@ -68,9 +68,8 @@ export default function TeamHeaderNav({ teamLogo, teamName, teamCountry, tabs }:
   return (
     <>
       {/* Original Header and TabNav Section */}
-      {/* Apply card styling: white bg, rounded corners, border, adjusted padding, and bottom margin */}
-      {/* Removed bottom padding (pb-4/pb-6) so TabNav sits at the bottom edge */}
-      <div className="bg-white rounded-lg border border-gray-200 pt-4 sm:pt-6 px-4 sm:px-6 mb-6">
+      {/* Updated dark:bg-[#222222] and removed border in dark mode */}
+      <div className="bg-white dark:bg-[#222222] rounded-lg border border-gray-200 dark:border-none pt-4 sm:pt-6 px-4 sm:px-6 mb-6">
         {/* Header Section: Logo, Name, Country */}
         {/* Use flex, justify-between for potential right-side content later */}
         {/* Keep bottom margin here for spacing between header and tabs */}
@@ -86,9 +85,10 @@ export default function TeamHeaderNav({ teamLogo, teamName, teamCountry, tabs }:
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-xl font-bold leading-tight">{teamName}</h1> {/* Adjusted text size */}
+              {/* Added dark:text-white for dark mode */}
+              <h1 className="text-xl font-bold leading-tight dark:text-white">{teamName}</h1> {/* Adjusted text size */}
               {teamCountry && (
-                <span className="text-sm text-gray-500">{teamCountry}</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">{teamCountry}</span>
               )}
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function TeamHeaderNav({ teamLogo, teamName, teamCountry, tabs }:
 
       {/* Sticky TabNav (Visible only on mobile/tablet when original is scrolled past) */}
       {isStickyNavVisible && (
-        <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-md lg:hidden">
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-white dark:bg-[#222222] border-t border-gray-200 dark:border-none shadow-md lg:hidden">
           {/* Apply similar padding and overflow handling */}
           <div className="px-4 sm:px-0 overflow-x-auto no-scrollbar">
             <TabNav tabs={tabs} />

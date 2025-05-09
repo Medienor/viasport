@@ -65,15 +65,16 @@ async function fetchMatchById(matchId: string): Promise<Fixture | null> {
         commentary_path,
         season_year,
         details_last_updated_at,
-        ball_possession
+        ball_possession,
+        youtube_highlight_id
       `)
       .eq('id', matchId)
       .single();
 
     if (error) throw error;
-    return match;
+    return match as Fixture | null;
   } catch (error) {
-    console.error('🔴 Error:', error);
+    console.error('🔴 Error fetching match by ID:', error);
     return null;
   }
 }
@@ -362,6 +363,9 @@ export default async function MatchPage({ params }: { params: { matchId: string 
     console.log('DEBUG: [MatchPage] Checking leagueId before passing to MatchCalendar:', match?.league?.id);
     // --- End log ---
 
+    // Determine winner team ID
+    const winnerTeamId = isFinished ? (match.goals.home > match.goals.away ? match.teams.home.id : (match.goals.away > match.goals.home ? match.teams.away.id : 0)) : 0;
+
     return (
       <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
         <PreventAutoScroll />
@@ -369,19 +373,18 @@ export default async function MatchPage({ params }: { params: { matchId: string 
           {/* Right column - Match details (now first on mobile) */}
           <div className="w-full md:w-3/4 order-first md:order-last space-y-6">
             {/* Match header - Now with navigation bar */}
-            <div className="bg-white rounded-lg overflow-hidden shadow">
+            <div className="bg-white dark:bg-[#222] rounded-lg overflow-hidden shadow">
               {/* Navigation bar */}
-              <div className="relative flex items-center justify-between px-4 py-4 border-b border-gray-200">
+              <div className="relative flex items-center justify-between px-4 py-4 border-b border-gray-200 dark:border-dark-border">
                 <Link
                   href="/"
-                  className="flex items-center text-sm text-gray-800 hover:decoration-black hover:underline px-2"
+                  className="flex items-center text-sm text-gray-800 dark:text-gray-200 hover:decoration-black dark:hover:decoration-white hover:underline px-2"
                 >
-                  <div className="bg-gray-100 p-1.5 rounded-full mr-2">
+                  <div className="bg-gray-100 dark:bg-gray-800 p-1.5 rounded-full mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  {/* Hide "Kamper" text on mobile */}
                   <span className="hidden sm:inline">Kamper</span>
                 </Link>
 
@@ -392,23 +395,21 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                       alt={match.league.name}
                       width={40}
                       height={40}
-                      className="mr-2 sm:mr-4" // Adjusted margin for mobile
+                      className="mr-2 sm:mr-4"
                     />
                     <Link
                       href={`/fotball/liga/${match.league.name.toLowerCase().replace(/\s+/g, '-')}-${match.league.id}`}
-                      className="text-gray-900 hover:decoration-black hover:underline transition-all"
+                      className="text-gray-900 dark:text-gray-100 hover:decoration-black dark:hover:decoration-white hover:underline transition-all"
                     >
-                      {/* Hide League Name and Round on mobile */}
                       <span className="hidden sm:inline">{match.league.name} {match.league.round}</span>
-                      {/* Show only League Name on mobile if needed, or nothing */}
-                      {/* <span className="sm:hidden">{match.league.name}</span> */}
                     </Link>
                   </div>
                 </div>
 
-                {/* Hide FollowButton on mobile */}
                 <div className="hidden sm:block">
-                  <FollowButton />
+                  <button className="text-sm px-4 py-1.5 rounded-full transition-colors bg-black text-white hover:bg-gray-800 dark:bg-[#ff6b00] dark:hover:bg-[#ff8533]">
+                    Følg
+                  </button>
                 </div>
               </div>
 
@@ -416,7 +417,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
               <div className="p-4 md:p-6">
                 {/* Top section: Date, Venue */}
                 {/* Center items on mobile, justify-center on sm and up */}
-                <div className="flex flex-col sm:flex-row justify-center items-center text-xs text-gray-600 mb-4 pb-4 space-y-1 sm:space-y-0 sm:space-x-3">
+                <div className="flex flex-col sm:flex-row justify-center items-center text-xs text-gray-600 dark:text-gray-400 mb-4 pb-4 space-y-1 sm:space-y-0 sm:space-x-3">
                   {/* Hide Date/Time on mobile */}
                   <span className="hidden sm:flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 mr-1 opacity-70" viewBox="0 0 20 20" fill="currentColor">
@@ -459,7 +460,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-semibold text-sm md:text-base text-gray-800 group-hover:underline line-clamp-2">
+                    <span className="font-semibold text-sm md:text-base text-gray-800 dark:text-[#AAAAAA] group-hover:underline line-clamp-2">
                       {match.teams.home.name}
                     </span>
                   </Link>
@@ -469,13 +470,13 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                     {isUpcoming ? (
                       <MatchCountdown matchDate={match.date} />
                     ) : isFinished ? ( // Show final score first if finished
-                       <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                         {match.goals.home ?? 0} - {match.goals.away ?? 0}
-                       </div>
+                      <div className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-1">
+                        {match.goals.home ?? 0} - {match.goals.away ?? 0}
+                      </div>
                     ) : ( // Show score for live matches too
-                       <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                         {match.goals?.home ?? 0} - {match.goals?.away ?? 0}
-                       </div>
+                      <div className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-1">
+                        {match.goals?.home ?? 0} - {match.goals?.away ?? 0}
+                      </div>
                     )}
 
                     {/* --- Live Timer --- */}
@@ -489,20 +490,20 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                     {/* --- End Live Timer --- */}
 
                     {isFinished && (
-                      <span className="text-gray-500 text-xs font-medium px-2 py-0.5 rounded-full uppercase">
+                      <span className="text-gray-500 dark:text-gray-300 text-xs font-medium px-2 py-0.5 rounded-full uppercase">
                         Fulltid
                       </span>
                     )}
-                     {match.status?.short === 'PEN' && (
-                       <span className="text-gray-500 text-xs font-medium mt-1">
-                         (Straffer)
-                       </span>
-                     )}
-                     {match.status?.short === 'AET' && (
-                       <span className="text-gray-500 text-xs font-medium mt-1">
-                         (Ekstraomg.)
-                       </span>
-                     )}
+                    {match.status?.short === 'PEN' && (
+                      <span className="text-gray-500 dark:text-gray-300 text-xs font-medium mt-1">
+                        (Straffer)
+                      </span>
+                    )}
+                    {match.status?.short === 'AET' && (
+                      <span className="text-gray-500 dark:text-gray-300 text-xs font-medium mt-1">
+                        (Ekstraomg.)
+                      </span>
+                    )}
                   </div>
 
                   {/* Away team */}
@@ -518,7 +519,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-semibold text-sm md:text-base text-gray-800 group-hover:underline line-clamp-2">
+                    <span className="font-semibold text-sm md:text-base text-gray-800 dark:text-[#AAAAAA] group-hover:underline line-clamp-2">
                       {match.teams.away.name}
                     </span>
                   </Link>
@@ -537,8 +538,8 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                         .sort((a, b) => ((a?.time?.elapsed || 0) + (a?.time?.extra || 0)) - ((b?.time?.elapsed || 0) + (b?.time?.extra || 0)))
                         .map((event, index) => (
                           <div key={`home-${index}`} className="flex items-center justify-end h-5">
-                            <span className="truncate">{event.player?.name}</span>
-                            <span className="text-gray-700 font-semibold whitespace-nowrap ml-1">
+                            <span className="truncate dark:text-gray-200">{event.player?.name}</span>
+                            <span className="text-gray-700 dark:text-gray-400 font-semibold whitespace-nowrap ml-1">
                               {event.time?.elapsed}'
                               {event.time?.extra && `+${event.time.extra}`}
                             </span>
@@ -549,13 +550,22 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                     {/* Goal Icon Column */}
                     <div className="flex flex-col items-center">
                       {match.event_data.some(event => event.type === 'Goal') && (
-                        <Image
-                          src="/images/channels/ball.svg"
-                          alt="Goal"
-                          width={14}
-                          height={14}
-                          className="opacity-75"
-                        />
+                        <>
+                          <Image
+                            src="/images/channels/ball.svg"
+                            alt="Goal"
+                            width={14}
+                            height={14}
+                            className="opacity-75 dark:hidden"
+                          />
+                          <Image
+                            src="/images/whiteball.svg"
+                            alt="Goal"
+                            width={14}
+                            height={14}
+                            className="opacity-75 hidden dark:block"
+                          />
+                        </>
                       )}
                     </div>
 
@@ -569,11 +579,11 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                         .sort((a, b) => ((a?.time?.elapsed || 0) + (a?.time?.extra || 0)) - ((b?.time?.elapsed || 0) + (b?.time?.extra || 0)))
                         .map((event, index) => (
                           <div key={`away-${index}`} className="flex items-center h-5">
-                            <span className="text-gray-700 font-semibold whitespace-nowrap mr-1">
+                            <span className="text-gray-700 dark:text-gray-400 font-semibold whitespace-nowrap mr-1">
                               {event.time?.elapsed}'
                               {event.time?.extra && `+${event.time.extra}`}
                             </span>
-                            <span className="truncate">{event.player?.name}</span>
+                            <span className="truncate dark:text-gray-200">{event.player?.name}</span>
                           </div>
                         ))}
                     </div>
@@ -604,7 +614,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
             {/* SEPARATE Live Match Events Card */}
             {/* Conditionally render the entire events card */}
             {(isLive || isFinished) && ( // Show if live or finished, even with 0 events initially
-              <div className="bg-white rounded-lg shadow p-4 md:p-6">
+              <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6">
                 <LiveMatchEvents
                   matchId={fixtureId}
                   initialEvents={match.event_data || []} // Default to empty array
@@ -630,7 +640,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
             {/* ==================================== */}
 
             {/* Match details card with tabs */}
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-6">
               <MatchTabs 
                 match={match}
                 activeTab="facts"
@@ -639,16 +649,16 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                 {/* Only include the non-table content here */}
                 {isUpcoming && (
                   <>
-                    <h3 className="text-lg font-semibold mb-4 text-gray-800 pb-2 border-b border-gray-200">
+                    <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100 pb-2 border-b border-gray-200 dark:border-[#2c2c2c]">
                       Kampinformasjon
                     </h3>
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      <span className="font-semibold">{match.teams?.home?.name || 'Hjemmelag'}</span> møter{' '}
-                      <span className="font-semibold">{match.teams?.away?.name || 'Bortelag'}</span>
+                    <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <span className="font-semibold dark:text-gray-100">{match.teams?.home?.name || 'Hjemmelag'}</span> møter{' '}
+                      <span className="font-semibold dark:text-gray-100">{match.teams?.away?.name || 'Bortelag'}</span>
                       {match.league?.round && ` i ${match.league.round}`}
                       {match.league?.name && ` av ${match.league.name}`}.
                       Kampen spilles
-                      {match.venue?.name && <> på <span className="font-semibold">{match.venue.name}</span></>}
+                      {match.venue?.name && <> på <span className="font-semibold dark:text-gray-100">{match.venue.name}</span></>}
                       {' '}{formatMatchDateTime(match.date).dayName}
                       {' '}{formatMatchDateTime(match.date).fullDate}
                       {isUpcoming ? ` kl. ${formatMatchDateTime(match.date).time}` : ''}.
@@ -662,36 +672,36 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                 
                 {isFinished && (
                   <>
-                    <h3 className="text-lg font-semibold mb-4 text-gray-800 pb-2 border-b border-gray-200">
+                    <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100 pb-2 border-b border-gray-200 dark:border-[#2c2c2c]">
                       Kampens hendelser
                     </h3>
                     
                     {/* Match summary */}
-                    <p className="text-lg text-gray-800 mb-6">
+                    <p className="text-lg text-gray-800 dark:text-gray-200 mb-6">
                       {generateMatchSummary(match)}
                     </p>
                     
                     {/* Match events section */}
                     {match.event_data && Array.isArray(match.event_data) && match.event_data.length > 0 && (
-                      <div className="mt-6">
+                      <div className="mt-6 bg-white dark:bg-[#222222] rounded-lg p-4">
                         <div className="relative">
                           {/* Timeline line */}
-                          <div className="absolute left-[60px] md:left-[100px] w-px h-full bg-gray-200" />
+                          <div className="absolute left-[60px] md:left-[100px] w-px h-full bg-gray-200 dark:bg-[#2c2c2c]" />
                           
                           <div className="space-y-2">
                             {/* Kickoff event */}
-                            <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white rounded-lg p-2">
-                              <div className="text-sm text-gray-500">0'</div>
+                            <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white dark:bg-[#222222] rounded-lg p-2">
+                              <div className="text-sm text-gray-500 dark:text-gray-400">0'</div>
                               <div className="flex justify-center">
                                 <Image
                                   src="/images/channels/whistle.svg"
                                   alt="Kickoff"
                                   width={14}
                                   height={14}
-                                  className="opacity-75"
+                                  className="opacity-75 dark:invert"
                                 />
                               </div>
-                              <span className="text-sm text-gray-500">Avspark</span>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">Avspark</span>
                             </div>
 
                             {/* Match events */}
@@ -700,10 +710,10 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                               .map((event, index) => (
                                 <div 
                                   key={index} 
-                                  className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white hover:bg-gray-50 rounded-lg p-2"
+                                  className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white dark:bg-[#222222] hover:bg-gray-50 dark:hover:bg-[#2c2c2c] rounded-lg p-2"
                                 >
                                   {/* Time column */}
-                                  <div className="text-sm text-gray-500">
+                                  <div className="text-sm text-gray-500 dark:text-gray-400">
                                     {event.time.elapsed}'
                                     {event.time.extra && `+${event.time.extra}`}
                                   </div>
@@ -716,148 +726,43 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                                         alt="Goal"
                                         width={14}
                                         height={14}
-                                        className="opacity-75"
+                                        className="opacity-75 dark:invert"
                                       />
                                     )}
-                                    {event.type === 'Card' && (
-                                      <Image
-                                        src={event.detail === 'Yellow Card' 
-                                          ? "/images/channels/yellow-card.svg" 
-                                          : "/images/channels/red.svg"}
-                                        alt={event.detail}
-                                        width={14}
-                                        height={14}
-                                        className="opacity-75"
-                                      />
+                                    {event.type === 'Card' && event.detail && (
+                                      <div className={`w-3 h-4 ${
+                                        event.detail === 'Yellow Card' ? 'bg-yellow-400' : 'bg-red-600'
+                                      } rounded-sm`} />
                                     )}
                                   </div>
 
                                   {/* Event details column */}
                                   <div className="min-w-0">
-                                    {event.type === 'Goal' && (
-                                      <div className="flex flex-col md:flex-row md:items-center gap-2">
-                                        <div className="flex items-center gap-2">
-                                          {event.player.id && (
-                                            <div className="relative w-5 h-5 flex-shrink-0">
-                                              <Image
-                                                src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
-                                                alt={event.player.name}
-                                                fill
-                                                className="object-cover rounded-full"
-                                              />
-                                            </div>
-                                          )}
-                                          <Link 
-                                            href={`/spillerprofil/${event.player.id}`}
-                                            className="text-sm font-medium hover:text-blue-600 transition-colors"
-                                          >
-                                            {event.player.name}
-                                          </Link>
-                                        </div>
-                                        {event.assist?.name && (
-                                          <div className="flex items-center gap-2">
-                                            <span className="text-sm text-gray-400 hidden md:inline">•</span>
-                                            <Link 
-                                              href={`/spillerprofil/${event.assist.id}`}
-                                              className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
-                                            >
-                                              {event.assist.name}
-                                            </Link>
-                                          </div>
-                                        )}
-                                      </div>
-                                    )}
-
-                                    {event.type === 'subst' && (
-                                      <div className="flex flex-col gap-2">
-                                        <div className="flex items-center gap-2">
-                                          <div className="relative w-5 h-5 flex-shrink-0">
-                                            <Image
-                                              src={`https://media.api-sports.io/football/players/${event.assist.id}.png`}
-                                              alt={event.assist.name}
-                                              fill
-                                              className="object-cover rounded-full"
-                                            />
-                                          </div>
-                                          <Link 
-                                            href={`/spillerprofil/${event.assist.id}`}
-                                            className="text-sm text-green-600 hover:text-green-700 transition-colors"
-                                          >
-                                            {event.assist.name}
-                                          </Link>
-                                          <span className="text-xs text-green-600">(inn)</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                          <div className="relative w-5 h-5 flex-shrink-0">
-                                            <Image
-                                              src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
-                                              alt={event.player.name}
-                                              fill
-                                              className="object-cover rounded-full"
-                                            />
-                                          </div>
-                                          <Link 
-                                            href={`/spillerprofil/${event.player.id}`}
-                                            className="text-sm text-red-600 hover:text-red-700 transition-colors"
-                                          >
-                                            {event.player.name}
-                                          </Link>
-                                          <span className="text-xs text-red-600">(ut)</span>
-                                        </div>
-                                      </div>
-                                    )}
-
-                                    {event.type === 'Card' && (
-                                      <div className="flex flex-col md:flex-row gap-2">
-                                        <div className="flex items-center gap-2">
-                                          {event.player.id && (
-                                            <div className="relative w-5 h-5 flex-shrink-0">
-                                              <Image
-                                                src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
-                                                alt={event.player.name}
-                                                fill
-                                                className="object-cover rounded-full"
-                                              />
-                                            </div>
-                                          )}
-                                          <Link 
-                                            href={`/spillerprofil/${event.player.id}`}
-                                            className="text-sm font-medium hover:text-blue-600 transition-colors"
-                                          >
-                                            {event.player.name}
-                                          </Link>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                          <span className={`text-sm ${
-                                            event.detail === 'Yellow Card' ? 'text-yellow-600' : 'text-red-600'
-                                          }`}>
-                                            {event.detail === 'Yellow Card' ? 'Gult kort' : 'Rødt kort'}
-                                          </span>
-                                          {event.comments && (
-                                            <span className="text-sm text-gray-500 italic">
-                                              {event.comments}
-                                            </span>
-                                          )}
-                                        </div>
-                                      </div>
-                                    )}
+                                    <div className="text-sm text-gray-800 dark:text-gray-200">
+                                      {event.player?.name}
+                                      {event.assist?.name && (
+                                        <span className="text-gray-500 dark:text-gray-400">
+                                          {' '}• Assist: {event.assist.name}
+                                        </span>
+                                      )}
+                                    </div>
                                   </div>
                                 </div>
                               ))}
 
                             {/* Final whistle */}
-                            <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white rounded-lg p-2">
-                              <div className="text-sm text-gray-500">90'</div>
+                            <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white dark:bg-[#222222] rounded-lg p-2">
+                              <div className="text-sm text-gray-500 dark:text-gray-400">90'</div>
                               <div className="flex justify-center">
                                 <Image
                                   src="/images/channels/whistle.svg"
                                   alt="Final whistle"
                                   width={14}
                                   height={14}
-                                  className="opacity-75"
+                                  className="opacity-75 dark:invert"
                                 />
                               </div>
-                              <span className="text-sm text-gray-500">Kampslutt</span>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">Kampslutt</span>
                             </div>
                           </div>
                         </div>
@@ -865,10 +770,10 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                     )}
 
                     {/* About the match */}
-                    <div className="bg-white rounded-lg mt-6">
-                      <h2 className="text-lg font-semibold mb-4">Om kampen</h2>
+                    <div className="bg-white dark:bg-[#222222] rounded-lg mt-6">
+                      <h2 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100">Om kampen</h2>
                       
-                      <div className="space-y-4 text-gray-700">
+                      <div className="space-y-4 text-gray-700 dark:text-gray-300">
                         {/* Match info paragraph */}
                         <p>
                           {match.teams.home.name} spiller hjemme mot {match.teams.away.name} på{' '}
@@ -900,21 +805,21 @@ export default async function MatchPage({ params }: { params: { matchId: string 
 
                     {/* Q&A accordion */}
                     {match.match_status === 'FT' && (
-                      <div className="bg-white rounded-lg mt-6">
-                        <h2 className="text-lg font-semibold mb-4">Spørsmål og svar</h2>
+                      <div className="bg-white dark:bg-[#222222] rounded-lg mt-6">
+                        <h2 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100">Spørsmål og svar</h2>
                         
-                        <div className="divide-y">
+                        <div className="divide-y divide-gray-200 dark:divide-[#2c2c2c]">
                           {/* Winner Question */}
                           <details className="group">
-                            <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50">
+                            <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 dark:hover:bg-[#2c2c2c] text-gray-800 dark:text-gray-200">
                               <span className="font-medium">
                                 Hvem vant mellom {match.teams.home.name} og {match.teams.away.name} {formatMatchDateTime(match.date).fullDate}?
                               </span>
-                              <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <svg className="w-5 h-5 transition-transform group-open:rotate-180 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                               </svg>
                             </summary>
-                            <div className="p-4 bg-gray-50">
+                            <div className="p-4 bg-gray-50 dark:bg-[#2c2c2c] text-gray-700 dark:text-gray-300">
                               {match.goals.home > match.goals.away ? (
                                 <p>{match.teams.home.name} vant {match.goals.home}-{match.goals.away} mot {match.teams.away.name}.</p>
                               ) : match.goals.home < match.goals.away ? (
@@ -928,13 +833,13 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                           {/* Top Scorer Question */}
                           {match.event_data && match.event_data.some(e => e.type === 'Goal') && (
                             <details className="group">
-                              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50">
+                              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 dark:hover:bg-[#2c2c2c] text-gray-800 dark:text-gray-200">
                                 <span className="font-medium">Hvilken spiller scoret flest mål i kampen?</span>
-                                <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-5 h-5 transition-transform group-open:rotate-180 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                               </summary>
-                              <div className="p-4 bg-gray-50">
+                              <div className="p-4 bg-gray-50 dark:bg-[#2c2c2c] text-gray-700 dark:text-gray-300">
                                 {(() => {
                                   const [topScorer, goals] = getTopScorer(match.event_data);
                                   return (
@@ -950,13 +855,13 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                           {/* All Scorers Question */}
                           {match.event_data && match.event_data.some(e => e.type === 'Goal') && (
                             <details className="group">
-                              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50">
+                              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 dark:hover:bg-[#2c2c2c] text-gray-800 dark:text-gray-200">
                                 <span className="font-medium">Hvem scoret målene i denne kampen?</span>
-                                <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-5 h-5 transition-transform group-open:rotate-180 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                               </summary>
-                              <div className="p-4 bg-gray-50">
+                              <div className="p-4 bg-gray-50 dark:bg-[#2c2c2c] text-gray-700 dark:text-gray-300">
                                 <div className="space-y-2">
                                   {match.event_data
                                     .filter(e => e.type === 'Goal')
@@ -997,17 +902,20 @@ export default async function MatchPage({ params }: { params: { matchId: string 
           <div className="w-full md:w-1/4 order-last md:order-first space-y-6">
 
             {/* === MatchHighlights component === */}
-            <MatchHighlights
-              homeTeamName={match.teams.home.name}
-              awayTeamName={match.teams.away.name}
-              homeTeamId={match.teams.home.id}
-              awayTeamId={match.teams.away.id}
-              leagueId={match.league.id}
-              matchDate={match.date}
-              isFinished={isFinished}
-              // Pass winnerTeamId if available and match is finished
-              winnerTeamId={isFinished ? (match.goals.home > match.goals.away ? match.teams.home.id : (match.goals.away > match.goals.home ? match.teams.away.id : 0)) : 0}
-            />
+            {isFinished && match.teams?.home?.name && match.teams?.away?.name && match.league?.id && match.date && (
+              <MatchHighlights
+                matchId={fixtureId}
+                initialYoutubeHighlightId={match.youtube_highlight_id || null}
+                homeTeamName={match.teams.home.name}
+                awayTeamName={match.teams.away.name}
+                homeTeamId={match.teams.home.id}
+                awayTeamId={match.teams.away.id}
+                leagueId={match.league.id}
+                matchDate={match.date}
+                isFinished={isFinished}
+                winnerTeamId={winnerTeamId}
+              />
+            )}
             {/* === End MatchHighlights component === */}
 
             {/* === Top Scorers Component === */}

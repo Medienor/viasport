@@ -211,14 +211,14 @@ export default function EliteserienVideos() {
 
   if (loading) return (
     <div className="animate-pulse grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
-      <div className="bg-gray-200 rounded-lg h-80"></div>
+      <div className="bg-gray-200 dark:bg-[#222222] rounded-lg h-80"></div>
       <div className="space-y-4">
         {[...Array(4)].map((_, i) => (
           <div key={i} className="flex space-x-4">
-            <div className="bg-gray-200 rounded-lg h-24 w-40"></div>
+            <div className="bg-gray-200 dark:bg-[#222222] rounded-lg h-24 w-40"></div>
             <div className="flex-1 space-y-2">
-              <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-              <div className="h-3 bg-gray-200 rounded w-1/2"></div>
+              <div className="h-4 bg-gray-200 dark:bg-[#222222] rounded w-3/4"></div>
+              <div className="h-3 bg-gray-200 dark:bg-[#222222] rounded w-1/2"></div>
             </div>
           </div>
         ))}
@@ -257,7 +257,7 @@ export default function EliteserienVideos() {
               href={`https://www.youtube.com/watch?v=${featuredVideo.id.videoId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="block relative rounded-lg overflow-hidden group"
+              className="block relative rounded-lg overflow-hidden group shadow-md dark:shadow-none"
             >
               <div className="relative aspect-video">
                 <Image
@@ -267,8 +267,8 @@ export default function EliteserienVideos() {
                   className="object-cover transition-transform group-hover:scale-105"
                 />
                 
-                {/* Top gradient with Eliteserien logo */}
-                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/80 to-transparent z-10">
+                {/* Top gradient - Adjusted 'from' color for light and dark modes */}
+                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-blue-900/80 dark:from-[#232323]/80 to-transparent z-10">
                   <div className="flex items-center p-6">
                     <Image 
                       src="https://media.api-sports.io/football/leagues/103.png" 
@@ -282,13 +282,13 @@ export default function EliteserienVideos() {
                 </div>
               </div>
               
-              {/* Dark blue title box */}
-              <div className="bg-blue-900 text-white p-4">
-                <h3 className="font-bold text-xl">
+              {/* Dark blue/custom dark title box */}
+              <div className="bg-blue-900 dark:bg-[#232323] text-white dark:text-gray-100 p-4">
+                <h3 className="font-bold text-xl dark:text-white">
                   {extractTeams(featuredVideo.snippet.title).full || 
                    `${extractTeams(featuredVideo.snippet.title).home} - ${extractTeams(featuredVideo.snippet.title).away}`} - Høydepunkter
                 </h3>
-                <p className="text-sm text-gray-300 mt-1 flex items-center">
+                <p className="text-sm text-gray-300 dark:text-gray-400 mt-1 flex items-center">
                   <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
                     <path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path>
@@ -313,7 +313,6 @@ export default function EliteserienVideos() {
         {/* List videos (right column - 50% width) */}
         <div className="space-y-4">
           {listVideos.map((video) => {
-            const score = extractScore(video.snippet.title);
             const teams = extractTeams(video.snippet.title);
             
             return (
@@ -332,24 +331,15 @@ export default function EliteserienVideos() {
                     className="object-cover transition-transform group-hover:scale-105"
                   />
                   
-                  {score && (
-                    <div className="absolute bottom-2 right-2 flex items-center space-x-1">
-                      <div className="bg-blue-600 text-white px-2 py-1 text-xs font-bold rounded">
-                        {score.home}
-                      </div>
-                      <div className="text-white text-xs">-</div>
-                      <div className="bg-blue-600 text-white px-2 py-1 text-xs font-bold rounded">
-                        {score.away}
-                      </div>
-                    </div>
-                  )}
+                  {/* Score overlay removed */}
+                  
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="font-medium text-sm group-hover:text-blue-600 line-clamp-2">
+                  <h3 className="font-medium text-sm text-gray-800 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2">
                     {teams.full || `${teams.home} - ${teams.away}`} - Høydepunkter
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                     YouTube • {new Date(video.snippet.publishedAt).toLocaleDateString('no-NO', {day: 'numeric', month: 'long'})}
                   </p>
                 </div>
@@ -360,10 +350,10 @@ export default function EliteserienVideos() {
           <div className="pt-2">
             <Link 
               href="/fotball/liga/eliteserien-103" 
-              className="text-blue-600 hover:underline text-sm font-medium inline-flex items-center"
+              className="text-blue-600 dark:text-white hover:underline text-sm font-medium inline-flex items-center"
             >
               Se mer
-              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 ml-1 text-blue-600 dark:text-[#ff6b00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
               </svg>
             </Link>

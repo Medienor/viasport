@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-07-09",
-          "end": "2025-04-16",
+          "end": "2025-05-31",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -147,7 +147,44 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-04-26",
+          "end": "2025-05-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-09-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -184,246 +221,11 @@
     2021,
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208337,
-          "date": "2025-04-13T13:00:00+00:00",
-          "venue": {
-            "id": 550,
-            "name": "Anfield",
-            "city": "Liverpool"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744549200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          },
-          "away": {
-            "id": 48,
-            "name": "West Ham",
-            "logo": "https://media.api-sports.io/football/teams/48.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208349,
-          "date": "2025-04-20T15:30:00+00:00",
-          "venue": {
-            "id": 547,
-            "name": "King Power Stadium",
-            "city": "Leicester, Leicestershire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745163000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 46,
-            "name": "Leicester",
-            "logo": "https://media.api-sports.io/football/teams/46.png",
-            "winner": null
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208357,
-          "date": "2025-04-27T15:30:00+00:00",
-          "venue": {
-            "id": 550,
-            "name": "Anfield",
-            "city": "Liverpool"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745767800
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          },
-          "away": {
-            "id": 47,
-            "name": "Tottenham",
-            "logo": "https://media.api-sports.io/football/teams/47.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208367,
-          "date": "2025-05-04T15:30:00+00:00",
-          "venue": {
-            "id": 519,
-            "name": "Stamford Bridge",
-            "city": "London"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746372600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 49,
-            "name": "Chelsea",
-            "logo": "https://media.api-sports.io/football/teams/49.png",
-            "winner": null
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208376,
@@ -486,7 +288,7 @@
       {
         "fixture": {
           "id": 1208386,
-          "date": "2025-05-18T14:00:00+00:00",
+          "date": "2025-05-19T19:00:00+00:00",
           "venue": {
             "id": 508,
             "name": "American Express Stadium",
@@ -498,7 +300,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1747576800
+          "timestamp": 1747681200
         },
         "league": {
           "id": 39,
@@ -600,9 +402,304 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1371781,
+          "date": "2025-07-29T22:00:00+00:00",
+          "venue": {
+            "id": 985,
+            "name": "Nissan Stadium",
+            "city": "Yokohama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753826400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 296,
+            "name": "Yokohama F. Marinos",
+            "logo": "https://media.api-sports.io/football/teams/296.png",
+            "winner": null
+          },
+          "away": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208367,
+          "date": "2025-05-04T15:30:00+00:00",
+          "venue": {
+            "id": 519,
+            "name": "Stamford Bridge",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1746372600
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https://media.api-sports.io/football/teams/49.png",
+            "winner": true
+          },
+          "away": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208357,
+          "date": "2025-04-27T15:30:00+00:00",
+          "venue": {
+            "id": 550,
+            "name": "Anfield",
+            "city": "Liverpool"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1745767800
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": true
+          },
+          "away": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208349,
+          "date": "2025-04-20T15:30:00+00:00",
+          "venue": {
+            "id": 547,
+            "name": "King Power Stadium",
+            "city": "Leicester, Leicestershire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1745163000
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 46,
+            "name": "Leicester",
+            "logo": "https://media.api-sports.io/football/teams/46.png",
+            "winner": false
+          },
+          "away": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208337,
+          "date": "2025-04-13T13:00:00+00:00",
+          "venue": {
+            "id": 550,
+            "name": "Anfield",
+            "city": "Liverpool"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744549200
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": true
+          },
+          "away": {
+            "id": 48,
+            "name": "West Ham",
+            "logo": "https://media.api-sports.io/football/teams/48.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208327,
@@ -956,242 +1053,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208280,
-          "date": "2025-02-23T16:30:00+00:00",
-          "venue": {
-            "id": 555,
-            "name": "Etihad Stadium",
-            "city": "Manchester"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1740328200
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": false
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208305,
-          "date": "2025-02-19T19:30:00+00:00",
-          "venue": {
-            "id": 495,
-            "name": "Villa Park",
-            "city": "Birmingham"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739993400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
-            "winner": null
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208268,
-          "date": "2025-02-16T14:00:00+00:00",
-          "venue": {
-            "id": 550,
-            "name": "Anfield",
-            "city": "Liverpool"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739714400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": true
-          },
-          "away": {
-            "id": 39,
-            "name": "Wolves",
-            "logo": "https://media.api-sports.io/football/teams/39.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208166,
-          "date": "2025-02-12T19:30:00+00:00",
-          "venue": {
-            "id": 8560,
-            "name": "Goodison Park",
-            "city": "Liverpool"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1739388600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 45,
-            "name": "Everton",
-            "logo": "https://media.api-sports.io/football/teams/45.png",
-            "winner": null
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1488,5 +1349,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T18:23:48.393Z"
+  "lastUpdated": "2025-05-08T13:55:25.708Z"
 }

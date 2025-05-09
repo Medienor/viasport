@@ -428,10 +428,10 @@ export default function TopScorersDisplay({
     if (!scorer || typeof scorer !== 'object' || !scorer.player_id) {
       return (
         <div className="flex flex-col items-center text-center w-24">
-          <div className="w-16 h-16 rounded-full bg-gray-200 mb-2 border border-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-xs">N/A</span>
+          <div className="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-700 mb-2 border border-gray-300 dark:border-dark-border flex items-center justify-center">
+            <span className="text-gray-500 dark:text-gray-400 text-xs">N/A</span>
           </div>
-          <span className="text-sm font-medium text-gray-500">-</span>
+          <span className="text-sm font-medium text-gray-500 dark:text-gray-400">-</span>
         </div>
       );
     }
@@ -457,24 +457,24 @@ export default function TopScorersDisplay({
             alt={displayName ?? 'Player'}
             width={64}
             height={64}
-            className="rounded-full object-cover w-16 h-16 mb-2 border border-gray-200 group-hover:opacity-80 transition-opacity"
+            className="rounded-full object-cover w-16 h-16 mb-2 border border-gray-200 dark:border-dark-border group-hover:opacity-80 transition-opacity"
           />
         ) : (
-          <div className="w-16 h-16 rounded-full bg-gray-100 mb-2 border border-gray-200 flex items-center justify-center">
-            <span className="text-gray-400 text-xs">No Pic</span>
+          <div className="w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-700 mb-2 border border-gray-200 dark:border-dark-border flex items-center justify-center">
+            <span className="text-gray-400 dark:text-gray-500 text-xs">No Pic</span>
           </div>
         )}
         {scorer.team_logo && (
-          <div className="absolute bottom-8 right-1 w-6 h-6 bg-white rounded-full border-2 border-white overflow-hidden flex items-center justify-center shadow-md">
+          <div className="absolute bottom-8 right-1 w-6 h-6 bg-white dark:bg-dark-nav rounded-full border-2 border-white dark:border-dark-nav overflow-hidden flex items-center justify-center shadow-md">
             <Image src={scorer.team_logo} alt="Team logo" fill className="object-contain p-0.5" sizes="20px" unoptimized />
           </div>
         )}
         {formattedRating && (
-          <div className="absolute bottom-8 left-1 w-6 h-6 bg-green-600 rounded-full border-2 border-white flex items-center justify-center shadow-md">
+          <div className="absolute bottom-8 left-1 w-6 h-6 bg-green-600 rounded-full border-2 border-white dark:border-dark-nav flex items-center justify-center shadow-md">
             <span className="text-white text-[10px] font-semibold leading-none">{formattedRating}</span>
           </div>
         )}
-        <span className="text-sm font-semibold text-gray-800 truncate w-full group-hover:text-blue-600 transition-colors">
+        <span className="text-sm font-semibold text-gray-800 dark:text-gray-100 truncate w-full group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {displayName ?? '-'}
         </span>
       </Link>
@@ -505,22 +505,22 @@ export default function TopScorersDisplay({
       const duration = 0.6; // Animation duration in seconds
 
       return (
-          <div className="flex justify-between items-center text-sm py-2.5 border-b border-gray-100 last:border-b-0">
-              <span className="font-semibold text-gray-800 text-right w-10 tabular-nums">
+          <div className="flex justify-between items-center text-sm py-2.5 border-b border-gray-100 dark:border-dark-border last:border-b-0">
+              <span className="font-semibold text-gray-800 dark:text-gray-100 text-right w-10 tabular-nums">
                   {homeValue != null ? (
                       <CountUp
                           start={startHome}
                           end={endHome}
                           duration={duration}
                           decimals={decimals}
-                          preserveValue // Important: keeps the value if component re-renders without change
+                          preserveValue
                       />
                   ) : (
                       '-'
                   )}
               </span>
-              <span className="text-xs text-gray-500 uppercase mx-3 text-center flex-1 tracking-wide">{label}</span>
-              <span className="font-semibold text-gray-800 text-left w-10 tabular-nums">
+              <span className="text-xs text-gray-500 dark:text-gray-400 uppercase mx-3 text-center flex-1 tracking-wide">{label}</span>
+              <span className="font-semibold text-gray-800 dark:text-gray-100 text-left w-10 tabular-nums">
                   {awayValue != null ? (
                       <CountUp
                           start={startAway}
@@ -553,16 +553,16 @@ export default function TopScorersDisplay({
 
   // --- Main JSX Structure ---
   return (
-    <div className={`bg-white rounded-lg shadow p-4 md:p-6 ${containerMarginClass}`}>
+    <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6">
       {/* Title */}
-      <h3 className="text-base font-semibold text-center mb-5 text-gray-800">
+      <h3 className="text-base font-semibold text-center mb-5 text-gray-800 dark:text-gray-100">
         Toppscorere
         {showLiveStats && (
-          <span className="text-[10px] text-green-600 font-bold align-middle ml-1.5 tracking-wide">
+          <span className="text-[10px] text-green-600 dark:text-green-500 font-bold align-middle ml-1.5 tracking-wide">
             LIVE
           </span>
         )}
-        {isLoadingLiveStats && <span className="animate-pulse text-sm text-gray-500 ml-2">Laster...</span>}
+        {isLoadingLiveStats && <span className="animate-pulse text-sm text-gray-500 dark:text-gray-400 ml-2">Laster...</span>}
       </h3>
 
       {/* Player Info Section - Render Skeletons or Actual Data */}
@@ -582,7 +582,7 @@ export default function TopScorersDisplay({
 
       {/* League/Season Context - Now always shown if leagueName exists */}
       {leagueName && (
-        <div className="text-center text-xs text-gray-700 mb-4 py-2 border-t border-b border-gray-100 flex items-center justify-center space-x-2.5">
+        <div className="text-center text-xs text-gray-700 dark:text-gray-300 mb-4 py-2 border-t border-b border-gray-100 dark:border-dark-border flex items-center justify-center space-x-2.5">
           {leagueLogoUrl && <Image src={leagueLogoUrl} width={18} height={18} alt={`${leagueName} logo`} className="inline-block" unoptimized />}
           {/* Still shows season year, can be removed if needed for live view */}
           <span>{leagueName} {displaySeason}</span>
@@ -627,7 +627,7 @@ export default function TopScorersDisplay({
                 )}
               </>
             ) : (
-              <p className="text-center text-sm text-gray-500 py-4">
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400 py-4">
                 {showLiveStats ? (liveStatsError || "Ingen live data tilgjengelig.") : "Ingen toppscorerdata tilgjengelig."}
               </p>
             )}
@@ -637,9 +637,13 @@ export default function TopScorersDisplay({
 
       {/* === Live Toggle Switch (Improved Styling & Animation) === */}
       {canShowToggle && (
-          <div className="mt-6 pt-4 border-t border-gray-200 flex items-center justify-center space-x-3">
+          <div className="mt-6 pt-4 border-t border-gray-200 dark:border-dark-border flex items-center justify-center space-x-3">
               {/* Label Text */}
-              <label htmlFor="liveToggle" className={`text-sm font-medium cursor-pointer ${isLoadingLiveStats ? 'text-gray-400 cursor-not-allowed' : 'text-gray-800'}`}>
+              <label htmlFor="liveToggle" className={`text-sm font-medium cursor-pointer ${
+                isLoadingLiveStats 
+                  ? 'text-gray-400 dark:text-gray-500 cursor-not-allowed' 
+                  : 'text-gray-800 dark:text-gray-100'
+              }`}>
                   {showLiveStats ? 'Vis sesongdata' : 'Vis live data'}
               </label>
               {/* Toggle Container */}
@@ -651,23 +655,21 @@ export default function TopScorersDisplay({
                       checked={showLiveStats}
                       onChange={handleToggleChange}
                       disabled={isLoadingLiveStats}
-                      className={`peer absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer
-                                 left-0 top-0  /* Explicit start position */
-                                 transition-transform duration-200 ease-in-out /* Added transition for transform */
-                                 checked:translate-x-4 /* Use transform to slide */
-                                 checked:border-blue-600 /* Keep checked border color */
+                      className={`peer absolute block w-6 h-6 rounded-full bg-white dark:bg-gray-100 border-4 appearance-none cursor-pointer
+                                 left-0 top-0
+                                 transition-transform duration-200 ease-in-out
+                                 checked:translate-x-4
+                                 checked:border-blue-600 dark:checked:border-blue-500
                                  focus:outline-none focus:ring-0 focus:ring-offset-0
-                                 disabled:cursor-not-allowed disabled:border-gray-200 disabled:bg-white /* Ensure thumb stays white when disabled */
-                                 `}
+                                 disabled:cursor-not-allowed disabled:border-gray-200 dark:disabled:border-gray-600 disabled:bg-white dark:disabled:bg-gray-700`}
                   />
                   {/* The Track (Background Label) */}
                   <label
                       htmlFor="liveToggle"
                       className={`block overflow-hidden h-6 rounded-full cursor-pointer transition-colors duration-200 ease-in-out
-                                 ${showLiveStats ? 'bg-blue-600' : 'bg-gray-300'}
-                                 ${isLoadingLiveStats ? (showLiveStats ? 'bg-blue-300' : 'bg-gray-200') : ''} /* Faded background when loading */
-                                 ${isLoadingLiveStats ? 'cursor-not-allowed' : ''}
-                                 `}
+                                 ${showLiveStats ? 'bg-blue-600 dark:bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'}
+                                 ${isLoadingLiveStats ? (showLiveStats ? 'bg-blue-300 dark:bg-blue-400' : 'bg-gray-200 dark:bg-gray-700') : ''}
+                                 ${isLoadingLiveStats ? 'cursor-not-allowed' : ''}`}
                   >
                   </label>
               </div>

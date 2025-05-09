@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-07-09",
-          "end": "2025-04-16",
+          "end": "2025-05-31",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-07-11",
-          "end": "2025-04-17",
+          "end": "2025-05-07",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -110,7 +110,7 @@
         {
           "year": 2025,
           "start": "2025-01-03",
-          "end": "2025-04-12",
+          "end": "2025-09-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -184,7 +184,7 @@
         {
           "year": 2025,
           "start": "2025-03-26",
-          "end": "2025-04-13",
+          "end": "2025-05-12",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -200,7 +200,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -222,12 +222,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361277,
-          "date": "2025-04-17T19:00:00+00:00",
+          "id": 1371991,
+          "date": "2025-05-08T19:00:00+00:00",
           "venue": {
-            "id": 910,
-            "name": "Stadio Olimpico",
-            "city": "Roma"
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
           },
           "status": {
             "long": "Not Started",
@@ -235,7 +235,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744916400
+          "timestamp": 1746730800
         },
         "league": {
           "id": 3,
@@ -244,15 +244,15 @@
         },
         "teams": {
           "home": {
-            "id": 487,
-            "name": "Lazio",
-            "logo": "https://media.api-sports.io/football/teams/487.png",
-            "winner": null
-          },
-          "away": {
             "id": 327,
             "name": "Bodo/Glimt",
             "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          },
+          "away": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png",
             "winner": null
           }
         },
@@ -281,12 +281,12 @@
       },
       {
         "fixture": {
-          "id": 1342209,
-          "date": "2025-04-21T17:15:00+00:00",
+          "id": 1373025,
+          "date": "2025-05-12T17:00:00+00:00",
           "venue": {
-            "id": 1184,
-            "name": "Aker Stadion",
-            "city": "Molde"
+            "id": 1174,
+            "name": "Color Line Stadion",
+            "city": "Ålesund"
           },
           "status": {
             "long": "Not Started",
@@ -294,201 +294,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745255700
+          "timestamp": 1747069200
         },
         "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
         },
         "teams": {
           "home": {
-            "id": 329,
-            "name": "Molde",
-            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
             "winner": null
           },
           "away": {
             "id": 327,
             "name": "Bodo/Glimt",
             "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1342211,
-          "date": "2025-04-27T15:00:00+00:00",
-          "venue": {
-            "id": 1175,
-            "name": "Aspmyra Stadion",
-            "city": "Bodø"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745766000
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2143,
-            "name": "KFUM Oslo",
-            "logo": "https://media.api-sports.io/football/teams/2143.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1342218,
-          "date": "2025-05-01T14:00:00+00:00",
-          "venue": {
-            "id": 2792,
-            "name": "Nye Fredrikstad Stadion",
-            "city": "Fredrikstad"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746108000
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2149,
-            "name": "Fredrikstad",
-            "logo": "https://media.api-sports.io/football/teams/2149.png",
-            "winner": null
-          },
-          "away": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1342226,
-          "date": "2025-05-10T16:00:00+00:00",
-          "venue": {
-            "id": 1175,
-            "name": "Aspmyra Stadion",
-            "city": "Bodø"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746892800
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": null
-          },
-          "away": {
-            "id": 324,
-            "name": "Stromsgodset",
-            "logo": "https://media.api-sports.io/football/teams/324.png",
             "winner": null
           }
         },
@@ -989,6 +812,65 @@
       },
       {
         "fixture": {
+          "id": 1342218,
+          "date": "2025-07-16T17:00:00+00:00",
+          "venue": {
+            "id": 2792,
+            "name": "Nye Fredrikstad Stadion",
+            "city": "Fredrikstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752685200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342296,
           "date": "2025-07-20T15:00:00+00:00",
           "venue": {
@@ -1079,6 +961,65 @@
             "id": 326,
             "name": "Valerenga",
             "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342226,
+          "date": "2025-07-30T17:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753894800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          },
+          "away": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
             "winner": null
           }
         },
@@ -1399,9 +1340,304 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1342356,
+          "date": "2025-09-21T15:00:00+00:00",
+          "venue": {
+            "id": 1190,
+            "name": "Lerkendal Stadion",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1758466800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": null
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1371990,
+          "date": "2025-05-01T19:00:00+00:00",
+          "venue": {
+            "id": 593,
+            "name": "Tottenham Hotspur Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1746126000
+        },
+        "league": {
+          "id": 3,
+          "name": "UEFA Europa League",
+          "logo": "https://media.api-sports.io/football/leagues/3.png"
+        },
+        "teams": {
+          "home": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png",
+            "winner": true
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342211,
+          "date": "2025-04-27T15:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1745766000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2143,
+            "name": "KFUM Oslo",
+            "logo": "https://media.api-sports.io/football/teams/2143.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1371611,
+          "date": "2025-04-24T16:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1745510400
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7000,
+            "name": "Junkeren",
+            "logo": "https://media.api-sports.io/football/teams/7000.png",
+            "winner": false
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342209,
+          "date": "2025-04-21T17:15:00+00:00",
+          "venue": {
+            "id": 1184,
+            "name": "Aker Stadion",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1745255700
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": null
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361276,
@@ -1703,7 +1939,7 @@
           "date": "2025-03-13T17:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Georgios Karaiskakis",
+            "name": "Stadio Georgios Karaiskáki",
             "city": "Piraeus"
           },
           "status": {
@@ -1755,242 +1991,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1353196,
-          "date": "2025-03-06T20:00:00+00:00",
-          "venue": {
-            "id": 1175,
-            "name": "Aspmyra Stadion",
-            "city": "Bodø"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1741291200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": true
-          },
-          "away": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1345767,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 1153,
-            "name": "De Grolsch Veste",
-            "city": "Enschede"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 415,
-            "name": "Twente",
-            "logo": "https://media.api-sports.io/football/teams/415.png",
-            "winner": true
-          },
-          "away": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299263,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 663,
-            "name": "Allianz Riviera",
-            "city": "Nice"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 84,
-            "name": "Nice",
-            "logo": "https://media.api-sports.io/football/teams/84.png",
-            "winner": null
-          },
-          "away": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299239,
-          "date": "2025-01-23T17:45:00+00:00",
-          "venue": {
-            "id": 1175,
-            "name": "Aspmyra Stadion",
-            "city": "Bodø"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737654300
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 327,
-            "name": "Bodo/Glimt",
-            "logo": "https://media.api-sports.io/football/teams/327.png",
-            "winner": true
-          },
-          "away": {
-            "id": 604,
-            "name": "Maccabi Tel Aviv",
-            "logo": "https://media.api-sports.io/football/teams/604.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2008,22 +2008,22 @@
       "name": "Bodo/Glimt",
       "logo": "https://media.api-sports.io/football/teams/327.png"
     },
-    "form": "WW",
+    "form": "WWDW",
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 2,
+        "away": 2,
+        "total": 4
       },
       "wins": {
-        "home": 1,
+        "home": 2,
         "away": 1,
-        "total": 2
+        "total": 3
       },
       "draws": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "loses": {
         "home": 0,
@@ -2034,39 +2034,39 @@
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 1,
-          "total": 4
+          "home": 6,
+          "away": 3,
+          "total": 9
         },
         "average": {
           "home": "3.0",
-          "away": "1.0",
-          "total": "2.0"
+          "away": "1.5",
+          "total": "2.3"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "11.11%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": 2,
+            "percentage": "22.22%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "11.11%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "11.11%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "44.44%"
           },
           "91-105": {
             "total": null,
@@ -2079,37 +2079,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 4,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 3,
             "under": 1
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 2,
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 4
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 0,
-          "total": 0
+          "away": 2,
+          "total": 2
         },
         "average": {
           "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "away": "1.0",
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -2121,8 +2121,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "46-60": {
             "total": null,
@@ -2133,8 +2133,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "91-105": {
             "total": null,
@@ -2147,24 +2147,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
-            "under": 2
+            "over": 1,
+            "under": 3
           },
           "1.5": {
-            "over": 0,
-            "under": 2
+            "over": 1,
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 4
           }
         }
       }
@@ -2172,7 +2172,7 @@
     "biggest": {
       "streak": {
         "wins": 2,
-        "draws": 0,
+        "draws": 1,
         "loses": 0
       },
       "wins": {
@@ -2186,18 +2186,18 @@
       "goals": {
         "for": {
           "home": 3,
-          "away": 1
+          "away": 2
         },
         "against": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 2,
       "away": 1,
-      "total": 2
+      "total": 3
     },
     "failed_to_score": {
       "home": 0,
@@ -2206,34 +2206,38 @@
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "50.00%"
       },
       "missed": {
         "total": 1,
-        "percentage": "100.00%"
+        "percentage": "50.00%"
       },
-      "total": 1
+      "total": 2
     },
     "lineups": [
       {
         "formation": "4-3-3",
+        "played": 2
+      },
+      {
+        "formation": "4-4-2",
         "played": 2
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "46-60": {
           "total": null,
@@ -2292,5 +2296,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T18:23:27.423Z"
+  "lastUpdated": "2025-05-08T13:55:03.970Z"
 }

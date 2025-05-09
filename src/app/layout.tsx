@@ -9,6 +9,8 @@ import Providers from './providers'
 import ScrollToTop from './components/ScrollToTop';
 import LoadingBar from './components/LoadingBar';
 import { Suspense } from 'react';
+import { AuthProvider } from "@/context/AuthContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,12 +22,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Initialize the Inter font with the subsets you need
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-inter',
-// });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ViaSport - Fotball på TV & Streaming",
@@ -50,11 +47,11 @@ export default function RootLayout({
   
   try {
     return (
-      <html lang="nb" className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
+      <html lang="nb" className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-gray-50 dark:bg-dark-main`}>
         <head>
           {/* Move scripts outside of head */}
         </head>
-        <body className="font-sans">
+        <body className={`${inter.className} bg-gray-100 dark:bg-dark-main`}>
           {/* Google Analytics */}
           <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-Z17J77B571"
@@ -80,12 +77,16 @@ export default function RootLayout({
           <Suspense fallback={null}>
             <LoadingBar />
           </Suspense>
-          <Providers>
-            <ScrollToTop />
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </Providers>
+          <AuthProvider>
+            <ThemeProvider>
+              <Providers>
+                <ScrollToTop />
+                <Navbar />
+                <main className="flex-grow">{children}</main>
+                <Footer />
+              </Providers>
+            </ThemeProvider>
+          </AuthProvider>
         </body>
       </html>
     );
