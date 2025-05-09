@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-05-09T12:46:42.212Z
+// Last updated: 2025-05-09T13:07:34.124Z
 
 export const calendarData = {
   "2025-05-02": [
@@ -19216,7 +19216,7 @@ export const calendarData = {
         "status": {
           "long": "Second Half",
           "short": "2H",
-          "elapsed": 53,
+          "elapsed": 75,
           "extra": null
         }
       },
@@ -19235,17 +19235,17 @@ export const calendarData = {
           "id": 836,
           "name": "SHANGHAI SIPG",
           "logo": "https://media.api-sports.io/football/teams/836.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 1431,
           "name": "Qingdao Jonoon",
           "logo": "https://media.api-sports.io/football/teams/1431.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 1,
+        "home": 2,
         "away": 1
       },
       "score": {

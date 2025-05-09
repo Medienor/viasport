@@ -6,13 +6,21 @@ import { useAuth } from '@/context/AuthContext';
 import Image from 'next/image';
 import { CheckCircleIcon } from '@heroicons/react/24/solid'; // For benefits list
 
-// Example Google Icon SVG component (replace with your preferred icon library or SVG)
+// Improved Google Icon component
 const GoogleIcon = () => (
-  <svg className="w-5 h-5 mr-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
-    <path fill="currentColor" d="M488 261.8C488 403.3 381.5 512 244 512 109.8 512 0 402.2 0 256S109.8 0 244 0c73 0 135.3 29.7 181.4 78.6l-62.8 61.7c-23.4-22-54-35.7-90.6-35.7-69.7 0-126.6 56.9-126.6 127s56.9 127 126.6 127c76.1 0 104.4-54.7 108.1-82.7H244v-77h236.1c2.3 12.7 3.9 26.4 3.9 40.8z"></path>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 48 48" 
+    width="20px" 
+    height="20px" 
+    className="mr-2"
+  >
+    <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" />
+    <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" />
+    <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" />
+    <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
   </svg>
 );
-
 
 export default function SignInPage() {
   const { session, isLoading, signInWithGoogle } = useAuth();
@@ -26,24 +34,31 @@ export default function SignInPage() {
   }, [session, isLoading, router]);
 
   const handleGoogleSignIn = async () => {
-    // No need to check isLoading here, signInWithGoogle handles it
-    await signInWithGoogle();
-    // Supabase handles the redirect flow
+    try {
+      // Get the current hostname to use for redirect
+      const redirectTo = typeof window !== 'undefined' 
+        ? `${window.location.origin}/` 
+        : 'https://viasport.no/';
+        
+      await signInWithGoogle({ redirectTo });
+    } catch (error) {
+      console.error("Google sign-in error:", error);
+    }
   };
 
   // Prevent rendering the sign-in options while loading or if logged in
   if (isLoading || session) {
     return (
-      <div className="flex justify-center items-center min-h-[calc(100vh-10rem)]">
+      <div className="flex justify-center items-center min-h-[calc(100vh-10rem)] bg-dark-main">
         {/* Optional: Add a spinner */}
-        <p>Laster...</p>
+        <p className="text-gray-200">Laster...</p>
       </div>
     );
   }
 
   return (
-    <div className="flex justify-center items-center min-h-[calc(100vh-10rem)] bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 bg-white p-8 md:p-10 rounded-lg shadow-md">
+    <div className="flex justify-center items-center min-h-[calc(100vh-10rem)] bg-gray-50 dark:bg-dark-main py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8 bg-white dark:bg-dark-nav p-8 md:p-10 rounded-lg shadow-md border dark:border-dark-border">
         <div>
           <Image
             className="mx-auto h-12 w-auto"
@@ -52,29 +67,29 @@ export default function SignInPage() {
             width={192} // Adjust width as needed
             height={48} // Adjust height as needed
           />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
             Logg inn eller registrer deg
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-600">
+          <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-300">
             Få tilgang til flere funksjoner!
           </p>
         </div>
 
         {/* Benefits Section */}
         <div className="mt-8 space-y-4">
-           <h3 className="text-lg font-medium text-gray-900">Fordeler med konto:</h3>
+           <h3 className="text-lg font-medium text-gray-900 dark:text-white">Fordeler med konto:</h3>
            <ul className="space-y-2">
              <li className="flex items-start">
                <CheckCircleIcon className="flex-shrink-0 h-5 w-5 text-green-500 mr-2 mt-0.5" />
-               <span className="text-sm text-gray-700">Lagre favorittlag og ligaer (kommer snart!)</span>
+               <span className="text-sm text-gray-700 dark:text-gray-300">Lagre favorittlag og ligaer (kommer snart!)</span>
              </li>
              <li className="flex items-start">
                <CheckCircleIcon className="flex-shrink-0 h-5 w-5 text-green-500 mr-2 mt-0.5" />
-               <span className="text-sm text-gray-700">Motta varsler om kampstart og mål (kommer snart!)</span>
+               <span className="text-sm text-gray-700 dark:text-gray-300">Motta varsler om kampstart og mål (kommer snart!)</span>
              </li>
               <li className="flex items-start">
                <CheckCircleIcon className="flex-shrink-0 h-5 w-5 text-green-500 mr-2 mt-0.5" />
-               <span className="text-sm text-gray-700">Synkroniser innstillinger på tvers av enheter (kommer snart!)</span>
+               <span className="text-sm text-gray-700 dark:text-gray-300">Synkroniser innstillinger på tvers av enheter (kommer snart!)</span>
              </li>
            </ul>
         </div>
@@ -86,7 +101,7 @@ export default function SignInPage() {
             <button
               onClick={handleGoogleSignIn}
               type="button"
-              className="w-full inline-flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+              className="w-full inline-flex justify-center items-center py-2 px-4 border border-gray-300 dark:border-dark-border rounded-md shadow-sm bg-white dark:bg-dark-nav text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 transition duration-150 ease-in-out"
             >
               <GoogleIcon />
               Fortsett med Google
