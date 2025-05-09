@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -11,9 +11,49 @@ import { nb } from 'date-fns/locale';
 import { getStreamingProviders } from '@/utils/channelUtils';
 import { useRouter, usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
+
+interface FixtureStatus {
+  short: string;
+  elapsed: number | null;
+  long?: string | null;
+}
+
+interface FixtureGoals {
+  home: number | null;
+  away: number | null;
+}
+
+interface FixtureScore {
+  halftime: FixtureGoals | null;
+  fulltime: FixtureGoals | null;
+  extratime?: FixtureGoals | null;
+  penalty?: FixtureGoals | null;
+}
+
+interface FixtureData {
+  fixture: {
+    id: number;
+    date: string;
+    status: FixtureStatus;
+  };
+  league: {
+    id: number;
+    name: string;
+    country: string;
+    logo: string;
+  };
+  teams: {
+    home: { id: number; name: string; logo: string };
+    away: { id: number; name: string; logo: string };
+  };
+  goals: FixtureGoals;
+  score?: FixtureScore;
+  formattedTime: string;
+}
 
 interface EnhancedFixturesSectionProps {
-  fixtures: {[key: string]: any[]};
+  fixtures: {[key: string]: FixtureData[]};
   formattedDates: {[key: string]: string};
   totalFixtureCount: {[key: string]: number};
   popularLeagueIds: number[];
@@ -24,19 +64,21 @@ type FilterType = 'today' | 'live' | 'tv' | 'upcoming';
 
 interface LiveMatch {
   id: number;
-  status: {
-    short: string;
-    elapsed: number | null;
-  };
-  goals: {
-    home: number | null;
-    away: number | null;
-  };
-  lastUpdated: number; // timestamp of when this data was last updated
+  status: FixtureStatus;
+  goals: FixtureGoals;
+  lastUpdated: number;
+}
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://cdynfbwdwdfsiwkgixua.supabase.co';
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'YOUR_SUPABASE_ANON_KEY';
+
+let supabase: SupabaseClient | null = null;
+if (typeof window !== 'undefined') {
+  supabase = createClient(supabaseUrl, supabaseAnonKey);
 }
 
 export default function EnhancedFixturesSection({
-  fixtures: newFixtures,
+  fixtures: initialFixtures,
   formattedDates,
   totalFixtureCount,
   popularLeagueIds,
@@ -50,11 +92,14 @@ export default function EnhancedFixturesSection({
     const parsedInitial = parseISO(initialSelectedDateString);
     return isValidDateFns(parsedInitial) ? parsedInitial : new Date();
   });
-  const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [liveMatches, setLiveMatches] = useState<{[key: number]: LiveMatch}>({});
-  const [isLoadingLiveData, setIsLoadingLiveData] = useState<boolean>(false);
   const [isClient, setIsClient] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
+  const [currentFixtures, setCurrentFixtures] = useState(initialFixtures);
+
+  useEffect(() => {
+    setCurrentFixtures(initialFixtures);
+  }, [initialFixtures]);
 
   useEffect(() => {
     setIsClient(true);
@@ -73,83 +118,104 @@ export default function EnhancedFixturesSection({
     }
   }, [initialSelectedDateString, selectedDate]);
 
-  const fetchMatchData = async () => {
-    try {
-      setIsLoadingLiveData(true);
-      
-      const response = await fetch('/api/football/live');
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch match data');
-      }
-      
-      const data = await response.json();
-      // console.log('API Response:', data); // Debug: Log the full response
-      
-      const newLiveMatchesMap: {[key: number]: LiveMatch} = {};
-      const now = Date.now();
-      
-      // Process live matches
-      data.live?.forEach((match: any) => {
-        // console.log('Processing live match:', match.league.id, match.fixture.id); // Debug
-        if (popularLeagueIds.includes(match.league.id)) {
-          newLiveMatchesMap[match.fixture.id] = {
-            id: match.fixture.id,
-            status: {
-              short: match.fixture.status.short,
-              elapsed: match.fixture.status.elapsed
-            },
-            goals: {
-              home: match.goals.home,
-              away: match.goals.away
-            },
-            lastUpdated: now
-          };
-        }
-      });
-      
-      // Process finished matches
-      data.finished?.forEach((match: any) => {
-        // console.log('Processing finished match:', match.league.id, match.fixture.id); // Debug
-        if (popularLeagueIds.includes(match.league.id)) {
-          newLiveMatchesMap[match.fixture.id] = {
-            id: match.fixture.id,
-            status: {
-              short: match.fixture.status.short,
-              elapsed: null
-            },
-            goals: {
-              home: match.goals.home,
-              away: match.goals.away
-            },
-            lastUpdated: now
-          };
-        }
-      });
-      
-      // console.log('Processed match data:', newLiveMatchesMap); // Debug
-      // console.log('Popular league IDs:', popularLeagueIds); // Debug
-      
-      setLiveMatches(newLiveMatchesMap);
-      
-    } catch (error) {
-      console.error('Error fetching match data:', error);
-    } finally {
-      setIsLoadingLiveData(false);
-    }
-  };
-
   useEffect(() => {
-    fetchMatchData();
-    
-    // Set up interval for regular updates
-    const interval = setInterval(() => {
-      setCurrentTime(new Date());
-      fetchMatchData();
-    }, 60000); // Check every minute
-    
-    return () => clearInterval(interval);
-  }, [popularLeagueIds]);
+    if (!supabase) {
+      console.warn("Supabase client not initialized. Realtime updates disabled.");
+      return;
+    }
+
+    const handleFixtureUpdate = (payload: any) => {
+      console.log('Realtime update received:', payload);
+      const updatedFixture = payload.new;
+      if (updatedFixture && updatedFixture.id) {
+        const supStatus = updatedFixture.status as { short: string; elapsed: number | null; long?: string; extra?: any } | null;
+        const supScore = updatedFixture.score as FixtureScore | null;
+        const supGoals = updatedFixture.goals as FixtureGoals | null;
+
+        let currentGoals: FixtureGoals = { home: null, away: null };
+        let statusShort = supStatus?.short || 'NS';
+        let elapsed = supStatus?.elapsed ?? null;
+
+        if (statusShort === 'FT' && supScore?.fulltime) {
+          currentGoals = supScore.fulltime;
+        } else if (statusShort === 'HT' && supScore?.halftime) {
+          currentGoals = supScore.halftime;
+        } else if (supGoals) {
+          currentGoals = supGoals;
+        }
+
+        setLiveMatches(prevLiveMatches => ({
+          ...prevLiveMatches,
+          [updatedFixture.id]: {
+            id: updatedFixture.id,
+            status: {
+              short: statusShort,
+              elapsed: elapsed,
+              long: supStatus?.long
+            },
+            goals: currentGoals,
+            lastUpdated: Date.now()
+          }
+        }));
+
+        setCurrentFixtures(prevFixtures => {
+            const newFixtures = { ...prevFixtures };
+            for (const dayKey in newFixtures) {
+                const dayFixtures = newFixtures[dayKey];
+                const fixtureIndex = dayFixtures.findIndex(f => f.fixture.id === updatedFixture.id);
+                if (fixtureIndex !== -1) {
+                    const updatedDayFixture = {
+                        ...dayFixtures[fixtureIndex],
+                        fixture: {
+                            ...dayFixtures[fixtureIndex].fixture,
+                            status: { short: statusShort, elapsed: elapsed, long: supStatus?.long },
+                        },
+                        goals: currentGoals,
+                        score: supScore || dayFixtures[fixtureIndex].score,
+                    };
+                    newFixtures[dayKey] = [
+                        ...dayFixtures.slice(0, fixtureIndex),
+                        updatedDayFixture,
+                        ...dayFixtures.slice(fixtureIndex + 1),
+                    ];
+                    break; 
+                }
+            }
+            return newFixtures;
+        });
+      }
+    };
+
+    const fixturesChannel = supabase
+      .channel('realtime-fixtures')
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'fixtures' },
+        handleFixtureUpdate
+      )
+      .on(
+        'postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'fixtures' },
+        (payload) => {
+            console.log('Realtime insert received:', payload);
+        }
+       )
+      .subscribe((status, err) => {
+        if (status === 'SUBSCRIBED') {
+          console.log('Subscribed to Supabase Realtime fixtures updates!');
+        }
+        if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT' || status === 'CLOSED') {
+          console.error('Supabase Realtime subscription error/closed:', status, err);
+        }
+      });
+
+    return () => {
+      if (fixturesChannel) {
+        supabase?.removeChannel(fixturesChannel);
+        console.log('Unsubscribed from Supabase Realtime fixtures updates.');
+      }
+    };
+  }, [supabase]);
 
   const handleDateOrFilterChange = (newDate: Date, newFilter?: FilterType) => {
     setSelectedDate(newDate);
@@ -165,7 +231,7 @@ export default function EnhancedFixturesSection({
     router.push(`${pathname}?${newSearchParams.toString()}`, { scroll: false });
   };
 
-  const groupFixturesByLeague = (dateFixtures: any[]) => {
+  const groupFixturesByLeague = useCallback((dateFixtures: FixtureData[]) => {
     if (!Array.isArray(dateFixtures)) return {};
     return dateFixtures.reduce((acc, fixture) => {
       if (!fixture?.league?.id) return acc;
@@ -179,7 +245,7 @@ export default function EnhancedFixturesSection({
       acc[leagueId].fixtures.push(fixture);
       return acc;
     }, {});
-  };
+  }, []);
 
   const getSectionTitle = () => {
     const todayDate = new Date();
@@ -198,68 +264,78 @@ export default function EnhancedFixturesSection({
     return format(selectedDate, 'd. MMMM yyyy', { locale: nb });
   };
 
-  const getMatchStatus = (fixture: any) => {
+  const getMatchData = useCallback((fixture: FixtureData) => {
     const fixtureId = fixture.fixture.id;
     const liveMatch = liveMatches[fixtureId];
-    
-    console.log('Match status check:', {
-      fixtureId,
-      hasLiveData: !!liveMatch,
-      liveMatchData: liveMatch,
-      timestamp: new Date().toISOString()
-    });
-    
-    const isFinished = liveMatch?.status.short === 'FT';
-    const isLive = liveMatch && ['1H', 'HT', '2H', 'ET', 'P', 'LIVE'].includes(liveMatch.status.short);
-    
-    return { isLive, isFinished };
-  };
 
-  const getMatchData = (fixture: any) => {
-    const fixtureId = fixture.fixture.id;
-    const liveMatch = liveMatches[fixtureId];
-    
     if (liveMatch) {
       return {
         id: fixtureId,
         status: liveMatch.status,
         goals: liveMatch.goals,
-        lastUpdated: Date.now()
+        lastUpdated: liveMatch.lastUpdated
       };
     }
-    
-    return null;
-  };
+    return {
+      id: fixtureId,
+      status: fixture.fixture.status,
+      goals: fixture.goals,
+      lastUpdated: 0
+    };
+  }, [liveMatches]);
 
-  const getFixturesToDisplay = () => {
-    const currentDayFixtures = newFixtures.today || [];
-    const nextDayFixtures = newFixtures.day1 || [];
+  const getFixturesToDisplay = useCallback(() => {
+    const fixturesForDate = currentFixtures[isSameDay(selectedDate, new Date()) ? 'today' : `day${selectedDate.getDay()}`] ||
+                           currentFixtures.today || [];
+
+    let dateKey = 'today';
+    const today = new Date();
+    if (isSameDay(selectedDate, today)) {
+        dateKey = 'today';
+    } else {
+        const dayKeys = Object.keys(currentFixtures);
+        const targetDateStr = format(selectedDate, 'yyyy-MM-dd');
+
+        for (const key of dayKeys) {
+            if (currentFixtures[key] && currentFixtures[key].length > 0) {
+                const fixtureDateStr = format(parseISO(currentFixtures[key][0].fixture.date), 'yyyy-MM-dd');
+                if (fixtureDateStr === targetDateStr) {
+                    dateKey = key;
+                    break;
+                }
+            }
+        }
+    }
+    const relevantDayFixtures = currentFixtures[dateKey] || [];
 
     switch (activeFilter) {
       case 'today':
-        return currentDayFixtures;
+        return currentFixtures.today || [];
       case 'live':
-        return currentDayFixtures.filter(fixture => getMatchStatus(fixture).isLive);
+        return (currentFixtures.today || []).filter(f => {
+          const matchData = getMatchData(f);
+          return matchData && ['1H', 'HT', '2H', 'ET', 'P', 'LIVE'].includes(matchData.status.short);
+        });
       case 'tv':
-        return currentDayFixtures.filter(fixture =>
+        return (currentFixtures.today || []).filter(fixture =>
           getStreamingProviders(fixture.league.id).length > 0
         );
       case 'upcoming':
-        return nextDayFixtures;
+        return currentFixtures.day1 || [];
       default:
-        return currentDayFixtures;
+        return relevantDayFixtures;
     }
-  };
+  }, [activeFilter, currentFixtures, selectedDate, getMatchData]);
 
   const fixturesToDisplay = getFixturesToDisplay();
   const groupedFixtures = groupFixturesByLeague(fixturesToDisplay);
 
   useEffect(() => {
-    console.log('Current fixtures (from props):', newFixtures);
+    console.log('Current fixtures (state):', currentFixtures);
     console.log('Live matches state:', liveMatches);
     console.log('Fixtures to display (processed):', fixturesToDisplay.length);
     console.log('Selected Date in Client:', selectedDate);
-  }, [newFixtures, liveMatches, fixturesToDisplay, selectedDate]);
+  }, [currentFixtures, liveMatches, fixturesToDisplay, selectedDate]);
 
   const CalendarIcon = () => {
     const [isCalendarOpen, setIsCalendarOpen] = useState(false);
@@ -503,9 +579,7 @@ export default function EnhancedFixturesSection({
           <CalendarIcon />
         </div>
         
-        {isLoadingLiveData && <div className="p-4 text-center text-gray-500 dark:text-gray-400">Laster live data...</div>}
-        
-        {!isLoadingLiveData && Object.keys(groupedFixtures).length === 0 ? (
+        {!Object.keys(groupedFixtures).length === 0 ? (
           <div className="p-6 text-center">
             <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path vectorEffect="non-scaling-stroke" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
@@ -527,24 +601,31 @@ export default function EnhancedFixturesSection({
                 </h3>
               </div>
               <div className="space-y-px">
-                {group.fixtures.map((fixture: any) => {
+                {group.fixtures.map((fixture: FixtureData) => {
                   const matchData = getMatchData(fixture);
-                  const { isLive, isFinished } = getMatchStatus(fixture);
                   const fixtureId = fixture.fixture.id;
                   const fixtureHref = `/fotball/kamp/${fixtureId}`;
+
+                  const isLive = matchData && ['1H', 'HT', '2H', 'ET', 'P', 'LIVE'].includes(matchData.status.short);
+                  const isFinished = matchData && matchData.status.short === 'FT';
+
+                  let linkClasses = "flex items-center justify-between px-3 lg:px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-[#2C2C2E] transition-colors duration-150";
+                  if (isLive) {
+                    linkClasses += " border-l-4 border-green-500 dark:border-orange-500";
+                  }
 
                   return (
                     <Link 
                       key={fixtureId}
                       href={fixtureHref}
-                      className="flex items-center justify-between px-3 lg:px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-[#2C2C2E] transition-colors duration-150"
+                      className={linkClasses}
                     >
                       <div className="w-8 lg:w-10 text-center flex-shrink-0 mr-1 lg:mr-2"> 
-                        {isLive && matchData ? (
+                        {isLive ? (
                           <span className="text-xs lg:text-sm font-semibold text-[#099460] dark:text-[#ff6b00]"> 
                             {matchData.status.elapsed !== null ? `${matchData.status.elapsed}'` : matchData.status.short}
                           </span>
-                        ) : isFinished && matchData ? (
+                        ) : isFinished ? (
                           <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] lg:text-xs font-semibold bg-gray-100 dark:bg-[#333333] text-gray-700 dark:text-gray-300 border border-gray-200/80 dark:border-[#444444]">
                             {matchData.status.short}
                           </span>
@@ -573,7 +654,7 @@ export default function EnhancedFixturesSection({
                         </div>
                         
                         <div className="w-10 lg:w-12 text-center flex-shrink-0">
-                          {(isLive || isFinished) && matchData ? (
+                          {(isLive || isFinished) && matchData.goals ? (
                             <span className="text-xs lg:text-sm font-bold text-gray-800 dark:text-gray-100"> 
                               {matchData.goals.home !== null && matchData.goals.away !== null 
                                 ? `${matchData.goals.home} - ${matchData.goals.away}` 

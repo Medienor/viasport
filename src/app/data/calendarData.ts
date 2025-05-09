@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-05-09T11:59:26.014Z
+// Last updated: 2025-05-09T12:46:42.212Z
 
 export const calendarData = {
   "2025-05-02": [
@@ -19206,7 +19206,7 @@ export const calendarData = {
         "timestamp": 1746790500,
         "periods": {
           "first": 1746790500,
-          "second": null
+          "second": 1746794100
         },
         "venue": {
           "id": null,
@@ -19214,9 +19214,9 @@ export const calendarData = {
           "city": "Shanghai"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 25,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 53,
           "extra": null
         }
       },
