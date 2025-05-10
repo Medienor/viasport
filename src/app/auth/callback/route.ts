@@ -8,6 +8,8 @@ export const dynamic = 'force-dynamic'; // Ensure dynamic handling
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get('code');
+  // Get the origin from query params or use the request origin
+  const origin = requestUrl.searchParams.get('origin') || requestUrl.origin;
 
   if (code) {
     const supabase = createRouteHandlerClient({ cookies });
@@ -17,14 +19,14 @@ export async function GET(request: NextRequest) {
     } catch (error) {
       console.error("Error exchanging code for session:", error);
       // Handle error, maybe redirect to an error page
-      return NextResponse.redirect(`${requestUrl.origin}/auth-error`); // Example error redirect
+      return NextResponse.redirect(`${origin}/auth-error`); // Use the correct origin
     }
   } else {
     console.warn("No code found in auth callback request.");
     // Handle case where no code is present, maybe redirect to login
-    return NextResponse.redirect(`${requestUrl.origin}/`); // Redirect home or to login
+    return NextResponse.redirect(`${origin}/`); // Use the correct origin
   }
 
   // URL to redirect to after sign in process completes
-  return NextResponse.redirect(requestUrl.origin);
+  return NextResponse.redirect(origin);
 }

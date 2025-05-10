@@ -50,6 +50,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         provider: 'google',
         options: {
           redirectTo: redirectTo || undefined,
+          queryParams: {
+            origin: typeof window !== 'undefined' ? window.location.origin : undefined
+          }
         },
       });
       
