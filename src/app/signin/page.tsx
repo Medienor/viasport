@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import Image from 'next/image';
@@ -25,6 +25,31 @@ const GoogleIcon = () => (
 export default function SignInPage() {
   const { session, isLoading, signInWithGoogle } = useAuth();
   const router = useRouter();
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Check for dark mode on initial load and when theme changes
+  useEffect(() => {
+    // Check initial dark mode state
+    if (typeof window !== 'undefined') {
+      // Check for dark class on html element (for Tailwind dark mode)
+      const isDark = document.documentElement.classList.contains('dark');
+      setIsDarkMode(isDark);
+      
+      // Set up an observer to detect theme changes
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.attributeName === 'class') {
+            const isDark = document.documentElement.classList.contains('dark');
+            setIsDarkMode(isDark);
+          }
+        });
+      });
+      
+      observer.observe(document.documentElement, { attributes: true });
+      
+      return () => observer.disconnect();
+    }
+  }, []);
 
   // Redirect if user is already logged in
   useEffect(() => {
@@ -62,10 +87,10 @@ export default function SignInPage() {
         <div>
           <Image
             className="mx-auto h-12 w-auto"
-            src="/blacklogo.svg" // Make sure this path is correct
+            src={isDarkMode ? "/whitelogo.svg" : "/blacklogo.svg"}
             alt="ViaSport Logo"
-            width={192} // Adjust width as needed
-            height={48} // Adjust height as needed
+            width={192}
+            height={48}
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
             Logg inn eller registrer deg

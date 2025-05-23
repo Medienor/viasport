@@ -226,21 +226,10 @@ export default function EliteserienVideos() {
     </div>
   );
 
-  if (error) return (
-    <div>
-      <div className="text-red-500 text-sm mt-4">Kunne ikke laste videoer: {error}</div>
-      {debugInfo && (
-        <details className="mt-2 text-xs border p-2 rounded">
-          <summary className="cursor-pointer font-medium">Debug Information</summary>
-          <pre className="mt-2 p-2 bg-gray-100 rounded overflow-auto">
-            {JSON.stringify(debugInfo, null, 2)}
-          </pre>
-        </details>
-      )}
-    </div>
-  );
+  // Return null (hide component completely) when there's an error
+  if (error) return null;
 
-  if (videos.length === 0) return <div className="text-sm text-gray-500 mt-4">Ingen videoer tilgjengelig</div>;
+  if (videos.length === 0) return null; // Also hide when no videos are available
 
   // Split videos into featured (first) and list (rest)
   const featuredVideo = videos[0];
@@ -248,7 +237,7 @@ export default function EliteserienVideos() {
   const listVideos = videos.slice(1, 5);
 
   return (
-    <div className="mt-4">
+    <div className="mt-4" id="eliteserien-videos-content">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Featured video (left column - 50% width) */}
         <div>

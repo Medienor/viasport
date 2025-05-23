@@ -224,7 +224,7 @@ export default function MatchHighlights({
           console.log(`📺 MatchHighlights [${matchId}]: --- Performing General Keyword Searches ---`);
           for (const term of searchTerms) {
             try {
-                const response = await fetch(`/api/youtube/search?q=${encodeURIComponent(term)}&maxResults=50&purpose=highlights`);
+                const response = await fetch(`/api/youtube/matchhighlights_youtube?q=${encodeURIComponent(term)}&maxResults=50`);
                 if (!response.ok) {
                   console.warn(`📺 MatchHighlights [${matchId}]: ⚠️ General search failed for term: "${term}" (Status: ${response.status})`);
                   continue;

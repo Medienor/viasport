@@ -4,6 +4,7 @@ import Image from 'next/image';
 import SimpleTeamStandings from './components/SimpleTeamStandings';
 import EnhancedFixturesSectionWrapper from './components/EnhancedFixturesSectionWrapper';
 import EliteserienVideos from './components/EliteserienVideos';
+import EliteserienVideosWrapper from './components/EliteserienVideosWrapper';
 
 // Set page-level revalidation time (24 hours = 86400 seconds)
 export const revalidate = 300;
@@ -167,16 +168,14 @@ export default function Home({
           
           {/* Full-width Eliteserien Videos section at the bottom */}
           <div className="lg:col-span-12 mt-8 order-4">
-            <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg p-4">
-              <h2 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Høydepunkter fra Eliteserien</h2>
-              <Suspense fallback={<div className="animate-pulse grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[...Array(4)].map((_, i) => (
-                  <div key={i} className="bg-gray-200 dark:bg-[#222222] rounded-lg h-48"></div>
-                ))}
-              </div>}>
-                <EliteserienVideos />
-              </Suspense>
-            </div>
+            <Suspense fallback={<div className="animate-pulse grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[...Array(4)].map((_, i) => (
+                <div key={i} className="bg-gray-200 dark:bg-[#222222] rounded-lg h-48"></div>
+              ))}
+            </div>}>
+              {/* Wrap EliteserienVideos in a client component that conditionally renders the container */}
+              <EliteserienVideosWrapper />
+            </Suspense>
           </div>
         </div>
       </div>

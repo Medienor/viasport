@@ -664,3 +664,18 @@ type FetchOptions = {
     
     return `${nameSlug}-${teamId}`;
   }
+
+  export async function fetchTransfersByTeam(teamId: number) {
+    try {
+      const response = await fetch(`/api/transfers?team=${teamId}`);
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Error fetching transfers:', error);
+      throw error;
+    }
+  }

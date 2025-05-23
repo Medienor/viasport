@@ -341,7 +341,7 @@ const TERMINAL_MATCH_STATUSES = [
   'WO',   // Walkover (Away win)
 ];
 
-const SCRIPT_MODE_ONLY_FILL_FT_DETAILS = true; // <--- ADD THIS FLAG
+const SCRIPT_MODE_ONLY_FILL_FT_DETAILS = false; // <--- CHANGE THIS TO FALSE
 
 async function syncFixtures() {
   console.log('Starting Viasport Fixture Synchronization Script...');

@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-05-09T13:07:30.574Z
+// Last updated: 2025-05-23T15:05:09.403Z
 
 export const leagueTeamsData = {
   "2": [
@@ -2385,6 +2385,26 @@ export const leagueTeamsData = {
         "capacity": 15034,
         "surface": "grass",
         "image": "https://media.api-sports.io/football/venues/725.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1660,
+        "name": "SV Elversberg",
+        "code": "ELV",
+        "country": "Germany",
+        "founded": 1907,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1660.png"
+      },
+      "venue": {
+        "id": 710,
+        "name": "URSAPHARM-Arena an der Kaiserlinde",
+        "address": "Lindenstraße 7",
+        "city": "Spiesen-Elversberg",
+        "capacity": 11150,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/710.png"
       }
     }
   ],
