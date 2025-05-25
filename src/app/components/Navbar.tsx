@@ -211,6 +211,13 @@ const Navbar = () => {
               </Link>
 
               <Link 
+                href="/news"
+                className="px-4 py-2 rounded-md text-sm font-semibold text-black dark:text-gray-100/80 hover:text-gray-700 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-transparent transition-all duration-200"
+              >
+                Nyheter
+              </Link>
+
+              <Link 
                 href="/om-oss"
                 className="px-4 py-2 rounded-md text-sm font-semibold text-black dark:text-gray-100/80 hover:text-gray-700 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-transparent transition-all duration-200"
               >
@@ -453,6 +460,13 @@ const Navbar = () => {
             className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
           >
             Overganger
+          </Link>
+          
+          <Link
+            href="/news"
+            className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+          >
+            Nyheter
           </Link>
           
           <div className="mt-3">

@@ -5,6 +5,7 @@ import SimpleTeamStandings from './components/SimpleTeamStandings';
 import EnhancedFixturesSectionWrapper from './components/EnhancedFixturesSectionWrapper';
 import EliteserienVideos from './components/EliteserienVideos';
 import EliteserienVideosWrapper from './components/EliteserienVideosWrapper';
+import LatestNews from './components/LatestNews';
 
 // Set page-level revalidation time (24 hours = 86400 seconds)
 export const revalidate = 300;
@@ -156,12 +157,22 @@ export default function Home({
 
           {/* Right Sidebar - Premier League Table */}
           <div className="lg:col-span-3 order-2 lg:order-3">
-            <div> 
+            <div className="space-y-6"> 
               <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
                 <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Tabellplassering</h2>
                 </div>
                 <SimpleTeamStandings leagueId={39} season={2024} leagueName={'Premier League'} /> 
+              </div>
+              
+              {/* Latest News Section */}
+              <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
+                <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Siste Nyheter</h2>
+                </div>
+                <div className="p-4">
+                  <LatestNews />
+                </div>
               </div>
             </div>
           </div>

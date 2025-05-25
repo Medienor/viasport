@@ -20,6 +20,7 @@ import LiveMatchEvents from '@/app/components/LiveMatchEvents';
 import TopScorersComparison from '@/app/components/TopScorersComparison';
 import MatchStatsSnippet from '@/app/components/MatchStatsSnippet';
 import HorizontalLineupComponent from '@/app/components/HorizontalLineupComponent';
+import FixtureNews from '@/app/components/FixtureNews';
 
 export const dynamic = "force-dynamic";
 
@@ -611,6 +612,9 @@ export default async function MatchPage({ params }: { params: { matchId: string 
             )}
             {/* ========================== */}
 
+            {/* Show FixtureNews after MatchStatsSnippet for finished matches */}
+            {isFinished && <FixtureNews leagueId={match.league.id} leagueName={match.league.name} isFinished={isFinished} />}
+
             {/* SEPARATE Live Match Events Card */}
             {/* Conditionally render the entire events card */}
             {(isLive || isFinished) && ( // Show if live or finished, even with 0 events initially
@@ -883,6 +887,9 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                 )}
               </MatchTabs>
             </div>
+
+            {/* Show FixtureNews before TeamForm for upcoming matches only */}
+            {isUpcoming && <FixtureNews leagueId={match.league.id} leagueName={match.league.name} isFinished={isFinished} />}
 
             {/* Conditionally render TeamForm if match is upcoming - MOVED HERE */}
             {isUpcoming && (
