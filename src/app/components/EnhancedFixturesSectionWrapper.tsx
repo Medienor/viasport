@@ -25,6 +25,8 @@ function generateDates(startDate: Date) {
   const dates: {[key: string]: Date} = {};
   // 'today' in the context of the component will be the startDate
   dates.today = new Date(startDate);
+  
+  // Generate tomorrow as day1, day after tomorrow as day2, etc.
   for (let i = 1; i <= 6; i++) {
     const nextDate = new Date(startDate);
     nextDate.setDate(startDate.getDate() + i);
@@ -96,7 +98,8 @@ async function fetchFixturesFromSupabase(date: Date) {
         goals,
         league,
         teams,
-        match_status
+        match_status,
+        event_data
       `)
       .in('match_status', ['NS', 'FT', '1H', '2H', 'HT']) // Include all relevant match statuses
       .gte('date', startOfDay.toISOString())
@@ -127,6 +130,7 @@ async function fetchFixturesFromSupabase(date: Date) {
           id: fixture.league_id,
           name: fixture.league.name,
           country: fixture.league.country,
+          round: fixture.league.round,
           logo: `https://viasport.b-cdn.net/football/leagues/${fixture.league_id}.png`
         },
         teams: {
@@ -141,7 +145,8 @@ async function fetchFixturesFromSupabase(date: Date) {
             logo: `https://viasport.b-cdn.net/football/teams/${fixture.away_team_id}.png`
           }
         },
-        goals: fixture.goals || { home: null, away: null }, // Add goals data
+        goals: fixture.goals || { home: null, away: null },
+        event_data: fixture.event_data || [],
         formattedTime: new Date(fixture.date).toLocaleTimeString('no-NO', { 
           hour: '2-digit', 
           minute: '2-digit' 

@@ -131,7 +131,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
   }
 
   return (
-    <div className="bg-white dark:bg-[#181818] rounded-lg shadow-md p-4">
+    <div className="bg-white dark:bg-[#222222] rounded-lg shadow-md p-4">
       <div className="flex items-center justify-between mb-3 relative" ref={dropdownRef}>
         {/* Current League Display */}
         <div className="flex items-center">
@@ -166,10 +166,10 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
         
         {/* Enhanced Dropdown Menu */}
         {isDropdownOpen && (
-          <div className="absolute right-0 top-full mt-1 w-64 bg-white dark:bg-[#181818] rounded-lg shadow-lg border border-gray-100 dark:border-[#333333] overflow-hidden z-20">
+          <div className="absolute right-0 top-full mt-1 w-64 bg-white dark:bg-[#222222] rounded-lg shadow-lg border border-gray-100 dark:border-[#333333] overflow-hidden z-20">
             <div className="py-2">
               {/* Header */}
-              <div className="px-4 py-2 bg-gray-50 dark:bg-[#222222] border-b border-gray-100 dark:border-[#333333]">
+              <div className="px-4 py-2 bg-gray-50 dark:bg-[#333333] border-b border-gray-100 dark:border-[#333333]">
                 <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-100">Velg liga</h3>
               </div>
               
@@ -180,7 +180,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
                     key={league.id}
                     onClick={() => changeLeague(league.id, league.name)}
                     className={`w-full text-left px-4 py-2.5 flex items-center space-x-3 hover:bg-gray-50 dark:hover:bg-[#333333] transition-colors
-                      ${leagueId === league.id ? 'bg-blue-50/50 dark:bg-[#222222]' : ''}`}
+                      ${leagueId === league.id ? 'bg-blue-50/50 dark:bg-[#333333]' : ''}`}
                   >
                     {/* League Icon */}
                     <div className="relative h-6 w-6 flex-shrink-0">
@@ -226,13 +226,13 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
           let rankClass = '';
           if (standing.description) {
             if (standing.description.includes('Champions League')) {
-              rankClass = 'border-l-2 border-blue-500';
+              rankClass = 'border-l-[3px] border-blue-500';
             } else if (standing.description.includes('Europa League')) {
-              rankClass = 'border-l-2 border-orange-500';
+              rankClass = 'border-l-[3px] border-orange-500';
             } else if (standing.description.includes('Conference League')) {
-              rankClass = 'border-l-2 border-purple-500';
+              rankClass = 'border-l-[3px] border-purple-500';
             } else if (standing.description.includes('Relegation')) {
-              rankClass = 'border-l-2 border-red-500';
+              rankClass = 'border-l-[3px] border-red-500';
             }
           }
 
@@ -252,7 +252,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
             <Link
               key={standing.team.id}
               href={`/lag/${slug}-${standing.team.id}`}
-              className={`flex items-center justify-between py-1 px-2 hover:bg-gray-50 dark:hover:bg-[#222222] rounded ${rankClass}`}
+              className={`flex items-center justify-between py-1 px-2 hover:bg-gray-50 dark:hover:bg-[#333333] ${rankClass}`}
             >
               <div className="flex items-center space-x-2">
                 <span className="w-5 text-xs text-gray-600 dark:text-gray-400">{standing.rank}</span>

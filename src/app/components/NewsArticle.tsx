@@ -7,6 +7,8 @@ import { formatDistanceToNow, format } from 'date-fns'
 import { nb } from 'date-fns/locale'
 import { ArrowLeftIcon, ShareIcon } from '@heroicons/react/24/outline'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { getStreamingProviders } from '@/utils/channelUtils'
+import { findMatchingFixture } from '@/utils/fixtureUtils'
 
 interface NewsArticleProps {
   article: {
@@ -29,6 +31,8 @@ interface NewsArticleProps {
     seo_slug?: string
     nb_seo_slug?: string
     db_league?: string
+    db_hometeam?: number
+    db_awayteam?: number
   }
 }
 
@@ -125,7 +129,120 @@ function extractMatchData(sportsRelated: SportsRelatedItem[]): MatchData | null 
   return matchItem?.data || null
 }
 
-function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
+function MatchSummaryCard({ matchData, article }: { matchData: MatchData, article: any }) {
+  const [timeLeft, setTimeLeft] = useState<string>('')
+  const [fixtureId, setFixtureId] = useState<number | null>(null)
+
+  useEffect(() => {
+    if ((matchData.event_status?.code === 'scheduled' || matchData.event_status?.code === 'not_started') && matchData.start_time) {
+      const updateCountdown = () => {
+        const now = new Date().getTime()
+        const matchTime = new Date(matchData.start_time).getTime()
+        const difference = matchTime - now
+
+        if (difference > 0) {
+          const days = Math.floor(difference / (1000 * 60 * 60 * 24))
+          const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+          const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+          const seconds = Math.floor((difference % (1000 * 60)) / 1000)
+
+          if (days > 0) {
+            setTimeLeft(`${days}d ${hours}t ${minutes}m`)
+          } else if (hours > 0) {
+            setTimeLeft(`${hours}t ${minutes}m ${seconds}s`)
+          } else if (minutes > 0) {
+            setTimeLeft(`${minutes}m ${seconds}s`)
+          } else {
+            setTimeLeft(`${seconds}s`)
+          }
+        } else {
+          setTimeLeft('Kampen starter snart')
+        }
+      }
+
+      updateCountdown()
+      const interval = setInterval(updateCountdown, 1000)
+
+      return () => clearInterval(interval)
+    }
+  }, [matchData.event_status?.code, matchData.start_time])
+
+  // Find matching fixture
+  useEffect(() => {
+    if (matchData.start_time && article.db_hometeam && article.db_awayteam) {
+      findMatchingFixture(
+        matchData.start_time,
+        article.db_hometeam,
+        article.db_awayteam
+      ).then(fixture => {
+        if (fixture) {
+          setFixtureId(fixture.id)
+        }
+      })
+    }
+  }, [matchData.start_time, article.db_hometeam, article.db_awayteam])
+
+  const createTeamSlug = (teamName: string, teamId: number) => {
+    if (!teamName || !teamId) {
+      console.log('Missing team data:', { teamName, teamId })
+      return '#'
+    }
+    
+    const slug = teamName
+      .toLowerCase()
+      .replace(/[æ]/g, 'ae')
+      .replace(/[ø]/g, 'o')
+      .replace(/[å]/g, 'a')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .trim()
+    
+    const url = `/lag/${slug}-${teamId}`
+    console.log('Generated team URL:', url)
+    return url
+  }
+
+  const createLeagueSlug = () => {
+    if (!article.sports_related || !Array.isArray(article.sports_related) || !article.db_league) {
+      return '#'
+    }
+
+    // Find the tournament/league in sports_related data
+    const tournament = article.sports_related.find(item => item.type === 'tournament')
+    
+    if (!tournament || !tournament.data || !tournament.data.slug) {
+      return '#'
+    }
+
+    // Extract the slug and remove the ID at the end
+    const originalSlug = tournament.data.slug // e.g., "champions-league-27"
+    const slugWithoutId = originalSlug.replace(/-\d+$/, '') // Remove "-27" to get "champions-league"
+    
+    // Create new URL with correct db_league ID
+    const url = `/fotball/liga/${slugWithoutId}-${article.db_league}`
+    console.log('Generated league URL:', url, { originalSlug, slugWithoutId, dbLeagueId: article.db_league })
+    return url
+  }
+
+  const getStreamingProvider = () => {
+    if (!article.db_league) return null
+    const providers = getStreamingProviders(article.db_league)
+    return providers.length > 0 ? providers[0] : null
+  }
+
+  const streamingProvider = getStreamingProvider()
+
+  // Add debugging to see what we're working with
+  console.log('Article team IDs:', { 
+    db_hometeam: article.db_hometeam, 
+    db_awayteam: article.db_awayteam 
+  })
+  console.log('Match team names:', { 
+    home: matchData.home_team?.name, 
+    away: matchData.away_team?.name 
+  })
+
   if (!matchData || !matchData.home_team || !matchData.away_team || !matchData.tournament_season_stage) {
     return null
   }
@@ -161,7 +278,8 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
       case 'live':
         return 'Live'
       case 'scheduled':
-        return 'Planlagt'
+      case 'not_started':
+        return timeLeft || 'Planlagt'
       default:
         return status
     }
@@ -169,7 +287,7 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 md:p-6 mb-8 shadow-sm dark:shadow-lg">
-      <div className="flex items-center justify-between mb-4 md:mb-6">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 md:mb-6 space-y-2 md:space-y-0">
         <div className="flex items-center space-x-2 md:space-x-3">
           {matchData.tournament_season_stage?.country?.url_flag && (
             <img 
@@ -179,9 +297,12 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
             />
           )}
           <div className="flex flex-col md:flex-row md:items-center md:space-x-2">
-            <span className="font-medium text-sm md:text-base text-gray-900 dark:text-white">
+            <Link 
+              href={createLeagueSlug()}
+              className="font-medium text-sm md:text-base text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
               {matchData.tournament_season_stage?.name || 'Unknown Tournament'}
-            </span>
+            </Link>
             {matchData.round && (
               <span className="text-xs md:text-sm text-gray-500 dark:text-gray-400">
                 Runde {matchData.round}
@@ -189,11 +310,26 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
             )}
           </div>
         </div>
-        {matchData.event_status?.code && (
-          <span className={`px-2 py-1 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-medium ${getStatusColor(matchData.event_status.code)}`}>
-            {getStatusText(matchData.event_status.code)}
-          </span>
-        )}
+        <div className="flex items-center space-x-2 md:self-end">
+          {matchData.event_status?.code && (
+            <span className={`px-2 py-1 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-medium ${getStatusColor(matchData.event_status.code)}`}>
+              {getStatusText(matchData.event_status.code)}
+            </span>
+          )}
+          {/* Show streaming provider only when match is upcoming (has countdown) */}
+          {(matchData.event_status?.code === 'scheduled' || matchData.event_status?.code === 'not_started') && streamingProvider && (
+            <div className="flex items-center space-x-1 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-lg">
+              <img 
+                src={streamingProvider.icon} 
+                alt={streamingProvider.name}
+                className="w-4 h-4 object-contain"
+              />
+              <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
+                {streamingProvider.name}
+              </span>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="flex items-center justify-between mb-4 md:mb-6">
@@ -205,9 +341,12 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
               className="w-8 h-8 md:w-12 md:h-12 object-contain flex-shrink-0"
             />
           )}
-          <span className="font-medium text-sm md:text-lg text-gray-900 dark:text-white truncate">
+          <Link 
+            href={createTeamSlug(matchData.home_team?.name || '', article.db_hometeam || 0)}
+            className="font-medium text-sm md:text-lg text-gray-900 dark:text-white truncate hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
             {matchData.home_team?.name || 'Unknown Team'}
-          </span>
+          </Link>
         </div>
 
         <div className="flex items-center space-x-3 md:space-x-4 px-3 md:px-6 flex-shrink-0">
@@ -224,9 +363,12 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
         </div>
 
         <div className="flex items-center space-x-2 md:space-x-3 flex-1 justify-end min-w-0">
-          <span className="font-medium text-sm md:text-lg text-gray-900 dark:text-white truncate">
+          <Link 
+            href={createTeamSlug(matchData.away_team?.name || '', article.db_awayteam || 0)}
+            className="font-medium text-sm md:text-lg text-gray-900 dark:text-white truncate hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
             {matchData.away_team?.name || 'Unknown Team'}
-          </span>
+          </Link>
           {matchData.away_team?.url_logo && (
             <img 
               src={matchData.away_team.url_logo} 
@@ -237,18 +379,39 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 pt-3 md:pt-4 border-t border-gray-200 dark:border-gray-700 text-xs md:text-sm">
+      <div className="pt-3 md:pt-4 border-t border-gray-200 dark:border-gray-700 text-xs md:text-sm space-y-2">
+        {/* Date and Button Row */}
         {matchData.start_time && (
-          <div className="flex items-center space-x-1 md:space-x-2">
-            <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400 dark:text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span className="text-gray-600 dark:text-gray-300 truncate">
-              {formatDate(matchData.start_time)}
-            </span>
+          <div className="grid grid-cols-2 items-center">
+            <div className="flex items-center space-x-1 md:space-x-2">
+              <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400 dark:text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-gray-600 dark:text-gray-300 truncate">
+                {formatDate(matchData.start_time)}
+              </span>
+            </div>
+            <div className="flex justify-end">
+              {fixtureId ? (
+                <Link 
+                  href={`/fotball/kamp/${fixtureId}`}
+                  className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium rounded-lg transition-colors"
+                >
+                  Følg kampen
+                </Link>
+              ) : (
+                <button 
+                  disabled
+                  className="px-3 py-1 bg-gray-400 text-white text-xs font-medium rounded-lg cursor-not-allowed"
+                >
+                  Følg kampen
+                </button>
+              )}
+            </div>
           </div>
         )}
         
+        {/* Venue Row */}
         {matchData.venue?.name && (
           <div className="flex items-center space-x-1 md:space-x-2">
             <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400 dark:text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -261,6 +424,7 @@ function MatchSummaryCard({ matchData }: { matchData: MatchData }) {
           </div>
         )}
 
+        {/* Referee Row */}
         {matchData.referee?.name && (
           <div className="flex items-center space-x-1 md:space-x-2">
             <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400 dark:text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -489,7 +653,7 @@ export default function NewsArticle({ article }: NewsArticleProps) {
       return (
         <div 
           key={index}
-          className="prose prose-lg dark:prose-invert max-w-none mb-6"
+          className="prose prose-lg dark:prose-invert max-w-none mb-6 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:dark:text-white [&_h2]:mt-8 [&_h2]:mb-4"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )
@@ -631,7 +795,7 @@ export default function NewsArticle({ article }: NewsArticleProps) {
       )}
 
       {matchData && (
-        <MatchSummaryCard matchData={matchData} />
+        <MatchSummaryCard matchData={matchData} article={article} />
       )}
 
       <div className="prose prose-lg dark:prose-invert max-w-none">

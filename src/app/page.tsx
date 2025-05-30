@@ -6,6 +6,15 @@ import EnhancedFixturesSectionWrapper from './components/EnhancedFixturesSection
 import EliteserienVideos from './components/EliteserienVideos';
 import EliteserienVideosWrapper from './components/EliteserienVideosWrapper';
 import LatestNews from './components/LatestNews';
+import LatestHighlights from './components/LatestHighlights';
+import AddItemButtons from './components/AddItemButtons';
+import AddLeagueButton from './components/AddLeagueButton';
+import AddTeamButton from './components/AddTeamButton';
+import FavoriteLeagues from './components/FavoriteLeagues';
+import ConditionalAddLeagueButton from './components/ConditionalAddLeagueButton';
+import ConditionalAddTeamButton from './components/ConditionalAddTeamButton';
+import FavoriteTeams from './components/FavoriteTeams';
+import EuropeanChampionships from './components/EuropeanChampionships';
 
 // Set page-level revalidation time (24 hours = 86400 seconds)
 export const revalidate = 300;
@@ -41,10 +50,15 @@ const popularTeams = [
   { id: 541, name: 'Real Madrid', country: 'Spain', logo: 'https://viasport.b-cdn.net/football/teams/541.png' },
 ];
 
-// Helper function to create league URL
-const createLeagueUrl = (name: string, id: number) => {
-  const slug = name.toLowerCase().replace(/\s+/g, '-');
-  return `/fotball/liga/${slug}-${id}`;
+// Helper function to create league slug
+const createLeagueSlug = (name: string, id: number) => {
+  const slug = name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Replace multiple hyphens with single
+    .trim();
+  return `${slug}-${id}`;
 };
 
 // Helper function to create team URL (you might need to adjust this based on your routes)
@@ -65,90 +79,103 @@ export default function Home({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Sidebar - Popular Leagues & Teams */}
           <div className="lg:col-span-3 order-3 lg:order-1">
-            <div className="h-full">
-              {/* Popular Leagues Section */}
-              <Link 
-                href="/fotball/liga" 
-                className="flex justify-between items-center mb-3 px-1 group"
-              >
-                <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-150">
+            <div className="h-full space-y-8">
+              {/* User's Favorite Leagues */}
+              <FavoriteLeagues />
+              
+              {/* Populære ligaer */}
+              <div className="mb-6">
+                <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-3 tracking-wide">
                   Populære ligaer
                 </h2>
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className="h-4 w-4 text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-150" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <div className="space-y-1.5 mb-8">
-                {popularLeagues.map(league => (
-                  <Link 
-                    key={league.id}
-                    href={createLeagueUrl(league.name, league.id)}
-                    className="flex items-center p-3 bg-white dark:bg-[#222222] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 shadow-sm" 
-                  >
-                    <div className="relative w-5 h-5 mr-3 flex-shrink-0">
-                      <Image 
-                        src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
-                        alt={league.name} 
-                        fill
-                        className="object-contain dark:brightness-110"
-                      />
-                    </div>
-                    <span className="text-sm font-medium text-gray-800 dark:text-gray-100 truncate"> 
-                      {league.name}
-                    </span>
-                  </Link>
-                ))}
-              </div>
-              
-              {/* Popular Teams Section */}
-              <div className="flex justify-between items-center mb-3 px-1">
-                <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">
-                  Fotball lag
-                </h2>
-              </div>
-              <div className="space-y-1.5"> 
-                {popularTeams.map(team => {
-                  // Generate slug directly here
-                  const slug = team.name.toLowerCase().replace(/\s+/g, '-'); 
-                  return (
-                    <Link 
-                      key={team.id}
-                      // Corrected href structure: /lag/{slug}-{id}
-                      href={`/lag/${slug}-${team.id}`} 
-                      className="flex items-center p-3 bg-white dark:bg-[#222222] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 shadow-sm" 
+                <div className="space-y-1.5">
+                  {popularLeagues.map(league => (
+                    <Link
+                      key={league.id}
+                      href={`/fotball/liga/${createLeagueSlug(league.name, league.id)}`}
+                      className="flex items-center p-3 bg-white dark:bg-[#222222] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 shadow-sm"
                     >
                       <div className="relative w-5 h-5 mr-3 flex-shrink-0">
-                        <Image 
-                          src={team.logo}
-                          alt={team.name} 
+                        <Image
+                          src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
+                          alt={league.name}
                           fill
                           className="object-contain dark:brightness-110"
                         />
                       </div>
-                      <div>
-                        <span className="block text-sm font-medium text-gray-800 dark:text-gray-100 truncate"> 
-                          {team.name}
-                        </span>
-                        <span className="block text-xs text-gray-500 dark:text-gray-400">
-                          {team.country} 
-                        </span>
-                      </div>
+                      <span className="text-sm font-medium text-gray-800 dark:text-gray-100 truncate">
+                        {league.name}
+                      </span>
                     </Link>
-                  );
-                })}
+                  ))}
+                  
+                  {/* Add League Button - shows here if user has NO favorites */}
+                  <ConditionalAddLeagueButton position="popular" />
+                </div>
+              </div>
+
+              {/* European Championships */}
+              <EuropeanChampionships />
+
+              {/* User's Favorite Teams */}
+              <FavoriteTeams />
+
+              {/* Popular Teams Section */}
+              <div>
+                <div className="flex justify-between items-center mb-3 px-1">
+                  <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">
+                    Fotball lag
+                  </h2>
+                </div>
+                <div className="space-y-1.5"> 
+                  {popularTeams.map(team => {
+                    const slug = team.name.toLowerCase().replace(/\s+/g, '-'); 
+                    return (
+                      <Link 
+                        key={team.id}
+                        href={`/lag/${slug}-${team.id}`} 
+                        className="flex items-center p-3 bg-white dark:bg-[#222222] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 shadow-sm" 
+                      >
+                        <div className="relative w-5 h-5 mr-3 flex-shrink-0">
+                          <Image 
+                            src={team.logo}
+                            alt={team.name} 
+                            fill
+                            className="object-contain dark:brightness-110"
+                          />
+                        </div>
+                        <div>
+                          <span className="block text-sm font-medium text-gray-800 dark:text-gray-100 truncate"> 
+                            {team.name}
+                          </span>
+                          <span className="block text-xs text-gray-500 dark:text-gray-400">
+                            {team.country} 
+                          </span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                  
+                  {/* Add Team Button - shows here if user has NO favorites */}
+                  <ConditionalAddTeamButton position="popular" />
+                </div>
+              </div>
+
+              {/* Latest Highlights Section */}
+              <div>
+                <div className="flex justify-between items-center mb-3 px-1">
+                  <h2 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">
+                    Høydepunkter
+                  </h2>
+                </div>
+                <LatestHighlights />
               </div>
             </div>
           </div>
 
           {/* Center Column - Fixtures */}
           <div className="lg:col-span-6 order-1 lg:order-2">
-            <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
+            <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden dark:border dark:border-[#141414]">
               <Suspense fallback={<FixturesSkeleton />}>
                 <EnhancedFixturesSectionWrapper searchParams={searchParams} />
               </Suspense>
@@ -158,7 +185,7 @@ export default function Home({
           {/* Right Sidebar - Premier League Table */}
           <div className="lg:col-span-3 order-2 lg:order-3">
             <div className="space-y-6"> 
-              <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
+              <div className="bg-white dark:bg-[#222222] shadow-sm rounded-lg overflow-hidden">
                 <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Tabellplassering</h2>
                 </div>
@@ -166,9 +193,9 @@ export default function Home({
               </div>
               
               {/* Latest News Section */}
-              <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
+              <div className="bg-white dark:bg-[#222222] shadow-sm rounded-lg overflow-hidden">
                 <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
-                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Siste Nyheter</h2>
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Nyheter</h2>
                 </div>
                 <div className="p-4">
                   <LatestNews />

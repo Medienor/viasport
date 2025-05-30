@@ -28,6 +28,8 @@ interface NewsArticleData {
   seo_slug?: string
   nb_seo_slug?: string
   db_league?: string
+  db_hometeam?: number
+  db_awayteam?: number
 }
 
 interface PageProps {
@@ -64,7 +66,9 @@ async function getArticle(slug: string): Promise<NewsArticleData | null> {
       sports_related,
       seo_slug,
       nb_seo_slug,
-      db_league
+      db_league,
+      db_hometeam,
+      db_awayteam
     `)
     .or(`seo_slug.eq.${slug},nb_seo_slug.eq.${slug}`)
     .eq('status', 'active')

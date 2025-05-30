@@ -55,7 +55,7 @@ export default function LatestNews() {
           .eq('nb_translated', true)
           .not('nb_title', 'is', null)
           .order('published_at', { ascending: false })
-          .limit(100);
+          .limit(5);
 
         if (error) {
           throw new Error(`Supabase error: ${error.message}`);
@@ -103,12 +103,19 @@ export default function LatestNews() {
 
   if (loading) return (
     <div className="animate-pulse space-y-4 mt-4">
-      {[...Array(10)].map((_, i) => (
+      {/* Featured story skeleton */}
+      <div className="space-y-3">
+        <div className="rounded bg-gray-200 dark:bg-[#222222] h-32 w-full"></div>
+        <div className="h-4 bg-gray-200 dark:bg-[#222222] rounded w-3/4"></div>
+        <div className="h-3 bg-gray-200 dark:bg-[#222222] rounded w-1/2"></div>
+      </div>
+      {/* Regular stories skeleton */}
+      {[...Array(4)].map((_, i) => (
         <div key={i} className="flex space-x-3">
-          <div className="rounded bg-gray-200 h-16 w-16"></div>
+          <div className="rounded bg-gray-200 dark:bg-[#222222] h-16 w-16"></div>
           <div className="flex-1 space-y-2 py-1">
-            <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-            <div className="h-3 bg-gray-200 rounded w-full"></div>
+            <div className="h-4 bg-gray-200 dark:bg-[#222222] rounded w-3/4"></div>
+            <div className="h-3 bg-gray-200 dark:bg-[#222222] rounded w-full"></div>
           </div>
         </div>
       ))}
@@ -117,56 +124,91 @@ export default function LatestNews() {
 
   if (error) return <div className="text-red-500 text-sm mt-4">Kunne ikke laste nyheter: {error}</div>;
 
-  if (news.length === 0) return <div className="text-sm text-gray-500 mt-4">Ingen nyheter tilgjengelig</div>;
+  if (news.length === 0) return <div className="text-sm text-gray-500 dark:text-gray-400 mt-4">Ingen nyheter tilgjengelig</div>;
+
+  const [featuredNews, ...regularNews] = news;
 
   return (
-    <div className="mt-4">
-      <ul className="space-y-4">
-        {news.map((item) => {
-          // Use Norwegian slug if available, otherwise fall back to English slug
-          const slug = item.nb_seo_slug || item.seo_slug;
-          const articleUrl = slug ? `/news/${slug}` : `/news/${item.id}`;
-          
-          // Use Norwegian content if available
-          const title = item.nb_title || item.title;
-          
-          return (
-            <li key={item.id} className="flex space-x-3">
-              <div className="relative h-16 w-16 flex-shrink-0 rounded overflow-hidden">
-                {item.generated_image_url ? (
-                  <Image 
-                    src={item.generated_image_url} 
-                    alt={title}
-                    fill
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="bg-gray-200 h-full w-full flex items-center justify-center">
-                    <span className="text-xs text-gray-500">Ingen bilde</span>
-                  </div>
-                )}
+    <div className="mt-4 space-y-6">
+      {/* Featured News Story */}
+      {featuredNews && (
+        <div className="space-y-3">
+          <div className="relative h-32 w-full rounded-lg overflow-hidden">
+            {featuredNews.generated_image_url ? (
+              <Image 
+                src={featuredNews.generated_image_url} 
+                alt={featuredNews.nb_title || featuredNews.title}
+                fill
+                className="object-cover"
+              />
+            ) : (
+              <div className="bg-gray-200 dark:bg-[#222222] h-full w-full flex items-center justify-center">
+                <span className="text-sm text-gray-500 dark:text-gray-400">Ingen bilde</span>
               </div>
-              <div className="flex-1">
-                <Link 
-                  href={articleUrl}
-                  className="block"
-                >
-                  <h3 className="text-sm font-medium hover:text-blue-600 hover:underline line-clamp-2">
-                    {title}
-                  </h3>
-                  <div className="flex items-center justify-between mt-2">
-                    {item.published_at && (
-                      <p className="text-xs text-gray-500">
-                        {formatRelativeTime(item.published_at)}
-                      </p>
-                    )}
-                  </div>
-                </Link>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+            )}
+          </div>
+          <Link 
+            href={featuredNews.nb_seo_slug || featuredNews.seo_slug ? `/news/${featuredNews.nb_seo_slug || featuredNews.seo_slug}` : `/news/${featuredNews.id}`}
+            className="block"
+          >
+            <h3 className="text-base font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:underline line-clamp-2 text-gray-900 dark:text-white">
+              {featuredNews.nb_title || featuredNews.title}
+            </h3>
+            {featuredNews.published_at && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                {formatRelativeTime(featuredNews.published_at)}
+              </p>
+            )}
+          </Link>
+        </div>
+      )}
+
+      {/* Regular News Stories */}
+      {regularNews.length > 0 && (
+        <ul className="space-y-4">
+          {regularNews.map((item) => {
+            const slug = item.nb_seo_slug || item.seo_slug;
+            const articleUrl = slug ? `/news/${slug}` : `/news/${item.id}`;
+            const title = item.nb_title || item.title;
+            
+            return (
+              <li key={item.id} className="flex space-x-3">
+                <div className="relative h-16 w-16 flex-shrink-0 rounded overflow-hidden">
+                  {item.generated_image_url ? (
+                    <Image 
+                      src={item.generated_image_url} 
+                      alt={title}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="bg-gray-200 dark:bg-[#222222] h-full w-full flex items-center justify-center">
+                      <span className="text-xs text-gray-500 dark:text-gray-400">Ingen bilde</span>
+                    </div>
+                  )}
+                </div>
+                <div className="flex-1">
+                  <Link 
+                    href={articleUrl}
+                    className="block"
+                  >
+                    <h3 className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:underline line-clamp-2 text-gray-900 dark:text-white">
+                      {title}
+                    </h3>
+                    <div className="flex items-center justify-between mt-2">
+                      {item.published_at && (
+                        <p className="text-xs text-gray-500 dark:text-gray-400">
+                          {formatRelativeTime(item.published_at)}
+                        </p>
+                      )}
+                    </div>
+                  </Link>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }
