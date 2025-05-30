@@ -125,23 +125,35 @@ export async function updateMajorLeagueFixtures(
         league_id: leagueId,
         home_team_id: fixture.teams.home.id,
         away_team_id: fixture.teams.away.id,
-        status: fixture.fixture.status.short,
-        score_fulltime_home: fixture.score?.fulltime?.home ?? null,
-        score_fulltime_away: fixture.score?.fulltime?.away ?? null,
-        score_halftime_home: fixture.score?.halftime?.home ?? null,
-        score_halftime_away: fixture.score?.halftime?.away ?? null,
-        score_extratime_home: fixture.score?.extratime?.home ?? null,
-        score_extratime_away: fixture.score?.extratime?.away ?? null,
-        score_penalty_home: fixture.score?.penalty?.home ?? null,
-        score_penalty_away: fixture.score?.penalty?.away ?? null,
-        venue_id: fixture.fixture.venue.id,
-        venue_name: fixture.fixture.venue.name,
-        venue_city: fixture.fixture.venue.city,
-        referee: fixture.fixture.referee,
-        timezone: fixture.fixture.timezone,
-        timestamp: fixture.fixture.timestamp,
-        periods_first: fixture.fixture.periods?.first,
-        periods_second: fixture.fixture.periods?.second,
+        status: {
+          long: fixture.fixture.status.long,
+          short: fixture.fixture.status.short,
+          elapsed: fixture.fixture.status.elapsed,
+          extra: fixture.fixture.status.extra
+        },
+        score: {
+          halftime: {
+            home: fixture.score?.halftime?.home ?? null,
+            away: fixture.score?.halftime?.away ?? null
+          },
+          fulltime: {
+            home: fixture.score?.fulltime?.home ?? null,
+            away: fixture.score?.fulltime?.away ?? null
+          },
+          extratime: {
+            home: fixture.score?.extratime?.home ?? null,
+            away: fixture.score?.extratime?.away ?? null
+          },
+          penalty: {
+            home: fixture.score?.penalty?.home ?? null,
+            away: fixture.score?.penalty?.away ?? null
+          }
+        },
+        venue: {
+          id: fixture.fixture.venue?.id ?? null,
+          name: fixture.fixture.venue?.name ?? null,
+          city: fixture.fixture.venue?.city ?? null
+        },
         updated_at: new Date().toISOString()
       }));
 
@@ -204,3 +216,40 @@ export async function getFixtureStats(leagueId: number = 39) {
     return null;
   }
 }
+
+// Add this at the bottom of the file
+async function runFixtureUpdate() {
+  console.log('🚀 Starting fixture update for all major leagues...\n');
+  
+  const startTime = Date.now();
+  const currentYear = new Date().getFullYear();
+  const years = [currentYear, currentYear + 1]; // This will be [2024, 2025] currently
+  
+  console.log(`📅 Processing seasons: ${years.join(', ')}`);
+  console.log(`🏆 Total leagues: ${MAJOR_LEAGUES.length}`);
+  console.log(`📊 Total combinations: ${MAJOR_LEAGUES.length * years.length}\n`);
+  
+  for (const year of years) {
+    console.log(`\n🗓️  Starting season ${year}...\n`);
+    
+    await updateMajorLeagueFixtures(year, (progress) => {
+      console.log(`\n📊 Season ${year} - Progress: ${progress.leaguesProcessed}/${progress.totalLeagues} leagues processed`);
+      console.log(`🏟️  Current: ${progress.currentLeagueName} (ID: ${progress.currentLeagueId})`);
+      console.log(`📈 Fixtures found: ${progress.fixturesFoundInCurrentLeague}`);
+      console.log(`💾 Fixtures inserted: ${progress.fixturesInsertedForCurrentLeague}`);
+      console.log(`🔢 Total inserted: ${progress.cumulativeFixturesInserted}`);
+      console.log(`🌐 API calls made: ${progress.apiCalls}`);
+      console.log('─'.repeat(50));
+    });
+    
+    console.log(`\n✅ Completed season ${year}!`);
+  }
+  
+  const totalTime = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
+  console.log('\n🎉 All fixture updates completed!');
+  console.log(`⏱️  Total time: ${totalTime} minutes`);
+  console.log(`📅 Seasons processed: ${years.join(', ')}`);
+}
+
+// Run the function directly
+runFixtureUpdate().catch(console.error);

@@ -209,6 +209,16 @@ export default function LatestNews() {
           })}
         </ul>
       )}
+
+      {/* Les mer section */}
+      <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+        <Link 
+          href="/news"
+          className="block text-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline"
+        >
+          Les mer
+        </Link>
+      </div>
     </div>
   );
 }

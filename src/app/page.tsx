@@ -194,10 +194,8 @@ export default function Home({
               
               {/* Latest News Section */}
               <div className="bg-white dark:bg-[#222222] shadow-sm rounded-lg overflow-hidden">
-                <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
-                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Nyheter</h2>
-                </div>
-                <div className="p-4">
+                <div className="p-4"> 
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Nyheter</h2>
                   <LatestNews />
                 </div>
               </div>

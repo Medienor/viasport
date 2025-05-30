@@ -22,8 +22,21 @@ interface TeamData {
 export const MAJOR_LEAGUES = [
   // Norwegian Leagues
   { id: 103, name: 'Eliteserien' },
-  { id: 104, name: 'OBOS-ligaen' },
+  { id: 104, name: '1. Division' }, // Updated name from 'OBOS-ligaen'
   { id: 725, name: 'Toppserien' }, // Norwegian Women's League
+  { id: 105, name: 'NM Cupen' }, // Norwegian Cup
+  { id: 557, name: 'Super Cup' }, // Norwegian Super Cup
+  { id: 915, name: '1. Division Women' },
+  { id: 473, name: '2. Division - Group 1' },
+  { id: 474, name: '2. Division - Group 2' },
+  { id: 1054, name: '2. Division - Play-offs' },
+  { id: 774, name: '3. Division - Girone 1' },
+  { id: 775, name: '3. Division - Girone 2' },
+  { id: 776, name: '3. Division - Girone 3' },
+  { id: 777, name: '3. Division - Girone 4' },
+  { id: 778, name: '3. Division - Girone 5' },
+  { id: 779, name: '3. Division - Girone 6' },
+  { id: 823, name: 'Nasjonal U19 Champions League' },
 
   // Top 5 Leagues
   { id: 39, name: 'Premier League' },
@@ -36,12 +49,30 @@ export const MAJOR_LEAGUES = [
   { id: 203, name: 'Süper Lig' }, // Turkey
   { id: 94, name: 'Primeira Liga' }, // Portugal
   { id: 106, name: 'Ekstraklasa' }, // Poland
+  { id: 107, name: 'I Liga' }, // Poland Second Division
+  { id: 108, name: 'Polish Cup' }, // Poland Cup
+  { id: 109, name: 'II Liga - East' }, // Poland Third Division East
+  { id: 727, name: 'Polish Super Cup' }, // Poland Super Cup
+  { id: 780, name: 'III Liga - Group 1' }, // Poland Fourth Division Group 1
+  { id: 781, name: 'III Liga - Group 2' }, // Poland Fourth Division Group 2
+  { id: 782, name: 'III Liga - Group 3' }, // Poland Fourth Division Group 3
+  { id: 783, name: 'III Liga - Group 4' }, // Poland Fourth Division Group 4
+  { id: 1033, name: 'Ekstraliga Women' }, // Poland Women's League
+  { id: 676, name: 'Central Youth League' }, // Poland Youth League
   { id: 88, name: 'Eredivisie' }, // Netherlands
   { id: 113, name: 'Allsvenskan' }, // Sweden
   { id: 40, name: 'Championship' }, // English Second Tier
   { id: 179, name: 'Superliga' }, // Denmark
+  { id: 120, name: '1. Division' }, // Denmark Second Tier
+  { id: 122, name: '2. Division' }, // Denmark Third Tier
+  { id: 862, name: '3. Division' }, // Denmark Fourth Tier
+  { id: 357, name: 'Premier Division' }, // Ireland
+  { id: 358, name: 'First Division' }, // Ireland Second Tier
   { id: 128, name: 'Veikkausliiga' }, // Finland
   { id: 119, name: 'Tippeligaen' }, // Iceland
+  { id: 165, name: '1. Deild' }, // Iceland Second Tier
+  { id: 166, name: '2. Deild' }, // Iceland Third Tier
+  { id: 167, name: 'Cup' }, // Iceland Cup
 
   // Major European Competitions
   { id: 2, name: 'Champions League' },
@@ -56,6 +87,7 @@ export const MAJOR_LEAGUES = [
   { id: 4, name: 'Euro Championship' },
   { id: 960, name: 'Euro Championship Qualification' },
   { id: 5, name: 'Nations League' },
+  { id: 1040, name: 'UEFA Nations League Women' },
   { id: 10, name: 'International Friendlies' },
   { id: 667, name: 'Club Friendlies' },
   { id: 480, name: 'Olympics Men' },
@@ -75,6 +107,14 @@ export const MAJOR_LEAGUES = [
   { id: 169, name: 'Super League' }, // China
   { id: 98, name: 'J1 League' }, // Japan
   { id: 253, name: 'MLS' }, // USA
+  { id: 389, name: 'Premier League' }, // Kazakhstan
+  { id: 570, name: 'Premier League' }, // Ghana
+  
+  // Vietnamese Leagues
+  { id: 340, name: 'V.League 1' }, // Vietnamese top division
+  { id: 637, name: 'V.League 2' }, // Vietnamese second division
+  { id: 341, name: 'Cup' }, // Vietnamese Cup
+  { id: 831, name: 'Super Cup' }, // Vietnamese Super Cup
   
   // Women's Football
   { id: 725, name: 'Toppserien' }, // Already added above (Norway)
@@ -93,7 +133,15 @@ export const MAJOR_LEAGUES = [
   { id: 290, name: 'Persian Gulf Pro League' },
   { id: 495, name: 'Hazfi Cup' },
   { id: 291, name: 'Azadegan League' },
-  { id: 905, name: 'Super Cup' }
+  { id: 905, name: 'Super Cup' },
+
+  // Saudi Arabian Leagues
+  { id: 307, name: 'Pro League' }, // Saudi Pro League
+  { id: 308, name: 'Division 1' }, // Saudi First Division
+  { id: 309, name: 'Division 2' }, // Saudi Second Division
+  { id: 504, name: 'King\'s Cup' }, // Saudi King's Cup
+  { id: 826, name: 'Saudi Super Cup' }, // Saudi Super Cup
+  { id: 827, name: 'Crown Prince Cup' }, // Saudi Crown Prince Cup
 ];
 
 // Add this constant at the top of the file, before any functions
