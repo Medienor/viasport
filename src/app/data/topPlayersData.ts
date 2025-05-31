@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-05-30T14:29:22.576Z
+// Last updated: 2025-05-31T09:03:28.296Z
 
 export const topPlayersData = {
   "1": {

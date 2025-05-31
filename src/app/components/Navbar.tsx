@@ -124,22 +124,22 @@ const Navbar = () => {
   }, [isSettingsOpen]);
 
   const mainLeagues = [
-    { name: 'Premier League', country: 'England', id: 39 },
-    { name: 'Eliteserien', country: 'Norge', id: 103 },
-    { name: 'Champions League', country: 'Europa', id: 2 },
-    { name: 'La Liga', country: 'Spania', id: 140 },
-    { name: 'Serie A', country: 'Italia', id: 135 },
+    { name: 'Premier League', country: 'England', id: 39, flag: 'https://media.api-sports.io/flags/gb-eng.svg' },
+    { name: 'Eliteserien', country: 'Norge', id: 103, flag: 'https://media.api-sports.io/flags/no.svg' },
+    { name: 'Champions League', country: 'Europa', id: 2, flag: null },
+    { name: 'La Liga', country: 'Spania', id: 140, flag: 'https://media.api-sports.io/flags/es.svg' },
+    { name: 'Serie A', country: 'Italia', id: 135, flag: 'https://media.api-sports.io/flags/it.svg' },
   ];
 
   const additionalLeagues = [
-    { name: 'Bundesliga', country: 'Tyskland', id: 78 },
-    { name: 'Ligue 1', country: 'Frankrike', id: 61 },
-    { name: 'Eredivisie', country: 'Nederland', id: 88 },
-    { name: 'Primeira Liga', country: 'Portugal', id: 94 },
-    { name: 'Europa League', country: 'Europa', id: 3 },
-    { name: 'Conference League', country: 'Europa', id: 848 },
-    { name: 'OBOS-ligaen', country: 'Norge', id: 104 },
-    { name: 'Toppserien', country: 'Norge', id: 725 },
+    { name: 'Bundesliga', country: 'Tyskland', id: 78, flag: 'https://media.api-sports.io/flags/de.svg' },
+    { name: 'Ligue 1', country: 'Frankrike', id: 61, flag: 'https://media.api-sports.io/flags/fr.svg' },
+    { name: 'Eredivisie', country: 'Nederland', id: 88, flag: 'https://media.api-sports.io/flags/nl.svg' },
+    { name: 'Primeira Liga', country: 'Portugal', id: 94, flag: 'https://media.api-sports.io/flags/pt.svg' },
+    { name: 'Europa League', country: 'Europa', id: 3, flag: null },
+    { name: 'Conference League', country: 'Europa', id: 848, flag: null },
+    { name: 'OBOS-ligaen', country: 'Norge', id: 104, flag: 'https://media.api-sports.io/flags/no.svg' },
+    { name: 'Toppserien', country: 'Norge', id: 725, flag: 'https://media.api-sports.io/flags/no.svg' },
   ];
 
   const allLeagues = [...mainLeagues, ...additionalLeagues];
@@ -431,18 +431,146 @@ const Navbar = () => {
           ${isMenuOpen ? 'block' : 'hidden'}
           ${
             isMenuOpen && isStickyVisible
-              ? 'fixed top-12 left-0 right-0 z-30 bg-white dark:bg-gray-800 h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-gray-700'
-              : isMenuOpen ? 'bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700'
+              ? 'fixed top-12 left-0 right-0 z-30 bg-white dark:bg-[#111111] h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-gray-700'
+              : isMenuOpen ? 'bg-white dark:bg-[#111111] border-t border-gray-100 dark:border-gray-700'
               : ''
           }
         `}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-[#111111]">
+          <div className="mb-3 px-2 flex items-center justify-between gap-3">
+            <div className="flex items-center gap-1">
+              <button
+                onClick={toggleTheme}
+                disabled={theme === 'light'}
+                className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 ${theme === 'light' ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
+                aria-label="Lyst tema"
+              >
+                <SunIcon className="h-6 w-6" />
+              </button>
+              <button
+                onClick={toggleTheme}
+                disabled={theme === 'dark'}
+                className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 ${theme === 'dark' ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
+                aria-label="Mørkt tema"
+              >
+                <MoonIcon className="h-6 w-6" />
+              </button>
+            </div>
+            
+            <div className="flex-1">
+              {isLoading ? (
+                <div className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400">
+                  Laster...
+                </div>
+              ) : session ? (
+                <>
+                  <div className="px-3 pb-2 text-sm text-gray-500 dark:text-gray-400 truncate text-center" title={session.user.email}>
+                    {session.user.email}
+                  </div>
+                  <button
+                    onClick={async () => {
+                      await signOut();
+                      setIsMenuOpen(false);
+                    }}
+                    className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-800/40 transition-colors duration-200"
+                  >
+                    <ArrowRightOnRectangleIcon className="h-5 w-5 mr-2" />
+                    Logg ut
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={handleSignInClick}
+                  className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <UserCircleIcon className="h-5 w-5 mr-2" />
+                  Logg inn / Registrer deg
+                </button>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-6">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-[#181818] rounded-t-md font-medium text-gray-800 dark:text-gray-100">
+              Snarveier
+            </div>
+            <div className="bg-white dark:bg-[#222222] rounded-b-md mb-2">
+              <Link
+                href="/transfers"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700"
+              >
+                Overganger
+              </Link>
+              
+              <Link
+                href="/news"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                Nyheter
+              </Link>
+            </div>
+          </div>
+
           <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-[#181818] rounded-t-md font-medium text-gray-800 dark:text-gray-100">
+              Populære ligaer
+            </div>
+            <div className="bg-white dark:bg-[#222222] rounded-b-md mb-2">
+              {mainLeagues.map((league, index) => (
+                <Link 
+                  key={index} 
+                  href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+                >
+                  <div className="flex items-center gap-2">
+                    {league.flag ? (
+                      <img src={league.flag} alt={`${league.country} flag`} className="w-4 h-3 object-cover rounded-sm" />
+                    ) : (
+                      <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                    <span>{league.name}</span>
+                  </div>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">{league.country}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mt-3">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-[#181818] rounded-t-md font-medium text-gray-800 dark:text-gray-100">
+              Andre ligaer
+            </div>
+            <div className="bg-white dark:bg-[#222222] rounded-b-md mb-2">
+              {additionalLeagues.map((league, index) => (
+                <Link 
+                  key={index} 
+                  href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+                >
+                  <div className="flex items-center gap-2">
+                    {league.flag ? (
+                      <img src={league.flag} alt={`${league.country} flag`} className="w-4 h-3 object-cover rounded-sm" />
+                    ) : (
+                      <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                    <span>{league.name}</span>
+                  </div>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">{league.country}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <div className="px-3 py-2 bg-gray-100 dark:bg-[#181818] rounded-t-md font-medium text-gray-800 dark:text-gray-100">
               Kommende kamper
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2">
+            <div className="bg-white dark:bg-[#222222] rounded-b-md mb-2">
               {upcomingItems.map((item, index) => (
                 <Link
                   key={index}
@@ -453,112 +581,6 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-          </div>
-          
-          <Link
-            href="/transfers"
-            className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-          >
-            Overganger
-          </Link>
-          
-          <Link
-            href="/news"
-            className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-          >
-            Nyheter
-          </Link>
-          
-          <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
-              Populære ligaer
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2">
-              {mainLeagues.map((league, index) => (
-                <Link 
-                  key={index} 
-                  href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
-                >
-                  <span>{league.name}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">{league.country}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          
-          <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
-              Andre ligaer
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2">
-              {additionalLeagues.map((league, index) => (
-                <Link 
-                  key={index} 
-                  href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
-                >
-                  <span>{league.name}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">{league.country}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          
-          <div className="mt-3">
-            <div className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-t-md font-medium text-gray-800 dark:text-gray-100">
-              Tema
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-b-md mb-2 flex justify-around items-center p-2">
-               <button
-                  onClick={toggleTheme}
-                  disabled={theme === 'light'}
-                  className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 ${theme === 'light' ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
-                  aria-label="Lyst tema"
-                >
-                  <SunIcon className="h-6 w-6" />
-                </button>
-                <button
-                  onClick={toggleTheme}
-                  disabled={theme === 'dark'}
-                  className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 ${theme === 'dark' ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
-                  aria-label="Mørkt tema"
-                >
-                  <MoonIcon className="h-6 w-6" />
-                </button>
-            </div>
-          </div>
-          
-          <div className="mt-6 px-2">
-            {isLoading ? (
-               <div className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400">
-                 Laster...
-               </div>
-            ) : session ? (
-              <>
-                <div className="px-3 pb-2 text-sm text-gray-500 dark:text-gray-400 truncate text-center" title={session.user.email}>
-                  {session.user.email}
-                </div>
-                <button
-                  onClick={async () => {
-                    await signOut();
-                    setIsMenuOpen(false);
-                  }}
-                  className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-800/40 transition-colors duration-200"
-                >
-                  <ArrowRightOnRectangleIcon className="h-5 w-5 mr-2" />
-                  Logg ut
-                </button>
-              </>
-            ) : (
-              <button
-                onClick={handleSignInClick}
-                className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
-              >
-                <UserCircleIcon className="h-5 w-5 mr-2" />
-                Logg inn / Registrer deg
-              </button>
-            )}
           </div>
         </div>
       </div>
