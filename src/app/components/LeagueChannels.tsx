@@ -13,38 +13,37 @@ export default function LeagueChannels({ leagueId }: LeagueChannelsProps) {
   if (providers.length === 0) return null;
   
   return (
-    <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6">
-      <h3 className="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Se kampen</h3>
-      <div className="space-y-3">
-        {providers.map((provider, index) => (
-          <div
-            key={index}
-            className="flex items-center justify-between py-3 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
-          >
-            <div className="flex items-center gap-3">
-              <div className="relative h-7 w-7 flex-shrink-0">
-                <Image
-                  src={provider.icon}
-                  alt={provider.name}
-                  fill
-                  className="object-contain"
-                  unoptimized
-                />
-              </div>
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                {provider.name}
-              </span>
-            </div>
+    <div className="bg-white dark:bg-[#181818] rounded-lg border border-gray-100 dark:border-none overflow-hidden">
+      <div className="p-4 border-b border-gray-100 dark:border-none">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Se kampen</h3>
+      </div>
+      <div className="p-4">
+        <div className="space-y-3">
+          {providers.map((provider, index) => (
             <a
+              key={index}
               href={provider.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-semibold text-blue-600 dark:text-orange-500 hover:text-blue-700 dark:hover:text-orange-400 transition-colors whitespace-nowrap ml-3"
+              className="flex items-center justify-between p-3 bg-white dark:bg-[#181818] hover:bg-gray-50 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 group"
             >
-              Se nå &rarr;
+              <div className="flex items-center gap-3">
+                <div className="relative h-8 w-8 flex-shrink-0">
+                  <Image
+                    src={provider.icon}
+                    alt={provider.name}
+                    fill
+                    className="object-contain"
+                    unoptimized
+                  />
+                </div>
+                <span className="font-medium text-gray-800 dark:text-gray-200">
+                  {provider.name}
+                </span>
+              </div>
             </a>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

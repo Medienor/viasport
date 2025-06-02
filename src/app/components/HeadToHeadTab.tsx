@@ -49,7 +49,7 @@ export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps)
   }, { homeWins: 0, draws: 0, awayWins: 0 });
 
   return (
-    <div className="bg-white dark:bg-[#222222] rounded-lg">
+    <div className="bg-white dark:bg-[#181818] rounded-lg">
       {/* Desktop header - hidden on mobile */}
       <div className="hidden md:flex justify-center gap-20 mb-8">
         <div className="text-center">
@@ -72,7 +72,7 @@ export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps)
 
         <div className="text-center">
           <div className="w-16 h-16 mb-4"></div>
-          <div className="bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#2c2c2c] text-2xl font-bold rounded-[50px] px-6 py-2 text-gray-800 dark:text-gray-200">
+          <div className="bg-white dark:bg-[#232323] border border-gray-200 dark:border-[#232323] text-2xl font-bold rounded-[50px] px-6 py-2 text-gray-800 dark:text-gray-200">
             {h2hStats.draws}
           </div>
           <div className="mt-2 text-sm text-gray-800 dark:text-gray-300">Uavgjort</div>
@@ -121,7 +121,7 @@ export default function HeadToHeadTab({ match, teamColors }: HeadToHeadTabProps)
           <div className="flex items-center justify-center mb-2">
             <span className="text-xs font-medium text-gray-500 dark:text-gray-400">VS</span>
           </div>
-          <div className="bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#2c2c2c] text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center text-gray-800 dark:text-gray-200">
+          <div className="bg-white dark:bg-[#232323] border border-gray-200 dark:border-[#232323] text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center text-gray-800 dark:text-gray-200">
             {h2hStats.draws}
           </div>
           <div className="mt-1 text-xs text-gray-800 dark:text-gray-300">Uavgjort</div>

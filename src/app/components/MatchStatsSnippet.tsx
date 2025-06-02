@@ -117,21 +117,61 @@ export default function MatchStatsSnippet({
 
   const hasEventData = initialEvents && initialEvents.length > 0;
 
+  // Check if match has passed 45 minutes (half time) without stats
+  const shouldShowDelayWarning = () => {
+    if (hasData || !matchStartDate) return false;
+    
+    const matchStart = new Date(matchStartDate);
+    const now = new Date();
+    const minutesPassed = (now.getTime() - matchStart.getTime()) / (1000 * 60);
+    
+    return minutesPassed > 45;
+  };
+
+  const showDelayWarning = shouldShowDelayWarning();
+
   // --- Render Logic ---
 
   if (!hasData) {
+    // Hide component entirely if match has passed 45 minutes without stats
+    if (showDelayWarning) {
+      return null;
+    }
+
     return (
-        <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6 text-center text-gray-500 dark:text-gray-400">
-            Statistikk ikke tilgjengelig ennå.
+        <div className="bg-white dark:bg-[#181818] rounded-lg border border-[#f3f4f6] dark:border-[#232323] p-4 md:p-6 text-center text-gray-500 dark:text-gray-400 text-[14px]">
+            <div className="inline-block relative">
+                <div className="flex items-center gap-2">
+                    Statistikk kommer snart
+                </div>
+                <div className="mt-2 h-0.5 bg-gray-200/50 dark:bg-gray-700/50 rounded-full overflow-hidden">
+                    <div className="h-full bg-[#16a34a] rounded-full animate-loading-line"></div>
+                </div>
+            </div>
+            <style jsx>{`
+                @keyframes loading-line {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+                .animate-loading-line {
+                    animation: loading-line 1.5s ease-in-out infinite;
+                    width: 100%;
+                    border-radius: 0.1rem;
+                }
+            `}</style>
         </div>
     );
   }
 
   return (
-    <div className="bg-white dark:bg-[#222222] rounded-lg shadow overflow-hidden">
+    <div className="bg-white dark:bg-[#181818] rounded-lg overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Column 1: Momentum Chart */}
-        <div className="p-4 md:p-6 border-b md:border-b-0 md:border-r border-[#f3f4f6] dark:border-gray-700">
+        <div className="p-4 md:p-6 border-b md:border-b-0 md:border-r border-[#f3f4f6] dark:border-[#232323]">
           <h3 className="text-[14px] font-[500] mb-3 text-gray-700 dark:text-gray-300">Momentum</h3>
           {/* Render MomentumChart if data is available */}
           {matchId && initialEvents !== undefined ? (
@@ -225,11 +265,17 @@ export default function MatchStatsSnippet({
         </div>
       </div>
        {/* "All stats" Button/Link Area */}
-       <div className="text-center border-t border-[#f3f4f6] dark:border-gray-700">
+       <div className="text-center border-t border-[#f3f4f6] dark:border-[#232323]">
          <button
-            onClick={onShowAllStats}
+            onClick={() => {
+              // Switch to statistikk tab
+              document.body.setAttribute('data-active-tab', 'statistikk');
+              // Call the original handler if provided
+              if (onShowAllStats) {
+                onShowAllStats();
+              }
+            }}
             className="w-full py-2.5 px-4 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
-            disabled={!onShowAllStats} // Disable if no handler provided
             aria-label="Se all kampstatistikk"
           >
            All statistikk

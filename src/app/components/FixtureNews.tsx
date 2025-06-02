@@ -98,9 +98,9 @@ export default function FixtureNews({ leagueId, leagueName, isFinished = false }
   }
 
   return (
-    <div className="bg-white dark:bg-[#1f1f1f] rounded-lg border border-gray-200 dark:border-[#303030] overflow-hidden shadow-sm dark:shadow-lg">
+    <div className="bg-white dark:bg-[#181818] rounded-lg border border-[#f3f4f6] dark:border-[#232323] overflow-hidden">
       {/* Header */}
-      <div className="px-6 py-4 border-b border-gray-200 dark:border-[#303030]">
+      <div className="px-6 py-4 border-b border-[#f3f4f6] dark:border-[#232323]">
         <h3 className="text-[14px] font-[500] mb-0 text-gray-700 dark:text-gray-300">
           Siste nytt fra {leagueName || 'ligaen'}
         </h3>

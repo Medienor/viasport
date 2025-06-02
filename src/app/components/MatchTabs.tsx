@@ -2,10 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import TeamStandings from '@/app/components/TeamStandings';
-import MatchStats from '@/app/components/MatchStats';
 import LineupComponent from '@/app/components/LineupComponent';
-import HeadToHeadTab from '@/app/components/HeadToHeadTab';
 import MatchCommentary from '@/app/components/MatchCommentary';
 
 // Initialize Supabase client
@@ -128,7 +125,6 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
     <>
       <div className="border-b border-gray-200 dark:border-[#2c2c2c] mb-6">
         <nav className="-mb-px flex space-x-6 overflow-x-auto" aria-label="Tabs">
-          {/* Map over the filtered tabs */}
           {tabsToShow.map((tab) => (
             <button
               key={tab.id}
@@ -147,44 +143,31 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
         </nav>
       </div>
 
-      {/* Content area - Update error messages for dark mode */}
+      {/* Only render content for non-table tabs */}
       {selectedTab === 'head-to-head' ? (
-        <HeadToHeadTab match={match} teamColors={teamColors} />
-      ) : selectedTab === 'table' ? (
-        forcedLeagueDetailsForTable ? (
-          <TeamStandings
-            teamId={match.teams.home.id}
-            teamName={match.teams.home.name}
-            seasons={[seasonYear]}
-            highlightTeams={[match.teams.home.id, match.teams.away.id]}
-            embedded={true}
-            forcedLeagueDetails={forcedLeagueDetailsForTable}
-          />
-        ) : (
-          <div className="text-center py-6 text-gray-500 dark:text-gray-400">
-            Kan ikke vise tabell (mangler ligainformasjon).
-          </div>
-        )
+        // Head-to-head is now rendered in the main page with data-tab-content="lag-vs-lag"
+        <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+          Lag vs Lag vises i hovedseksjonen.
+        </div>
       ) : selectedTab === 'stats' ? (
-        hasPlayerStats ? (
-          <MatchStats match={match} teamColors={teamColors} />
-        ) : (
-          <div className="text-center py-6 text-gray-500 dark:text-gray-400">
-            Ingen statistikk tilgjengelig for denne kampen ennå.
-          </div>
-        )
+        // Stats is now rendered in the main page with data-tab-content="statistikk"
+        <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+          Statistikk vises i hovedseksjonen.
+        </div>
       ) : selectedTab === 'facts' ? (
         <>
           {children}
         </>
       ) : selectedTab === 'commentary' ? (
-        hasEventData ? (
-          <MatchCommentary match={match} />
-        ) : (
-          <div className="text-center py-6 text-gray-500 dark:text-gray-400">
-            Ingen kommentarer tilgjengelig for denne kampen ennå.
-          </div>
-        )
+        // Commentary is now rendered in the main page with data-tab-content="referat"
+        <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+          Referat vises i hovedseksjonen.
+        </div>
+      ) : selectedTab === 'table' ? (
+        // Table is now rendered in the main page with data-tab-content="tabell"
+        <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+          Tabell vises i hovedseksjonen.
+        </div>
       ) : null}
     </>
   );

@@ -1,9 +1,12 @@
+'use client';
+
 import { format } from 'date-fns';
 import { nb } from 'date-fns/locale';
 import Image from 'next/image';
 import { createClient } from '@supabase/supabase-js';
 import { useEffect, useState } from 'react';
 import { getStreamingProviders } from '@/utils/channelUtils';
+import { generateMatchEvents, generatePreMatchContent, generateSystemEvents, generateCommentary } from '@/app/utils/commentaryUtils';
 
 interface MatchCommentaryProps {
   match: any;
@@ -37,18 +40,22 @@ const matchSummaryTemplates = [
 ];
 
 interface CommentaryPath {
-  welcome_template: number;
-  referee_template: number;
-  venue_template: number;
-  lineup_template: number;
-  subs_template: number;
-  formation_template: number;
-  goal_template: number;
-  yellow_card_template: number;
-  red_card_template: number;
-  substitution_template: number;
-  break_template: number;
-  summary_template: number;
+  // Old format (backward compatibility)
+  welcome_template?: number;
+  referee_template?: number;
+  venue_template?: number;
+  lineup_template?: number;
+  subs_template?: number;
+  formation_template?: number;
+  goal_template?: number;
+  yellow_card_template?: number;
+  red_card_template?: number;
+  substitution_template?: number;
+  break_template?: number;
+  summary_template?: number;
+  
+  // New format
+  event_templates?: { [key: string]: number };
 }
 
 // Helper function to get random item from array
@@ -285,7 +292,19 @@ const generateEventText = (event: any, match: any) => {
   const templates = commentaryPhrases[event.type];
   if (!templates) return '';
 
-  const template = templates[match.commentary_path?.[`${event.type}_template`] || 0];
+  let templateIndex = 0;
+  
+  // Check if we have the new event_templates format
+  if (match.commentary_path?.event_templates) {
+    // New format: use event-specific mapping
+    const eventKey = `${event.type}_${event.time?.elapsed || event.time}_${event.player?.id || 'unknown'}`;
+    templateIndex = match.commentary_path.event_templates[eventKey] || 0;
+  } else {
+    // Old format: use the single template index (backward compatibility)
+    templateIndex = match.commentary_path?.[`${event.type}_template`] || 0;
+  }
+  
+  const template = templates[templateIndex] || templates[0];
   
   // Calculate the current score based on the event timing
   const homeGoals = match.goals?.home || 0;
@@ -295,20 +314,11 @@ const generateEventText = (event: any, match: any) => {
   // Get venue name from match object, with fallback
   const venueName = match.venue?.name || match.fixture?.venue?.name || 'hjemmebane';
 
-  // Log for debugging
-  console.log('Event:', event);
-  console.log('Match:', match);
-  console.log('Venue:', venueName);
-  console.log('Score:', score);
-
   let text = template
     .replace(/{player}/g, event.player?.name || 'Ukjent spiller')
     .replace(/{team}/g, event.team?.name || 'Laget')
     .replace(/{venue}/g, venueName)
     .replace(/{score}/g, score);
-
-  // Additional debug log
-  console.log('Generated text:', text);
 
   return text;
 };
@@ -365,20 +375,64 @@ export default function MatchCommentary({ match }: MatchCommentaryProps) {
   }, [match.id]); // Only run when match.id changes
 
   const generateRandomPath = (): CommentaryPath => {
-    return {
-      welcome_template: Math.floor(Math.random() * preMatchCommentary.welcome.length),
-      referee_template: Math.floor(Math.random() * preMatchCommentary.referee.length),
-      venue_template: Math.floor(Math.random() * preMatchCommentary.venue.length),
-      lineup_template: Math.floor(Math.random() * preMatchCommentary.lineups.length),
-      subs_template: Math.floor(Math.random() * preMatchCommentary.subs.length),
-      formation_template: Math.floor(Math.random() * preMatchCommentary.formation.length),
-      goal_template: Math.floor(Math.random() * commentaryPhrases.goal.length),
-      yellow_card_template: Math.floor(Math.random() * commentaryPhrases.yellowCard.length),
-      red_card_template: Math.floor(Math.random() * commentaryPhrases.redCard.length),
-      substitution_template: Math.floor(Math.random() * commentaryPhrases.substitution.length),
-      break_template: Math.floor(Math.random() * breakCommentary.break.length),
-      summary_template: Math.floor(Math.random() * matchSummaryTemplates.length)
-    };
+    // Check if this match has events to create the new format
+    if (match.event_data && match.event_data.length > 0) {
+      // New format with event-specific mappings
+      const eventTemplates: { [key: string]: number } = {};
+      
+      match.event_data.forEach((event: any, index: number) => {
+        const eventKey = `${event.type}_${event.time?.elapsed || event.time}_${event.player?.id || index}`;
+        
+        let maxTemplates = 10; // default
+        
+        switch (event.type) {
+          case 'Goal':
+            maxTemplates = commentaryPhrases.goal.length;
+            break;
+          case 'Card':
+            maxTemplates = event.detail === 'Yellow Card' 
+              ? commentaryPhrases.yellowCard.length 
+              : commentaryPhrases.redCard.length;
+            break;
+          case 'Substitution':
+            maxTemplates = commentaryPhrases.substitution.length;
+            break;
+        }
+        
+        eventTemplates[eventKey] = Math.floor(Math.random() * maxTemplates);
+      });
+
+      return {
+        // Keep old format for pre-match content
+        welcome_template: Math.floor(Math.random() * preMatchCommentary.welcome.length),
+        referee_template: Math.floor(Math.random() * preMatchCommentary.referee.length),
+        venue_template: Math.floor(Math.random() * preMatchCommentary.venue.length),
+        lineup_template: Math.floor(Math.random() * preMatchCommentary.lineups.length),
+        subs_template: Math.floor(Math.random() * preMatchCommentary.subs.length),
+        formation_template: Math.floor(Math.random() * preMatchCommentary.formation.length),
+        break_template: Math.floor(Math.random() * breakCommentary.break.length),
+        summary_template: Math.floor(Math.random() * matchSummaryTemplates.length),
+        
+        // New format for events
+        event_templates: eventTemplates
+      };
+    } else {
+      // Fallback to old format if no events
+      return {
+        welcome_template: Math.floor(Math.random() * preMatchCommentary.welcome.length),
+        referee_template: Math.floor(Math.random() * preMatchCommentary.referee.length),
+        venue_template: Math.floor(Math.random() * preMatchCommentary.venue.length),
+        lineup_template: Math.floor(Math.random() * preMatchCommentary.lineups.length),
+        subs_template: Math.floor(Math.random() * preMatchCommentary.subs.length),
+        formation_template: Math.floor(Math.random() * preMatchCommentary.formation.length),
+        goal_template: Math.floor(Math.random() * commentaryPhrases.goal.length),
+        yellow_card_template: Math.floor(Math.random() * commentaryPhrases.yellowCard.length),
+        red_card_template: Math.floor(Math.random() * commentaryPhrases.redCard.length),
+        substitution_template: Math.floor(Math.random() * commentaryPhrases.substitution.length),
+        break_template: Math.floor(Math.random() * breakCommentary.break.length),
+        summary_template: Math.floor(Math.random() * matchSummaryTemplates.length)
+      };
+    }
   };
 
   // Use commentaryPath in your render logic
@@ -396,268 +450,12 @@ export default function MatchCommentary({ match }: MatchCommentaryProps) {
   console.log('Fixture data:', match.fixture);
   console.log('Extra time:', match.fixture?.status?.extra);
 
-  const generateCommentary = (event: any) => {
-    switch (event.type) {
-      case 'Goal':
-        const goalPhrase = getRandomPhrase(commentaryPhrases.goal)
-          .replace('{player}', event.player.name)
-          .replace('{team}', event.team.name)
-          .replace('{venue}', match.venue?.name || match.fixture?.venue?.name || 'hjemmebane')
-          .replace('{score}', `${match.goals.home}-${match.goals.away}`);
-        
-        return {
-          type: 'goal',
-          text: goalPhrase,
-          time: event.time.elapsed,
-          player: event.player
-        };
-
-      case 'Card':
-        const cardPhrases = event.detail === 'Yellow Card' ? 
-          commentaryPhrases.yellowCard : commentaryPhrases.redCard;
-        const cardPhrase = getRandomPhrase(cardPhrases)
-          .replace('{player}', event.player.name)
-          .replace('{team}', event.team.name);
-        
-        return {
-          type: event.detail.toLowerCase().replace(' ', ''),
-          text: cardPhrase,
-          time: event.time.elapsed,
-          player: event.player
-        };
-
-      case 'Substitution':
-        const subPhrase = getRandomPhrase(commentaryPhrases.substitution)
-          .replace('{playerIn}', event.assist?.name || 'Spiller')
-          .replace('{playerOut}', event.player?.name || 'Spiller')
-          .replace('{team}', event.team.name);
-        
-        return {
-          type: 'substitution',
-          text: subPhrase,
-          time: event.time.elapsed,
-          player: event.player
-        };
-
-      default:
-        return null;
-    }
-  };
-
-  const generatePreMatchContent = () => {
-    const content = [];
-    const fixtureData = typeof match.fixture === 'string' ? 
-      JSON.parse(match.fixture) : match.fixture;
-
-    // Make sure we have a commentary path
-    if (!commentaryPath) return [];
-
-    // Add lineups if available (first/newest)
-    if (match.lineups?.length > 0) {
-      match.lineups.forEach((lineup: any) => {
-        const isHome = lineup.team.id === match.teams.home.id;
-        const team = isHome ? match.teams.home.name : match.teams.away.name;
-        
-        // Formation (shows up first)
-        if (lineup.formation) {
-          content.push({
-            type: 'formation',
-            text: preMatchCommentary.formation[commentaryPath.formation_template]
-              .replace('{team}', team)
-              .replace('{formation}', lineup.formation),
-            time: null
-          });
-        }
-
-        // Substitutes
-        const subs = lineup.substitutes.map((p: any) => p.player.name).join(', ');
-        content.push({
-          type: 'subs',
-          text: preMatchCommentary.subs[commentaryPath.subs_template]
-            .replace('{team}', team)
-            .replace('{players}', subs),
-          time: null
-        });
-
-        // Starting XI
-        const startingXI = lineup.startXI.map((p: any) => p.player.name).join(', ');
-        content.push({
-          type: 'lineup',
-          text: preMatchCommentary.lineups[commentaryPath.lineup_template]
-            .replace('{team}', team)
-            .replace('{players}', startingXI),
-          time: null
-        });
-      });
-    }
-
-    // Referee information
-    if (fixtureData?.referee) {
-      content.push({
-        type: 'referee',
-        text: preMatchCommentary.referee[commentaryPath.referee_template]
-          .replace('{referee}', fixtureData.referee)
-      });
-    }
-
-    // Venue information
-    if (fixtureData?.venue) {
-      content.push({
-        type: 'venue',
-        text: preMatchCommentary.venue[commentaryPath.venue_template]
-          .replace('{venue}', fixtureData.venue.name)
-          .replace('{city}', fixtureData.venue.city)
-      });
-    }
-
-    // Welcome message (last/oldest)
-    content.push({
-      type: 'welcome',
-      text: preMatchCommentary.welcome[commentaryPath.welcome_template]
-        .replace('{homeTeam}', match.teams.home.name)
-        .replace('{awayTeam}', match.teams.away.name)
-        .replace('{venue}', fixtureData?.venue?.name || match.venue?.name || 'hjemmebane')
-        .replace('{broadcastInfo}', '')
-    });
-
-    return content;
-  };
-
-  const generateMatchSummary = (match: any, stats: any, path: CommentaryPath | null) => {
-    const homeStats = stats[0]?.statistics || [];
-    const awayStats = stats[1]?.statistics || [];
-    const possession = homeStats.find(s => s.type === 'Ball Possession')?.value || '50';
-    const homeShots = parseInt(homeStats.find(s => s.type === 'Total Shots')?.value || '0');
-    const awayShots = parseInt(awayStats.find(s => s.type === 'Total Shots')?.value || '0');
-    const homeShotsOnTarget = parseInt(homeStats.find(s => s.type === 'Shots on Goal')?.value || '0');
-    const awayShotsOnTarget = parseInt(awayStats.find(s => s.type === 'Shots on Goal')?.value || '0');
-
-    // Generate match outcome based on result
-    const matchOutcome = match.goals.home === match.goals.away
-      ? `Det ender uavgjort ${match.goals.home}-${match.goals.away}`
-      : match.goals.home > match.goals.away
-        ? `${match.teams.home.name} vinner ${match.goals.home}-${match.goals.away}`
-        : `${match.teams.away.name} vinner ${match.goals.away}-${match.goals.home}`;
-
-    // Generate first half narrative
-    const firstHalfNarrative = `I første omgang ${
-      homeShots > awayShots 
-        ? `dominerte ${match.teams.home.name} med ${homeShots} skudd mot mål`
-        : awayShots > homeShots
-          ? `var det ${match.teams.away.name} som skapte mest med ${awayShots} avslutninger`
-          : 'var lagene jevnspilte med like mange sjanser'
-    }.`;
-
-    // Generate second half narrative
-    const secondHalfNarrative = match.goals.home === match.goals.away
-      ? 'Andre omgang fortsatte å være jevnspilt helt til sluttsignalet.'
-      : `I andre omgang sikret ${match.goals.home > match.goals.away ? match.teams.home.name : match.teams.away.name} seieren.`;
-
-    // Generate match stats narrative
-    const matchStatsNarrative = `${match.teams.home.name} endte med ${possession}% ballbesittelse og ${homeShots} skudd (${homeShotsOnTarget} på mål), mens ${match.teams.away.name} hadde ${awayShots} avslutninger (${awayShotsOnTarget} på mål).`;
-
-    // Generate table implications
-    const tableImplications = match.goals.home === match.goals.away
-      ? 'Begge lag tar med seg ett poeng fra dagens oppgjør.'
-      : `${match.goals.home > match.goals.away ? match.teams.home.name : match.teams.away.name} sikrer tre viktige poeng i kampen om tabellplasseringene.`;
-
-    return `${matchOutcome} på ${match.venue?.name || 'hjemmebane'}! 
-${firstHalfNarrative} 
-${secondHalfNarrative} 
-${matchStatsNarrative} 
-${tableImplications} 
-Takk for at du fulgte kampen!`;
-  };
-
-  const generateSystemEvents = () => {
-    const events = [];
-
-    if (match.match_status !== 'NS' && match.match_status !== 'TBD') {
-      const providers = getStreamingProviders(match.league_id);
-      const broadcastInfo = generateBroadcastMessage(providers);
-
-      events.push({
-        type: 'system',
-        systemType: 'kickoff',
-        time: -1,
-        text: preMatchCommentary.welcome[match.commentary_path?.welcome_template || 0]
-          .replace('{homeTeam}', match.teams.home.name)
-          .replace('{awayTeam}', match.teams.away.name)
-          .replace('{venue}', match.venue?.name || 'hjemmebane')
-          .replace('{broadcastInfo}', broadcastInfo)
-      });
-    }
-
-    // Add fulltime event if match is finished
-    if (['FT', 'AET', 'PEN'].includes(match.match_status)) {
-      const summary = generateMatchSummary(match, match.fixture_statistics, commentaryPath);
-      events.push({
-        type: 'system',
-        systemType: 'summary',
-        time: 90 + (match.fixture?.status?.extra || 0),
-        text: summary
-      });
-    }
-
-    // Find the last event before halftime and first event after
-    const firstHalfEvents = match.event_data?.filter(event => event.time?.elapsed <= 45) || [];
-    const secondHalfEvents = match.event_data?.filter(event => event.time?.elapsed > 45) || [];
-    
-    if (firstHalfEvents.length > 0 && match.fixture_statistics) {
-      // Calculate halftime score by counting goals in first half
-      const firstHalfGoals = firstHalfEvents.filter(event => event.type === 'Goal');
-      const halftimeScore = {
-        home: firstHalfGoals.filter(goal => goal.team.id === match.teams.home.id).length,
-        away: firstHalfGoals.filter(goal => goal.team.id === match.teams.away.id).length
-      };
-
-      const stats = match.fixture_statistics;
-      const homeStats = stats[0]?.statistics || [];
-      const awayStats = stats[1]?.statistics || [];
-      
-      const homePossession = parseInt(homeStats.find(s => s.type === 'Ball Possession')?.value || '0');
-      const homeShots = parseInt(homeStats.find(s => s.type === 'Total Shots')?.value || '0');
-      const awayShots = parseInt(awayStats.find(s => s.type === 'Total Shots')?.value || '0');
-      const yellowCards = match.event_cards_yellow || 0;
-      
-      // Determine dominant team
-      const dominantTeam = homePossession > 50 ? match.teams.home.name : match.teams.away.name;
-      
-      const breakText = breakCommentary.break[commentaryPath?.break_template || 0]
-        .replace('{homeTeam}', match.teams.home.name)
-        .replace('{awayTeam}', match.teams.away.name)
-        .replace('{score}', `${halftimeScore.home}-${halftimeScore.away}`)  // Using halftime score
-        .replace('{venue}', match.venue?.name || '')
-        .replace('{dominantTeam}', dominantTeam)
-        .replace('{possession}', homePossession > 50 ? homePossession : (100 - homePossession))
-        .replace('{shotStats}', `Totalt ${homeShots + awayShots} skudd i første omgang.`)
-        .replace('{yellowCards}', `Vi har sett ${yellowCards}`)
-        .replace('{totalShots}', `${homeShots + awayShots}`);
-
-      events.push({
-        type: 'system',
-        systemType: 'break',
-        time: 45,
-        text: breakText
-      });
-    }
-
-    return events;
-  };
-
-  if (!match) {
-    return (
-      <div className="text-gray-500 italic dark:text-gray-400">
-        Ingen kampinformasjon tilgjengelig.
-      </div>
-    );
-  }
-
-  const preMatchContent = generatePreMatchContent();
+  const matchEvents = generateMatchEvents(match);
+  const preMatchContent = generatePreMatchContent(match);
   const systemEvents = generateSystemEvents();
   const allEvents = [...(match.event_data || []), ...systemEvents];
   // Sort events so that higher minutes are at the top
-  const matchEvents = allEvents.sort((a, b) => {
+  const matchEventsSorted = allEvents.sort((a, b) => {
     // Special handling for system events
     const timeA = a.time?.elapsed || a.time;
     const timeB = b.time?.elapsed || b.time;
@@ -667,7 +465,7 @@ Takk for at du fulgte kampen!`;
   return (
     <div className="space-y-4">
       {/* Match events/commentary first, now sorted newest to oldest */}
-      {matchEvents.map((event, index) => {
+      {matchEventsSorted.map((event, index) => {
         if (event.type === 'system') {
           // Get the appropriate label based on system type
           const systemLabel = {
@@ -689,6 +487,8 @@ Takk for at du fulgte kampen!`;
                     height={24}
                     className="dark:invert"
                   />
+                ) : event.systemType === 'kickoff' ? (
+                  <span className="font-bold dark:text-gray-200 text-[10px]">START</span>
                 ) : (
                   <span className="font-bold dark:text-gray-200">{event.time}'</span>
                 )}
@@ -697,14 +497,14 @@ Takk for at du fulgte kampen!`;
                 <div className="flex items-center gap-2 mb-2">
                   <span className="font-medium dark:text-gray-100">{systemLabel}</span>
                 </div>
-                <p className="dark:text-gray-300">{event.text}</p>
+                <p className="text-sm leading-5 text-[#1f2937] dark:text-gray-300">{event.text}</p>
               </div>
             </div>
           );
         }
 
         // Regular event handling continues as before
-        const commentary = generateCommentary(event);
+        const commentary = generateCommentary(event, match);
         if (!commentary) return null;
 
         return (
@@ -716,29 +516,52 @@ Takk for at du fulgte kampen!`;
             <div className="flex-1 bg-white dark:bg-[#282828] rounded-lg p-4 shadow-sm">
               <div className="flex items-center gap-2 mb-2">
                 {commentary.type === 'goal' && (
-                  <span className="text-xl">⚽</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clipPath="url(#clip0_8773_27874)">
+                      <circle cx="10" cy="10" r="6" fill="white"></circle>
+                      <path d="M12.1527 12.8534C11.9667 12.8534 11.7807 12.8407 11.5947 12.822C11.535 12.8105 11.4791 12.7847 11.4316 12.7469C11.3841 12.709 11.3465 12.6603 11.322 12.6047C11.13 11.8914 10.944 11.2154 10.764 10.558C10.7309 10.4722 10.7289 10.3774 10.7584 10.2902C10.7878 10.203 10.8469 10.1289 10.9253 10.0807L12.488 8.68071C12.5533 8.62378 12.637 8.59242 12.7237 8.59242C12.8103 8.59242 12.894 8.62378 12.9593 8.68071C13.4836 8.9669 13.9538 9.34256 14.3487 9.79071C14.4382 9.90152 14.4884 10.0389 14.4913 10.1814C14.4945 10.9616 14.2622 11.7247 13.8247 12.3707C13.8202 12.3888 13.8118 12.4056 13.8 12.42C13.7185 12.5308 13.6096 12.6183 13.484 12.674C13.0528 12.7989 12.6055 12.8596 12.1567 12.854L12.1527 12.8534Z" fill="black"></path>
+                      <path d="M7.10465 11.34C7.02984 11.3408 6.95733 11.3142 6.90065 11.2654C6.41141 10.9692 5.98548 10.5793 5.64732 10.118C5.59205 10.04 5.56182 9.947 5.56065 9.85137C5.56036 9.12375 5.75289 8.40905 6.11865 7.78004C6.12338 7.75725 6.13677 7.73718 6.15598 7.72404C6.2112 7.67488 6.27685 7.63886 6.34798 7.61871C6.777 7.45131 7.23347 7.3654 7.69398 7.36537C7.83638 7.35297 7.97959 7.35297 8.12198 7.36537C8.20282 7.37405 8.27826 7.41012 8.33574 7.46761C8.39323 7.5251 8.42931 7.60054 8.43798 7.68137C8.54932 8.16537 8.67332 8.66137 8.79132 9.15737L8.88465 9.55737C8.90016 9.61795 8.89912 9.68158 8.88165 9.74162C8.86418 9.80166 8.83091 9.85591 8.78532 9.89871L7.34065 11.2534C7.31059 11.2834 7.27481 11.3072 7.23542 11.3232C7.19603 11.3393 7.15384 11.3472 7.11132 11.3467H7.10465V11.34Z" fill="black"></path>
+                      <path d="M10.0007 3.33337C8.68211 3.33337 7.39318 3.72437 6.29685 4.45691C5.20052 5.18945 4.34604 6.23064 3.84146 7.44882C3.33687 8.66699 3.20485 10.0074 3.46209 11.3006C3.71932 12.5938 4.35426 13.7817 5.28661 14.7141C6.21896 15.6464 7.40685 16.2814 8.70005 16.5386C9.99326 16.7958 11.3337 16.6638 12.5519 16.1592C13.7701 15.6547 14.8112 14.8002 15.5438 13.7038C16.2763 12.6075 16.6673 11.3186 16.6673 10C16.6673 8.23193 15.9649 6.53624 14.7147 5.286C13.4645 4.03575 11.7688 3.33337 10.0007 3.33337ZM10.0813 14.9487L10.044 14.8154C10.0313 14.7242 9.986 14.6407 9.91652 14.5803C9.84704 14.5199 9.75806 14.4866 9.66599 14.4867C8.90137 14.4739 8.1582 14.2319 7.53265 13.792C7.46899 13.7605 7.39905 13.7436 7.32799 13.7427C7.28427 13.7388 7.24023 13.744 7.1986 13.7579C7.15697 13.7718 7.11864 13.7941 7.08599 13.8234L6.63332 14.2514C5.76947 13.5707 5.13338 12.6431 4.8097 11.592C4.48602 10.5409 4.49009 9.41611 4.82138 8.36738C5.15267 7.31864 5.79546 6.39566 6.66423 5.72124C7.53299 5.04683 8.58653 4.65296 9.68465 4.59204L9.75132 4.82737C9.79577 4.9576 9.83288 5.08782 9.86265 5.21804C9.88329 5.27852 9.91751 5.33347 9.9627 5.37866C10.0079 5.42385 10.0628 5.45808 10.1233 5.47871H10.1793C10.9222 5.59096 11.6436 5.81576 12.3187 6.14537C12.3661 6.17132 12.4202 6.18224 12.474 6.17671C12.548 6.17726 12.6207 6.15792 12.6847 6.12071L13.2927 5.69271C14.1813 6.36716 14.8399 7.2998 15.178 8.36295C15.5162 9.4261 15.5175 10.5678 15.1818 11.6317C14.846 12.6956 14.1897 13.6298 13.3025 14.3063C12.4154 14.9828 11.3408 15.3685 10.226 15.4107L10.0813 14.9487Z" fill="black"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8773_27874">
+                        <rect width="16" height="16" fill="transparent" transform="translate(2 2)"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
                 )}
                 {commentary.type === 'yellowcard' && (
-                  <span className="text-yellow-400">🟨</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9092 2.96924H7.091C5.88601 2.96924 4.90918 3.94607 4.90918 5.15106V14.8478C4.90918 16.0528 5.88601 17.0296 7.091 17.0296H12.9092C14.1142 17.0296 15.091 16.0528 15.091 14.8478V5.15106C15.091 3.94607 14.1142 2.96924 12.9092 2.96924Z" fill="#facc15"></path>
+                  </svg>
                 )}
                 {commentary.type === 'redcard' && (
-                  <span className="text-red-600">🟥</span>
+                  <svg width="20" height="20" viewBox="0 -2 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="yellow-red-card-icon">
+                      <rect id="Rectangle_2316" fill="#facc15" fillRule="nonzero" x="0" y="1" width="8" height="11" rx="2"></rect>
+                      <rect id="Rectangle_3201" fill="#dc2626" fillRule="nonzero" x="3" y="-2" width="8" height="11" rx="2"></rect>
+                    </g>
+                  </svg>
                 )}
                 {commentary.type === 'substitution' && (
                   <span className="dark:text-gray-200">🔄</span>
                 )}
                 <span className="font-medium dark:text-gray-100">
-                  {commentary.type === 'goal' ? 'Mål!' : 'Hendelse'}
+                  {commentary.type === 'goal' ? 'Mål!' : 
+                   commentary.type === 'yellowcard' ? 'Gult kort!' :
+                   commentary.type === 'redcard' ? 'Rødt kort!' :
+                   commentary.type === 'substitution' ? 'Bytte!' :
+                   'Hendelse'}
                 </span>
               </div>
-              <p className="dark:text-gray-300">{commentary.text}</p>
+              <p className="text-sm leading-5 text-[#1f2937] dark:text-gray-300">{commentary.text}</p>
             </div>
           </div>
         );
       })}
 
       {/* Show message if no events yet */}
-      {matchEvents.length === 0 && (
+      {matchEventsSorted.length === 0 && (
         <div className="text-gray-500 italic dark:text-gray-400">
           Ingen hendelser å vise ennå.
         </div>
@@ -767,7 +590,7 @@ Takk for at du fulgte kampen!`;
                  content.type === 'venue' ? 'Arena' : 'Info'}
               </span>
             </div>
-            <p className="dark:text-gray-300">{content.text}</p>
+            <p className="text-sm leading-5 text-[#1f2937] dark:text-gray-300">{content.text}</p>
           </div>
         </div>
       ))}

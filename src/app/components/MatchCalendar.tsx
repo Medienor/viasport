@@ -58,6 +58,14 @@ interface MatchCalendarProps {
     currentMatchId?: string; // Keep for highlighting the current page's match
     leagueId: number; // Required prop
     leagueName?: string; // Optional league name for the header
+    hasTopScorersAbove?: boolean; // Add this prop
+}
+
+interface RelatedLeague {
+    id: number;
+    name: string;
+    country: string;
+    logo?: string;
 }
 
 // --- Constants ---
@@ -109,7 +117,8 @@ const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 export default function MatchCalendar({
     currentMatchId = "",
     leagueId,
-    leagueName = "Liga Kamper" // Default name if not provided
+    leagueName = "Liga Kamper", // Default name if not provided
+    hasTopScorersAbove = false // Default to false
 }: MatchCalendarProps) {
     const [pastMatches, setPastMatches] = useState<LeagueFixture[]>([]);
     const [upcomingMatches, setUpcomingMatches] = useState<LeagueFixture[]>([]);
@@ -117,7 +126,8 @@ export default function MatchCalendar({
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [currentTime, setCurrentTime] = useState(() => new Date()); // For live timer calculation
-    const [activeTab, setActiveTab] = useState<'upcoming' | 'past'>('upcoming'); // State for active tab
+    const [relatedLeagues, setRelatedLeagues] = useState<RelatedLeague[]>([]);
+    const [isLoadingRelated, setIsLoadingRelated] = useState(false);
 
     const supabaseRef = useRef<SupabaseClient | null>(null);
     const channelRef = useRef<RealtimeChannel | null>(null);
@@ -249,121 +259,90 @@ export default function MatchCalendar({
         // as the component unmount/leagueId change will trigger new fetches/subscriptions.
     }, [leagueId, fetchLeagueMatches]); // Fetch when leagueId changes or fetchLeagueMatches function reference changes (due to leagueId change)
 
-    // --- Realtime Subscription ---
+    // --- Realtime Subscription for Live Updates ---
     useEffect(() => {
-        // Ensure Supabase client is initialized and leagueId is present
-        if (!supabaseRef.current || !leagueId) return;
+        if (!leagueId || !supabaseRef.current) return;
 
-        // If a channel already exists for this leagueId (e.g., from a previous render),
-        // ensure it's properly cleaned up before creating a new one.
-        // This check might be redundant if the cleanup function works perfectly,
-        // but adds a layer of safety.
-        if (channelRef.current && channelRef.current.topic !== `realtime:public:fixtures:league_id=eq.${leagueId}`) {
-             console.log(`DEBUG: [MatchCalendar] Topic mismatch or existing channel found. Cleaning up before resubscribing.`);
-             supabaseRef.current.removeChannel(channelRef.current)
-                 .catch(error => console.error("🔴 [MatchCalendar] Error removing channel during mismatch check:", error));
-             channelRef.current = null;
-        }
+        let channel: RealtimeChannel | null = null;
+        let reconnectTimeout: NodeJS.Timeout | null = null;
+        let isSubscribed = false;
 
-        // Only proceed if there's no active channel for the current leagueId
-        if (!channelRef.current) {
-            const supabase = supabaseRef.current;
-            const channel = supabase.channel(`league-fixtures-${leagueId}`);
-            channelRef.current = channel;
+        const setupChannel = () => {
+            // Clean up existing channel
+            if (channel) {
+                channel.unsubscribe();
+                channel = null;
+            }
 
-            console.log(`DEBUG: [MatchCalendar] Setting up subscription for league ${leagueId}`);
-
-            channel
-                .on(
-                    'postgres_changes',
-                    {
-                        event: 'UPDATE',
+            try {
+                channel = supabaseRef.current!
+                    .channel(`league_${leagueId}_live_updates`, {
+                        config: {
+                            presence: { key: `league_${leagueId}` },
+                            broadcast: { self: false },
+                        }
+                    })
+                    .on('postgres_changes', {
+                        event: '*',
                         schema: 'public',
-                        table: 'fixtures',
-                        filter: `league_id=eq.${leagueId}`,
-                    },
-                    (payload) => {
-                        console.log('DEBUG: [MatchCalendar] Realtime UPDATE received:', payload);
-                        const updatedFixture = payload.new as LeagueFixture;
-                        const fixtureId = updatedFixture.id;
-
-                        // Update live state directly using the fixtureId
-                        // No need to check against existing state keys here,
-                        // just update based on the incoming ID.
-                        const newStatus = updatedFixture.status?.short ?? updatedFixture.fixture?.status?.short ?? null;
-                        const newElapsed = updatedFixture.status?.elapsed ?? updatedFixture.fixture?.status?.elapsed ?? null;
-                        const newGoalsHome = updatedFixture.goals?.home ?? null;
-                        const newGoalsAway = updatedFixture.goals?.away ?? null;
-                        const newLastUpdated = updatedFixture.details_last_updated_at
-                            ? parseISO(updatedFixture.details_last_updated_at).getTime()
-                            : Date.now(); // Use current time if timestamp is missing
-
-                        console.log(`DEBUG: [MatchCalendar] Updating live state for ${fixtureId}: S=${newStatus} E=${newElapsed} G=(${newGoalsHome}-${newGoalsAway}) U=${newLastUpdated}`);
-
-                        // Use functional update form for safety, though direct update might also work
-                        setLiveUpdates(prev => ({
-                            ...prev,
-                            [fixtureId]: {
-                                statusShort: newStatus,
-                                elapsed: newElapsed,
-                                goalsHome: newGoalsHome,
-                                goalsAway: newGoalsAway,
-                                lastUpdated: newLastUpdated,
-                            },
-                        }));
-
-                        // Note: Moving matches between upcoming/past based on realtime
-                        // status changes (e.g., NS -> 1H -> FT) is not implemented here
-                        // to keep the logic simpler. The initial fetch categorizes them.
-                    }
-                )
-                .subscribe((status, err) => {
-                    // Log different statuses for better debugging
-                    switch (status) {
-                        case 'SUBSCRIBED':
+                        table: 'live_match_updates',
+                        filter: `league_id=eq.${leagueId}`
+                    }, (payload) => {
+                        if (payload.eventType === 'INSERT' || payload.eventType === 'UPDATE') {
+                            const update = payload.new as LiveMatchUpdate;
+                            setLiveUpdates(prev => ({
+                                ...prev,
+                                [update.fixture_id]: update
+                            }));
+                        } else if (payload.eventType === 'DELETE') {
+                            const deletedUpdate = payload.old as LiveMatchUpdate;
+                            setLiveUpdates(prev => {
+                                const newUpdates = { ...prev };
+                                delete newUpdates[deletedUpdate.fixture_id];
+                                return newUpdates;
+                            });
+                        }
+                    })
+                    .on('subscribe', (status) => {
+                        if (status === 'SUBSCRIBED') {
                             console.log(`✅ [MatchCalendar] Subscribed successfully to league ${leagueId}`);
-                            break;
-                        case 'CHANNEL_ERROR':
-                            // Enhanced logging for CHANNEL_ERROR
-                            console.error(`🔴 [MatchCalendar] Channel error for league ${leagueId}. Status: ${status}`, err); // Log the full error object
-                            setError(`Realtime channel error: ${err?.message || 'Unknown error'}`);
-                            break;
-                        case 'TIMED_OUT':
-                            console.warn(`🟠 [MatchCalendar] Subscription timed out for league ${leagueId}. Status: ${status}`, err); // Log error on timeout too
-                            // Supabase client attempts auto-reconnect
-                            break;
-                        case 'CLOSED':
-                            console.log(`ℹ️ [MatchCalendar] Channel closed for league ${leagueId}. Status: ${status}`);
-                            // This might happen during cleanup or if connection is lost.
-                            break;
-                        default:
-                             console.log(`ℹ️ [MatchCalendar] Channel status [league-${leagueId}]: ${status}`);
-                    }
-                     // Log the specific error object if present outside the switch too, just in case
-                     if (err) {
-                         console.error(`🔴 [MatchCalendar] Subscription error details [league-${leagueId}]:`, err);
-                         // Set error state only for critical errors like initial connection failure
-                         // Note: We already set error for CHANNEL_ERROR inside the switch.
-                         // Avoid setting error for TIMED_OUT as Supabase handles retries.
-                     }
-                });
-        }
+                            isSubscribed = true;
+                        }
+                    })
+                    .on('error', (error) => {
+                        console.error(`🔴 [MatchCalendar] Channel error for league ${leagueId}:`, error);
+                        isSubscribed = false;
+                        
+                        // Only attempt reconnection if we're still mounted and have a valid leagueId
+                        if (leagueId && !reconnectTimeout) {
+                            reconnectTimeout = setTimeout(() => {
+                                console.log(`🔄 [MatchCalendar] Attempting to reconnect to league ${leagueId}`);
+                                reconnectTimeout = null;
+                                setupChannel();
+                            }, 3000); // Wait 3 seconds before reconnecting
+                        }
+                    });
 
-        // Cleanup function: This runs when the component unmounts OR BEFORE the effect runs again due to dependency changes.
-        return () => {
-            if (channelRef.current) {
-                console.log(`DEBUG: [MatchCalendar] Cleaning up subscription for league ${leagueId}`);
-                // Use a temporary variable to avoid race conditions if the ref changes quickly
-                const currentChannel = channelRef.current;
-                channelRef.current = null; // Clear the ref immediately
-                supabaseRef.current?.removeChannel(currentChannel)
-                    .then(status => console.log(`DEBUG: [MatchCalendar] Unsubscribe status for league ${leagueId}: ${status}`))
-                    .catch(error => console.error("🔴 [MatchCalendar] Error during unsubscribe:", error));
+                channel.subscribe();
+            } catch (error) {
+                console.error(`🔴 [MatchCalendar] Failed to setup channel for league ${leagueId}:`, error);
             }
         };
-    // IMPORTANT: Only depend on leagueId and the presence of the supabase client.
-    // Do NOT include liveUpdates or upcomingMatches here.
-    }, [leagueId, supabaseRef.current]); // Re-run only if leagueId changes or supabase client initializes
+
+        setupChannel();
+
+        return () => {
+            isSubscribed = false;
+            if (reconnectTimeout) {
+                clearTimeout(reconnectTimeout);
+                reconnectTimeout = null;
+            }
+            if (channel) {
+                channel.unsubscribe();
+                channel = null;
+            }
+        };
+    }, [leagueId, supabaseRef.current]);
 
     // --- Live Timer Update Interval ---
      useEffect(() => {
@@ -449,7 +428,7 @@ export default function MatchCalendar({
             }
              // Render timer with live color
              timerComponent = (
-                 <span style={{ color: '#00985f' }} className="block text-sm font-semibold whitespace-nowrap">
+                 <span className="block font-semibold whitespace-nowrap text-[#00985f] dark:text-[#ff6b00]" style={{ fontSize: '12px' }}>
                      {displayStatus}
                  </span>
              );
@@ -493,7 +472,7 @@ export default function MatchCalendar({
     );
 
     // --- Render Helper for Match Rows ---
-    const renderMatchRow = (match: LeagueFixture, isPastSection: boolean) => {
+    const renderMatchCard = (match: LeagueFixture) => {
         const {
             displayStatus,
             timerComponent,
@@ -502,45 +481,41 @@ export default function MatchCalendar({
             isUpcoming,
             homeScore,
             awayScore,
-            matchDateStr,
-            kickOffTime,
-            isToday,
         } = getMatchDisplayData(match);
 
-        const streamingProviders = getStreamingProviders(leagueId);
-        const hasStreamingProviders = streamingProviders.length > 0;
         const fixtureIdStr = match.id.toString();
         const isCurrentPageMatch = currentMatchId === fixtureIdStr;
         const linkHref = `/fotball/kamp/${match.id}`;
 
-        // Unique ID for the tooltip anchor based on match ID
-        const tooltipId = `match-${match.id}-tooltip-anchor`;
-
         return (
-            <Link
-                key={`${isPastSection ? 'past' : 'upcoming'}-${match.id}`}
-                href={linkHref}
-                className={`block hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors ${
-                    isCurrentPageMatch ? 'bg-gray-100 dark:bg-gray-800 font-semibold' : ''
-                }`}
-            >
-                <div className="flex justify-between items-center px-3 py-3 border-b border-gray-100 dark:border-dark-border">
-                    {/* Left side: Date/Teams/Scores */}
-                    <div className={`flex-grow pr-3 ${
-                        isFinished || isLive ? 'border-r border-gray-100 dark:border-dark-border' : ''
-                    }`}>
-                        {/* Date Header (only for the first item in upcoming or if date changes) - Simplified: Show for all */}
-                        {!isPastSection && (
-                             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1.5">{matchDateStr}</div>
+            <div key={match.id} className="border border-[#f3f4f6] dark:border-[#232323] rounded-lg overflow-hidden">
+                <Link
+                    href={linkHref}
+                    className={`flex items-center hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors duration-150 py-3 bg-white dark:bg-[#181818] ${
+                        isLive ? 'border-l-4 border-l-green-500 dark:border-l-[#ff6b00]' : 'border-l-4 border-l-transparent'
+                    }`}
+                >
+                    {/* Time/Status */}
+                    <div className="w-16 flex items-center justify-center flex-shrink-0">
+                        {timerComponent ? (
+                            timerComponent
+                        ) : isFinished ? (
+                            <span className="text-xs font-semibold text-gray-600 dark:text-gray-300">
+                                {displayStatus}
+                            </span>
+                        ) : (
+                            <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                {displayStatus}
+                            </span>
                         )}
-                         {isPastSection && (
-                             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1.5">{matchDateStr}</div>
-                        )}
-
-                        {/* Home Team Row */}
-                        <div className="flex items-center justify-between mb-1">
-                            <div className="flex items-center min-w-0">
-                                <div className="relative w-4 h-4 mr-1.5 flex-shrink-0">
+                    </div>
+                    
+                    {/* Teams stacked vertically - with fixed width constraint */}
+                    <div className="flex items-center px-2" style={{ width: 'calc(100% - 120px)' }}>
+                        <div className="flex flex-col space-y-1 w-full">
+                            {/* Home team */}
+                            <div className="flex items-center space-x-2">
+                                <div className="w-5 h-5 flex-shrink-0 relative">
                                     {match.teams?.home?.logo && (
                                         <Image 
                                             src={match.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
@@ -551,28 +526,18 @@ export default function MatchCalendar({
                                         />
                                     )}
                                 </div>
-                                <span className={`text-sm truncate ${
-                                    isCurrentPageMatch 
-                                        ? 'font-semibold text-gray-900 dark:text-[#AAAAAA]' 
-                                        : 'font-normal text-gray-800 dark:text-[#AAAAAA]'
-                                }`}>
+                                <span 
+                                    className="text-[#656565] dark:text-[#aaa] overflow-hidden text-ellipsis whitespace-nowrap block"
+                                    style={{ fontSize: '14px', fontWeight: '400', maxWidth: 'calc(100% - 32px)' }}
+                                    title={match.teams?.home?.name ?? 'N/A'}
+                                >
                                     {match.teams?.home?.name ?? 'N/A'}
                                 </span>
                             </div>
-                            <span className={`text-sm ml-2 ${
-                                isFinished || isLive 
-                                    ? (isLive 
-                                        ? 'font-bold text-gray-900 dark:text-gray-100' 
-                                        : 'font-medium text-gray-700 dark:text-gray-300')
-                                    : 'font-normal text-gray-400 dark:text-gray-500'
-                            }`}>
-                                {(isFinished || isLive) && homeScore !== null ? homeScore : ''}
-                            </span>
-                        </div>
-                        {/* Away Team Row */}
-                        <div className="flex items-center justify-between">
-                            <div className="flex items-center min-w-0">
-                                <div className="relative w-4 h-4 mr-1.5 flex-shrink-0">
+                            
+                            {/* Away team */}
+                            <div className="flex items-center space-x-2">
+                                <div className="w-5 h-5 flex-shrink-0 relative">
                                     {match.teams?.away?.logo && (
                                         <Image 
                                             src={match.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
@@ -583,59 +548,99 @@ export default function MatchCalendar({
                                         />
                                     )}
                                 </div>
-                                <span className={`text-sm truncate ${
-                                    isCurrentPageMatch 
-                                        ? 'font-semibold text-gray-900 dark:text-[#AAAAAA]' 
-                                        : 'font-normal text-gray-800 dark:text-[#AAAAAA]'
-                                }`}>
+                                <span 
+                                    className="text-[#656565] dark:text-[#aaa] overflow-hidden text-ellipsis whitespace-nowrap block"
+                                    style={{ fontSize: '14px', fontWeight: '400', maxWidth: 'calc(100% - 32px)' }}
+                                    title={match.teams?.away?.name ?? 'N/A'}
+                                >
                                     {match.teams?.away?.name ?? 'N/A'}
                                 </span>
                             </div>
-                             <span className={`text-sm ml-2 ${
-                                isFinished || isLive 
-                                    ? (isLive 
-                                        ? 'font-bold text-gray-900 dark:text-gray-100' 
-                                        : 'font-medium text-gray-700 dark:text-gray-300')
-                                    : 'font-normal text-gray-400 dark:text-gray-500'
-                            }`}>
-                                {(isFinished || isLive) && awayScore !== null ? awayScore : ''}
-                            </span>
                         </div>
                     </div>
-
-                    {/* Right side: Status/Time & TV Icon */}
-                    <div className="flex-shrink-0 text-center w-[70px] pl-3"> {/* Wider width */}
-                        {timerComponent ? (
-                            timerComponent // Render live timer component
+                    
+                    {/* Scores - Fixed position on the right */}
+                    <div className="flex flex-col items-center justify-center flex-shrink-0 w-12 ml-auto">
+                        {(isFinished || isLive) ? (
+                            <>
+                                <span className="font-medium text-[#2b2b2b] dark:text-gray-100" style={{ fontSize: '14px' }}>
+                                    {homeScore ?? '-'}
+                                </span>
+                                <span className="font-medium text-[#2b2b2b] dark:text-gray-100" style={{ fontSize: '14px' }}>
+                                    {awayScore ?? '-'}
+                                </span>
+                            </>
                         ) : (
-                            <span className={`block text-sm ${
-                                isFinished 
-                                    ? 'font-normal text-gray-500 dark:text-gray-400' 
-                                    : 'font-medium text-gray-800 dark:text-gray-200'
-                            }`}>
-                                {displayStatus} {/* Render FT, Pause, 15:00 etc. */}
-                            </span>
-                        )}
-
-                        {/* TV Icon - Show only for upcoming matches with providers */}
-                        {isUpcoming && hasStreamingProviders && (
-                            <div
-                                data-tooltip-id="streaming-provider-tooltip" // Use the common ID
-                                data-tooltip-content={JSON.stringify(streamingProviders)}
-                                data-tooltip-place="top-end"
-                                className="mt-1 text-gray-400 dark:text-gray-500 flex justify-center relative"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                            </div>
+                            <>
+                                <span className="text-[#2b2b2b] dark:text-gray-400" style={{ fontSize: '14px' }}>-</span>
+                                <span className="text-[#2b2b2b] dark:text-gray-400" style={{ fontSize: '14px' }}>-</span>
+                            </>
                         )}
                     </div>
-                </div>
-            </Link>
+                </Link>
+            </div>
         );
     };
 
+    // --- Fetch Related Leagues ---
+    useEffect(() => {
+        const fetchRelatedLeagues = async () => {
+            if (!leagueId) return;
+            
+            setIsLoadingRelated(true);
+            try {
+                // First, get the current league's country
+                const { data: currentLeague, error: currentLeagueError } = await supabaseRef.current
+                    .from('leagues')
+                    .select('country')
+                    .eq('id', leagueId)
+                    .single();
+
+                if (currentLeagueError || !currentLeague) {
+                    console.error('Error fetching current league:', currentLeagueError);
+                    return;
+                }
+
+                // Don't show related leagues if country is "World"
+                if (currentLeague.country === 'World') {
+                    setRelatedLeagues([]);
+                    return;
+                }
+
+                // Then, fetch other leagues from the same country (excluding current league)
+                const { data: leagues, error: leaguesError } = await supabaseRef.current
+                    .from('leagues')
+                    .select('id, name, country')
+                    .eq('country', currentLeague.country)
+                    .neq('id', leagueId)
+                    .limit(6); // Limit to 6 related leagues
+
+                if (leaguesError) {
+                    console.error('Error fetching related leagues:', leaguesError);
+                    return;
+                }
+
+                setRelatedLeagues(leagues || []);
+            } catch (error) {
+                console.error('Error in fetchRelatedLeagues:', error);
+            } finally {
+                setIsLoadingRelated(false);
+            }
+        };
+
+        fetchRelatedLeagues();
+    }, [leagueId]);
+
+    // Helper function to create league slug
+    const createLeagueSlug = (name: string, id: number) => {
+        const slug = name
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
+            .replace(/\s+/g, '-') // Replace spaces with hyphens
+            .replace(/-+/g, '-') // Replace multiple hyphens with single
+            .trim();
+        return `${slug}-${id}`;
+    };
 
     // --- Main Render ---
     if (!leagueId) {
@@ -646,14 +651,16 @@ export default function MatchCalendar({
         );
     }
 
-    // Update league logo URL format
     const leagueLogoUrl = `https://viasport.b-cdn.net/football/leagues/${leagueId}.png`;
+    
+    // Show only first 5 fixtures
+    const displayedFixtures = upcomingMatches.slice(0, 5);
 
     return (
-        <div className="bg-white dark:bg-dark-nav rounded-lg shadow overflow-hidden">
+        <div className="bg-[#f9fafb] dark:bg-[#111111] rounded-lg overflow-hidden !mt-0">
             {/* === League Header === */}
-            <div className="flex items-center p-4 border-b border-gray-100 dark:border-dark-border bg-white dark:bg-dark-nav">
-                <div className="relative w-6 h-6 mr-2 flex-shrink-0">
+            <div className="flex items-center p-4 border-b border-gray-100 dark:border-transparent bg-white dark:bg-[#111111]">
+                <div className="relative w-6 h-6 mr-3 flex-shrink-0">
                     <Image
                         src={leagueLogoUrl}
                         alt={leagueName}
@@ -663,37 +670,16 @@ export default function MatchCalendar({
                         onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
                 </div>
-                <h2 className="text-base font-semibold text-gray-800 dark:text-gray-100 truncate">
-                    {leagueName}
-                </h2>
+                <div>
+                    <h2 className="text-base font-semibold text-gray-800 dark:text-gray-100">
+                        {leagueName}
+                    </h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                        Kommende kamper
+                    </p>
+                </div>
             </div>
             {/* === End League Header === */}
-
-            {/* === Tabs === */}
-            <div className="flex border-b border-gray-100 dark:border-dark-border">
-                <button
-                    onClick={() => setActiveTab('upcoming')}
-                    className={`flex-1 py-2 px-4 text-sm font-medium text-center focus:outline-none ${
-                        activeTab === 'upcoming'
-                            ? 'text-blue-600 dark:text-white border-b-2 border-blue-600 dark:border-[#ff6b00]'
-                            : 'text-gray-500 dark:text-gray-400/70 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
-                    }`}
-                >
-                    Kommende ({upcomingMatches.length})
-                </button>
-                <button
-                    onClick={() => setActiveTab('past')}
-                    className={`flex-1 py-2 px-4 text-sm font-medium text-center focus:outline-none ${
-                        activeTab === 'past'
-                            ? 'text-blue-600 dark:text-white border-b-2 border-blue-600 dark:border-[#ff6b00]'
-                            : 'text-gray-500 dark:text-gray-400/70 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
-                    }`}
-                >
-                    Resultater ({pastMatches.length})
-                </button>
-            </div>
-            {/* === End Tabs === */}
-
 
             {isLoading && (
                 <div className="p-4 text-center text-gray-500 dark:text-gray-400">Laster kamper...</div>
@@ -702,56 +688,72 @@ export default function MatchCalendar({
                 <div className="p-4 text-center text-red-600 dark:text-red-400">{error}</div>
             )}
 
-            {/* Match List Container */}
+            {/* Fixtures Container */}
             {!isLoading && !error && (
-                 // Added overflow-x-hidden to prevent horizontal scrollbar
-                <div className="max-h-[400px] overflow-y-auto overflow-x-hidden custom-scrollbar">
-                    {/* Upcoming Matches Section (Conditional) */}
-                    {activeTab === 'upcoming' && (
-                        <>
-                            {upcomingMatches.length > 0 ? (
-                                <div>
-                                    {upcomingMatches.map(match => renderMatchRow(match, false))}
-                                </div>
-                            ) : (
-                                <div className="p-4 text-center text-gray-500 dark:text-gray-400 text-sm">Ingen kommende kamper.</div>
-                            )}
-                        </>
+                <>
+                    {upcomingMatches.length > 0 ? (
+                        <div className="space-y-3 pt-3 pb-3">
+                            {displayedFixtures.map(match => renderMatchCard(match))}
+                        </div>
+                    ) : (
+                        <div className="p-4 text-center text-gray-500 dark:text-gray-400">
+                            <div className="text-base font-medium mb-1">Sesongen er ferdig</div>
+                            <div className="text-sm">Ny sesong data kommer snart</div>
+                        </div>
                     )}
+                </>
+            )}
 
-                    {/* Past Matches Section (Conditional) */}
-                    {activeTab === 'past' && (
-                         <>
-                            {pastMatches.length > 0 ? (
-                                <div>
-                                    {pastMatches.map(match => renderMatchRow(match, true))}
-                                </div>
-                             ) : (
-                                <div className="p-4 text-center text-gray-500 dark:text-gray-400 text-sm">Ingen nylige resultater.</div>
-                             )}
-                        </>
-                    )}
+            {/* === Related Leagues Section === */}
+            {relatedLeagues.length > 0 && (
+                <div className="border-t border-gray-100 dark:border-transparent">
+                    <div className="pt-4 pb-4">
+                        <h3 className="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-6 tracking-wide">
+                            Relevante ligaer
+                        </h3>
+                        <div className="space-y-1.5">
+                            {relatedLeagues.map(league => (
+                                <Link
+                                    key={league.id}
+                                    href={`/fotball/liga/${createLeagueSlug(league.name, league.id)}`}
+                                    className="flex items-center p-3 bg-white dark:bg-[#181818] hover:bg-gray-100 dark:hover:bg-[#333333] rounded-lg transition-colors duration-150 border border-[#f3f4f6] dark:border-[#232323]"
+                                >
+                                    <div className="relative w-8 h-8 mr-3 flex-shrink-0">
+                                        <Image
+                                            src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
+                                            alt={league.name}
+                                            fill
+                                            className="object-contain dark:brightness-110"
+                                            unoptimized
+                                            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                                        />
+                                    </div>
+                                    <span className="text-sm font-medium text-gray-800 dark:text-gray-100 truncate">
+                                        {league.name}
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             )}
 
-            {/* === Add the Tooltip Component Here === */}
+            {/* === Tooltip Component === */}
             <Tooltip
-                 id="streaming-provider-tooltip"
-                 render={({ content }) => { // Now this can access renderTooltipContent
-                     if (!content) return null;
-                     try {
-                         const providers = JSON.parse(content) as StreamingProvider[];
-                         // Call the helper function defined in the component scope
-                         return renderTooltipContent(providers);
-                     } catch (e) {
-                         console.error("Failed to parse tooltip content", e);
-                         return null;
-                     }
-                 }}
-                 clickable
-                 style={{ backgroundColor: 'transparent', padding: 0, zIndex: 50 }}
+                id="streaming-provider-tooltip"
+                render={({ content }) => {
+                    if (!content) return null;
+                    try {
+                        const providers = JSON.parse(content) as StreamingProvider[];
+                        return renderTooltipContent(providers);
+                    } catch (e) {
+                        console.error("Failed to parse tooltip content", e);
+                        return null;
+                    }
+                }}
+                clickable
+                style={{ backgroundColor: 'transparent', padding: 0, zIndex: 50 }}
             />
-             {/* === End Tooltip Component === */}
         </div>
     );
 } 

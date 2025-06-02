@@ -205,6 +205,33 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
   const [isExpanded, setIsExpanded] = useState(false);
   const isMobile = useIsMobile();
 
+  // Add early validation for lineups
+  if (!lineups || !Array.isArray(lineups) || lineups.length < 2) {
+    console.warn('HorizontalLineupComponent: Invalid lineups data', lineups);
+    return (
+      <div className="bg-white dark:bg-[#181818] rounded-lg border border-[#f3f4f6] dark:border-[#232323] p-6">
+        <div className="text-center text-gray-500 dark:text-gray-400">
+          <p>Lagoppstilling ikke tilgjengelig</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Validate that both teams have required data
+  const homeTeam = lineups[0];
+  const awayTeam = lineups[1];
+
+  if (!homeTeam?.team || !awayTeam?.team || !homeTeam?.startXI || !awayTeam?.startXI) {
+    console.warn('HorizontalLineupComponent: Missing team or startXI data', { homeTeam, awayTeam });
+    return (
+      <div className="bg-white dark:bg-[#181818] rounded-lg border border-[#f3f4f6] dark:border-[#232323] p-6">
+        <div className="text-center text-gray-500 dark:text-gray-400">
+          <p>Lagoppstilling ikke komplett</p>
+        </div>
+      </div>
+    );
+  }
+
   // Calculate highest rating for each team safely (copied & adapted)
   const teamHighestRatings = lineups.reduce((acc: { [key: number]: number }, team: TeamLineup) => {
     const startXI = Array.isArray(team.startXI) ? team.startXI : [];
@@ -218,10 +245,6 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
     acc[team.team.id] = ratings.length > 0 ? Math.max(...ratings.filter(r => !isNaN(r))) : 0; // Added filter for NaN
     return acc;
   }, {});
-
-  if (!lineups || lineups.length < 2) { // Need at least two teams
-    return <div className="text-center py-4">Ingen lagoppstilling tilgjengelig for begge lag</div>;
-  }
 
   // --- NEW getGridPosition for Horizontal Layout ---
   const getGridPosition = (grid: string, isHome: boolean, startXI: Array<{ player: Player }>) => {
@@ -581,8 +604,15 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
           {/* Players */}
           {lineups.map((team, teamIndex) => {
             const isHome = teamIndex === 0;
+            
+            // Add safety check for team.startXI
+            if (!team?.startXI || !Array.isArray(team.startXI)) {
+              console.warn(`Team ${teamIndex} missing startXI data:`, team);
+              return null;
+            }
+
             return team.startXI.map(({ player }) => {
-              if (!player.grid) return null;
+              if (!player?.grid) return null;
               
               // Get position based on layout
               const position = isMobile
@@ -650,12 +680,12 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
                             <Link
                                 href={`/spillerprofil/${player.id}`}
                                 key={`sub-${player.id}`}
-                                className="block hover:bg-gray-50 dark:hover:bg-transparent transition-colors border-b border-[#f3f4f6] dark:border-[#2c2c2c]"
+                                className="block hover:bg-gray-50 dark:hover:bg-transparent transition-colors border-b border-[#f3f4f6] dark:border-[#232323]"
                             >
                                 <div className="flex items-center gap-2 p-2">
                                     <div className="flex items-center gap-2 flex-1 min-w-0">
                                         <div className="relative">
-                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-gray-700">
+                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
                                                 <img
                                                     src={getPlayerPhotoUrl(player.id)}
                                                     alt=""
@@ -666,7 +696,7 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
                                             {rating > 0 && (
                                                 <div className="absolute -bottom-1 -right-1 flex items-center">
                                                     <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${getRatingColor(rating)} 
-                                                        flex items-center justify-center text-[8px] sm:text-[10px] font-bold text-white border border-white dark:border-gray-800`}>
+                                                        flex items-center justify-center text-[8px] sm:text-[10px] font-bold text-white border border-white dark:border-[#232323]`}>
                                                         {rating.toFixed(1)}
                                                     </div>
                                                 </div>
@@ -701,7 +731,7 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
                                             </div>
                                         )}
                                         {subOut !== undefined && (
-                                            <div className="flex items-center gap-1 text-red-600 text-[11px] sm:text-xs font-medium bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#2c2c2c] rounded-full px-1.5 py-0.5" title={`Utbyttet ${subOut}'`}>
+                                            <div className="flex items-center gap-1 text-red-600 text-[11px] sm:text-xs font-medium bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#232323] rounded-full px-1.5 py-0.5" title={`Utbyttet ${subOut}'`}>
                                                 ↓<span className="hidden sm:inline">{subOut}'</span>
                                             </div>
                                         )}
@@ -728,12 +758,12 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
                             <Link
                                 href={`/spillerprofil/${player.id}`}
                                 key={`bench-${player.id}`}
-                                className="block hover:bg-gray-50 dark:hover:bg-transparent transition-colors border-b border-[#f3f4f6] dark:border-[#2c2c2c]"
+                                className="block hover:bg-gray-50 dark:hover:bg-transparent transition-colors border-b border-[#f3f4f6] dark:border-[#232323]"
                             >
                                 <div className="flex items-center gap-2 p-2">
                                     <div className="flex items-center gap-2 flex-1 min-w-0">
                                         <div className="relative">
-                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-gray-700">
+                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
                                                 <img
                                                     src={getPlayerPhotoUrl(player.id)}
                                                     alt=""
@@ -744,7 +774,7 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
                                             {rating > 0 && (
                                                 <div className="absolute -bottom-1 -right-1 flex items-center">
                                                     <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${getRatingColor(rating)} 
-                                                        flex items-center justify-center text-[8px] sm:text-[10px] font-bold text-white border border-white dark:border-gray-800`}>
+                                                        flex items-center justify-center text-[8px] sm:text-[10px] font-bold text-white border border-white dark:border-[#232323]`}>
                                                         {rating.toFixed(1)}
                                                     </div>
                                                 </div>
@@ -779,7 +809,7 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
                                             </div>
                                         )}
                                         {subOut !== undefined && (
-                                            <div className="flex items-center gap-1 text-red-600 text-[11px] sm:text-xs font-medium bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#2c2c2c] rounded-full px-1.5 py-0.5" title={`Utbyttet ${subOut}'`}>
+                                            <div className="flex items-center gap-1 text-red-600 text-[11px] sm:text-xs font-medium bg-white dark:bg-[#2c2c2c] border border-gray-200 dark:border-[#232323] rounded-full px-1.5 py-0.5" title={`Utbyttet ${subOut}'`}>
                                                 ↓<span className="hidden sm:inline">{subOut}'</span>
                                             </div>
                                         )}
@@ -794,118 +824,129 @@ export default function HorizontalLineupComponent({ lineups, playerStats = [], e
     );
   };
 
-  // --- Component Return (Added margin-top, white bg, shadow) ---
+  // Component Return with additional safety checks
   return (
-    <div className="space-y-0"> {/* Keep no top-level space */}
-      {/* Render the combined horizontal formation */}
-      {renderHorizontalFormation(lineups[0], lineups[1])}
+    <div className="space-y-0">
+      {/* Only render if we have valid data */}
+      {homeTeam && awayTeam ? (
+        <>
+          {/* Render the combined horizontal formation */}
+          {renderHorizontalFormation(homeTeam, awayTeam)}
 
-      {/* Substitutes Section */}
-      <div className="bg-white dark:bg-[#222222] shadow">
-        {/* Mobile/Tablet Toggle Header */}
-        <div 
-          className="md:hidden cursor-pointer border-b border-[#f3f4f6] dark:border-[#2c2c2c]"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          <div className="flex items-center justify-between px-4 py-4">
-            <h4 className="text-sm font-medium text-gray-600 dark:text-gray-300">Innbyttere og Trenere</h4>
-            <ChevronDownIcon 
-              className={`w-5 h-5 text-gray-400 dark:text-gray-500 transition-transform duration-200 ${
-                isExpanded ? 'transform rotate-180' : ''
-              }`}
-            />
-          </div>
-        </div>
-
-        {/* Desktop Header */}
-        <div className="hidden md:block text-center py-4 border-b border-[#f3f4f6] dark:border-[#2c2c2c]">
-          <h4 className="text-sm font-medium text-gray-600 dark:text-gray-300">Innbyttere</h4>
-        </div>
-
-        {/* Content that collapses on mobile */}
-        <div className={`${!isExpanded ? 'hidden md:block' : 'block'}`}>
-          {/* Grid for both teams */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-8 gap-y-4 px-3 sm:px-4 py-4">
-            {/* Home Team Section */}
-            <div>
-              {/* Coach */}
-              {lineups[0].coach && (
-                <>
-                  <div className="text-center mb-3">
-                    <span className="text-xs text-gray-500 dark:text-gray-400">Trener</span>
-                  </div>
-                  <Link
-                    href="#"
-                    className="block border-b border-[#f3f4f6] dark:border-[#2c2c2c]"
-                  >
-                    <div className="flex items-center gap-2 p-2">
-                      <div className="flex items-center gap-2 flex-1 min-w-0">
-                        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-[#2c2c2c]">
-                          <img
-                            src={lineups[0].coach.photo || '/default-coach.png'}
-                            alt=""
-                            className="w-full h-full object-cover"
-                            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-                          />
-                        </div>
-                        <div className="min-w-0">
-                          <div className="font-medium text-xs sm:text-sm truncate text-gray-800 dark:text-gray-200">
-                            {lineups[0].coach.name}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </>
-              )}
-              
-              {/* Players */}
-              <div className="mt-4">
-                {renderTeamList(lineups[0])}
+          {/* Substitutes Section */}
+          <div className="bg-white dark:bg-[#181818] rounded-b-lg border border-[#f3f4f6] dark:border-[#232323]">
+            {/* Mobile/Tablet Toggle Header */}
+            <div 
+              className="md:hidden cursor-pointer border-b border-[#f3f4f6] dark:border-[#232323]"
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              <div className="flex items-center justify-between px-4 py-4">
+                <h4 className="text-sm font-medium text-gray-600 dark:text-gray-300">Innbyttere og Trenere</h4>
+                <ChevronDownIcon 
+                  className={`w-5 h-5 text-gray-400 dark:text-gray-500 transition-transform duration-200 ${
+                    isExpanded ? 'transform rotate-180' : ''
+                  }`}
+                />
               </div>
             </div>
 
-            {/* Away Team Section */}
-            <div>
-              {/* Coach */}
-              {lineups[1].coach && (
-                <>
-                  <div className="text-center mb-3">
-                    <span className="text-xs text-gray-500 dark:text-gray-400">Trener</span>
-                  </div>
-                  <Link
-                    href="#"
-                    className="block border-b border-[#f3f4f6] dark:border-[#2c2c2c]"
-                  >
-                    <div className="flex items-center gap-2 p-2">
-                      <div className="flex items-center gap-2 flex-1 min-w-0">
-                        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-[#2c2c2c]">
-                          <img
-                            src={lineups[1].coach.photo || '/default-coach.png'}
-                            alt=""
-                            className="w-full h-full object-cover"
-                            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-                          />
-                        </div>
-                        <div className="min-w-0">
-                          <div className="font-medium text-xs sm:text-sm truncate text-gray-800 dark:text-gray-200">
-                            {lineups[1].coach.name}
+            {/* Desktop Header */}
+            <div className="hidden md:block text-center py-4 border-b border-[#f3f4f6] dark:border-[#232323]">
+              <h4 className="text-sm font-medium text-gray-600 dark:text-gray-300">Innbyttere</h4>
+            </div>
+
+            {/* Content that collapses on mobile */}
+            <div className={`${!isExpanded ? 'hidden md:block' : 'block'}`}>
+              {/* Grid for both teams */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-8 gap-y-4 px-3 sm:px-4 py-4">
+                {/* Home Team Section */}
+                <div>
+                  {/* Coach */}
+                  {homeTeam.coach && (
+                    <>
+                      <div className="text-center mb-3">
+                        <span className="text-xs text-gray-500 dark:text-gray-400">Trener</span>
+                      </div>
+                      <Link
+                        href="#"
+                        className="block border-b border-[#f3f4f6] dark:border-[#232323]"
+                      >
+                        <div className="flex items-center gap-2 p-2">
+                          <div className="flex items-center gap-2 flex-1 min-w-0">
+                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
+                              <img
+                                src={homeTeam.coach.photo || '/default-coach.png'}
+                                alt=""
+                                className="w-full h-full object-cover"
+                                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                              />
+                            </div>
+                            <div className="min-w-0">
+                              <div className="font-medium text-xs sm:text-sm truncate text-gray-800 dark:text-gray-200">
+                                {homeTeam.coach.name}
+                              </div>
+                            </div>
                           </div>
                         </div>
+                      </Link>
+                    </>
+                  )}
+                  
+                  {/* Players */}
+                  <div className="mt-4">
+                    {renderTeamList(homeTeam)}
+                  </div>
+                </div>
+
+                {/* Away Team Section */}
+                <div>
+                  {/* Coach */}
+                  {awayTeam.coach && (
+                    <>
+                      <div className="text-center mb-3">
+                        <span className="text-xs text-gray-500 dark:text-gray-400">Trener</span>
                       </div>
-                    </div>
-                  </Link>
-                </>
-              )}
-              
-              {/* Players */}
-              <div className="mt-4">
-                {renderTeamList(lineups[1])}
+                      <Link
+                        href="#"
+                        className="block border-b border-[#f3f4f6] dark:border-[#232323]"
+                      >
+                        <div className="flex items-center gap-2 p-2">
+                          <div className="flex items-center gap-2 flex-1 min-w-0">
+                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover flex-shrink-0 bg-gray-200 overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
+                              <img
+                                src={awayTeam.coach.photo || '/default-coach.png'}
+                                alt=""
+                                className="w-full h-full object-cover"
+                                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                              />
+                            </div>
+                            <div className="min-w-0">
+                              <div className="font-medium text-xs sm:text-sm truncate text-gray-800 dark:text-gray-200">
+                                {awayTeam.coach.name}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    </>
+                  )}
+                  
+                  {/* Players */}
+                  <div className="mt-4">
+                    {renderTeamList(awayTeam)}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </>
+      ) : (
+        <div className="bg-white dark:bg-[#181818] rounded-lg border border-[#f3f4f6] dark:border-[#232323] p-6">
+          <div className="text-center text-gray-500 dark:text-gray-400">
+            <p>Kunne ikke laste lagoppstilling</p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 } 

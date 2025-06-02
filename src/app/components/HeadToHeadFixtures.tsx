@@ -36,7 +36,7 @@ export default function HeadToHeadFixtures({ matches }: HeadToHeadFixturesProps)
         .map((match) => (
           <div 
             key={match.fixture.id}
-            className="block bg-gray-50 dark:bg-[#2c2c2c] rounded-lg p-3"
+            className="block bg-gray-50 dark:bg-[#222222] rounded-lg p-3"
           >
             <div className="md:text-[10px] text-[9px] text-gray-500 dark:text-gray-400 mb-2">
               {format(parseISO(match.fixture.date), 'd. MMMM yyyy', { locale: nb })}

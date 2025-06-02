@@ -185,7 +185,7 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
               <Link
                 key={fixture.id}
                 href={`/fotball/kamp/${fixture.id}`}
-                className="block bg-white dark:bg-[#181818] rounded-lg border border-gray-200 dark:border-none shadow-sm hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors"
+                className="block bg-white dark:bg-[#181818] rounded-lg border border-gray-200 dark:border-[#232323] shadow-sm hover:bg-gray-50 dark:hover:bg-[#222222] transition-colors"
               >
                 <div className="hidden sm:flex items-center justify-between p-4 gap-4">
                   <div className="flex-shrink-0 w-40 text-xs">
@@ -219,7 +219,7 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
                     <div className={`w-auto px-3 py-1 rounded text-sm font-semibold flex-shrink-0 
                                      ${isLive 
                                         ? 'bg-[#00985f]/10 text-[#00985f] dark:bg-[#00985f]/20 dark:text-[#20c997]'
-                                        : 'bg-gray-100 text-gray-800 dark:bg-[#222222] dark:text-gray-200'
+                                        : 'bg-gray-100 text-gray-800 dark:bg-[#232323] dark:text-gray-200'
                                      }`}>
                       {(() => {
                           if (isLive) {

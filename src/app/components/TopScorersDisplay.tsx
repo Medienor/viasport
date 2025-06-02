@@ -413,7 +413,7 @@ export default function TopScorersDisplay({
   );
 
   const StatRowSkeleton = () => (
-    <div className="flex justify-between items-center text-sm py-2.5 border-b border-gray-100 last:border-b-0 animate-pulse">
+    <div className="flex justify-between items-center text-sm py-2.5 border-b border-gray-100 dark:border-dark-border last:border-b-0 animate-pulse">
       <div className="h-4 bg-gray-200 rounded w-8"></div>
       <div className="h-3 bg-gray-200 rounded w-20 mx-3"></div>
       <div className="h-4 bg-gray-200 rounded w-8"></div>
@@ -519,7 +519,7 @@ export default function TopScorersDisplay({
                       '-'
                   )}
               </span>
-              <span className="text-xs text-gray-500 dark:text-gray-400 uppercase mx-3 text-center flex-1 tracking-wide">{label}</span>
+              <span className="text-[10px] text-gray-500 dark:text-gray-400 uppercase mx-3 text-center flex-1 tracking-wide">{label}</span>
               <span className="font-semibold text-gray-800 dark:text-gray-100 text-left w-10 tabular-nums">
                   {awayValue != null ? (
                       <CountUp
@@ -545,7 +545,7 @@ export default function TopScorersDisplay({
   // For now, just use the props directly
   const displayHomePlayer = showLiveStats ? liveHomeStats : homeTopScorer;
   const displayAwayPlayer = showLiveStats ? liveAwayStats : awayTopScorer;
-  const statsLabelSuffix = showLiveStats ? "" : " (Sesong)";
+  const statsLabelSuffix = showLiveStats ? "" : ""; // Removed " (Sesong)" suffix
 
   // Get previous stats for animation start point
   const prevHome = showLiveStats ? prevHomeStatsRef.current : null;
@@ -553,17 +553,37 @@ export default function TopScorersDisplay({
 
   // --- Main JSX Structure ---
   return (
-    <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6">
-      {/* Title */}
-      <h3 className="text-base font-semibold text-center mb-5 text-gray-800 dark:text-gray-100">
-        Toppscorere
-        {showLiveStats && (
-          <span className="text-[10px] text-green-600 dark:text-green-500 font-bold align-middle ml-1.5 tracking-wide">
-            LIVE
-          </span>
+    <div className="mb-6 bg-white dark:bg-[#181818] rounded-lg border border-gray-100 dark:border-none overflow-hidden"> {/* Updated to match reference styling */}
+      {/* Updated Header with Icon and Season Info */}
+      <div className="pt-4 pb-4 mb-5 border-b border-[#f4f4f4] dark:border-dark-border"> {/* Updated border color for light mode */}
+        <div className="flex items-center justify-center mb-2">
+          {/* Trophy Icon */}
+          <svg className="w-5 h-5 text-gray-800 dark:text-gray-100 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m13 11.75c-.19 0-.38-.07-.53-.22-.29-.29-.29-.77 0-1.06l4-4c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-4 4c-.15.15-.34.22-.53.22z"></path>
+            <path d="m22.69 4.54c-.12-.28-.39-.46-.69-.46h-2.08v-2.08c0-.3-.18-.58-.46-.69-.28-.12-.6-.05-.82.16l-2.12 2.12c-.14.14-.22.33-.22.53v2.83c0 .41.34.75.75.75h2.83c.2 0 .39-.08.53-.22l2.12-2.12c.21-.21.28-.54.16-.82z"></path>
+            <path d="m14.24 12.24c-.18.18-.38.31-.61.39-.25.65-.89 1.12-1.63 1.12-.96 0-1.75-.79-1.75-1.75 0-.74.47-1.37 1.12-1.63.09-.23.22-.43.39-.61l.93-.93c-.22-.05-.46-.08-.7-.08-1.79 0-3.25 1.46-3.25 3.25s1.46 3.25 3.25 3.25 3.25-1.46 3.25-3.25c0-.24-.03-.47-.08-.7l-.93.93z"></path>
+            <path d="m17.77 8.7-.67.67c.41.79.64 1.68.64 2.63 0 3.17-2.58 5.75-5.75 5.75s-5.75-2.58-5.75-5.75 2.58-5.75 5.75-5.75c.95 0 1.84.23 2.63.64l.67-.67v-.67c-.99-.51-2.11-.8-3.3-.8-4 0-7.25 3.25-7.25 7.25s3.25 7.25 7.25 7.25 7.25-3.25 7.25-7.25c0-1.19-.29-2.31-.8-3.3z"></path>
+            <path d="m21.12 8.19c-.16.16-.34.28-.54.36.44 1.09.67 2.25.67 3.45 0 5.1-4.15 9.25-9.25 9.25s-9.25-4.15-9.25-9.25 4.15-9.25 9.25-9.25c1.19 0 2.36.23 3.45.67.09-.2.21-.39.36-.54l.66-.66c-1.39-.64-2.91-.98-4.47-.98-5.93.01-10.75 4.83-10.75 10.76s4.82 10.75 10.75 10.75 10.75-4.82 10.75-10.75c0-1.56-.34-3.08-.98-4.47l-.66.66z"></path>
+          </svg>
+          <h3 className="text-base font-semibold text-gray-800 dark:text-gray-100">
+            Toppscorere
+            {showLiveStats && (
+              <span className="text-[10px] text-green-600 dark:text-green-500 font-bold align-middle ml-1.5 tracking-wide">
+                LIVE
+              </span>
+            )}
+            {isLoadingLiveStats && <span className="animate-pulse text-sm text-gray-500 dark:text-gray-400 ml-2">Laster...</span>}
+          </h3>
+        </div>
+        
+        {/* Season Info Under Title */}
+        {leagueName && (
+          <div className="text-center text-xs text-gray-600 dark:text-gray-400 flex items-center justify-center space-x-2">
+            {leagueLogoUrl && <Image src={leagueLogoUrl} width={16} height={16} alt={`${leagueName} logo`} className="inline-block" unoptimized />}
+            <span>{leagueName} {displaySeason}</span>
+          </div>
         )}
-        {isLoadingLiveStats && <span className="animate-pulse text-sm text-gray-500 dark:text-gray-400 ml-2">Laster...</span>}
-      </h3>
+      </div>
 
       {/* Player Info Section - Render Skeletons or Actual Data */}
       <div className="flex justify-around items-start mb-5 min-h-[100px]">
@@ -580,64 +600,57 @@ export default function TopScorersDisplay({
         )}
       </div>
 
-      {/* League/Season Context - Now always shown if leagueName exists */}
-      {leagueName && (
-        <div className="text-center text-xs text-gray-700 dark:text-gray-300 mb-4 py-2 border-t border-b border-gray-100 dark:border-dark-border flex items-center justify-center space-x-2.5">
-          {leagueLogoUrl && <Image src={leagueLogoUrl} width={18} height={18} alt={`${leagueName} logo`} className="inline-block" unoptimized />}
-          {/* Still shows season year, can be removed if needed for live view */}
-          <span>{leagueName} {displaySeason}</span>
-        </div>
-      )}
-
       {/* Stats Comparison Section - UPDATED to pass previous values */}
-      <div className="space-y-1 min-h-[180px]"> {/* Added min-height to reduce layout shift */}
-        {isLoadingLiveStats ? (
-          <>
-            <StatRowSkeleton />
-            <StatRowSkeleton />
-            <StatRowSkeleton />
-            <StatRowSkeleton />
-            <StatRowSkeleton />
-            {(displayHomePlayer?.average_rating || displayAwayPlayer?.average_rating || homeTopScorer?.average_rating || awayTopScorer?.average_rating) && <StatRowSkeleton />}
-          </>
-        ) : (
-          <>
-            {displayHomePlayer || displayAwayPlayer ? (
-              <>
-                <StatRow label={`Mål${statsLabelSuffix}`}
-                         homeValue={displayHomePlayer?.goals_total} awayValue={displayAwayPlayer?.goals_total}
-                         homePrevValue={prevHome?.goals_total} awayPrevValue={prevAway?.goals_total} />
-                <StatRow label={`Målgivende${statsLabelSuffix}`}
-                         homeValue={displayHomePlayer?.assists} awayValue={displayAwayPlayer?.assists}
-                         homePrevValue={prevHome?.assists} awayPrevValue={prevAway?.assists} />
-                <StatRow label={`Minutter${statsLabelSuffix}`}
-                         homeValue={displayHomePlayer?.minutes} awayValue={displayAwayPlayer?.minutes}
-                         homePrevValue={prevHome?.minutes} awayPrevValue={prevAway?.minutes} />
-                <StatRow label={`Taklinger${statsLabelSuffix}`}
-                         homeValue={displayHomePlayer?.tackles} awayValue={displayAwayPlayer?.tackles}
-                         homePrevValue={prevHome?.tackles} awayPrevValue={prevAway?.tackles} />
-                <StatRow label={`Straffemål${statsLabelSuffix}`}
-                         homeValue={displayHomePlayer?.penalties_scored} awayValue={displayAwayPlayer?.penalties_scored}
-                         homePrevValue={prevHome?.penalties_scored} awayPrevValue={prevAway?.penalties_scored} />
-                {/* Conditionally render Rating only if either player has one */}
-                {(displayHomePlayer?.average_rating != null || displayAwayPlayer?.average_rating != null) && (
-                    <StatRow label={`Rating${statsLabelSuffix}`}
-                             homeValue={displayHomePlayer?.average_rating} awayValue={displayAwayPlayer?.average_rating}
-                             homePrevValue={prevHome?.average_rating} awayPrevValue={prevAway?.average_rating} />
-                )}
-              </>
-            ) : (
-              <p className="text-center text-sm text-gray-500 dark:text-gray-400 py-4">
-                {showLiveStats ? (liveStatsError || "Ingen live data tilgjengelig.") : "Ingen toppscorerdata tilgjengelig."}
-              </p>
-            )}
-          </>
-        )}
+      <div className="px-4"> {/* Added horizontal padding wrapper */}
+        <div className="space-y-1 min-h-[180px]"> {/* Added min-height to reduce layout shift */}
+          {isLoadingLiveStats ? (
+            <>
+              <StatRowSkeleton />
+              <StatRowSkeleton />
+              <StatRowSkeleton />
+              <StatRowSkeleton />
+              <StatRowSkeleton />
+              {(displayHomePlayer?.average_rating || displayAwayPlayer?.average_rating || homeTopScorer?.average_rating || awayTopScorer?.average_rating) && <StatRowSkeleton />}
+            </>
+          ) : (
+            <>
+              {displayHomePlayer || displayAwayPlayer ? (
+                <>
+                  <StatRow label={`Mål${statsLabelSuffix}`}
+                           homeValue={displayHomePlayer?.goals_total} awayValue={displayAwayPlayer?.goals_total}
+                           homePrevValue={prevHome?.goals_total} awayPrevValue={prevAway?.goals_total} />
+                  <StatRow label={`Målgivende${statsLabelSuffix}`}
+                           homeValue={displayHomePlayer?.assists} awayValue={displayAwayPlayer?.assists}
+                           homePrevValue={prevHome?.assists} awayPrevValue={prevAway?.assists} />
+                  <StatRow label={`Minutter${statsLabelSuffix}`}
+                           homeValue={displayHomePlayer?.minutes} awayValue={displayAwayPlayer?.minutes}
+                           homePrevValue={prevHome?.minutes} awayPrevValue={prevAway?.minutes} />
+                  <StatRow label={`Taklinger${statsLabelSuffix}`}
+                           homeValue={displayHomePlayer?.tackles} awayValue={displayAwayPlayer?.tackles}
+                           homePrevValue={prevHome?.tackles} awayPrevValue={prevAway?.tackles} />
+                  <StatRow label={`Straffemål${statsLabelSuffix}`}
+                           homeValue={displayHomePlayer?.penalties_scored} awayValue={displayAwayPlayer?.penalties_scored}
+                           homePrevValue={prevHome?.penalties_scored} awayPrevValue={prevAway?.penalties_scored} />
+                  {/* Conditionally render Rating only if either player has one */}
+                  {(displayHomePlayer?.average_rating != null || displayAwayPlayer?.average_rating != null) && (
+                      <StatRow label={`Rating${statsLabelSuffix}`}
+                               homeValue={displayHomePlayer?.average_rating} awayValue={displayAwayPlayer?.average_rating}
+                               homePrevValue={prevHome?.average_rating} awayPrevValue={prevAway?.average_rating} />
+                  )}
+                </>
+              ) : (
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 py-4">
+                  {showLiveStats ? (liveStatsError || "Ingen live data tilgjengelig.") : "Ingen toppscorerdata tilgjengelig."}
+                </p>
+              )}
+            </>
+          )}
+        </div>
       </div>
 
-      {/* === Live Toggle Switch (Improved Styling & Animation) === */}
+      {/* === Live Toggle Switch (iOS Style) === */}
       {canShowToggle && (
-          <div className="mt-6 pt-4 border-t border-gray-200 dark:border-dark-border flex items-center justify-center space-x-3">
+          <div className="mt-6 pt-4 pb-4 border-t border-[#f4f4f4] dark:border-dark-border flex items-center justify-center space-x-3">
               {/* Label Text */}
               <label htmlFor="liveToggle" className={`text-sm font-medium cursor-pointer ${
                 isLoadingLiveStats 
@@ -646,31 +659,32 @@ export default function TopScorersDisplay({
               }`}>
                   {showLiveStats ? 'Vis sesongdata' : 'Vis live data'}
               </label>
-              {/* Toggle Container */}
-              <div className="relative inline-block w-10 align-middle select-none">
-                  {/* The Thumb (Input) */}
+              
+              {/* iOS Style Toggle Container */}
+              <div className="relative inline-block">
                   <input
                       type="checkbox"
                       id="liveToggle"
                       checked={showLiveStats}
                       onChange={handleToggleChange}
                       disabled={isLoadingLiveStats}
-                      className={`peer absolute block w-6 h-6 rounded-full bg-white dark:bg-gray-100 border-4 appearance-none cursor-pointer
-                                 left-0 top-0
-                                 transition-transform duration-200 ease-in-out
-                                 checked:translate-x-4
-                                 checked:border-blue-600 dark:checked:border-blue-500
-                                 focus:outline-none focus:ring-0 focus:ring-offset-0
-                                 disabled:cursor-not-allowed disabled:border-gray-200 dark:disabled:border-gray-600 disabled:bg-white dark:disabled:bg-gray-700`}
+                      className="sr-only"
                   />
-                  {/* The Track (Background Label) */}
                   <label
                       htmlFor="liveToggle"
-                      className={`block overflow-hidden h-6 rounded-full cursor-pointer transition-colors duration-200 ease-in-out
-                                 ${showLiveStats ? 'bg-blue-600 dark:bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'}
-                                 ${isLoadingLiveStats ? (showLiveStats ? 'bg-blue-300 dark:bg-blue-400' : 'bg-gray-200 dark:bg-gray-700') : ''}
-                                 ${isLoadingLiveStats ? 'cursor-not-allowed' : ''}`}
+                      className={`relative inline-flex items-center cursor-pointer transition-colors duration-300 ease-in-out
+                                 w-[42px] h-[26px] rounded-full
+                                 ${showLiveStats 
+                                   ? 'bg-green-500 dark:bg-green-600' 
+                                   : 'bg-gray-200 dark:bg-gray-600'
+                                 }
+                                 ${isLoadingLiveStats ? 'cursor-not-allowed opacity-50' : ''}`}
                   >
+                      <span
+                          className={`inline-block w-[22px] h-[22px] bg-white rounded-full shadow-sm transform transition-transform duration-300 ease-in-out
+                                     ${showLiveStats ? 'translate-x-[18px]' : 'translate-x-0.5'}
+                                     ${isLoadingLiveStats ? 'opacity-70' : ''}`}
+                      />
                   </label>
               </div>
           </div>

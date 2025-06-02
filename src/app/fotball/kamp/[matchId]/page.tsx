@@ -21,6 +21,13 @@ import TopScorersComparison from '@/app/components/TopScorersComparison';
 import MatchStatsSnippet from '@/app/components/MatchStatsSnippet';
 import HorizontalLineupComponent from '@/app/components/HorizontalLineupComponent';
 import FixtureNews from '@/app/components/FixtureNews';
+import TopSectionTabs from '@/app/components/TopSectionTabs';
+import TeamStandings from '@/app/components/TeamStandings';
+import MatchStats from '@/app/components/MatchStats';
+import HeadToHeadTab from '@/app/components/HeadToHeadTab';
+import MatchCommentary from '@/app/components/MatchCommentary';
+import MatchSummaryCard from '@/app/components/MatchSummaryCard';
+import LiveCommentaryPreview from '@/app/components/LiveCommentaryPreview';
 
 export const dynamic = "force-dynamic";
 
@@ -370,18 +377,24 @@ export default async function MatchPage({ params }: { params: { matchId: string 
     return (
       <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
         <PreventAutoScroll />
+        
+        {/* SEO-friendly heading - visually hidden but accessible */}
+        <h1 className="sr-only">
+          {match.teams.home.name} mot {match.teams.away.name} - {match.league.name} {formatMatchDateTime(match.date).fullDate}
+        </h1>
+        
         <div className="flex flex-col md:flex-row gap-8">
           {/* Right column - Match details (now first on mobile) */}
           <div className="w-full md:w-3/4 order-first md:order-last space-y-6">
             {/* Match header - Now with navigation bar */}
-            <div className="bg-white dark:bg-[#222] rounded-lg overflow-hidden shadow">
+            <div className="bg-white dark:bg-[#181818] rounded-lg overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
               {/* Navigation bar */}
-              <div className="relative flex items-center justify-between px-4 py-4 border-b border-gray-200 dark:border-dark-border">
+              <div className="relative flex items-center justify-between px-4 py-4 border-b border-[#f3f4f6] dark:border-[#232323]">
                 <Link
                   href="/"
                   className="flex items-center text-sm text-gray-800 dark:text-gray-200 hover:decoration-black dark:hover:decoration-white hover:underline px-2"
                 >
-                  <div className="bg-gray-100 dark:bg-gray-800 p-1.5 rounded-full mr-2">
+                  <div className="bg-gray-100 dark:bg-[#222] p-1.5 rounded-full mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -407,9 +420,22 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                   </div>
                 </div>
 
-                <div className="hidden sm:block">
-                  <button className="text-sm px-4 py-1.5 rounded-full transition-colors bg-black text-white hover:bg-gray-800 dark:bg-[#ff6b00] dark:hover:bg-[#ff8533]">
-                    Følg
+                <div className="flex items-center">
+                  <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors group">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="h-5 w-5 text-gray-400 group-hover:text-yellow-500 transition-colors" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z" 
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -592,77 +618,27 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                 )}
                 {/* --- End Goal Events --- */}
               </div>
+
+              {/* Add the new TopSectionTabs component */}
+              <TopSectionTabs match={match} />
             </div>
-            
-            {/* === Match Stats Snippet === */}
-            {/* Render only if match is NOT upcoming AND (stats OR ball possession data exists) */}
-            {!isUpcoming && (match.fixture_statistics != null || match.ball_possession != null) && (
-              <MatchStatsSnippet
-                matchId={fixtureId} // Pass ID
-                fixtureStatistics={match.fixture_statistics}
-                teamColors={teamColors}
-                initialEvents={match.event_data || []} // Pass events
-                matchStatusShort={match.status?.short} // Pass status
-                matchStartDate={match.date} // Pass date
-                lastUpdatedAt={match.details_last_updated_at} // Pass timestamp
-                // Pass ball possession data (handle potential null)
-                ballPossession={match.ball_possession ?? undefined}
-                // onShowAllStats={() => { /* Client-side scroll logic */ }}
-              />
-            )}
-            {/* ========================== */}
 
-            {/* Show FixtureNews after MatchStatsSnippet for finished matches */}
-            {isFinished && <FixtureNews leagueId={match.league.id} leagueName={match.league.name} isFinished={isFinished} />}
-
-            {/* SEPARATE Live Match Events Card */}
-            {/* Conditionally render the entire events card */}
-            {(isLive || isFinished) && ( // Show if live or finished, even with 0 events initially
-              <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-4 md:p-6">
-                <LiveMatchEvents
-                  matchId={fixtureId}
-                  initialEvents={match.event_data || []} // Default to empty array
-                  homeTeamId={match.teams.home.id}
-                  awayTeamId={match.teams.away.id}
-                  isLive={!!isLive}
-                />
-              </div>
-            )}
-            {/* END SEPARATE Live Match Events Card */}
-
-            {/* === Horizontal Lineup Component === */}
-            {/* Render if lineups exist */}
-            {match.lineups && match.lineups.length > 0 && (
-              <div>
-                <HorizontalLineupComponent
-                  lineups={match.lineups}
-                  playerStats={match.player_statistics || []} // Pass player stats, default to empty array
-                  eventData={match.event_data || []} // Pass event data, default to empty array
-                />
-              </div>
-            )}
-            {/* ==================================== */}
-
-            {/* Match details card with tabs */}
-            <div className="bg-white dark:bg-[#222222] rounded-lg shadow p-6">
-              <MatchTabs 
-                match={match}
-                activeTab="facts"
-                teamColors={teamColors}
-              >
+            {/* Match details card - Only show for upcoming or finished matches */}
+            {(isUpcoming || (isFinished && !isLive)) && (
+              <div className="bg-white dark:bg-[#181818] rounded-lg border border-[#f3f4f6] dark:border-[#232323] p-6" data-tab-content="fakta">
                 {/* Only include the non-table content here */}
                 {isUpcoming && (
                   <>
-                    <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100 pb-2 border-b border-gray-200 dark:border-[#2c2c2c]">
+                    <h3 className="text-lg font-semibold mb-4 text-[#1f2937] dark:text-gray-100 pb-2 border-b border-[#f3f4f6] dark:border-[#2c2c2c]">
                       Kampinformasjon
                     </h3>
-                    <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                      <span className="font-semibold dark:text-gray-100">{match.teams?.home?.name || 'Hjemmelag'}</span> møter{' '}
-                      <span className="font-semibold dark:text-gray-100">{match.teams?.away?.name || 'Bortelag'}</span>
+                    <p className="text-sm text-[#656565] dark:text-gray-300 leading-relaxed">
+                      <span className="dark:text-gray-100">{match.teams?.home?.name || 'Hjemmelag'}</span> møter{' '}
+                      <span className="dark:text-gray-100">{match.teams?.away?.name || 'Bortelag'}</span>
                       {match.league?.round && ` i ${match.league.round}`}
                       {match.league?.name && ` av ${match.league.name}`}.
                       Kampen spilles
-                      {match.venue?.name && <> på <span className="font-semibold dark:text-gray-100">{match.venue.name}</span></>}
+                      {match.venue?.name && <> på <span className="dark:text-gray-100">{match.venue.name}</span></>}
                       {' '}{formatMatchDateTime(match.date).dayName}
                       {' '}{formatMatchDateTime(match.date).fullDate}
                       {isUpcoming ? ` kl. ${formatMatchDateTime(match.date).time}` : ''}.
@@ -670,237 +646,131 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                   </>
                 )}
                 
-                {isLive && (
-                  <div>Live Match Details</div>
+                {isFinished && !isLive && (
+                  <MatchSummaryCard
+                    match={match}
+                  />
                 )}
-                
-                {isFinished && (
-                  <>
-                    <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100 pb-2 border-b border-gray-200 dark:border-[#2c2c2c]">
-                      Kampens hendelser
-                    </h3>
-                    
-                    {/* Match summary */}
-                    <p className="text-lg text-gray-800 dark:text-gray-200 mb-6">
-                      {generateMatchSummary(match)}
-                    </p>
-                    
-                    {/* Match events section */}
-                    {match.event_data && Array.isArray(match.event_data) && match.event_data.length > 0 && (
-                      <div className="mt-6 bg-white dark:bg-[#222222] rounded-lg p-4">
-                        <div className="relative">
-                          {/* Timeline line */}
-                          <div className="absolute left-[60px] md:left-[100px] w-px h-full bg-gray-200 dark:bg-[#2c2c2c]" />
-                          
-                          <div className="space-y-2">
-                            {/* Kickoff event */}
-                            <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white dark:bg-[#222222] rounded-lg p-2">
-                              <div className="text-sm text-gray-500 dark:text-gray-400">0'</div>
-                              <div className="flex justify-center">
-                                <Image
-                                  src="/images/channels/whistle.svg"
-                                  alt="Kickoff"
-                                  width={14}
-                                  height={14}
-                                  className="opacity-75 dark:invert"
-                                />
-                              </div>
-                              <span className="text-sm text-gray-500 dark:text-gray-400">Avspark</span>
-                            </div>
-
-                            {/* Match events */}
-                            {match.event_data
-                              .sort((a, b) => (a.time.elapsed + (a.time.extra || 0)) - (b.time.elapsed + (b.time.extra || 0)))
-                              .map((event, index) => (
-                                <div 
-                                  key={index} 
-                                  className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white dark:bg-[#222222] hover:bg-gray-50 dark:hover:bg-[#2c2c2c] rounded-lg p-2"
-                                >
-                                  {/* Time column */}
-                                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                                    {event.time.elapsed}'
-                                    {event.time.extra && `+${event.time.extra}`}
-                                  </div>
-
-                                  {/* Icon column */}
-                                  <div className="flex justify-center">
-                                    {event.type === 'Goal' && (
-                                      <Image
-                                        src="/images/channels/ball.svg"
-                                        alt="Goal"
-                                        width={14}
-                                        height={14}
-                                        className="opacity-75 dark:invert"
-                                      />
-                                    )}
-                                    {event.type === 'Card' && event.detail && (
-                                      <div className={`w-3 h-4 ${
-                                        event.detail === 'Yellow Card' ? 'bg-yellow-400' : 'bg-red-600'
-                                      } rounded-sm`} />
-                                    )}
-                                  </div>
-
-                                  {/* Event details column */}
-                                  <div className="min-w-0">
-                                    <div className="text-sm text-gray-800 dark:text-gray-200">
-                                      {event.player?.name}
-                                      {event.assist?.name && (
-                                        <span className="text-gray-500 dark:text-gray-400">
-                                          {' '}• Assist: {event.assist.name}
-                                        </span>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
-                              ))}
-
-                            {/* Final whistle */}
-                            <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white dark:bg-[#222222] rounded-lg p-2">
-                              <div className="text-sm text-gray-500 dark:text-gray-400">90'</div>
-                              <div className="flex justify-center">
-                                <Image
-                                  src="/images/channels/whistle.svg"
-                                  alt="Final whistle"
-                                  width={14}
-                                  height={14}
-                                  className="opacity-75 dark:invert"
-                                />
-                              </div>
-                              <span className="text-sm text-gray-500 dark:text-gray-400">Kampslutt</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* About the match */}
-                    <div className="bg-white dark:bg-[#222222] rounded-lg mt-6">
-                      <h2 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100">Om kampen</h2>
-                      
-                      <div className="space-y-4 text-gray-700 dark:text-gray-300">
-                        {/* Match info paragraph */}
-                        <p>
-                          {match.teams.home.name} spiller hjemme mot {match.teams.away.name} på{' '}
-                          {match.venue?.name || 'ukjent arena'} {formatMatchDateTime(match.date).dayName}{' '}
-                          {formatMatchDateTime(match.date).fullDate} kl.{' '}
-                          {formatMatchDateTime(match.date).time}. 
-                          {match.league.round && (
-                            <> Dette er {match.league.round} av {match.league.name}.</>
-                          )}
-                        </p>
-
-                        {/* Lineups info */}
-                        <p>
-                          Forventet lagoppstilling blir tilgjengelig noen dager før kampstart, 
-                          mens den faktiske lagoppstillingen blir publisert cirka én time før avspark.
-                        </p>
-
-                        {/* Streaming info */}
-                        {getStreamingProviders(match.league.id).length > 0 && (
-                          <p>
-                            Se kampen på{' '}
-                            {getStreamingProviders(match.league.id)
-                              .map(provider => provider.name)
-                              .join(' / ')}.
-                          </p>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Q&A accordion */}
-                    {match.match_status === 'FT' && (
-                      <div className="bg-white dark:bg-[#222222] rounded-lg mt-6">
-                        <h2 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100">Spørsmål og svar</h2>
-                        
-                        <div className="divide-y divide-gray-200 dark:divide-[#2c2c2c]">
-                          {/* Winner Question */}
-                          <details className="group">
-                            <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 dark:hover:bg-[#2c2c2c] text-gray-800 dark:text-gray-200">
-                              <span className="font-medium">
-                                Hvem vant mellom {match.teams.home.name} og {match.teams.away.name} {formatMatchDateTime(match.date).fullDate}?
-                              </span>
-                              <svg className="w-5 h-5 transition-transform group-open:rotate-180 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                              </svg>
-                            </summary>
-                            <div className="p-4 bg-gray-50 dark:bg-[#2c2c2c] text-gray-700 dark:text-gray-300">
-                              {match.goals.home > match.goals.away ? (
-                                <p>{match.teams.home.name} vant {match.goals.home}-{match.goals.away} mot {match.teams.away.name}.</p>
-                              ) : match.goals.home < match.goals.away ? (
-                                <p>{match.teams.away.name} vant {match.goals.away}-{match.goals.home} mot {match.teams.home.name}.</p>
-                              ) : (
-                                <p>Kampen endte uavgjort {match.goals.home}-{match.goals.away}.</p>
-                              )}
-                            </div>
-                          </details>
-
-                          {/* Top Scorer Question */}
-                          {match.event_data && match.event_data.some(e => e.type === 'Goal') && (
-                            <details className="group">
-                              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 dark:hover:bg-[#2c2c2c] text-gray-800 dark:text-gray-200">
-                                <span className="font-medium">Hvilken spiller scoret flest mål i kampen?</span>
-                                <svg className="w-5 h-5 transition-transform group-open:rotate-180 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg>
-                              </summary>
-                              <div className="p-4 bg-gray-50 dark:bg-[#2c2c2c] text-gray-700 dark:text-gray-300">
-                                {(() => {
-                                  const [topScorer, goals] = getTopScorer(match.event_data);
-                                  return (
-                                    <p>
-                                      {topScorer} scoret {goals} {goals === 1 ? 'mål' : 'mål'} i kampen.
-                                    </p>
-                                  );
-                                })()}
-                              </div>
-                            </details>
-                          )}
-
-                          {/* All Scorers Question */}
-                          {match.event_data && match.event_data.some(e => e.type === 'Goal') && (
-                            <details className="group">
-                              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 dark:hover:bg-[#2c2c2c] text-gray-800 dark:text-gray-200">
-                                <span className="font-medium">Hvem scoret målene i denne kampen?</span>
-                                <svg className="w-5 h-5 transition-transform group-open:rotate-180 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg>
-                              </summary>
-                              <div className="p-4 bg-gray-50 dark:bg-[#2c2c2c] text-gray-700 dark:text-gray-300">
-                                <div className="space-y-2">
-                                  {match.event_data
-                                    .filter(e => e.type === 'Goal')
-                                    .sort((a, b) => a.time.elapsed - b.time.elapsed)
-                                    .map((goal, index) => (
-                                      <p key={index}>
-                                        {goal.time.elapsed}' - {goal.player.name}
-                                        {goal.assist && ` (Assist: ${goal.assist.name})`}
-                                      </p>
-                                    ))}
-                                </div>
-                              </div>
-                            </details>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                )}
-              </MatchTabs>
-            </div>
-
-            {/* Show FixtureNews before TeamForm for upcoming matches only */}
-            {isUpcoming && <FixtureNews leagueId={match.league.id} leagueName={match.league.name} isFinished={isFinished} />}
-
-            {/* Conditionally render TeamForm if match is upcoming - MOVED HERE */}
-            {isUpcoming && (
-              <TeamForm
-                homeForm={homeTeamForm}
-                awayForm={awayTeamForm}
-                homeTeamId={match.teams.home.id}
-                awayTeamId={match.teams.away.id}
-              />
+              </div>
             )}
             
+            {/* === Live Commentary Preview === */}
+            {isLive && (
+              <div data-tab-content="fakta">
+                <LiveCommentaryPreview
+                  matchId={fixtureId}
+                  isLive={isLive}
+                />
+              </div>
+            )}
+
+            {/* === Match Stats Snippet === */}
+            {!isUpcoming && (match.fixture_statistics != null || match.ball_possession != null) && (
+              <div data-tab-content="fakta">
+                <MatchStatsSnippet
+                  matchId={fixtureId}
+                  fixtureStatistics={match.fixture_statistics}
+                  teamColors={teamColors}
+                  initialEvents={match.event_data || []}
+                  matchStatusShort={match.status?.short}
+                  matchStartDate={match.date}
+                  lastUpdatedAt={match.details_last_updated_at}
+                  ballPossession={match.ball_possession ?? undefined}
+                />
+              </div>
+            )}
+
+            {/* Show FixtureNews after MatchStatsSnippet for finished matches */}
+            {isFinished && (
+              <div data-tab-content="fakta">
+                <FixtureNews leagueId={match.league.id} leagueName={match.league.name} isFinished={isFinished} />
+              </div>
+            )}
+
+            {/* Live Match Events - Only visible on Fakta tab */}
+            {(isLive || isFinished) && (
+              <div data-tab-content="fakta" className="border border-[#f3f4f6] dark:border-[#232323] rounded-lg overflow-hidden">
+                <LiveMatchEvents
+                  matchId={match.id}
+                  initialEvents={match.event_data || []}
+                  homeTeamId={match.teams?.home?.id || 0}
+                  awayTeamId={match.teams?.away?.id || 0}
+                  isLive={isLive}
+                />
+              </div>
+            )}
+
+            {/* === Horizontal Lineup Component === */}
+            {match.lineups && Array.isArray(match.lineups) && match.lineups.length >= 2 && (
+              <div data-tab-content="fakta">
+                <HorizontalLineupComponent
+                  lineups={match.lineups}
+                  playerStats={match.player_statistics || []}
+                  eventData={match.event_data || []}
+                />
+              </div>
+            )}
+
+            {/* Conditionally render TeamForm if match is upcoming */}
+            {isUpcoming && (
+              <div data-tab-content="fakta">
+                <TeamForm
+                  homeForm={homeTeamForm}
+                  awayForm={awayTeamForm}
+                  homeTeamId={match.teams.home.id}
+                  awayTeamId={match.teams.away.id}
+                />
+              </div>
+            )}
+
+            {/* TeamStandings for tabell tab */}
+            <div data-tab-content="tabell" className="bg-white dark:bg-[#181818] rounded-lg p-6 border border-[#f3f4f6] dark:border-[#232323]">
+              <TeamStandings
+                teamId={match.teams.home.id}
+                teamName={match.teams.home.name}
+                seasons={[seasonForScorers]}
+                hideSeasonSelector={true}
+                highlightTeams={[match.teams.home.id, match.teams.away.id]}
+                leagueId={match.league.id}
+                embedded={true}
+                forcedLeagueDetails={{
+                  id: match.league.id,
+                  name: match.league.name || 'Ukjent Liga',
+                  logo: match.league.logo || '/images/league-placeholder.png'
+                }}
+              />
+            </div>
+
+            {/* MatchStats for statistikk tab */}
+            {match.player_statistics && Array.isArray(match.player_statistics) && match.player_statistics.length > 0 && (
+              <div data-tab-content="statistikk" className="bg-white dark:bg-[#181818] rounded-lg p-6 border border-[#f3f4f6] dark:border-[#232323]">
+                <MatchStats match={match} teamColors={teamColors} />
+              </div>
+            )}
+
+            {/* HeadToHeadTab for lag-vs-lag tab */}
+            <div data-tab-content="lag-vs-lag" className="bg-white dark:bg-[#181818] rounded-lg p-6 border border-[#f3f4f6] dark:border-[#232323]">
+              <HeadToHeadTab match={match} teamColors={teamColors} />
+            </div>
+
+            {/* MatchCommentary for referat tab */}
+            <div data-tab-content="referat" className="bg-white dark:bg-[#181818] rounded-lg p-6 border border-[#f3f4f6] dark:border-[#232323]">
+              <h2 className="text-xl font-semibold mb-6 text-gray-900 dark:text-gray-100">Kampreferat</h2>
+              <MatchCommentary match={match} />
+            </div>
+
+            {/* HorizontalLineupComponent for lag tab */}
+            {match.lineups && Array.isArray(match.lineups) && match.lineups.length >= 2 && (
+              <div data-tab-content="lag">
+                <HorizontalLineupComponent 
+                  lineups={match.lineups}
+                  playerStats={match.player_statistics || []}
+                  eventData={match.event_data || []}
+                  teamColors={teamColors}
+                />
+              </div>
+            )}
+
           </div>
 
           
@@ -954,10 +824,11 @@ export default async function MatchPage({ params }: { params: { matchId: string 
             {!isFinished && <LeagueChannels leagueId={leagueIdForScorers} />}
             {/* ============================================ */}
 
+            {/* Match Calendar - Pass whether TopScorers is rendered */}
             <MatchCalendar
-              currentMatchId={params.matchId}
               leagueId={match.league.id}
-              leagueName={match.league.name}
+              currentMatchId={params.matchId}
+              hasTopScorersAbove={canRenderScorers}
             />
           </div>
         </div>

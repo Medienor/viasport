@@ -72,3 +72,33 @@ body {
 .animate-slide-up {
   animation: slide-up 0.3s ease-out;
 }
+
+/* Hide all tab content by default */
+[data-tab-content] {
+  display: none;
+}
+
+/* Show content when the corresponding tab is active */
+[data-active-tab="fakta"] [data-tab-content="fakta"] {
+  display: block;
+}
+
+[data-active-tab="referat"] [data-tab-content="referat"] {
+  display: block;
+}
+
+[data-active-tab="lag"] [data-tab-content="lag"] {
+  display: block;
+}
+
+[data-active-tab="tabell"] [data-tab-content="tabell"] {
+  display: block;
+}
+
+[data-active-tab="statistikk"] [data-tab-content="statistikk"] {
+  display: block;
+}
+
+[data-active-tab="lag-vs-lag"] [data-tab-content="lag-vs-lag"] {
+  display: block;
+}

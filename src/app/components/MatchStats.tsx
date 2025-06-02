@@ -97,7 +97,7 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
           </div>
 
           {/* Stats with pill design */}
-          <div className="space-y-4">
+          <div className="space-y-0">
             {[
               { label: 'Forventet mål (xG)', type: 'expected_goals' },
               { label: 'Totale skudd', type: 'Total Shots' },
@@ -123,13 +123,13 @@ export default function MatchStats({ match, teamColors }: MatchStatsProps) {
                   return `${value} (${percentage})`;
                 }
               },
-            ].map((stat) => {
+            ].map((stat, index) => {
               const homeValue = match.fixture_statistics[0].statistics.find((s: any) => s.type === stat.type)?.value;
               const awayValue = match.fixture_statistics[1].statistics.find((s: any) => s.type === stat.type)?.value;
               const betterTeam = getBetterValue(stat.type, homeValue, awayValue);
 
               return (
-                <div key={stat.type} className="flex items-center justify-between">
+                <div key={stat.type} className="flex items-center justify-between py-3 border-b border-[#f3f4f6] dark:border-[#232323] last:border-b-0">
                   <div className="w-32 text-right">
                     <span 
                       className={`font-medium ${betterTeam === 'home' ? 'inline-flex items-center justify-center px-2 py-0.5 rounded-full' : 'text-gray-900 dark:text-gray-300'}`}

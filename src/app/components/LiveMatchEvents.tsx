@@ -280,7 +280,7 @@ const LiveMatchEvents: React.FC<LiveMatchEventsProps> = ({
   const timeTextClasses = "text-sm font-semibold text-black dark:text-gray-100";
 
   return (
-    <div className="mt-2 bg-white dark:bg-[#222222] rounded-lg p-4">
+    <div className="bg-white dark:bg-[#181818] rounded-lg p-4">
       <div className="text-center mb-4">
         <h3 className="text-base font-semibold text-gray-800 dark:text-gray-100 inline-block">
           Kamphendelser

@@ -51,7 +51,7 @@ export default function RootLayout({
         <head>
           {/* Move scripts outside of head */}
         </head>
-        <body className={`${inter.className} bg-gray-100 dark:bg-dark-main`}>
+        <body className={`${inter.className} bg-gray-50 dark:bg-dark-main`}>
           {/* Google Analytics */}
           <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-Z17J77B571"
