@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { format, parseISO } from 'date-fns';
 import { nb } from 'date-fns/locale';
 
@@ -85,7 +84,10 @@ function getTopScorer(eventData: any[]): [string, number] {
     }
   });
   
-  const topScorer = Object.entries(scorerCounts).reduce((a, b) => 
+  const entries = Object.entries(scorerCounts);
+  if (entries.length === 0) return ['Ingen målscorer', 0];
+  
+  const topScorer = entries.reduce((a, b) => 
     a[1] > b[1] ? a : b
   );
   
@@ -203,7 +205,7 @@ export default function MatchSummaryCard({ match }: MatchSummaryCardProps) {
                       .sort((a: any, b: any) => a.time.elapsed - b.time.elapsed)
                       .map((goal: any, index: number) => (
                         <p key={index} className="text-sm">
-                          {goal.time.elapsed}' - {goal.player.name}
+                          {goal.time.elapsed}&apos; - {goal.player.name}
                           {goal.assist && ` (Assist: ${goal.assist.name})`}
                         </p>
                       ))}

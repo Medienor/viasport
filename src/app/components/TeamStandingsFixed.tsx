@@ -127,11 +127,24 @@ export default function TeamStandings({
     return Array.isArray(seasons) ? [...seasons].sort((a, b) => b - a) : [];
   }, [seasons]);
 
-  // Initialize with the preferred season (2024 if available, otherwise latest)
+  // Initialize with the most current/active season
   useEffect(() => {
     if (validSeasons.length > 0 && selectedSeason === null) {
-      // Prefer 2024 if available, otherwise use the latest season
-      const preferredSeason = validSeasons.includes(2024) ? 2024 : validSeasons[0];
+      const currentYear = new Date().getFullYear();
+      
+      // Prefer current year if available, otherwise the latest season
+      let preferredSeason;
+      if (validSeasons.includes(currentYear)) {
+        preferredSeason = currentYear;
+      } else if (validSeasons.includes(currentYear + 1)) {
+        // If next year is available (like 2025), prefer that
+        preferredSeason = currentYear + 1;
+      } else {
+        // Fall back to the latest available season
+        preferredSeason = validSeasons[0]; // Already sorted descending
+      }
+      
+      console.log(`[TeamStandings] Auto-selecting season ${preferredSeason} from available: [${validSeasons.join(', ')}]`);
       setSelectedSeason(preferredSeason);
     }
   }, [validSeasons, selectedSeason]);
