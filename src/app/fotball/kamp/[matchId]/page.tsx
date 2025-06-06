@@ -22,7 +22,7 @@ import MatchStatsSnippet from '@/app/components/MatchStatsSnippet';
 import HorizontalLineupComponent from '@/app/components/HorizontalLineupComponent';
 import FixtureNews from '@/app/components/FixtureNews';
 import TopSectionTabs from '@/app/components/TopSectionTabs';
-import TeamStandings from '@/app/components/TeamStandings';
+import TeamStandings from '@/app/components/TeamStandingsFixed';
 import MatchStats from '@/app/components/MatchStats';
 import HeadToHeadTab from '@/app/components/HeadToHeadTab';
 import MatchCommentary from '@/app/components/MatchCommentary';

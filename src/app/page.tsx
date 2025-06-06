@@ -185,15 +185,10 @@ export default function Home({
           {/* Right Sidebar - Premier League Table */}
           <div className="lg:col-span-3 order-2 lg:order-3">
             <div className="space-y-6"> 
-              <div className="bg-white dark:bg-[#222222] shadow-sm rounded-lg overflow-hidden">
-                <div className="p-4 border-b border-gray-200 dark:border-[#333333]"> 
-                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Tabellplassering</h2>
-                </div>
-                <SimpleTeamStandings leagueId={39} season={2024} leagueName={'Premier League'} /> 
-              </div>
+              <SimpleTeamStandings leagueId={39} season={2024} leagueName={'Premier League'} />
               
               {/* Latest News Section */}
-              <div className="bg-white dark:bg-[#222222] shadow-sm rounded-lg overflow-hidden">
+              <div className="bg-white dark:bg-[#181818] shadow-sm rounded-lg overflow-hidden">
                 <div className="p-4"> 
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Nyheter</h2>
                   <LatestNews />

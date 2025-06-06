@@ -84,6 +84,7 @@ export const MAJOR_LEAGUES = [
 
   // International Teams & Competitions
   { id: 1, name: 'World Cup' },
+  { id: 32, name: 'World Cup Qualification Europe' },
   { id: 4, name: 'Euro Championship' },
   { id: 960, name: 'Euro Championship Qualification' },
   { id: 5, name: 'Nations League' },

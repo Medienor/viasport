@@ -133,20 +133,25 @@ export default function LatestNews() {
       {/* Featured News Story */}
       {featuredNews && (
         <div className="space-y-3">
-          <div className="relative h-32 w-full rounded-lg overflow-hidden">
-            {featuredNews.generated_image_url ? (
-              <Image 
-                src={featuredNews.generated_image_url} 
-                alt={featuredNews.nb_title || featuredNews.title}
-                fill
-                className="object-cover"
-              />
-            ) : (
-              <div className="bg-gray-200 dark:bg-[#222222] h-full w-full flex items-center justify-center">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Ingen bilde</span>
-              </div>
-            )}
-          </div>
+          <Link 
+            href={featuredNews.nb_seo_slug || featuredNews.seo_slug ? `/news/${featuredNews.nb_seo_slug || featuredNews.seo_slug}` : `/news/${featuredNews.id}`}
+            className="block"
+          >
+            <div className="relative h-32 w-full rounded-lg overflow-hidden">
+              {featuredNews.generated_image_url ? (
+                <Image 
+                  src={featuredNews.generated_image_url} 
+                  alt={featuredNews.nb_title || featuredNews.title}
+                  fill
+                  className="object-cover"
+                />
+              ) : (
+                <div className="bg-gray-200 dark:bg-[#222222] h-full w-full flex items-center justify-center">
+                  <span className="text-sm text-gray-500 dark:text-gray-400">Ingen bilde</span>
+                </div>
+              )}
+            </div>
+          </Link>
           <Link 
             href={featuredNews.nb_seo_slug || featuredNews.seo_slug ? `/news/${featuredNews.nb_seo_slug || featuredNews.seo_slug}` : `/news/${featuredNews.id}`}
             className="block"
@@ -173,20 +178,25 @@ export default function LatestNews() {
             
             return (
               <li key={item.id} className="flex space-x-3">
-                <div className="relative h-16 w-16 flex-shrink-0 rounded overflow-hidden">
-                  {item.generated_image_url ? (
-                    <Image 
-                      src={item.generated_image_url} 
-                      alt={title}
-                      fill
-                      className="object-cover"
-                    />
-                  ) : (
-                    <div className="bg-gray-200 dark:bg-[#222222] h-full w-full flex items-center justify-center">
-                      <span className="text-xs text-gray-500 dark:text-gray-400">Ingen bilde</span>
-                    </div>
-                  )}
-                </div>
+                <Link 
+                  href={articleUrl}
+                  className="block"
+                >
+                  <div className="relative h-16 w-16 flex-shrink-0 rounded overflow-hidden">
+                    {item.generated_image_url ? (
+                      <Image 
+                        src={item.generated_image_url} 
+                        alt={title}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="bg-gray-200 dark:bg-[#222222] h-full w-full flex items-center justify-center">
+                        <span className="text-xs text-gray-500 dark:text-gray-400">Ingen bilde</span>
+                      </div>
+                    )}
+                  </div>
+                </Link>
                 <div className="flex-1">
                   <Link 
                     href={articleUrl}

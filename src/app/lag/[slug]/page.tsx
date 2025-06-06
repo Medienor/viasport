@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import TeamStandings from '@/app/components/TeamStandings';
+import TeamStandings from '@/app/components/TeamStandingsFixed';
 import path from 'path';
 import { readdir } from 'fs/promises';
 import TeamStats from '@/app/components/TeamStats';

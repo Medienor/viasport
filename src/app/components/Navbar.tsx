@@ -164,7 +164,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white dark:bg-dark-nav border-b border-gray-200 dark:border-dark-border z-20">
+      <nav className="bg-white dark:bg-dark-nav border-b border-gray-200 dark:border-[#232323] z-20">
         <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8 bg-white dark:bg-dark-nav">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
@@ -243,7 +243,7 @@ const Navbar = () => {
                 {isSettingsOpen && (
                   <div
                     ref={settingsMenuRef}
-                    className="absolute right-0 mt-2 w-48 bg-white dark:bg-dark-nav rounded-md shadow-lg ring-1 ring-black dark:ring-dark-border ring-opacity-5 focus:outline-none z-30"
+                    className="absolute right-0 mt-2 w-48 bg-white dark:bg-dark-nav rounded-md shadow-lg ring-1 ring-black dark:ring-[#232323] ring-opacity-5 focus:outline-none z-30"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="settings-menu-button"
@@ -277,7 +277,7 @@ const Navbar = () => {
                         </button>
                       )}
 
-                      <div className="border-t border-gray-100 dark:border-dark-border my-1"></div>
+                      <div className="border-t border-gray-100 dark:border-[#232323] my-1"></div>
                       <div className="px-4 py-2 text-sm text-gray-500 dark:text-gray-400">Tema</div>
                       <div className="flex justify-around items-center px-4 pb-2">
                         <button
@@ -332,7 +332,7 @@ const Navbar = () => {
       </nav>
 
       {hasMounted && isStickyVisible && (
-        <div className="fixed top-0 left-0 right-0 z-40 bg-white dark:bg-dark-nav text-gray-800 dark:text-gray-100 md:hidden transition-transform duration-200 ease-in-out transform translate-y-0 border-b border-gray-100 dark:border-dark-border">
+        <div className="fixed top-0 left-0 right-0 z-40 bg-white dark:bg-dark-nav text-gray-800 dark:text-gray-100 md:hidden transition-transform duration-200 ease-in-out transform translate-y-0 border-b border-gray-100 dark:border-[#232323]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center h-12">
               <div className="flex-shrink-0 flex items-center">
@@ -384,7 +384,7 @@ const Navbar = () => {
 
       {isMobileSearchOpen && (
         <div className="fixed inset-0 z-50 bg-white dark:bg-dark-main md:hidden flex flex-col animate-fade-in">
-          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-dark-border flex-shrink-0">
+          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-[#232323] flex-shrink-0">
             <button
               onClick={() => setIsMobileSearchOpen(false)}
               className="p-1 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-500"
@@ -431,8 +431,8 @@ const Navbar = () => {
           ${isMenuOpen ? 'block' : 'hidden'}
           ${
             isMenuOpen && isStickyVisible
-              ? 'fixed top-12 left-0 right-0 z-30 bg-white dark:bg-[#111111] h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-gray-700'
-              : isMenuOpen ? 'bg-white dark:bg-[#111111] border-t border-gray-100 dark:border-gray-700'
+              ? 'fixed top-12 left-0 right-0 z-30 bg-white dark:bg-[#111111] h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-[#232323]'
+              : isMenuOpen ? 'bg-white dark:bg-[#111111] border-t border-gray-100 dark:border-[#232323]'
               : ''
           }
         `}
@@ -460,7 +460,7 @@ const Navbar = () => {
             
             <div className="flex-1">
               {isLoading ? (
-                <div className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400">
+                <div className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-[#232323] text-gray-500 dark:text-gray-400">
                   Laster...
                 </div>
               ) : session ? (
@@ -482,7 +482,7 @@ const Navbar = () => {
               ) : (
                 <button
                   onClick={handleSignInClick}
-                  className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+                                      className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-[#232323] text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
                 >
                   <UserCircleIcon className="h-5 w-5 mr-2" />
                   Logg inn / Registrer deg
@@ -498,7 +498,7 @@ const Navbar = () => {
             <div className="bg-white dark:bg-[#222222] rounded-b-md mb-2">
               <Link
                 href="/transfers"
-                className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-[#232323]"
               >
                 Overganger
               </Link>
@@ -521,7 +521,7 @@ const Navbar = () => {
                 <Link 
                   key={index} 
                   href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-[#232323] last:border-b-0"
                 >
                   <div className="flex items-center gap-2">
                     {league.flag ? (
@@ -548,7 +548,7 @@ const Navbar = () => {
                 <Link 
                   key={index} 
                   href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-[#232323] last:border-b-0"
                 >
                   <div className="flex items-center gap-2">
                     {league.flag ? (
@@ -575,7 +575,7 @@ const Navbar = () => {
                 <Link
                   key={index}
                   href={item.href}
-                  className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+                  className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 border-b border-gray-100 dark:border-[#232323] last:border-b-0"
                 >
                   {item.text}
                 </Link>

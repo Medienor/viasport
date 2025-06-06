@@ -27,7 +27,7 @@ const getSeasonForLeague = (leagueId: number): number => {
   return league?.season || 2024; // Default to 2024 if not found
 };
 
-export default function SimpleTeamStandings({ leagueId: initialLeagueId, season: initialSeason, leagueName: initialLeagueName }: SimpleTeamStandingsProps) {
+export default function SimpleTeamStandings({ leagueId: initialLeagueId, leagueName: initialLeagueName }: SimpleTeamStandingsProps) {
   // Get stored league preference from localStorage
   const [leagueId, setLeagueId] = useState<number>(initialLeagueId);
   const [leagueName, setLeagueName] = useState<string>(initialLeagueName);
@@ -116,8 +116,29 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
 
   if (loading) {
     return (
-      <div className="text-center py-4">
-        <p className="text-gray-500 dark:text-gray-400">Laster tabell...</p>
+      <div className="bg-white dark:bg-[#181818] rounded-lg shadow-sm p-4">
+        <div className="flex items-center justify-between mb-3">
+          {/* Skeleton for league header */}
+          <div className="flex items-center">
+            <div className="h-6 w-6 bg-gray-200 dark:bg-[#333333] rounded-full animate-pulse"></div>
+            <div className="h-4 w-32 bg-gray-200 dark:bg-[#333333] rounded ml-2 animate-pulse"></div>
+          </div>
+          <div className="h-4 w-20 bg-gray-200 dark:bg-[#333333] rounded animate-pulse"></div>
+        </div>
+        
+        {/* Skeleton for standings rows */}
+        <div className="space-y-1">
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="flex items-center justify-between py-1 px-2">
+              <div className="flex items-center space-x-2">
+                <div className="w-5 h-3 bg-gray-200 dark:bg-[#333333] rounded animate-pulse"></div>
+                <div className="h-4 w-4 bg-gray-200 dark:bg-[#333333] rounded animate-pulse"></div>
+                <div className="h-3 w-20 bg-gray-200 dark:bg-[#333333] rounded animate-pulse"></div>
+              </div>
+              <div className="h-3 w-6 bg-gray-200 dark:bg-[#333333] rounded animate-pulse"></div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
@@ -131,7 +152,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
   }
 
   return (
-    <div className="bg-white dark:bg-[#222222] rounded-lg shadow-md p-4">
+    <div className="bg-white dark:bg-[#181818] rounded-lg shadow-sm p-4">
       <div className="flex items-center justify-between mb-3 relative" ref={dropdownRef}>
         {/* Current League Display */}
         <div className="flex items-center">
