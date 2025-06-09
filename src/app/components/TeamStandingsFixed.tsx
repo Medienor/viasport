@@ -121,6 +121,7 @@ export default function TeamStandings({
     forcedLeagueDetails?.id || leagueId || null
   );
   const [showForm, setShowForm] = useState(false);
+  const [showAllGroups, setShowAllGroups] = useState(false);
 
   // Memoize valid seasons
   const validSeasons = useMemo(() => {
@@ -296,9 +297,9 @@ export default function TeamStandings({
     return standingsData;
   }, [standingsData, selectedLeagueId]);
 
-  // Helper function to reorder groups so team's group appears first
-  const reorderStandingsGroups = (standingsGroups: any[][], teamId: number) => {
-    if (standingsGroups.length <= 1) return standingsGroups;
+  // Helper function to filter and reorder groups based on display preferences
+  const getGroupsToDisplay = (standingsGroups: any[][], teamId: number) => {
+    if (standingsGroups.length <= 1) return { groupsToShow: standingsGroups, hasMultipleGroups: false };
     
     // Check if any group actually has "group" in the name (case insensitive)
     const hasActualGroups = standingsGroups.some((group: any[]) => 
@@ -306,23 +307,32 @@ export default function TeamStandings({
       group[0].group.toLowerCase().includes('group')
     );
     
-    // Only reorder if there are actual groups (not just regular league standings)
+    // If no actual groups (just regular league standings), show all
     if (!hasActualGroups) {
-      return standingsGroups;
+      return { groupsToShow: standingsGroups, hasMultipleGroups: false };
     }
     
     const teamGroupIndex = standingsGroups.findIndex((group: any[]) => 
       group.some((standing: any) => standing?.team?.id === teamId)
     );
     
-    if (teamGroupIndex <= 0) return standingsGroups; // Already first or not found
+    // If showing all groups or team group not found, show all groups
+    if (showAllGroups || teamGroupIndex === -1) {
+      // Reorder so team's group appears first
+      if (teamGroupIndex > 0) {
+        const reorderedGroups = [...standingsGroups];
+        const teamGroup = reorderedGroups.splice(teamGroupIndex, 1)[0];
+        reorderedGroups.unshift(teamGroup);
+        console.log(`[TeamStandings] Moved team ${teamId}'s group to top (was index ${teamGroupIndex})`);
+        return { groupsToShow: reorderedGroups, hasMultipleGroups: true };
+      }
+      return { groupsToShow: standingsGroups, hasMultipleGroups: true };
+    }
     
-    const reorderedGroups = [...standingsGroups];
-    const teamGroup = reorderedGroups.splice(teamGroupIndex, 1)[0];
-    reorderedGroups.unshift(teamGroup);
-    
-    console.log(`[TeamStandings] Moved team ${teamId}'s group to top (was index ${teamGroupIndex})`);
-    return reorderedGroups;
+    // Show only team's group
+    const teamGroup = standingsGroups[teamGroupIndex];
+    console.log(`[TeamStandings] Showing only team ${teamId}'s group (index ${teamGroupIndex})`);
+    return { groupsToShow: [teamGroup], hasMultipleGroups: true };
   };
 
   // Loading state
@@ -439,25 +449,30 @@ export default function TeamStandings({
                 </div>
               </div>
 
-              {/* Render each group - prioritize current team's group */}
-              {reorderStandingsGroups(standingsGroups, teamId).map((standingGroup: any[], groupIndex: number) => {
-                if (!Array.isArray(standingGroup) || standingGroup.length === 0) {
-                  return null;
-                }
-
-                const currentTeamIndex = standingGroup.findIndex(
-                  (standing: any) => standing?.team?.id === teamId
-                );
-                const currentTeamStanding = currentTeamIndex !== -1 ? standingGroup[currentTeamIndex] : null;
-                const isTeamGroup = currentTeamStanding !== null;
+              {/* Render groups based on display preferences */}
+              {(() => {
+                const { groupsToShow, hasMultipleGroups } = getGroupsToDisplay(standingsGroups, teamId);
                 
-                // Check if this competition has actual groups (not just league name)
-                const hasActualGroups = standingsGroups.length > 1 || 
-                  (standingGroup[0]?.group && standingGroup[0].group.toLowerCase().includes('group'));
-                const shouldShowGroupLabel = isTeamGroup && hasActualGroups;
-
                 return (
-                  <div key={groupIndex} className={`mb-4 last:mb-0 ${shouldShowGroupLabel ? 'ring-2 ring-blue-200 dark:ring-blue-800 rounded-lg p-2' : ''}`}>
+                  <div>
+                    {groupsToShow.map((standingGroup: any[], groupIndex: number) => {
+                      if (!Array.isArray(standingGroup) || standingGroup.length === 0) {
+                        return null;
+                      }
+
+                      const currentTeamIndex = standingGroup.findIndex(
+                        (standing: any) => standing?.team?.id === teamId
+                      );
+                      const currentTeamStanding = currentTeamIndex !== -1 ? standingGroup[currentTeamIndex] : null;
+                      const isTeamGroup = currentTeamStanding !== null;
+                      
+                      // Check if this competition has actual groups (not just league name)
+                      const hasActualGroups = standingsGroups.length > 1 || 
+                        (standingGroup[0]?.group && standingGroup[0].group.toLowerCase().includes('group'));
+                      const shouldShowGroupLabel = isTeamGroup && hasActualGroups;
+
+                      return (
+                        <div key={groupIndex} className={`mb-4 last:mb-0 ${shouldShowGroupLabel ? 'ring-2 ring-blue-200 dark:ring-blue-800 rounded-lg p-2' : ''}`}>
                     {standingGroup[0]?.group && (
                       <h4 className={`text-md font-medium mb-2 dark:text-gray-300 ${shouldShowGroupLabel ? 'text-blue-700 dark:text-blue-300 font-semibold' : ''}`}>
                         {standingGroup[0].group} {shouldShowGroupLabel && '(Din gruppe)'}
@@ -647,7 +662,34 @@ export default function TeamStandings({
                     )}
                   </div>
                 );
-              })}
+                    })}
+                    
+                    {/* Show expand button if there are multiple groups and not showing all */}
+                    {hasMultipleGroups && !showAllGroups && (
+                      <div className="mt-4 text-center">
+                        <button
+                          onClick={() => setShowAllGroups(true)}
+                          className="px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 bg-blue-50 hover:bg-blue-100 dark:bg-blue-900/30 dark:hover:bg-blue-900/50 rounded-md transition-colors"
+                        >
+                          Se alle andre grupper
+                        </button>
+                      </div>
+                    )}
+                    
+                    {/* Show collapse button if showing all groups and there are multiple */}
+                    {hasMultipleGroups && showAllGroups && (
+                      <div className="mt-4 text-center">
+                        <button
+                          onClick={() => setShowAllGroups(false)}
+                          className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 rounded-md transition-colors"
+                        >
+                          Skjul andre grupper
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
             </div>
           );
         })}

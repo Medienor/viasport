@@ -387,7 +387,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
           {/* Right column - Match details (now first on mobile) */}
           <div className="w-full md:w-3/4 order-first md:order-last space-y-6">
             {/* Match header - Now with navigation bar */}
-            <div className="bg-white dark:bg-[#181818] rounded-lg overflow-hidden border border-[#f3f4f6] dark:border-[#232323]">
+            <div className="bg-white dark:bg-[#181818] rounded-none lg:rounded-lg overflow-hidden border-l-0 border-r-0 border-t-0 lg:border-l lg:border-r lg:border-t border-b lg:border border-[#f3f4f6] dark:border-[#232323] w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] -mt-8 lg:w-auto lg:left-auto lg:right-auto lg:ml-0 lg:mr-0 lg:mt-0">
               {/* Navigation bar */}
               <div className="relative flex items-center justify-between px-4 py-4 border-b border-[#f3f4f6] dark:border-[#232323]">
                 <Link

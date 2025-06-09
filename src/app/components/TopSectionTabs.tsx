@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 
 interface TopSectionTabsProps {
   match: any;
@@ -8,12 +8,14 @@ interface TopSectionTabsProps {
 
 export default function TopSectionTabs({ match }: TopSectionTabsProps) {
   const [activeTab, setActiveTab] = useState('fakta');
+  const [showStickyClone, setShowStickyClone] = useState(false);
   const [tooltipData, setTooltipData] = useState<{
     show: boolean;
     text: string;
     x: number;
     y: number;
   }>({ show: false, text: '', x: 0, y: 0 });
+  const tabsRef = useRef<HTMLDivElement>(null);
 
   // Calculate match timing
   const matchDateString = match.fixture?.date || match.date;
@@ -164,9 +166,27 @@ export default function TopSectionTabs({ match }: TopSectionTabsProps) {
   }, [activeTab]);
 
   // Handle tab click with availability check
-  const handleTabClick = (tabId: string) => {
+  const handleTabClick = (tabId: string, isFromStickyClone: boolean = false) => {
     if (getTabAvailability(tabId)) {
       setActiveTab(tabId);
+      
+      // Auto-scroll to content when changing tabs on mobile sticky clone
+      if (isFromStickyClone && tabsRef.current && window.innerWidth < 1024) {
+        // Get the position of the original tabs
+        const tabsRect = tabsRef.current.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Calculate the position just below the original tabs
+        const targetPosition = scrollTop + tabsRect.bottom + 40; // 40px padding for better spacing
+        
+        // Smooth scroll to the target position
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+        
+        console.log('Auto-scrolling to content for tab:', tabId, 'at position:', targetPosition);
+      }
     }
   };
 
@@ -177,9 +197,89 @@ export default function TopSectionTabs({ match }: TopSectionTabsProps) {
     }
   }, [minutesUntilMatch, isLive, isFinished, activeTab]);
 
+  // Show/hide sticky clone based on scroll position
+  useEffect(() => {
+    if (!tabsRef.current) return;
+    
+    let isScrolling = false;
+    
+    const handleScroll = () => {
+      if (!tabsRef.current || isScrolling) return;
+      
+      isScrolling = true;
+      requestAnimationFrame(() => {
+        if (!tabsRef.current) {
+          isScrolling = false;
+          return;
+        }
+        
+        const tabsRect = tabsRef.current.getBoundingClientRect();
+        const navbarHeight = 49;
+        
+        // Check if tabs have scrolled past the navbar on mobile
+        if (window.innerWidth < 1024) {
+          // Simple logic: Show clone when original tabs go behind navbar
+          const shouldShowClone = tabsRect.bottom <= navbarHeight;
+          
+          setShowStickyClone(prevState => {
+            if (prevState !== shouldShowClone) {
+              console.log('Clone state change:', {
+                from: prevState,
+                to: shouldShowClone,
+                tabsBottom: tabsRect.bottom,
+                navbarHeight,
+                reason: shouldShowClone ? 'tabs hidden' : 'tabs visible'
+              });
+              return shouldShowClone;
+            }
+            return prevState;
+          });
+        } else {
+          // Desktop - always hide clone
+          setShowStickyClone(prevState => {
+            if (prevState) {
+              console.log('Hiding clone on desktop');
+              return false;
+            }
+            return prevState;
+          });
+        }
+        
+        isScrolling = false;
+      });
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setShowStickyClone(prevState => {
+          if (prevState) {
+            console.log('Hiding clone on resize to desktop');
+            return false;
+          }
+          return prevState;
+        });
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleResize);
+    
+    // Check initial position
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty dependency array
+
   return (
     <>
-      <div>
+      {/* Original tabs - always in natural position */}
+      <div 
+        ref={tabsRef}
+        className="bg-white dark:bg-[#181818]"
+      >
         {/* Tab Navigation */}
         <div className="dark:border-dark-border">
           <nav className="-mb-px flex space-x-8 overflow-x-auto px-4 md:px-6">
@@ -190,12 +290,12 @@ export default function TopSectionTabs({ match }: TopSectionTabsProps) {
               return (
                 <div
                   key={tab.id}
-                  onMouseEnter={(e) => {
+                  onMouseEnter={(event) => {
                     if (!isAvailable) {
-                      showTooltip(e, tooltipMessage);
+                      showTooltip(event, tooltipMessage);
                     }
                   }}
-                  onMouseLeave={(e) => {
+                  onMouseLeave={() => {
                     if (!isAvailable) {
                       hideTooltip();
                     }
@@ -204,7 +304,7 @@ export default function TopSectionTabs({ match }: TopSectionTabsProps) {
                   <button
                     onClick={() => handleTabClick(tab.id)}
                     disabled={!isAvailable}
-                    className={`whitespace-nowrap py-3 px-1 border-b-[4px] font-medium text-sm transition-colors ${
+                    className={`whitespace-nowrap py-3 px-1 border-b-[4px] font-medium text-[13px] sm:text-sm transition-colors ${
                       activeTab === tab.id && isAvailable
                         ? 'border-black dark:border-[#ff6b00] text-black dark:text-[#ff6b00] rounded-t-md'
                         : isAvailable
@@ -220,6 +320,43 @@ export default function TopSectionTabs({ match }: TopSectionTabsProps) {
           </nav>
         </div>
       </div>
+
+      {/* Sticky clone - only visible when scrolled past original */}
+      {showStickyClone && (
+        <div className="fixed top-[49px] left-0 right-0 z-40 lg:hidden bg-white dark:bg-[#181818]">
+          {/* Tab Navigation Clone */}
+          <div className="dark:border-dark-border">
+            <nav className="-mb-px flex space-x-8 overflow-x-auto px-4 md:px-6">
+              {sortedTabs.map((tab) => {
+                const isAvailable = getTabAvailability(tab.id);
+                
+                return (
+                  <div key={`clone-${tab.id}`}>
+                    <button
+                      onClick={() => handleTabClick(tab.id, true)}
+                      disabled={!isAvailable}
+                      className={`whitespace-nowrap py-3 px-1 border-b-[4px] font-medium text-[13px] sm:text-sm transition-colors ${
+                        activeTab === tab.id && isAvailable
+                          ? 'border-black dark:border-[#ff6b00] text-black dark:text-[#ff6b00] rounded-t-md'
+                          : isAvailable
+                          ? 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 cursor-pointer'
+                          : 'border-transparent text-gray-300 dark:text-gray-600 cursor-not-allowed opacity-50'
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  </div>
+                );
+              })}
+            </nav>
+          </div>
+        </div>
+      )}
+      
+      {/* Spacer when clone is visible to prevent content jump */}
+      {showStickyClone && (
+        <div className="h-[52px] lg:hidden" />
+      )}
 
       {/* Custom Tooltip */}
       {tooltipData.show && (
