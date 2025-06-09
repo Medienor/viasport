@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-06-09T14:03:22.510Z
+// Last updated: 2025-06-09T17:08:32.450Z
 
 export const calendarData = {
   "2025-06-02": [
@@ -3655,8 +3655,8 @@ export const calendarData = {
         "date": "2025-06-04T19:15:00+00:00",
         "timestamp": 1749064500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749064500,
+          "second": 1749068100
         },
         "venue": {
           "id": 21598,
@@ -3664,9 +3664,9 @@ export const calendarData = {
           "city": "Húsavík"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
           "extra": null
         }
       },
@@ -3685,18 +3685,18 @@ export const calendarData = {
           "id": 4166,
           "name": "Völsungur",
           "logo": "https://media.api-sports.io/football/teams/4166.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 2116,
           "name": "Thor Akureyri",
           "logo": "https://media.api-sports.io/football/teams/2116.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       },
       "score": {
         "halftime": {
@@ -3704,8 +3704,8 @@ export const calendarData = {
           "away": null
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -3776,76 +3776,6 @@ export const calendarData = {
         "fulltime": {
           "home": 2,
           "away": 1
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1333335,
-        "referee": null,
-        "timezone": "UTC",
-        "date": "2025-06-04T19:15:00+00:00",
-        "timestamp": 1749064500,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 20546,
-          "name": "Fellavöllur",
-          "city": "Fellabær"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 166,
-        "name": "2. Deild",
-        "country": "Iceland",
-        "logo": "https://media.api-sports.io/football/leagues/166.png",
-        "flag": "https://media.api-sports.io/flags/is.svg",
-        "season": 2025,
-        "round": "Regular Season - 6",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 6087,
-          "name": "Höttur / Huginn",
-          "logo": "https://media.api-sports.io/football/teams/6087.png",
-          "winner": null
-        },
-        "away": {
-          "id": 18366,
-          "name": "Fjardabyggd / Leiknir",
-          "logo": "https://media.api-sports.io/football/teams/18366.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
         },
         "extratime": {
           "home": null,
@@ -4126,76 +4056,6 @@ export const calendarData = {
         "fulltime": {
           "home": 0,
           "away": 1
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1376418,
-        "referee": null,
-        "timezone": "UTC",
-        "date": "2025-06-04T22:00:00+00:00",
-        "timestamp": 1749074400,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": null,
-          "name": "TBC",
-          "city": "TBC"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/10.png",
-        "flag": null,
-        "season": 2025,
-        "round": "Friendlies 3",
-        "standings": false
-      },
-      "teams": {
-        "home": {
-          "id": 1513,
-          "name": "Guinea-Bissau",
-          "logo": "https://media.api-sports.io/football/teams/1513.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1528,
-          "name": "Burundi",
-          "logo": "https://media.api-sports.io/football/teams/1528.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
         },
         "extratime": {
           "home": null,
@@ -4981,6 +4841,76 @@ export const calendarData = {
     },
     {
       "fixture": {
+        "id": 1333335,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-06-05T19:15:00+00:00",
+        "timestamp": 1749150900,
+        "periods": {
+          "first": 1749150900,
+          "second": 1749154500
+        },
+        "venue": {
+          "id": 20546,
+          "name": "Fellavöllur",
+          "city": "Fellabær"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 166,
+        "name": "2. Deild",
+        "country": "Iceland",
+        "logo": "https://media.api-sports.io/football/leagues/166.png",
+        "flag": "https://media.api-sports.io/flags/is.svg",
+        "season": 2025,
+        "round": "Regular Season - 6",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 6087,
+          "name": "Höttur / Huginn",
+          "logo": "https://media.api-sports.io/football/teams/6087.png",
+          "winner": null
+        },
+        "away": {
+          "id": 18366,
+          "name": "Fjardabyggd / Leiknir",
+          "logo": "https://media.api-sports.io/football/teams/18366.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": 1,
+          "away": 1
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1376553,
         "referee": null,
         "timezone": "UTC",
@@ -4996,8 +4926,8 @@ export const calendarData = {
           "city": "TBC"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
+          "long": "Match Cancelled",
+          "short": "Canc",
           "elapsed": null,
           "extra": null
         }
@@ -7560,6 +7490,76 @@ export const calendarData = {
         "fulltime": {
           "home": 0,
           "away": 7
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1376418,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-06-06T19:00:00+00:00",
+        "timestamp": 1749236400,
+        "periods": {
+          "first": 1749236400,
+          "second": 1749240000
+        },
+        "venue": {
+          "id": null,
+          "name": "TBC",
+          "city": "TBC"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png",
+        "flag": null,
+        "season": 2025,
+        "round": "Friendlies 3",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 1513,
+          "name": "Guinea-Bissau",
+          "logo": "https://media.api-sports.io/football/teams/1513.png",
+          "winner": false
+        },
+        "away": {
+          "id": 1528,
+          "name": "Burundi",
+          "logo": "https://media.api-sports.io/football/teams/1528.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": 0,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -14155,76 +14155,6 @@ export const calendarData = {
     },
     {
       "fixture": {
-        "id": 1377020,
-        "referee": null,
-        "timezone": "UTC",
-        "date": "2025-06-07T15:00:00+00:00",
-        "timestamp": 1749308400,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 1107,
-          "name": "Stade de Marrakech",
-          "city": "Marrakech"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/10.png",
-        "flag": null,
-        "season": 2025,
-        "round": "Friendlies 1",
-        "standings": false
-      },
-      "teams": {
-        "home": {
-          "id": 1511,
-          "name": "Kenya",
-          "logo": "https://media.api-sports.io/football/teams/1511.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1523,
-          "name": "Chad",
-          "logo": "https://media.api-sports.io/football/teams/1523.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
         "id": 1211843,
         "referee": null,
         "timezone": "UTC",
@@ -19353,8 +19283,8 @@ export const calendarData = {
         },
         "status": {
           "long": "Match Finished",
-          "short": "FT",
-          "elapsed": 90,
+          "short": "PEN",
+          "elapsed": 120,
           "extra": 7
         }
       },
@@ -19373,13 +19303,13 @@ export const calendarData = {
           "id": 1577,
           "name": "Al Ahly",
           "logo": "https://media.api-sports.io/football/teams/1577.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 2292,
           "name": "Pachuca",
           "logo": "https://media.api-sports.io/football/teams/2292.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
@@ -19400,78 +19330,8 @@ export const calendarData = {
           "away": null
         },
         "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1376416,
-        "referee": null,
-        "timezone": "UTC",
-        "date": "2025-06-08T22:00:00+00:00",
-        "timestamp": 1749420000,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": null,
-          "name": "TBC",
-          "city": "TBC"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/10.png",
-        "flag": null,
-        "season": 2025,
-        "round": "Friendlies 3",
-        "standings": false
-      },
-      "teams": {
-        "home": {
-          "id": 1503,
-          "name": "Gabon",
-          "logo": "https://media.api-sports.io/football/teams/1503.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1513,
-          "name": "Guinea-Bissau",
-          "logo": "https://media.api-sports.io/football/teams/1513.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 5
         }
       }
     },
@@ -20054,10 +19914,10 @@ export const calendarData = {
           "city": "Tønsberg"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 75,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -20094,8 +19954,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -20116,7 +19976,7 @@ export const calendarData = {
         "timestamp": 1749474000,
         "periods": {
           "first": 1749474000,
-          "second": null
+          "second": 1749477600
         },
         "venue": {
           "id": 19680,
@@ -20124,10 +19984,10 @@ export const calendarData = {
           "city": "Kristiansund"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 4
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 2
         }
       },
       "league": {
@@ -20156,7 +20016,7 @@ export const calendarData = {
       },
       "goals": {
         "home": 0,
-        "away": 1
+        "away": 3
       },
       "score": {
         "halftime": {
@@ -20164,8 +20024,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -20186,7 +20046,7 @@ export const calendarData = {
         "timestamp": 1749474000,
         "periods": {
           "first": 1749474000,
-          "second": null
+          "second": 1749477600
         },
         "venue": {
           "id": 2791,
@@ -20194,10 +20054,10 @@ export const calendarData = {
           "city": "Elverum"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 3
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -20225,8 +20085,8 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 2,
-        "away": 0
+        "home": 6,
+        "away": 1
       },
       "score": {
         "halftime": {
@@ -20234,8 +20094,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 6,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20256,7 +20116,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 989,
@@ -20264,10 +20124,10 @@ export const calendarData = {
           "city": "Astana"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 3,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 10
         }
       },
       "league": {
@@ -20285,27 +20145,27 @@ export const calendarData = {
           "id": 1095,
           "name": "Kazakhstan",
           "logo": "https://media.api-sports.io/football/teams/1095.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 1105,
           "name": "FYR Macedonia",
           "logo": "https://media.api-sports.io/football/teams/1105.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "score": {
         "halftime": {
           "home": 0,
-          "away": 0
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20326,7 +20186,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 11310,
@@ -20334,10 +20194,10 @@ export const calendarData = {
           "city": "Oppaker"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 4,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -20366,16 +20226,16 @@ export const calendarData = {
       },
       "goals": {
         "home": 0,
-        "away": 1
+        "away": 3
       },
       "score": {
         "halftime": {
           "home": 0,
-          "away": 1
+          "away": 2
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -20396,7 +20256,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 5132,
@@ -20404,10 +20264,10 @@ export const calendarData = {
           "city": "Porsgrunn"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 3,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -20425,27 +20285,27 @@ export const calendarData = {
           "id": 25501,
           "name": "Pors Grenland II",
           "logo": "https://media.api-sports.io/football/teams/25501.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 6986,
           "name": "Fram",
           "logo": "https://media.api-sports.io/football/teams/6986.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 1,
+        "away": 2
       },
       "score": {
         "halftime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -20466,7 +20326,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": null,
@@ -20474,10 +20334,10 @@ export const calendarData = {
           "city": "Grindavík"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 3,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 9
         }
       },
       "league": {
@@ -20495,27 +20355,27 @@ export const calendarData = {
           "id": 277,
           "name": "Grindavik",
           "logo": "https://media.api-sports.io/football/teams/277.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 2113,
           "name": "HK Kopavogur",
           "logo": "https://media.api-sports.io/football/teams/2113.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 1
       },
       "score": {
         "halftime": {
           "home": 0,
-          "away": 0
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20536,7 +20396,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": null,
@@ -20544,10 +20404,10 @@ export const calendarData = {
           "city": "Neskaupstadur"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 1,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -20565,27 +20425,27 @@ export const calendarData = {
           "id": 18366,
           "name": "Fjardabyggd / Leiknir",
           "logo": "https://media.api-sports.io/football/teams/18366.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 2121,
           "name": "Grotta",
           "logo": "https://media.api-sports.io/football/teams/2121.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 3
       },
       "score": {
         "halftime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -20605,8 +20465,8 @@ export const calendarData = {
         "date": "2025-06-09T14:00:00+00:00",
         "timestamp": 1749477600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749477600,
+          "second": 1749481200
         },
         "venue": {
           "id": 2313,
@@ -20614,10 +20474,10 @@ export const calendarData = {
           "city": "Ólafsvik"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -20635,27 +20495,27 @@ export const calendarData = {
           "id": 828,
           "name": "Vikingur Olafsiik",
           "logo": "https://media.api-sports.io/football/teams/828.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 4171,
           "name": "Thróttur Vogar",
           "logo": "https://media.api-sports.io/football/teams/4171.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -20676,7 +20536,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 829,
@@ -20684,10 +20544,10 @@ export const calendarData = {
           "city": "Garðabær"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 3,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -20705,27 +20565,27 @@ export const calendarData = {
           "id": 4173,
           "name": "KFG",
           "logo": "https://media.api-sports.io/football/teams/4173.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 4170,
           "name": "Kári",
           "logo": "https://media.api-sports.io/football/teams/4170.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 3,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20746,7 +20606,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 21599,
@@ -20754,10 +20614,10 @@ export const calendarData = {
           "city": "Þorlákshöfn"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 2,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 3
         }
       },
       "league": {
@@ -20775,27 +20635,27 @@ export const calendarData = {
           "id": 4167,
           "name": "Ægir",
           "logo": "https://media.api-sports.io/football/teams/4167.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 6087,
           "name": "Höttur / Huginn",
           "logo": "https://media.api-sports.io/football/teams/6087.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 4,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20816,7 +20676,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 3184,
@@ -20824,10 +20684,10 @@ export const calendarData = {
           "city": "Garður"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 2,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 70
         }
       },
       "league": {
@@ -20845,17 +20705,17 @@ export const calendarData = {
           "id": 4169,
           "name": "Vídir",
           "logo": "https://media.api-sports.io/football/teams/4169.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 4172,
           "name": "Dalvík / Reynir",
           "logo": "https://media.api-sports.io/football/teams/4172.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "score": {
@@ -20864,8 +20724,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -20886,7 +20746,7 @@ export const calendarData = {
         "timestamp": 1749477600,
         "periods": {
           "first": 1749477600,
-          "second": null
+          "second": 1749481200
         },
         "venue": {
           "id": 1186,
@@ -20894,10 +20754,10 @@ export const calendarData = {
           "city": "Notodden"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 4,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
         }
       },
       "league": {
@@ -20925,7 +20785,7 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 2,
+        "home": 3,
         "away": 0
       },
       "score": {
@@ -20934,8 +20794,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -20955,8 +20815,8 @@ export const calendarData = {
         "date": "2025-06-09T15:00:00+00:00",
         "timestamp": 1749481200,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749481200,
+          "second": 1749484800
         },
         "venue": {
           "id": 1193,
@@ -20964,10 +20824,10 @@ export const calendarData = {
           "city": "Sarpsborg"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -20985,27 +20845,27 @@ export const calendarData = {
           "id": 16215,
           "name": "Sarpsborg 08 II",
           "logo": "https://media.api-sports.io/football/teams/16215.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 16231,
           "name": "Stabæk II",
           "logo": "https://media.api-sports.io/football/teams/16231.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -21025,8 +20885,8 @@ export const calendarData = {
         "date": "2025-06-09T15:00:00+00:00",
         "timestamp": 1749481200,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749481200,
+          "second": 1749484800
         },
         "venue": {
           "id": null,
@@ -21034,10 +20894,10 @@ export const calendarData = {
           "city": "TBC"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -21065,17 +20925,17 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -21095,8 +20955,8 @@ export const calendarData = {
         "date": "2025-06-09T16:00:00+00:00",
         "timestamp": 1749484800,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749484800,
+          "second": 1749488400
         },
         "venue": {
           "id": 12682,
@@ -21104,9 +20964,9 @@ export const calendarData = {
           "city": "Sandnes"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 53,
           "extra": null
         }
       },
@@ -21125,23 +20985,23 @@ export const calendarData = {
           "id": 18440,
           "name": "Sandnes Ulf II",
           "logo": "https://media.api-sports.io/football/teams/18440.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 6971,
           "name": "Brodd",
           "logo": "https://media.api-sports.io/football/teams/6971.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fulltime": {
           "home": null,
@@ -21165,7 +21025,7 @@ export const calendarData = {
         "date": "2025-06-09T16:00:00+00:00",
         "timestamp": 1749484800,
         "periods": {
-          "first": null,
+          "first": 1749484800,
           "second": null
         },
         "venue": {
@@ -21174,10 +21034,10 @@ export const calendarData = {
           "city": "Akureyri"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Halftime",
+          "short": "HT",
+          "elapsed": 45,
+          "extra": 11
         }
       },
       "league": {
@@ -21195,23 +21055,23 @@ export const calendarData = {
           "id": 2116,
           "name": "Thor Akureyri",
           "logo": "https://media.api-sports.io/football/teams/2116.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 2122,
           "name": "IR Reykjavik",
           "logo": "https://media.api-sports.io/football/teams/2122.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fulltime": {
           "home": null,
@@ -21235,8 +21095,8 @@ export const calendarData = {
         "date": "2025-06-09T16:00:00+00:00",
         "timestamp": 1749484800,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749484800,
+          "second": 1749488400
         },
         "venue": {
           "id": 2320,
@@ -21244,9 +21104,9 @@ export const calendarData = {
           "city": "Reykjavík"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 46,
           "extra": null
         }
       },
@@ -21275,13 +21135,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21305,8 +21165,8 @@ export const calendarData = {
         "date": "2025-06-09T16:00:00+00:00",
         "timestamp": 1749484800,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749484800,
+          "second": 1749488400
         },
         "venue": {
           "id": 21596,
@@ -21314,9 +21174,9 @@ export const calendarData = {
           "city": "Hafnarfjörður"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 46,
           "extra": null
         }
       },
@@ -21335,23 +21195,23 @@ export const calendarData = {
           "id": 2118,
           "name": "Haukar",
           "logo": "https://media.api-sports.io/football/teams/2118.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 6093,
           "name": "Kormákur / Hvöt",
           "logo": "https://media.api-sports.io/football/teams/6093.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21370,13 +21230,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1339003,
-        "referee": null,
+        "referee": "Julian Weinberger, Austria",
         "timezone": "UTC",
         "date": "2025-06-09T16:00:00+00:00",
         "timestamp": 1749484800,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1749484800,
+          "second": 1749488400
         },
         "venue": {
           "id": 1545,
@@ -21384,9 +21244,9 @@ export const calendarData = {
           "city": "Vaduz"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 49,
           "extra": null
         }
       },
@@ -21405,23 +21265,23 @@ export const calendarData = {
           "id": 1107,
           "name": "Liechtenstein",
           "logo": "https://media.api-sports.io/football/teams/1107.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 1108,
           "name": "Scotland",
           "logo": "https://media.api-sports.io/football/teams/1108.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 3
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fulltime": {
           "home": null,
@@ -21445,7 +21305,7 @@ export const calendarData = {
         "date": "2025-06-09T16:30:00+00:00",
         "timestamp": 1749486600,
         "periods": {
-          "first": null,
+          "first": 1749486600,
           "second": null
         },
         "venue": {
@@ -21454,9 +21314,9 @@ export const calendarData = {
           "city": "Stavanger"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 38,
           "extra": null
         }
       },
@@ -21485,13 +21345,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21515,7 +21375,7 @@ export const calendarData = {
         "date": "2025-06-09T17:00:00+00:00",
         "timestamp": 1749488400,
         "periods": {
-          "first": null,
+          "first": 1749488400,
           "second": null
         },
         "venue": {
@@ -21524,9 +21384,9 @@ export const calendarData = {
           "city": "Reykjavík"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 8,
           "extra": null
         }
       },
@@ -21555,13 +21415,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21585,7 +21445,7 @@ export const calendarData = {
         "date": "2025-06-09T17:00:00+00:00",
         "timestamp": 1749488400,
         "periods": {
-          "first": null,
+          "first": 1749488400,
           "second": null
         },
         "venue": {
@@ -21594,9 +21454,9 @@ export const calendarData = {
           "city": "Linköping"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 8,
           "extra": null
         }
       },
@@ -21625,13 +21485,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21655,7 +21515,7 @@ export const calendarData = {
         "date": "2025-06-09T17:00:00+00:00",
         "timestamp": 1749488400,
         "periods": {
-          "first": null,
+          "first": 1749488400,
           "second": null
         },
         "venue": {
@@ -21664,9 +21524,9 @@ export const calendarData = {
           "city": "Malmö"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 8,
           "extra": null
         }
       },
@@ -21695,13 +21555,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21720,23 +21580,23 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1377387,
-        "referee": null,
+        "referee": "Florjan Lata, Albania",
         "timezone": "UTC",
         "date": "2025-06-09T17:00:00+00:00",
         "timestamp": 1749488400,
         "periods": {
-          "first": null,
+          "first": 1749488400,
           "second": null
         },
         "venue": {
           "id": null,
           "name": "Stadiumi Fadil Vokrri",
-          "city": "Pristina"
+          "city": "Prishtinë"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 7,
           "extra": null
         }
       },
@@ -21765,13 +21625,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -21860,7 +21720,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1339004,
-        "referee": null,
+        "referee": "Jasmin Sabotic, Luxembourg",
         "timezone": "UTC",
         "date": "2025-06-09T18:00:00+00:00",
         "timestamp": 1749492000,
@@ -22279,6 +22139,76 @@ export const calendarData = {
     },
     {
       "fixture": {
+        "id": 1376416,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-06-09T19:00:00+00:00",
+        "timestamp": 1749495600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": null,
+          "name": "TBC",
+          "city": "TBC"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png",
+        "flag": null,
+        "season": 2025,
+        "round": "Friendlies 3",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 1503,
+          "name": "Gabon",
+          "logo": "https://media.api-sports.io/football/teams/1503.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1513,
+          "name": "Guinea-Bissau",
+          "logo": "https://media.api-sports.io/football/teams/1513.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1332971,
         "referee": null,
         "timezone": "UTC",
@@ -22631,77 +22561,7 @@ export const calendarData = {
   "2025-06-10": [
     {
       "fixture": {
-        "id": 1376809,
-        "referee": null,
-        "timezone": "UTC",
-        "date": "2025-06-10T12:00:00+00:00",
-        "timestamp": 1749556800,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": null,
-          "name": "Loftus Versfeld Stadium",
-          "city": "Tshwane"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/10.png",
-        "flag": null,
-        "season": 2025,
-        "round": "Friendlies 1",
-        "standings": false
-      },
-      "teams": {
-        "home": {
-          "id": 1531,
-          "name": "South Africa",
-          "logo": "https://media.api-sports.io/football/teams/1531.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1512,
-          "name": "Mozambique",
-          "logo": "https://media.api-sports.io/football/teams/1512.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1377021,
+        "id": 1377020,
         "referee": null,
         "timezone": "UTC",
         "date": "2025-06-10T15:00:00+00:00",
@@ -23303,6 +23163,76 @@ export const calendarData = {
           "id": 6686,
           "name": "Lindome",
           "logo": "https://media.api-sports.io/football/teams/6686.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1376809,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-06-10T17:30:00+00:00",
+        "timestamp": 1749576600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": null,
+          "name": "Loftus Versfeld Stadium",
+          "city": "Tshwane"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png",
+        "flag": null,
+        "season": 2025,
+        "round": "Friendlies 1",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 1531,
+          "name": "South Africa",
+          "logo": "https://media.api-sports.io/football/teams/1531.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1512,
+          "name": "Mozambique",
+          "logo": "https://media.api-sports.io/football/teams/1512.png",
           "winner": null
         }
       },

@@ -164,7 +164,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white dark:bg-dark-nav border-b border-gray-200 dark:border-[#232323] z-20">
+      <nav className="bg-white dark:bg-dark-nav border-b border-[#f3f4f6] dark:border-[#232323] z-20">
         <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-8 bg-white dark:bg-dark-nav">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
@@ -431,7 +431,7 @@ const Navbar = () => {
           ${isMenuOpen ? 'block' : 'hidden'}
           ${
             isMenuOpen && isStickyVisible
-              ? 'fixed top-12 left-0 right-0 z-30 bg-white dark:bg-[#111111] h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-[#232323]'
+              ? 'fixed top-12 left-0 right-0 z-[100] bg-white dark:bg-[#111111] h-[calc(100vh-3rem)] overflow-y-auto border-t border-gray-100 dark:border-[#232323]'
               : isMenuOpen ? 'bg-white dark:bg-[#111111] border-t border-gray-100 dark:border-[#232323]'
               : ''
           }
