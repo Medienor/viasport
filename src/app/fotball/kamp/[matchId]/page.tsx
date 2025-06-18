@@ -409,10 +409,10 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                       alt={match.league.name}
                       width={40}
                       height={40}
-                      className="mr-2 sm:mr-4"
+                      className={`mr-2 sm:mr-4 ${match.league.name?.toLowerCase().includes('fifa') || match.league.name?.toLowerCase().includes('club world cup') ? 'object-contain max-h-8' : ''}`}
                     />
                     <Link
-                      href={`/fotball/liga/${match.league.name.toLowerCase().replace(/\s+/g, '-')}-${match.league.id}`}
+                      href={`/fotball/liga/${match.league.name?.toLowerCase().replace(/\s+/g, '-') || 'liga'}-${match.league.id}`}
                       className="text-gray-900 dark:text-gray-100 hover:decoration-black dark:hover:decoration-white hover:underline transition-all"
                     >
                       <span className="hidden sm:inline">{match.league.name} {match.league.round}</span>
@@ -476,7 +476,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                 <div className="grid grid-cols-3 items-center gap-4 mb-4">
                   {/* Home team */}
                   <Link
-                    href={`/lag/${match.teams.home.name.toLowerCase().replace(/\s+/g, '-')}-${match.teams.home.id}`}
+                    href={`/lag/${match.teams.home.name?.toLowerCase().replace(/\s+/g, '-') || 'lag'}-${match.teams.home.id}`}
                     className="flex flex-col items-center group hover:opacity-80 transition-opacity text-center"
                   >
                     <div className="relative h-12 w-12 md:h-16 md:w-16 mb-2">
@@ -535,7 +535,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
 
                   {/* Away team */}
                   <Link
-                    href={`/lag/${match.teams.away.name.toLowerCase().replace(/\s+/g, '-')}-${match.teams.away.id}`}
+                    href={`/lag/${match.teams.away.name?.toLowerCase().replace(/\s+/g, '-') || 'lag'}-${match.teams.away.id}`}
                     className="flex flex-col items-center group hover:opacity-80 transition-opacity text-center"
                   >
                     <div className="relative h-12 w-12 md:h-16 md:w-16 mb-2">
@@ -821,7 +821,11 @@ export default async function MatchPage({ params }: { params: { matchId: string 
 
             {/* === LeagueChannels - Conditionally Rendered === */}
             {/* Only show if the match is NOT finished */}
-            {!isFinished && <LeagueChannels leagueId={leagueIdForScorers} />}
+            {!isFinished && (
+              <div className="mb-8">
+                <LeagueChannels leagueId={leagueIdForScorers} />
+              </div>
+            )}
             {/* ============================================ */}
 
             {/* Match Calendar - Pass whether TopScorers is rendered */}

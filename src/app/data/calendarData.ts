@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-06-18T18:42:53.008Z
+// Last updated: 2025-06-18T19:08:04.616Z
 
 export const calendarData = {
   "2025-06-11": [
@@ -19704,10 +19704,10 @@ export const calendarData = {
           "city": "Kongsvinger"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 86,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -19735,7 +19735,7 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 2,
+        "home": 3,
         "away": 0
       },
       "score": {
@@ -19744,8 +19744,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -19774,10 +19774,10 @@ export const calendarData = {
           "city": "Kjeller"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 86,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -19814,8 +19814,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -19844,10 +19844,10 @@ export const calendarData = {
           "city": "Oslo"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 84,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -19865,17 +19865,17 @@ export const calendarData = {
           "id": 7006,
           "name": "Lyn",
           "logo": "https://media.api-sports.io/football/teams/7006.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 2153,
           "name": "Raufoss",
           "logo": "https://media.api-sports.io/football/teams/2153.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 2,
+        "home": 3,
         "away": 2
       },
       "score": {
@@ -19884,8 +19884,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -19914,10 +19914,10 @@ export const calendarData = {
           "city": "Moss"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 84,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -19946,7 +19946,7 @@ export const calendarData = {
       },
       "goals": {
         "home": 3,
-        "away": 0
+        "away": 1
       },
       "score": {
         "halftime": {
@@ -19954,8 +19954,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -19984,10 +19984,10 @@ export const calendarData = {
           "city": "Skien"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 87,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -20024,8 +20024,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20054,10 +20054,10 @@ export const calendarData = {
           "city": "Ranheim"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 85,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -20075,18 +20075,18 @@ export const calendarData = {
           "id": 322,
           "name": "Ranheim",
           "logo": "https://media.api-sports.io/football/teams/322.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 334,
           "name": "Start",
           "logo": "https://media.api-sports.io/football/teams/334.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "score": {
         "halftime": {
@@ -20094,8 +20094,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20124,10 +20124,10 @@ export const calendarData = {
           "city": "Oslo"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 83,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -20155,8 +20155,8 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 0,
-        "away": 3
+        "home": 1,
+        "away": 4
       },
       "score": {
         "halftime": {
@@ -20164,8 +20164,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         },
         "extratime": {
           "home": null,
@@ -20194,10 +20194,10 @@ export const calendarData = {
           "city": "Bærum"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 81,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -20226,7 +20226,7 @@ export const calendarData = {
       },
       "goals": {
         "home": 1,
-        "away": 2
+        "away": 3
       },
       "score": {
         "halftime": {
@@ -20234,8 +20234,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -20264,10 +20264,10 @@ export const calendarData = {
           "city": "Torslanda"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 86,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 2
         }
       },
       "league": {
@@ -20304,8 +20304,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -20336,8 +20336,8 @@ export const calendarData = {
         "status": {
           "long": "Second Half",
           "short": "2H",
-          "elapsed": 67,
-          "extra": null
+          "elapsed": 90,
+          "extra": 2
         }
       },
       "league": {
@@ -20365,7 +20365,7 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 1,
+        "home": 4,
         "away": 0
       },
       "score": {
@@ -20404,10 +20404,10 @@ export const calendarData = {
           "city": "Falun"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 85,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -20444,8 +20444,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -20476,7 +20476,7 @@ export const calendarData = {
         "status": {
           "long": "Second Half",
           "short": "2H",
-          "elapsed": 54,
+          "elapsed": 80,
           "extra": null
         }
       },
@@ -20536,7 +20536,7 @@ export const calendarData = {
         "timestamp": 1750267800,
         "periods": {
           "first": 1750267800,
-          "second": null
+          "second": 1750271400
         },
         "venue": {
           "id": 1525,
@@ -20544,10 +20544,10 @@ export const calendarData = {
           "city": "Södertälje"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 15
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 66,
+          "extra": null
         }
       },
       "league": {
@@ -20605,7 +20605,7 @@ export const calendarData = {
         "date": "2025-06-18T19:00:00+00:00",
         "timestamp": 1750273200,
         "periods": {
-          "first": null,
+          "first": 1750273200,
           "second": null
         },
         "venue": {
@@ -20614,9 +20614,9 @@ export const calendarData = {
           "city": "Dunajská Streda"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 8,
           "extra": null
         }
       },
@@ -20645,13 +20645,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -20675,7 +20675,7 @@ export const calendarData = {
         "date": "2025-06-18T19:00:00+00:00",
         "timestamp": 1750273200,
         "periods": {
-          "first": null,
+          "first": 1750273200,
           "second": null
         },
         "venue": {
@@ -20684,9 +20684,9 @@ export const calendarData = {
           "city": "Nitra"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 8,
           "extra": null
         }
       },
@@ -20705,23 +20705,23 @@ export const calendarData = {
           "id": 8190,
           "name": "England U21",
           "logo": "https://media.api-sports.io/football/teams/8190.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 8196,
           "name": "Germany U21",
           "logo": "https://media.api-sports.io/football/teams/8196.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fulltime": {
           "home": null,
@@ -20745,7 +20745,7 @@ export const calendarData = {
         "date": "2025-06-18T19:00:00+00:00",
         "timestamp": 1750273200,
         "periods": {
-          "first": null,
+          "first": 1750273200,
           "second": null
         },
         "venue": {
@@ -20754,9 +20754,9 @@ export const calendarData = {
           "city": "Miami Garden"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 4,
           "extra": null
         }
       },
@@ -20785,13 +20785,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,

@@ -13,7 +13,7 @@ export default function LeagueChannels({ leagueId }: LeagueChannelsProps) {
   if (providers.length === 0) return null;
   
   return (
-    <div className="bg-white dark:bg-[#181818] rounded-lg border border-gray-100 dark:border-none overflow-hidden">
+    <div className="bg-white dark:bg-[#181818] rounded-lg border border-gray-100 dark:border-none overflow-hidden mb-8">
       <div className="p-4 border-b border-gray-100 dark:border-none">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Se kampen</h3>
       </div>

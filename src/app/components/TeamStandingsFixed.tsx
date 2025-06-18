@@ -102,151 +102,9 @@ interface StandingsData {
   };
 }
 
-// Helper function to check if standings data is meaningful for a given season
-const hasStandingsData = async (leagues: LeagueData[], year: number): Promise<boolean> => {
-  try {
-    // Filter to meaningful leagues for the given year
-    const yearLeagues = leagues.filter(league => 
-      league.seasons.some(season => season.year === year) &&
-      league.league.type === 'League' // Only check main leagues for meaningful data
-    );
-    
-    if (yearLeagues.length === 0) return false;
-    
-    // Check a sample league to see if it has meaningful standings
-    const sampleLeague = yearLeagues[0];
-    const response = await fetch(`/api/standings?league=${sampleLeague.league.id}&season=${year}`);
-    
-    if (!response.ok) return false;
-    
-    const data = await response.json();
-    if (!data.response || !Array.isArray(data.response) || data.response.length === 0) {
-      return false;
-    }
-    
-    const standings = data.response[0];
-    const standingsGroups = standings.league?.standings || [];
-    
-    // Check if any team has played games (meaningful data)
-    for (const group of standingsGroups) {
-      if (Array.isArray(group)) {
-        for (const team of group) {
-          if (team?.all?.played > 0) {
-            console.log(`[TeamStandings] ✅ Found meaningful standings data for ${year} in ${sampleLeague.league.name}`);
-            return true;
-          }
-        }
-      }
-    }
-    
-    console.log(`[TeamStandings] ❌ No meaningful standings data found for ${year} in ${sampleLeague.league.name}`);
-    return false;
-  } catch (error) {
-    console.error(`[TeamStandings] Error checking standings data for ${year}:`, error);
-    return false;
-  }
-};
 
-// Helper function to detect the most appropriate season to display
-const detectBestSeason = async (leagues: LeagueData[]): Promise<number> => {
-  const currentYear = new Date().getFullYear();
-  const currentDate = new Date();
-  
-  console.log(`[TeamStandings] 🕒 Detecting best season for current date: ${currentDate.toISOString().split('T')[0]}`);
-  
-  // Check if we have meaningful leagues for current year
-  const currentYearLeagues = leagues.filter(league => 
-    league.seasons.some(season => season.year === currentYear)
-  );
-  
-  // Check if we have meaningful leagues for previous year
-  const previousYear = currentYear - 1;
-  const previousYearLeagues = leagues.filter(league => 
-    league.seasons.some(season => season.year === previousYear)
-  );
-  
-  console.log(`[TeamStandings] 📊 Season analysis:`, {
-    currentYear,
-    currentYearLeagues: currentYearLeagues.length,
-    previousYear,
-    previousYearLeagues: previousYearLeagues.length
-  });
-  
-  // If we have current year leagues, check if they have meaningful standings data
-  if (currentYearLeagues.length > 0) {
-    const hasCurrentYearData = await hasStandingsData(leagues, currentYear);
-    if (hasCurrentYearData) {
-      console.log(`[TeamStandings] ✅ Current year ${currentYear} has meaningful standings data`);
-      return currentYear;
-    }
-    
-    // Check if any previous year season has ended recently (indicating new season should start)
-    const hasRecentlyEndedSeason = previousYearLeagues.some(league => {
-      const relevantSeason = league.seasons.find(s => s.year === previousYear);
-      if (relevantSeason && relevantSeason.end) {
-        const seasonEndDate = new Date(relevantSeason.end);
-        const daysSinceEnd = (currentDate.getTime() - seasonEndDate.getTime()) / (1000 * 60 * 60 * 24);
-        
-        console.log(`[TeamStandings] 📅 ${league.league.name} ${previousYear} season ended: ${relevantSeason.end} (${Math.round(daysSinceEnd)} days ago)`);
-        
-        // If season ended more than 30 days ago, new season should be active
-        return daysSinceEnd > 30;
-      }
-      return false;
-    });
-    
-    if (hasRecentlyEndedSeason) {
-      console.log(`[TeamStandings] ⚠️ Previous season ended >30 days ago but no meaningful current year data yet, checking date logic...`);
-    }
-  }
-  
-  // Check current date logic for typical European season timing
-  const month = currentDate.getMonth() + 1; // 1-12
-  
-  // European football seasons typically:
-  // - Start in August (month 8)
-  // - End in May (month 5)
-  // - June-July is off-season
-  
-  if (month >= 8 || month <= 5) {
-    // We're in an active season period
-    if (month >= 8) {
-      // August onwards = new season starting
-      console.log(`[TeamStandings] 📅 Date analysis: Month ${month} indicates new season, checking current year data...`);
-      if (currentYearLeagues.length > 0) {
-        const hasCurrentYearData = await hasStandingsData(leagues, currentYear);
-        if (hasCurrentYearData) {
-          console.log(`[TeamStandings] ✅ New season has started with meaningful data: ${currentYear}`);
-          return currentYear;
-        } else {
-          console.log(`[TeamStandings] ⚠️ New season period but no meaningful data yet, using previous year: ${previousYear}`);
-          return previousYear;
-        }
-      }
-    } else {
-      // January-May = current season ongoing
-      console.log(`[TeamStandings] 📅 Date analysis: Month ${month} indicates ongoing season, trying previous year: ${previousYear}`);
-      if (previousYearLeagues.length > 0) {
-        return previousYear;
-      }
-    }
-  } else {
-    // June-July = off-season, prefer previous year
-    console.log(`[TeamStandings] 📅 Date analysis: Month ${month} indicates off-season, trying previous year: ${previousYear}`);
-    if (previousYearLeagues.length > 0) {
-      return previousYear;
-    }
-  }
-  
-  // Fallback: prefer year with more leagues
-  if (currentYearLeagues.length >= previousYearLeagues.length) {
-    console.log(`[TeamStandings] 🔄 Fallback: Using current year ${currentYear} (${currentYearLeagues.length} vs ${previousYearLeagues.length} leagues)`);
-    return currentYear;
-  } else {
-    console.log(`[TeamStandings] 🔄 Fallback: Using previous year ${previousYear} (${previousYearLeagues.length} vs ${currentYearLeagues.length} leagues)`);
-    return previousYear;
-  }
-};
+
+
 
 export default function TeamStandings({
   teamId,
@@ -296,11 +154,17 @@ export default function TeamStandings({
     }
   }, [validSeasons, selectedSeason]);
 
-  // Fetch leagues data from cached API route
+  // Fetch leagues data directly from API Football
   const fetchLeagues = async (): Promise<LeagueData[]> => {
     try {
-      console.log(`[TeamStandings] 🏆 Fetching leagues for team ${teamId}...`);
-      const response = await fetch(`/api/leagues?team=${teamId}`);
+      console.log(`[TeamStandings] 🏆 Fetching leagues for team ${teamId} from API Football...`);
+      
+      const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/leagues?team=${teamId}`, {
+        headers: {
+          'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
+          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+        }
+      });
 
       if (!response.ok) {
         console.error(`[TeamStandings] ❌ API request failed: ${response.status} ${response.statusText}`);
@@ -308,114 +172,117 @@ export default function TeamStandings({
       }
 
       const data = await response.json();
-      console.log(`[TeamStandings] 📥 Raw API response for team ${teamId}:`, {
+      console.log(`[TeamStandings] 📥 Raw API Football response for team ${teamId}:`, {
         hasResponse: !!data.response,
         responseLength: data.response?.length || 0,
         responseType: Array.isArray(data.response) ? 'array' : typeof data.response,
         fullData: data
       });
 
-      if (data.response && Array.isArray(data.response)) {
-        console.log(`[TeamStandings] 📋 Processing ${data.response.length} league items...`);
-        
-        // Log all leagues and their seasons
-        data.response.forEach((item: LeagueData, index: number) => {
-          const seasons = item.seasons?.map(s => s.year) || [];
-          console.log(`[TeamStandings] 📋 League ${index + 1}: ${item.league?.name} (ID: ${item.league?.id}, Type: ${item.league?.type}) - Seasons: [${seasons.join(', ')}]`);
-        });
-        
-        // Use smart season detection to determine the best season
-        const bestSeason = await detectBestSeason(data.response);
-        console.log(`[TeamStandings] 🎯 Smart season detection result: ${bestSeason}`);
-        
-        // Filter for leagues that have the detected best season
-        let filtered = data.response.filter((item: LeagueData) => 
-          item.seasons.some(season => season.year === bestSeason)
-        );
-        console.log(`[TeamStandings] 🔍 After filtering for detected season ${bestSeason}: ${filtered.length} leagues found`);
-        filtered.forEach((item: LeagueData, index: number) => {
-          console.log(`[TeamStandings] 🔍 Filtered ${index + 1}: ${item.league.name} (${item.league.type})`);
-        });
-        
-        // Prioritize League type competitions and exclude friendlies/cups without standings
-        const meaningfulLeagues = filtered.filter((item: LeagueData) => {
-          const isLeague = item.league.type === 'League';
-          const isMeaningfulCup = item.league.type === 'Cup' && 
-            !item.league.name.toLowerCase().includes('friendlies') &&
-            !item.league.name.toLowerCase().includes('friendly') &&
-            !item.league.name.toLowerCase().includes('international champions cup') &&
-            !item.league.name.toLowerCase().includes('community shield') &&
-            !item.league.name.toLowerCase().includes('emirates cup') &&
-            !item.league.name.toLowerCase().includes('mls all-star');
-          return isLeague || isMeaningfulCup;
-        });
-        
-        console.log(`[TeamStandings] 🎯 After filtering for meaningful competitions: ${meaningfulLeagues.length} leagues found`);
-        meaningfulLeagues.forEach((item: LeagueData, index: number) => {
-          console.log(`[TeamStandings] 🎯 Meaningful ${index + 1}: ${item.league.name} (${item.league.type})`);
-        });
-        
-        // If detected season has meaningful leagues, use them
-        if (meaningfulLeagues.length > 0) {
-          console.log(`[TeamStandings] ✅ Using detected season ${bestSeason} leagues (${meaningfulLeagues.length} meaningful found)`);
-          // Update selectedSeason to match the detected season
-          if (selectedSeason !== bestSeason) {
-            console.log(`[TeamStandings] 🔄 Updating selectedSeason from ${selectedSeason} to ${bestSeason}`);
-            setSelectedSeason(bestSeason);
-          }
-          return meaningfulLeagues;
-        }
-        
-        // If detected season doesn't work, try fallback logic
-        const currentYear = new Date().getFullYear();
-        const previousYear = currentYear - 1;
-        const fallbackSeason = bestSeason === currentYear ? previousYear : currentYear;
-        
-        console.log(`[TeamStandings] ⚠️ No meaningful leagues found for detected season ${bestSeason}, trying fallback ${fallbackSeason}...`);
-        
-        filtered = data.response.filter((item: LeagueData) => 
-          item.seasons.some(season => season.year === fallbackSeason)
-        );
-        console.log(`[TeamStandings] 🔍 After filtering for fallback season ${fallbackSeason}: ${filtered.length} leagues found`);
-        filtered.forEach((item: LeagueData, index: number) => {
-          console.log(`[TeamStandings] 🔍 Fallback ${index + 1}: ${item.league.name} (${item.league.type})`);
-        });
-        
-        const meaningfulFallbackLeagues = filtered.filter((item: LeagueData) => {
-          const isLeague = item.league.type === 'League';
-          const isMeaningfulCup = item.league.type === 'Cup' && 
-            !item.league.name.toLowerCase().includes('friendlies') &&
-            !item.league.name.toLowerCase().includes('friendly') &&
-            !item.league.name.toLowerCase().includes('international champions cup') &&
-            !item.league.name.toLowerCase().includes('community shield') &&
-            !item.league.name.toLowerCase().includes('emirates cup') &&
-            !item.league.name.toLowerCase().includes('mls all-star');
-          return isLeague || isMeaningfulCup;
-        });
-        
-        console.log(`[TeamStandings] 🎯 After filtering for meaningful fallback competitions: ${meaningfulFallbackLeagues.length} leagues found`);
-        meaningfulFallbackLeagues.forEach((item: LeagueData, index: number) => {
-          console.log(`[TeamStandings] 🎯 Meaningful fallback ${index + 1}: ${item.league.name} (${item.league.type})`);
-        });
-        
-        if (meaningfulFallbackLeagues.length > 0) {
-          console.log(`[TeamStandings] ✅ Using fallback season ${fallbackSeason} leagues (${meaningfulFallbackLeagues.length} meaningful found)`);
-          // Update selectedSeason to match the data we're actually using
-          console.log(`[TeamStandings] 🔄 Updating selectedSeason from ${selectedSeason} to ${fallbackSeason}`);
-          setSelectedSeason(fallbackSeason);
-          return meaningfulFallbackLeagues;
-        }
-      } else {
-        console.error(`[TeamStandings] ❌ Invalid API response structure:`, {
-          hasResponse: !!data.response,
-          responseType: typeof data.response,
-          isArray: Array.isArray(data.response),
-          fullData: data
-        });
+      if (!data.response || !Array.isArray(data.response) || data.response.length === 0) {
+        console.log(`[TeamStandings] ❌ No leagues found for team ${teamId}`);
+        return [];
       }
+
+      console.log(`[TeamStandings] 📋 Processing ${data.response.length} league items from API Football...`);
       
-      console.log(`[TeamStandings] ❌ FINAL RESULT: No meaningful leagues found for any season`);
-      return [];
+      // Log all leagues and their seasons
+      data.response.forEach((item: any, index: number) => {
+        const seasons = item.seasons?.map((s: any) => s.year) || [];
+        console.log(`[TeamStandings] 📋 League ${index + 1}: ${item.league?.name} (ID: ${item.league?.id}, Type: ${item.league?.type}) - Seasons: [${seasons.join(', ')}]`);
+      });
+
+      // Process the leagues and find the best ones for standings
+      const currentYear = new Date().getFullYear();
+
+      // Filter and prioritize leagues with standings coverage
+      const eligibleLeagues = data.response
+        .filter((item: any) => {
+          // Check if league has current seasons with standings coverage
+          const hasStandings = item.seasons?.some((season: any) => 
+            season.current && season.coverage?.standings === true
+          );
+          if (!hasStandings) {
+            console.log(`[TeamStandings] ❌ Excluding ${item.league?.name}: No current season with standings coverage`);
+            return false;
+          }
+          return true;
+        })
+        .map((item: any) => {
+          // Get the current season with standings or fall back to most recent
+          let currentSeason = item.seasons?.find((season: any) => 
+            season.current && season.coverage?.standings === true
+          );
+          
+          // If no current season with standings, try to find the most recent one
+          if (!currentSeason) {
+            currentSeason = item.seasons
+              ?.filter((season: any) => season.coverage?.standings === true)
+              ?.sort((a: any, b: any) => b.year - a.year)?.[0];
+          }
+          
+          return {
+            id: item.league.id,
+            season: currentSeason?.year || currentYear,
+            league: {
+              id: item.league.id,
+              name: item.league.name,
+              type: item.league.type,
+              logo: item.league.logo,
+              country: item.country
+            },
+            seasons: item.seasons?.map((s: any) => ({
+              year: s.year,
+              start: s.start,
+              end: s.end,
+              current: s.current
+            })) || []
+          };
+        })
+        .filter((item: any) => {
+          // Prioritize League type and exclude problematic competitions
+          const isLeague = item.league.type === 'League';
+          const isMeaningfulCup = item.league.type === 'Cup' && 
+            !item.league.name.toLowerCase().includes('friendlies') &&
+            !item.league.name.toLowerCase().includes('friendly') &&
+            !item.league.name.toLowerCase().includes('international champions cup') &&
+            !item.league.name.toLowerCase().includes('community shield') &&
+            !item.league.name.toLowerCase().includes('emirates cup') &&
+            !item.league.name.toLowerCase().includes('mls all-star');
+          
+          if (!isLeague && !isMeaningfulCup) {
+            console.log(`[TeamStandings] ❌ Excluding ${item.league.name}: Not a meaningful competition`);
+            return false;
+          }
+          return true;
+        })
+        .sort((a: any, b: any) => {
+          // Sort by: League type first, then by season (most recent)
+          if (a.league.type === 'League' && b.league.type !== 'League') return -1;
+          if (b.league.type === 'League' && a.league.type !== 'League') return 1;
+          return b.season - a.season;
+        });
+
+      console.log(`[TeamStandings] 🎯 After filtering for meaningful leagues with standings: ${eligibleLeagues.length} leagues found`);
+      eligibleLeagues.forEach((item: any, index: number) => {
+        console.log(`[TeamStandings] 🎯 Eligible ${index + 1}: ${item.league.name} (${item.league.type}) - Season: ${item.season}`);
+      });
+
+      if (eligibleLeagues.length === 0) {
+        console.log(`[TeamStandings] ❌ No meaningful leagues with standings found for team ${teamId}`);
+        return [];
+      }
+
+      // Auto-select the best season based on the most relevant league
+      const bestSeason = eligibleLeagues[0].season;
+      if (selectedSeason !== bestSeason) {
+        console.log(`[TeamStandings] 🔄 Updating selectedSeason from ${selectedSeason} to ${bestSeason}`);
+        setSelectedSeason(bestSeason);
+      }
+
+      console.log(`[TeamStandings] ✅ Successfully processed ${eligibleLeagues.length} leagues for team ${teamId}`);
+      return eligibleLeagues;
+
     } catch (err: any) {
       console.error(`[TeamStandings] 💥 ERROR in fetchLeagues:`, err);
       console.error(`[TeamStandings] 💥 fetchLeagues error details:`, {
@@ -766,13 +633,12 @@ export default function TeamStandings({
 
       {/* League Selector for teams with multiple leagues */}
       {!forcedLeagueDetails && availableLeagues.length > 1 && (
-        <div className="mb-4">
-          <label htmlFor="league-select" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Velg turnering:</label>
+        <div className="mb-6">
           <select
             id="league-select"
             value={selectedLeagueId ?? ''}
             onChange={handleLeagueChange}
-            className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
+            className="block w-full pl-4 pr-10 py-3 text-base bg-white dark:bg-[#181818] border border-gray-200 dark:border-[#232323] dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 rounded-lg shadow-sm transition-all duration-200 hover:border-gray-300 dark:hover:border-[#333333]"
           >
             <option value="">Alle turneringer</option>
             {availableLeagues.map((league) => (
