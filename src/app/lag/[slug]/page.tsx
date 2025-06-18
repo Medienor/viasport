@@ -298,13 +298,13 @@ export default async function TeamPage({ params }: { params: { slug: string } })
   }, new Set<number>()); // Initialize with an empty Set
 
   // Convert Set to array and sort descending
-  const sortedSeasonYears = Array.from(allSeasonYears).sort((a, b) => b - a);
+  const sortedSeasonYears: number[] = Array.from(allSeasonYears).sort((a, b) => b - a);
 
   // Log the calculated seasons on the server
   // console.log(`[TeamPage] Calculated seasonYears for team ${teamId}:`, sortedSeasonYears);
 
   // Handle case where no seasons are found at all - Fallback to current year
-  const seasonYears = sortedSeasonYears.length > 0 ? sortedSeasonYears : [new Date().getFullYear()];
+  const seasonYears: number[] = sortedSeasonYears.length > 0 ? sortedSeasonYears : [new Date().getFullYear()];
   // console.log(`[TeamPage] Final seasonYears prop being passed to TeamStandings for team ${teamId}:`, seasonYears);
 
   // More debug logging
@@ -858,6 +858,10 @@ export default async function TeamPage({ params }: { params: { slug: string } })
               <TeamAnalysis
                 team={team}
                 leagues={leagues}
+                fixtures={{
+                  upcoming: supabaseUpcomingFixtures,
+                  past: supabasePastFixtures
+                }}
               />
             )}
 

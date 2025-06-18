@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRightIcon, HomeIcon } from '@heroicons/react/24/solid';
+import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { BASE_URL, headers } from '@/app/services/sportApi';
 import { createPlayerSlug, createTeamSlugWithId } from '@/app/utils/slugUtils';
 import { getStreamingProviders } from '@/utils/channelUtils';
@@ -76,6 +76,8 @@ export default function LeaguePageClient({
   const [standings, setStandings] = useState(initialStandings);
   // State for loading indicator
   const [isLoading, setIsLoading] = useState(false);
+  // State for showing all fixtures or just next 90 days
+  const [showAllFixtures, setShowAllFixtures] = useState(false);
   
   // Format season display for the dropdown
   function formatSeasonDisplay(season: number): string {
@@ -130,11 +132,49 @@ export default function LeaguePageClient({
     fetchSeasonStandings();
   }, [selectedSeason, currentSeason, leagueData.league.id, initialStandings]);
   
-  // Capitalize first letter of sport name
-  const formattedSport = sport.charAt(0).toUpperCase() + sport.slice(1);
+
   
-  // Group fixtures by date
-  const fixturesByDate = fixtures.reduce((acc: {[key: string]: any[]}, fixture: any) => {
+  // Filter fixtures - hide "FT" matches from previous days and limit to 90 days initially
+  const today = new Date().toISOString().split('T')[0];
+  const next90Days = new Date();
+  next90Days.setDate(next90Days.getDate() + 90);
+  const next90DaysStr = next90Days.toISOString().split('T')[0];
+  
+  const filteredFixtures = fixtures.filter((fixture: any) => {
+    const fixtureDate = fixture.fixture.date.split('T')[0];
+    const isFinished = fixture.fixture.status.short === 'FT';
+    
+    // If match is finished and from a previous day, hide it
+    if (isFinished && fixtureDate < today) {
+      return false;
+    }
+    
+    // If not showing all fixtures, limit to next 90 days
+    if (!showAllFixtures && fixtureDate > next90DaysStr) {
+      return false;
+    }
+    
+    // Show all other fixtures (including FT matches from today)
+    return true;
+  });
+  
+  // Count how many fixtures are beyond 90 days (for showing load more button)
+  const allAvailableFixtures = fixtures.filter((fixture: any) => {
+    const fixtureDate = fixture.fixture.date.split('T')[0];
+    const isFinished = fixture.fixture.status.short === 'FT';
+    
+    // If match is finished and from a previous day, hide it
+    if (isFinished && fixtureDate < today) {
+      return false;
+    }
+    
+    return true;
+  });
+  
+  const hasMoreFixtures = allAvailableFixtures.length > filteredFixtures.length;
+
+  // Group filtered fixtures by date
+  const fixturesByDate = filteredFixtures.reduce((acc: {[key: string]: any[]}, fixture: any) => {
     const date = fixture.fixture.date.split('T')[0];
     if (!acc[date]) {
       acc[date] = [];
@@ -638,6 +678,18 @@ export default function LeaguePageClient({
                 ) : (
                   <div className="px-4 py-5 sm:px-6 text-center text-gray-500 dark:text-gray-400">
                     Ingen kommende kamper tilgjengelig for denne sesongen.
+                  </div>
+                )}
+                
+                {/* Load more button */}
+                {hasMoreFixtures && (
+                  <div className="text-center px-4 py-5 sm:px-6 border-t border-gray-200 dark:border-dark-border bg-gray-50 dark:bg-[#222]">
+                    <button
+                      onClick={() => setShowAllFixtures(true)}
+                      className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 font-medium"
+                    >
+                      Vis alle kommende kamper ({allAvailableFixtures.length - filteredFixtures.length} til)
+                    </button>
                   </div>
                 )}
               </div>

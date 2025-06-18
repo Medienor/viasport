@@ -6,32 +6,25 @@ import Link from 'next/link';
 
 interface SimpleTeamStandingsProps {
   leagueId: number;
-  season: number;
   leagueName: string;
 }
 
 // Update the popularLeagues array to include country info
 const popularLeagues = [
-  { id: 39, name: 'Premier League', country: 'England', season: 2024 },
-  { id: 103, name: 'Eliteserien', country: 'Norway', season: 2025 },
-  { id: 140, name: 'La Liga', country: 'Spain', season: 2024 },
-  { id: 135, name: 'Serie A', country: 'Italy', season: 2024 },
-  { id: 78, name: 'Bundesliga', country: 'Germany', season: 2024 },
-  { id: 61, name: 'Ligue 1', country: 'France', season: 2024 },
-  { id: 104, name: 'OBOS-ligaen', country: 'Norway', season: 2025 }
+  { id: 39, name: 'Premier League', country: 'England' },
+  { id: 103, name: 'Eliteserien', country: 'Norway' },
+  { id: 140, name: 'La Liga', country: 'Spain' },
+  { id: 135, name: 'Serie A', country: 'Italy' },
+  { id: 78, name: 'Bundesliga', country: 'Germany' },
+  { id: 61, name: 'Ligue 1', country: 'France' },
+  { id: 104, name: 'OBOS-ligaen', country: 'Norway' }
 ];
-
-// Helper function to get the correct season for a league
-const getSeasonForLeague = (leagueId: number): number => {
-  const league = popularLeagues.find(l => l.id === leagueId);
-  return league?.season || 2024; // Default to 2024 if not found
-};
 
 export default function SimpleTeamStandings({ leagueId: initialLeagueId, leagueName: initialLeagueName }: SimpleTeamStandingsProps) {
   // Get stored league preference from localStorage
   const [leagueId, setLeagueId] = useState<number>(initialLeagueId);
   const [leagueName, setLeagueName] = useState<string>(initialLeagueName);
-  const [season, setSeason] = useState<number>(getSeasonForLeague(initialLeagueId));
+  const [currentSeason, setCurrentSeason] = useState<number>(new Date().getFullYear()); // Track which season we're showing
   const [standings, setStandings] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -47,7 +40,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, leagueN
       const parsedLeagueId = parseInt(storedLeagueId);
       setLeagueId(parsedLeagueId);
       setLeagueName(storedLeagueName);
-      setSeason(getSeasonForLeague(parsedLeagueId));
+      // Season will be determined dynamically in fetchStandingsWithFallback
     }
   }, []);
 
@@ -65,31 +58,72 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, leagueN
     };
   }, []);
 
-  // Fetch standings when leagueId or season changes
+  // Helper function to fetch standings with fallback to previous season
+  const fetchStandingsWithFallback = async (leagueId: number) => {
+    const currentYear = new Date().getFullYear();
+    console.log(`🏆 Fetching standings for league ${leagueId}...`);
+    
+    // Try current year first
+    console.log(`📊 Trying season ${currentYear}...`);
+    let response = await fetch(`/api/standings?league=${leagueId}&season=${currentYear}`, {
+      next: { revalidate: 86400 },
+      headers: {
+        'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+      }
+    });
+    
+    if (!response.ok) {
+      throw new Error(`API responded with status: ${response.status}`);
+    }
+    
+    let data = await response.json();
+    console.log(`📊 Season ${currentYear} response:`, data.response?.length || 0, 'standings');
+    
+    // If current year has data, use it
+    if (data.response && data.response.length > 0) {
+      console.log(`✅ Using season ${currentYear} standings`);
+      setCurrentSeason(currentYear);
+      return data.response;
+    }
+    
+    // If current year is empty, try previous year
+    const previousYear = currentYear - 1;
+    console.log(`📊 Season ${currentYear} empty, trying ${previousYear}...`);
+    
+    response = await fetch(`/api/standings?league=${leagueId}&season=${previousYear}`, {
+      next: { revalidate: 86400 },
+      headers: {
+        'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+      }
+    });
+    
+    if (!response.ok) {
+      throw new Error(`API responded with status: ${response.status}`);
+    }
+    
+    data = await response.json();
+    console.log(`📊 Season ${previousYear} response:`, data.response?.length || 0, 'standings');
+    
+    if (data.response && data.response.length > 0) {
+      console.log(`✅ Using fallback season ${previousYear} standings`);
+      setCurrentSeason(previousYear);
+      return data.response;
+    }
+    
+    console.log(`❌ No standings found for either ${currentYear} or ${previousYear}`);
+    return [];
+  };
+
+  // Fetch standings when leagueId changes
   useEffect(() => {
     const fetchStandings = async () => {
       try {
         setLoading(true);
         setError(null);
         
-        const response = await fetch(`/api/standings?league=${leagueId}&season=${season}`, {
-          next: { revalidate: 86400 },
-          headers: {
-            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
-          }
-        });
+        const standingsData = await fetchStandingsWithFallback(leagueId);
+        setStandings(standingsData);
         
-        if (!response.ok) {
-          throw new Error(`API responded with status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        
-        if (data.response && data.response.length > 0) {
-          setStandings(data.response);
-        } else {
-          setStandings([]);
-        }
       } catch (error) {
         console.error('Error fetching standings:', error);
         setError((error as Error).message);
@@ -99,15 +133,14 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, leagueN
     };
 
     fetchStandings();
-  }, [leagueId, season]);
+  }, [leagueId]); // Removed season dependency since we determine it dynamically
 
   // Change league and save preference
   const changeLeague = (id: number, name: string) => {
-    const newSeason = getSeasonForLeague(id);
     setLeagueId(id);
     setLeagueName(name);
-    setSeason(newSeason);
     setIsDropdownOpen(false);
+    // Season will be determined dynamically when fetchStandings runs
     
     // Save to localStorage
     localStorage.setItem('preferredLeagueId', id.toString());
@@ -165,7 +198,9 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, leagueN
               unoptimized
             />
           </div>
-          <h2 className="text-base font-medium ml-2 text-gray-900 dark:text-gray-100">{leagueName}</h2>
+          <h2 className="text-base font-medium ml-2 text-gray-900 dark:text-gray-100">
+            {leagueName} {currentSeason && currentSeason !== new Date().getFullYear() ? `${currentSeason}` : ''}
+          </h2>
         </div>
         
         {/* Toggle Button */}

@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-06-09T17:08:33.319Z
+// Last updated: 2025-06-18T18:42:54.268Z
 
 export const leaguesData = [
   {
@@ -2111,7 +2111,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-09-19",
-        "end": "2025-05-31",
+        "end": "2025-06-21",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -2700,7 +2700,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -4213,7 +4213,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -4566,7 +4566,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -4894,7 +4894,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-02-08",
+        "start": "2025-02-07",
         "end": "2025-06-21",
         "current": true,
         "coverage": {
@@ -5256,7 +5256,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -5885,7 +5885,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-02-08",
+        "start": "2025-02-07",
         "end": "2025-10-11",
         "current": true,
         "coverage": {
@@ -6005,7 +6005,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -6113,8 +6113,8 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-03-12",
-        "end": "2025-03-12",
+        "start": "2025-09-05",
+        "end": "2025-09-05",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -9068,7 +9068,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -11001,7 +11001,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -12169,7 +12169,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -13064,7 +13064,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-09",
-        "end": "2025-06-08",
+        "end": "2025-06-07",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -14285,7 +14285,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -14608,7 +14608,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -15093,7 +15093,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -16415,7 +16415,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -17376,7 +17376,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-28",
-        "end": "2025-06-08",
+        "end": "2025-11-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -17846,7 +17846,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-05-03",
-        "end": "2025-06-16",
+        "end": "2025-06-18",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -17862,7 +17862,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -23887,7 +23887,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-28",
-        "end": "2025-06-01",
+        "end": "2025-07-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -25571,7 +25571,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -26100,7 +26100,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -26784,7 +26784,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -29440,7 +29440,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -29745,7 +29745,7 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
+            "events": true,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -29757,7 +29757,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -29897,7 +29897,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -30087,7 +30087,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-01-22",
-        "end": "2025-04-23",
+        "end": "2025-04-24",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -32105,10 +32105,32 @@ export const leaguesData = [
         "year": 2024,
         "start": "2024-06-12",
         "end": "2024-08-14",
-        "current": true,
+        "current": false,
         "coverage": {
           "fixtures": {
             "events": true,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": false,
+          "players": false,
+          "top_scorers": false,
+          "top_assists": false,
+          "top_cards": false,
+          "injuries": false,
+          "predictions": true,
+          "odds": false
+        }
+      },
+      {
+        "year": 2025,
+        "start": null,
+        "end": null,
+        "current": true,
+        "coverage": {
+          "fixtures": {
+            "events": false,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -32397,8 +32419,8 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-04-13",
-        "end": "2025-06-08",
+        "start": "2025-04-12",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -32414,7 +32436,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -34453,7 +34475,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -35772,8 +35794,8 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-04-12",
-        "end": "2025-07-19",
+        "start": "2025-04-19",
+        "end": "2025-07-25",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -38367,7 +38389,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2024-12-07",
-        "end": "2025-05-28",
+        "end": "2025-07-16",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -38491,8 +38513,8 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2024-12-14",
-        "end": "2025-04-26",
+        "start": "2024-12-13",
+        "end": "2025-06-16",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -38780,7 +38802,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -39939,7 +39961,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-02-16",
+        "start": "2025-02-15",
         "end": "2025-12-07",
         "current": true,
         "coverage": {
@@ -40086,7 +40108,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-03-02",
+        "start": "2025-03-01",
         "end": "2025-11-30",
         "current": true,
         "coverage": {
@@ -40513,7 +40535,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-14",
-        "end": "2025-06-19",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -40529,7 +40551,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -41527,7 +41549,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-05-28",
-        "end": "2025-06-08",
+        "end": "2025-06-16",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -41673,7 +41695,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-02-23",
+        "start": "2025-02-21",
         "end": "2025-06-22",
         "current": true,
         "coverage": {
@@ -41909,7 +41931,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-01-24",
-        "end": "2025-06-09",
+        "end": "2025-06-20",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -42144,7 +42166,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-01-31",
-        "end": "2025-06-11",
+        "end": "2025-06-14",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -42829,7 +42851,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -43623,7 +43645,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -46071,7 +46093,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -46196,7 +46218,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -46387,6 +46409,28 @@ export const leaguesData = [
         "year": 2023,
         "start": "2024-06-12",
         "end": "2024-06-15",
+        "current": false,
+        "coverage": {
+          "fixtures": {
+            "events": true,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": false,
+          "players": true,
+          "top_scorers": true,
+          "top_assists": true,
+          "top_cards": true,
+          "injuries": false,
+          "predictions": true,
+          "odds": false
+        }
+      },
+      {
+        "year": 2024,
+        "start": null,
+        "end": null,
         "current": true,
         "coverage": {
           "fixtures": {
@@ -46680,7 +46724,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-09",
-        "end": "2025-06-14",
+        "end": "2025-06-15",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -46843,7 +46887,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -46978,7 +47022,7 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
+            "events": true,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -46990,7 +47034,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -47137,7 +47181,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -47262,7 +47306,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -47578,7 +47622,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -50707,7 +50751,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": true,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -50728,7 +50772,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-02-21",
-        "end": "2025-05-23",
+        "end": "2025-05-24",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -51579,7 +51623,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-03-19",
+        "start": "2025-03-18",
         "end": "2025-08-13",
         "current": true,
         "coverage": {
@@ -56473,7 +56517,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -60415,7 +60459,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -61847,7 +61891,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -62022,7 +62066,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-04-07",
-        "end": "2025-06-18",
+        "end": "2025-06-17",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -62038,7 +62082,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -62361,7 +62405,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -64672,8 +64716,8 @@ export const leaguesData = [
           "fixtures": {
             "events": true,
             "lineups": true,
-            "statistics_fixtures": false,
-            "statistics_players": false
+            "statistics_fixtures": true,
+            "statistics_players": true
           },
           "standings": true,
           "players": true,
@@ -70616,7 +70660,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-06-12",
-        "end": "2025-06-12",
+        "end": "2025-06-20",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -71256,7 +71300,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -72989,7 +73033,7 @@ export const leaguesData = [
         "year": 2024,
         "start": "2024-08-16",
         "end": "2025-05-24",
-        "current": true,
+        "current": false,
         "coverage": {
           "fixtures": {
             "events": true,
@@ -73002,6 +73046,28 @@ export const leaguesData = [
           "top_scorers": true,
           "top_assists": true,
           "top_cards": true,
+          "injuries": false,
+          "predictions": true,
+          "odds": false
+        }
+      },
+      {
+        "year": 2025,
+        "start": "2025-08-16",
+        "end": "2025-08-26",
+        "current": true,
+        "coverage": {
+          "fixtures": {
+            "events": false,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": false,
+          "players": false,
+          "top_scorers": false,
+          "top_assists": false,
+          "top_cards": false,
           "injuries": false,
           "predictions": true,
           "odds": false
@@ -74085,7 +74151,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -75622,7 +75688,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -76996,7 +77062,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -80933,12 +80999,12 @@ export const leaguesData = [
       },
       {
         "year": 2020,
-        "start": "2020-02-29",
-        "end": "2020-05-24",
+        "start": "2020-09-05",
+        "end": "2021-05-31",
         "current": false,
         "coverage": {
           "fixtures": {
-            "events": true,
+            "events": false,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -80955,12 +81021,12 @@ export const leaguesData = [
       },
       {
         "year": 2020,
-        "start": "2020-09-05",
-        "end": "2021-05-31",
+        "start": "2020-02-29",
+        "end": "2020-05-24",
         "current": false,
         "coverage": {
           "fixtures": {
-            "events": false,
+            "events": true,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -83653,7 +83719,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -84312,7 +84378,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-05-03",
+        "start": "2025-05-02",
         "end": "2025-09-13",
         "current": true,
         "coverage": {
@@ -84498,7 +84564,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -87459,7 +87525,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-09-20",
-        "end": "2025-05-19",
+        "end": "2025-06-21",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -87475,7 +87541,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -90488,7 +90554,7 @@ export const leaguesData = [
         "year": 2024,
         "start": "2024-08-17",
         "end": "2025-05-25",
-        "current": true,
+        "current": false,
         "coverage": {
           "fixtures": {
             "events": true,
@@ -90502,6 +90568,28 @@ export const leaguesData = [
           "top_assists": true,
           "top_cards": true,
           "injuries": true,
+          "predictions": true,
+          "odds": false
+        }
+      },
+      {
+        "year": 2025,
+        "start": "2025-08-24",
+        "end": "2026-05-24",
+        "current": true,
+        "coverage": {
+          "fixtures": {
+            "events": false,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": false,
+          "players": false,
+          "top_scorers": false,
+          "top_assists": false,
+          "top_cards": false,
+          "injuries": false,
           "predictions": true,
           "odds": false
         }
@@ -90913,7 +91001,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-16",
-        "end": "2025-06-01",
+        "end": "2025-06-20",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -91561,7 +91649,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -91804,7 +91892,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -94310,7 +94398,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -94633,7 +94721,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -97042,7 +97130,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -97578,7 +97666,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -98107,7 +98195,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -98232,7 +98320,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -100354,7 +100442,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-05-02",
-        "end": "2025-05-30",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -100370,7 +100458,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -103037,7 +103125,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -103118,7 +103206,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -103816,7 +103904,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -104851,7 +104939,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-11-23",
-        "end": "2025-06-04",
+        "end": "2025-06-15",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -104867,7 +104955,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -106154,7 +106242,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -107308,7 +107396,7 @@ export const leaguesData = [
         "year": 2024,
         "start": "2024-08-03",
         "end": "2025-05-28",
-        "current": true,
+        "current": false,
         "coverage": {
           "fixtures": {
             "events": true,
@@ -107321,6 +107409,28 @@ export const leaguesData = [
           "top_scorers": true,
           "top_assists": true,
           "top_cards": true,
+          "injuries": false,
+          "predictions": true,
+          "odds": false
+        }
+      },
+      {
+        "year": 2025,
+        "start": "2025-06-21",
+        "end": "2025-07-06",
+        "current": true,
+        "coverage": {
+          "fixtures": {
+            "events": false,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": true,
+          "players": false,
+          "top_scorers": false,
+          "top_assists": false,
+          "top_cards": false,
           "injuries": false,
           "predictions": true,
           "odds": false
@@ -107454,7 +107564,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2024-08-16",
-        "end": "2025-06-19",
+        "end": "2025-07-18",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -107470,7 +107580,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -107801,7 +107911,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -108461,7 +108571,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2025-02-26",
-        "end": "2025-04-04",
+        "end": "2025-06-15",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -108477,7 +108587,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -109829,7 +109939,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": true,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -110658,7 +110768,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-17",
-        "end": "2025-06-07",
+        "end": "2025-06-14",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -110674,7 +110784,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -110982,7 +111092,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-04-22",
-        "end": "2025-06-01",
+        "end": "2025-06-14",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -116628,7 +116738,7 @@ export const leaguesData = [
         "year": 2024,
         "start": "2024-07-03",
         "end": "2024-12-06",
-        "current": true,
+        "current": false,
         "coverage": {
           "fixtures": {
             "events": true,
@@ -116641,6 +116751,28 @@ export const leaguesData = [
           "top_scorers": true,
           "top_assists": true,
           "top_cards": true,
+          "injuries": false,
+          "predictions": true,
+          "odds": false
+        }
+      },
+      {
+        "year": 2025,
+        "start": "2025-05-29",
+        "end": "2025-06-19",
+        "current": true,
+        "coverage": {
+          "fixtures": {
+            "events": false,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": false,
+          "players": false,
+          "top_scorers": false,
+          "top_assists": false,
+          "top_cards": false,
           "injuries": false,
           "predictions": true,
           "odds": false
@@ -116862,7 +116994,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-28",
-        "end": "2025-06-16",
+        "end": "2025-06-23",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -117113,7 +117245,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -118766,7 +118898,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-10",
-        "end": "2025-05-24",
+        "end": "2025-05-25",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -118951,7 +119083,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -119082,7 +119214,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-07-19",
-        "end": "2025-06-07",
+        "end": "2025-06-18",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -119223,7 +119355,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -119348,7 +119480,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -119473,7 +119605,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -119598,7 +119730,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -120665,7 +120797,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -121297,7 +121429,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -121510,7 +121642,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -123817,7 +123949,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -125501,7 +125633,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -126074,7 +126206,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -130990,7 +131122,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-10-19",
-        "end": "2025-06-02",
+        "end": "2025-06-21",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -132145,7 +132277,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -133770,7 +133902,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -135298,7 +135430,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-09-14",
-        "end": "2025-05-24",
+        "end": "2025-06-30",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -135314,7 +135446,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -137701,7 +137833,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2025-05-28",
-        "end": "2025-06-08",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -137717,7 +137849,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -137914,7 +138046,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-15",
-        "end": "2025-06-12",
+        "end": "2025-06-21",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -138526,7 +138658,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -141509,7 +141641,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2025-05-17",
-        "end": "2025-06-07",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -141722,7 +141854,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-01-10",
-        "end": "2025-06-24",
+        "end": "2025-07-09",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -142274,7 +142406,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": true,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -146970,7 +147102,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -147954,7 +148086,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -149078,7 +149210,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -149570,7 +149702,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -150018,7 +150150,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -150664,7 +150796,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -152720,7 +152852,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": true,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -152851,7 +152983,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-04",
-        "end": "2025-06-22",
+        "end": "2025-08-26",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -154261,7 +154393,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-07",
-        "end": "2025-05-30",
+        "end": "2025-06-12",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -154600,7 +154732,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -156406,7 +156538,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-01-31",
-        "end": "2025-06-27",
+        "end": "2025-06-28",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -157052,7 +157184,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-08",
-        "end": "2025-06-09",
+        "end": "2025-06-16",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -157068,7 +157200,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -159263,7 +159395,7 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-05-03",
+        "start": "2025-05-04",
         "end": "2025-07-14",
         "current": true,
         "coverage": {
@@ -159301,7 +159433,7 @@ export const leaguesData = [
       {
         "year": 2024,
         "start": "2024-08-17",
-        "end": "2025-06-08",
+        "end": "2025-06-14",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -159317,7 +159449,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -159359,8 +159491,8 @@ export const leaguesData = [
       },
       {
         "year": 2025,
-        "start": "2025-05-05",
-        "end": "2025-06-30",
+        "start": "2025-05-04",
+        "end": "2025-07-01",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -160073,7 +160205,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-07",
-        "end": "2025-06-28",
+        "end": "2025-07-06",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -160089,7 +160221,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -160111,7 +160243,7 @@ export const leaguesData = [
         "year": 2024,
         "start": "2024-06-06",
         "end": "2024-07-20",
-        "current": true,
+        "current": false,
         "coverage": {
           "fixtures": {
             "events": true,
@@ -160127,6 +160259,28 @@ export const leaguesData = [
           "injuries": false,
           "predictions": true,
           "odds": false
+        }
+      },
+      {
+        "year": 2025,
+        "start": "2025-06-04",
+        "end": "2025-07-09",
+        "current": true,
+        "coverage": {
+          "fixtures": {
+            "events": false,
+            "lineups": false,
+            "statistics_fixtures": false,
+            "statistics_players": false
+          },
+          "standings": false,
+          "players": false,
+          "top_scorers": false,
+          "top_assists": false,
+          "top_cards": false,
+          "injuries": false,
+          "predictions": true,
+          "odds": true
         }
       }
     ]
@@ -160455,7 +160609,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-01-24",
-        "end": "2025-06-09",
+        "end": "2025-06-14",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -160800,7 +160954,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-03-28",
-        "end": "2025-06-01",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -160816,7 +160970,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -161595,7 +161749,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -164893,7 +165047,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -165357,7 +165511,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -166939,7 +167093,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -167074,12 +167228,12 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
-            "lineups": false,
-            "statistics_fixtures": false,
-            "statistics_players": false
+            "events": true,
+            "lineups": true,
+            "statistics_fixtures": true,
+            "statistics_players": true
           },
-          "standings": false,
+          "standings": true,
           "players": true,
           "top_scorers": true,
           "top_assists": true,
@@ -167838,7 +167992,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -169169,7 +169323,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-06-04",
-        "end": "2025-06-11",
+        "end": "2025-06-15",
         "current": true,
         "coverage": {
           "fixtures": {
@@ -169997,10 +170151,10 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
-            "lineups": false,
-            "statistics_fixtures": false,
-            "statistics_players": false
+            "events": true,
+            "lineups": true,
+            "statistics_fixtures": true,
+            "statistics_players": true
           },
           "standings": true,
           "players": false,
@@ -170590,7 +170744,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -172778,7 +172932,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -174006,7 +174160,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -174065,7 +174219,7 @@ export const leaguesData = [
           "top_cards": true,
           "injuries": false,
           "predictions": true,
-          "odds": true
+          "odds": false
         }
       }
     ]
@@ -174722,7 +174876,7 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
+            "events": true,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -174734,7 +174888,7 @@ export const leaguesData = [
           "top_cards": false,
           "injuries": false,
           "predictions": true,
-          "odds": false
+          "odds": true
         }
       }
     ]
@@ -174950,7 +175104,7 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
+            "events": true,
             "lineups": false,
             "statistics_fixtures": false,
             "statistics_players": false
@@ -175053,12 +175207,12 @@ export const leaguesData = [
         "current": true,
         "coverage": {
           "fixtures": {
-            "events": false,
-            "lineups": false,
-            "statistics_fixtures": false,
-            "statistics_players": false
+            "events": true,
+            "lineups": true,
+            "statistics_fixtures": true,
+            "statistics_players": true
           },
-          "standings": false,
+          "standings": true,
           "players": false,
           "top_scorers": false,
           "top_assists": false,
@@ -175139,7 +175293,7 @@ export const leaguesData = [
             "statistics_fixtures": false,
             "statistics_players": false
           },
-          "standings": false,
+          "standings": true,
           "players": false,
           "top_scorers": false,
           "top_assists": false,
@@ -175563,7 +175717,7 @@ export const leaguesData = [
       },
       {
         "year": 2023,
-        "start": "2023-11-13",
+        "start": "2023-11-15",
         "end": "2025-10-13",
         "current": true,
         "coverage": {
@@ -177161,7 +177315,7 @@ export const leaguesData = [
       {
         "year": 2025,
         "start": "2025-02-28",
-        "end": "2025-06-01",
+        "end": "2025-06-22",
         "current": true,
         "coverage": {
           "fixtures": {

@@ -33,6 +33,13 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
   useEffect(() => {
     const fetchAndAnalyze = async () => {
       try {
+        // Add defensive checks for required props
+        if (!team?.team?.id || !leagues || !fixtures) {
+          console.warn('TeamAnalysis: Missing required props', { team: !!team, leagues: !!leagues, fixtures: !!fixtures });
+          setAnalysisText(null);
+          return;
+        }
+
         // Find the main league by checking if the league ID matches any major league
         const mainLeague = leagues.find(league => {
           const leagueId = league.league.id;
@@ -45,6 +52,12 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
 
         if (!mainLeague) {
           console.log('No main league found');
+          return;
+        }
+
+        // Add defensive check for seasons
+        if (!mainLeague.seasons || !Array.isArray(mainLeague.seasons) || mainLeague.seasons.length === 0) {
+          console.warn('TeamAnalysis: No valid seasons found for main league', mainLeague);
           return;
         }
 
@@ -67,8 +80,16 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
         }
 
         const recentForm = currentStanding.form?.split('').reverse() || [];
+        
+        // Add defensive check for fixtures.past
+        if (!fixtures.past || !Array.isArray(fixtures.past)) {
+          console.warn('TeamAnalysis: fixtures.past is not a valid array', fixtures.past);
+          setAnalysisText(null);
+          return;
+        }
+
         const recentResults = fixtures.past
-          .filter((f: any) => f.league.id === mainLeague.league.id)
+          .filter((f: any) => f.league_id === mainLeague.league.id || f.league?.id === mainLeague.league.id)
           .slice(0, 5)
           .reverse();
 
@@ -121,16 +142,45 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
 
         // Recent form analysis
         const lastFiveResults = recentResults.map((match: any) => {
-          const isHome = match.teams.home.id === team.team.id;
+          // Handle both API structure (teams.home/teams.away) and Supabase structure (home_team_id/away_team_id)
+          let isHome: boolean;
+          let homeGoals: number | null;
+          let awayGoals: number | null;
+          let opponentName: string;
+
+          if (match.teams?.home?.id !== undefined) {
+            // API structure: teams.home/teams.away
+            isHome = match.teams.home.id === team.team.id;
+            homeGoals = match.goals?.home ?? null;
+            awayGoals = match.goals?.away ?? null;
+            opponentName = isHome ? match.teams.away?.name : match.teams.home?.name;
+          } else if (match.home_team_id !== undefined) {
+            // Supabase structure: home_team_id/away_team_id
+            isHome = match.home_team_id === team.team.id;
+            homeGoals = match.score?.fulltime?.home ?? null;
+            awayGoals = match.score?.fulltime?.away ?? null;
+            opponentName = isHome ? match.away_team?.name : match.home_team?.name;
+          } else {
+            // Fallback for unknown structure
+            console.warn('Unknown fixture structure:', match);
+            return null;
+          }
+
+          // Skip if we don't have valid data
+          if (homeGoals === null || awayGoals === null || !opponentName) {
+            return null;
+          }
+
           const score = isHome ? 
-            `${match.goals.home}-${match.goals.away}` : 
-            `${match.goals.away}-${match.goals.home}`;
-          const opponent = isHome ? match.teams.away.name : match.teams.home.name;
+            `${homeGoals}-${awayGoals}` : 
+            `${awayGoals}-${homeGoals}`;
+          
           const result = isHome ? 
-            (match.goals.home > match.goals.away ? 'seier' : match.goals.home < match.goals.away ? 'tap' : 'uavgjort') :
-            (match.goals.away > match.goals.home ? 'seier' : match.goals.away < match.goals.home ? 'tap' : 'uavgjort');
-          return { score, opponent, result };
-        });
+            (homeGoals > awayGoals ? 'seier' : homeGoals < awayGoals ? 'tap' : 'uavgjort') :
+            (awayGoals > homeGoals ? 'seier' : awayGoals < homeGoals ? 'tap' : 'uavgjort');
+          
+          return { score, opponent: opponentName, result };
+        }).filter(Boolean); // Remove null entries
 
         // Form context
         const wins = recentForm.filter((r: string) => r === 'W').length;
@@ -224,20 +274,45 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
             {fixtures.upcoming
               .slice(0, 5) // Take only top 5 matches
               .map((match: any) => {
-                const isHome = match.teams.home.id === team.team.id;
-                const opponent = isHome ? match.teams.away : match.teams.home;
+                // Handle both API structure (teams.home/teams.away) and Supabase structure (home_team_id/away_team_id)
+                let isHome: boolean;
+                let opponentName: string;
+                let fixtureId: number;
+
+                if (match.teams?.home?.id !== undefined) {
+                  // API structure: teams.home/teams.away
+                  isHome = match.teams.home.id === team.team.id;
+                  const opponent = isHome ? match.teams.away : match.teams.home;
+                  opponentName = opponent?.name;
+                  fixtureId = match.fixture?.id;
+                } else if (match.home_team_id !== undefined) {
+                  // Supabase structure: home_team_id/away_team_id
+                  isHome = match.home_team_id === team.team.id;
+                  const opponent = isHome ? match.away_team : match.home_team;
+                  opponentName = opponent?.name;
+                  fixtureId = match.id;
+                } else {
+                  // Skip unknown structure
+                  return null;
+                }
+
+                // Skip if we don't have valid data
+                if (!opponentName || !fixtureId) {
+                  return null;
+                }
                 
                 return (
-                  <li key={match.fixture.id}>
+                  <li key={fixtureId}>
                     <Link 
-                      href={`/fotball/kamp/${match.fixture.id}`}
+                      href={`/fotball/kamp/${fixtureId}`}
                       className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline"
                     >
-                      {`${isHome ? team.team.name : opponent.name} mot ${isHome ? opponent.name : team.team.name}`}
+                      {`${isHome ? team.team.name : opponentName} mot ${isHome ? opponentName : team.team.name}`}
                     </Link>
                   </li>
                 );
-              })}
+              })
+              .filter(Boolean)} {/* Remove null entries */}
           </ul>
         </div>
       )}

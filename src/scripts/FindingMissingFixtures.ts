@@ -11,7 +11,6 @@ const supabase = createClient(SCRIPT_SUPABASE_URL, SCRIPT_SUPABASE_ANON_KEY);
 // --- END Hardcoded Credentials and Configuration ---
 
 import colors from 'ansi-colors';
-import { MAJOR_LEAGUES } from './teamDataFetcher';
 
 interface ApiFixture {
   fixture: {
@@ -423,16 +422,10 @@ async function findMissingFixtures() {
   const startTime = Date.now();
   
   try {
-    // Find the World Cup Qualification Europe league from MAJOR_LEAGUES
-    const targetLeague = MAJOR_LEAGUES.find(league => league.id === 32);
-    if (!targetLeague) {
-      console.error(colors.red('❌ World Cup Qualification Europe league not found in MAJOR_LEAGUES'));
-      return;
-    }
-    
-    const LEAGUE_ID = targetLeague.id;
-    const LEAGUE_NAME = targetLeague.name;
-    const SEASONS = [2024, 2025]; // Focus on both seasons
+    // Target Premier League for 2024/25 season (API uses 2024 as season identifier)
+    const LEAGUE_ID = 39; // Premier League
+    const LEAGUE_NAME = 'Premier League';
+    const SEASONS = [2024]; // Focus on 2024/25 season
     
     console.log(colors.cyan(`🎯 Target: ${LEAGUE_NAME} (ID: ${LEAGUE_ID})`));
     console.log(colors.cyan(`🎯 Seasons: ${SEASONS.join(', ')}\n`));

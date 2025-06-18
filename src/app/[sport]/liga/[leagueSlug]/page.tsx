@@ -143,12 +143,67 @@ export default async function LeaguePage({ params }: { params: LeagueParams }) {
     
     const league = leagueData.response[0];
     
-    // Find current season
+    // Find current season - for Premier League, use next season if current has ended
     const seasons = league.seasons || [];
+    const currentDate = new Date();
     const currentSeason = seasons.find((season: any) => season.current === true);
-    const seasonYear = currentSeason?.year || new Date().getFullYear();
     
-    // 2. Fetch standings, fixtures, and top scorers in parallel
+    console.log('🔍 Season Debug Info:');
+    console.log('League ID:', leagueId);
+    console.log('Current Date:', currentDate.toISOString());
+    console.log('Available seasons:', seasons.map((s: any) => ({ year: s.year, current: s.current, start: s.start, end: s.end })));
+    console.log('Current season from API:', currentSeason);
+    
+    let seasonYear = currentSeason?.year || new Date().getFullYear();
+    
+    // Special handling for Premier League - if current season has ended, look for next season's fixtures
+    if (leagueId === 39 && currentSeason && new Date(currentSeason.end) < currentDate) {
+      console.log('🏆 Premier League: Current season has ended, switching to next season');
+      console.log('Season end date:', currentSeason.end);
+      console.log('Switching from season', seasonYear, 'to', seasonYear + 1);
+      // Current season has ended, use next season (2025)
+      seasonYear = currentSeason.year + 1;
+    }
+    
+    console.log('📅 Final season year to fetch:', seasonYear);
+    
+    // Helper function to fetch top scorers with fallback
+    async function fetchTopScorersWithFallback(leagueId: number) {
+      const currentYear = new Date().getFullYear();
+      console.log(`🏆 Trying top scorers for current year: ${currentYear}`);
+      
+      // Try current year first
+      let topScorersResponse = await fetch(`${BASE_URL}/players/topscorers?league=${leagueId}&season=${currentYear}`, { 
+        headers,
+        next: { revalidate: 86400 }
+      });
+      let topScorersData = await topScorersResponse.json();
+      
+      console.log(`Top scorers ${currentYear} response:`, { results: topScorersData.results, responseLength: topScorersData.response?.length });
+      
+      // If current year is empty, try previous year
+      if (!topScorersData.response || topScorersData.response.length === 0) {
+        const previousYear = currentYear - 1;
+        console.log(`🔄 Current year empty, trying previous year: ${previousYear}`);
+        
+        topScorersResponse = await fetch(`${BASE_URL}/players/topscorers?league=${leagueId}&season=${previousYear}`, { 
+          headers,
+          next: { revalidate: 86400 }
+        });
+        topScorersData = await topScorersResponse.json();
+        
+        console.log(`Top scorers ${previousYear} response:`, { results: topScorersData.results, responseLength: topScorersData.response?.length });
+      }
+      
+      return topScorersData;
+    }
+    
+    // 2. Fetch standings, fixtures, and top scorers
+    console.log('🚀 Making API calls for:');
+    console.log(`- Standings: league=${leagueId}&season=${seasonYear}`);
+    console.log(`- Fixtures: league=${leagueId}&season=${seasonYear}`);
+    console.log(`- Top scorers: fallback strategy starting with current year`);
+    
     const [standingsData, fixturesData, topScorersData] = await Promise.all([
       // Standings
       fetch(`${BASE_URL}/standings?league=${leagueId}&season=${seasonYear}`, { 
@@ -156,18 +211,20 @@ export default async function LeaguePage({ params }: { params: LeagueParams }) {
         next: { revalidate: 3600 } // Cache for 1 hour
       }).then(res => res.json()),
       
-      // Upcoming fixtures (next 30 days)
-      fetch(`${BASE_URL}/fixtures?league=${leagueId}&season=${seasonYear}&from=${getFormattedDate()}&to=${getFormattedDate(30)}`, { 
+      // All fixtures for the season
+      fetch(`${BASE_URL}/fixtures?league=${leagueId}&season=${seasonYear}`, { 
         headers,
         next: { revalidate: 1800 } // Cache for 30 minutes
       }).then(res => res.json()),
       
-      // Top scorers
-      fetch(`${BASE_URL}/players/topscorers?league=${leagueId}&season=${seasonYear}`, { 
-        headers,
-        next: { revalidate: 86400 } // Cache for 24 hours
-      }).then(res => res.json())
+      // Top scorers with fallback
+      fetchTopScorersWithFallback(leagueId)
     ]);
+    
+    console.log('📊 API Responses:');
+    console.log('Standings response:', { results: standingsData.results, responseLength: standingsData.response?.length });
+    console.log('Fixtures response:', { results: fixturesData.results, responseLength: fixturesData.response?.length });
+    console.log('Top scorers final response:', { results: topScorersData.results, responseLength: topScorersData.response?.length });
     
     // Process standings data
     const standings = standingsData.response && standingsData.response.length > 0
@@ -179,6 +236,15 @@ export default async function LeaguePage({ params }: { params: LeagueParams }) {
     
     // Process top scorers data
     const topScorers = topScorersData.response || [];
+    
+    console.log('✅ Processed data:');
+    console.log('Standings count:', standings.length);
+    console.log('Fixtures count:', fixtures.length);
+    console.log('Top scorers count:', topScorers.length);
+    if (fixtures.length > 0) {
+      console.log('First fixture date:', fixtures[0]?.fixture?.date);
+      console.log('Last fixture date:', fixtures[fixtures.length - 1]?.fixture?.date);
+    }
     
     // Pass all data to the client component
     return (
@@ -204,9 +270,4 @@ export default async function LeaguePage({ params }: { params: LeagueParams }) {
   }
 }
 
-// Helper function to get formatted date for API
-function getFormattedDate(daysFromNow = 0): string {
-  const date = new Date();
-  date.setDate(date.getDate() + daysFromNow);
-  return date.toISOString().split('T')[0];
-} 
+ 
